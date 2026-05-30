@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  background: #f4f6f8;
+  color: #1a1d21;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.menu__item,
+.toolbar__btn,
+.sidebar__close {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #c8d0d8;
+  background: #fff;
+  color: inherit;
+  border-radius: 8px;
+  padding: 0.45rem 0.85rem;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  text-underline-offset: unset;
+}
+
+.menu__item:hover,
+.menu__item:focus-visible,
+.toolbar__btn:hover,
+.toolbar__btn:focus-visible {
+  background: #e8eef4;
+  text-decoration: none;
+}
+
+.menu__item--active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.menu__item--active:hover,
+.menu__item--active:focus-visible {
+  background: #1d4ed8;
+  text-decoration: none;
+}
+
+.main {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.toolbar__title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.toolbar__btn {
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 0.25rem 0.65rem;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar__weekday {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #5c6670;
+  padding: 0.35rem 0;
+  text-decoration: none;
+}
+
+.calendar__day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.calendar__day--empty {
+  visibility: hidden;
+}
+
+.calendar__day--today {
+  background: #dbeafe;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.calendar__day--other-month {
+  color: #9aa3ad;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(320px, 90vw);
+  height: 100%;
+  background: #fff;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.12);
+  padding: 1.5rem;
+}
+
+.sidebar__title {
+  margin: 0 0 0.75rem;
+  text-decoration: none;
+}
+
+.sidebar__text {
+  margin: 0 0 1rem;
+  color: #5c6670;
+  text-decoration: none;
+}
+
+.sidebar__close {
+  width: 100%;
+}
+
+[hidden] {
+  display: none !important;
+}
