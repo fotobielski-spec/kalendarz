@@ -8,7 +8,7 @@ Szczegóły produktów: [PRODUCT_MODEL.md](./PRODUCT_MODEL.md)
 
 ## Kontekst techniczny
 
-Istniejący system **Dokumenty ID** (analiza, generacja elektroniczna, impozycja 1×8 na 10×15) jest **stabilnym komponentem zewnętrznym**. Integracja wyłącznie przez adapter HTTP w `apps/api/src/adapters/dokumenty-id/` — bez przepisywania logiki.
+Program **Dokumenty ID** (desktop) jest **przebudowywany** na usługę `apps/engine` (HTTP). Sklep (`apps/api` + `apps/web`) łączy się przez adapter w `apps/api/src/adapters/dokumenty-id/`. Logika biometryczna migruje do `apps/engine/src/core/` — nie do frontendu. Plan: [ENGINE_REBUILD.md](./ENGINE_REBUILD.md).
 
 ## Stack technologiczny MVP
 
@@ -41,10 +41,12 @@ Istniejący system **Dokumenty ID** (analiza, generacja elektroniczna, impozycja
 dokumenty-id-web/
 ├── apps/
 │   ├── web/          # Sklep www: landing, capture, koszyk, płatność
-│   ├── api/          # REST API, adapter silnika, workers
+│   ├── api/          # REST sklepu, adapter → engine, workers
+│   ├── engine/       # Silnik: analiza + generacja (port z desktopu)
 │   └── admin/        # Panel administracyjny
 ├── packages/
-│   └── shared/       # Zod schemas, typy, kody błędów PL
+│   ├── shared/       # Kontrakty sklepu
+│   └── engine-contract/  # Kontrakty HTTP silnika
 ├── docs/
 │   ├── ARCHITECTURE.md
 │   └── DEPLOYMENT_PLAN.md

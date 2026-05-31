@@ -42,6 +42,23 @@ services:
       timeout: 5s
       retries: 5
 
+  engine:
+    build:
+      context: .
+      dockerfile: apps/engine/Dockerfile
+    environment:
+      ENGINE_PORT: 4100
+      ENGINE_MODE: mock
+      ENGINE_VERSION: 0.1.0-mock
+      S3_BUCKET: dokumenty-id
+    ports:
+      - "4100:4100"
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://127.0.0.1:4100/v1/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))\""]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
   minio-init:
     image: minio/mc:latest
     depends_on:

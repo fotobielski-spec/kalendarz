@@ -1,22 +1,22 @@
-# Adapter: silnik Dokumenty ID
+# Adapter: przebudowany silnik Dokumenty ID
 
-Ten katalog zawiera **wyłącznie adapter HTTP** do istniejącego systemu Dokumenty ID.
+## Architektura
 
-## Zasady
-
-- **Nie przepisujemy** logiki analizy, generacji ani impozycji 1×8.
-- Adapter mapuje kontrakty zewnętrzne na typy `@dokumenty-id/shared`.
-- Nowe reguły `hair_on_face` / `hair_on_eyebrows` — mapowanie w etapie 2.
-
-## Planowany interfejs (etap 2)
-
-```ts
-interface DokumentyIdEngine {
-  startAnalysis(input: { sessionId: string; imageStorageKey: string }): Promise<{ jobId: string }>;
-  getAnalysisStatus(jobId: string): Promise<AnalysisResult>;
-  generateElectronic(input: { sessionId: string }): Promise<{ storageKey: string }>;
-  generateImposition1x8(input: { sessionId: string }): Promise<{ storageKey: string }>;
-}
+```text
+apps/web  →  apps/api  →  [ten adapter]  →  apps/engine (HTTP)
+                              ↓
+                    @dokumenty-id/shared (AnalysisResult)
 ```
 
-Implementacja: `engine.client.ts` + testy integracyjne z mockiem HTTP.
+- **Logika biometryczna** żyje w `apps/engine/src/core/` (port z desktopu).
+- Ten katalog: **tylko HTTP + mapowanie** — `engine.client.ts`, `engine.mapper.ts`, `engine.adapter.ts`.
+
+## Pliki
+
+| Plik | Rola |
+|------|------|
+| `engine.client.ts` | Klient REST `/v1/jobs/*` |
+| `engine.mapper.ts` | Engine JSON → `AnalysisResult` + komunikaty PL |
+| `engine.adapter.ts` | Fasada używana przez route’y API |
+
+Kontrakt HTTP: `packages/engine-contract` · plan portu: `docs/ENGINE_REBUILD.md`

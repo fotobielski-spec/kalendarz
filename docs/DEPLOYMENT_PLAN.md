@@ -33,13 +33,15 @@
 
 ---
 
-## ETAP 2 — Integracja silnika Dokumenty ID
+## ETAP 2 — Integracja silnika (apps/engine)
 
-**Zakres:** Adapter HTTP, `POST .../analyze`, polling, UI wyników, retry, `hair_on_face` / `hair_on_eyebrows`.
+**Zakres:** Podłączenie API sklepu do `apps/engine` (mock lub pierwszy port legacy), polling analizy, UI wyników, `hair_on_face` / `hair_on_eyebrows`. Równolegle: port modułów do `apps/engine/src/core/` (E2 w ENGINE_REBUILD.md).
 
 ### Definition of Done
 
-- [ ] `DokumentyIdEngine` client + testy integracyjne (mock HTTP)
+- [x] `engine-contract` + klient adaptera w API (szkielet)
+- [ ] Route’y API: `POST /sessions/:id/analyze`, polling statusu
+- [ ] Testy integracyjne API ↔ engine (docker compose)
 - [ ] Model `AnalysisRun` + statusy w DB
 - [ ] Mapa kodów błędów → komunikaty PL (UI)
 - [ ] Logi techniczne bez base64/twarzy (tylko sessionId, jobId)
