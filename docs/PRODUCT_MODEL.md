@@ -2,7 +2,7 @@
 
 ## Założenie biznesowe
 
-**Dokumenty ID Web** to typowa aplikacja **e-commerce w przeglądarce**. Klient sam obsługuje cały proces na swoim urządzeniu (telefon lub komputer). **Nie ma sprzedaży stacjonarnej**, punktu foto ani kiosku jako modelu domyślnego.
+**Dokumenty ID Web** to **niezależna** aplikacja **e-commerce w przeglądarce** — nie łączy się ze starym programem desktop. Klient obsługuje proces na swoim urządzeniu. **Nie ma sprzedaży stacjonarnej** ani kiosku.
 
 | Było (odrzucone) | Jest (docelowe) |
 |------------------|-----------------|
@@ -24,7 +24,7 @@ Brak produktu „odbiór osobisty” / „płatność przy ladzie”.
 
 1. Wejście na stronę (SEO / link bezpośredni).
 2. „Zrób zdjęcie” — na **mobile**: aparat lub upload; na **desktop**: upload lub opcjonalny QR „otwórz na telefonie”.
-3. Maska biometryczna + analiza (silnik zewnętrzny).
+3. Maska biometryczna + analiza (moduł `packages/processing` w tej aplikacji).
 4. Po 100% — podgląd miniatury (watermark).
 5. Koszyk → dane e-mail (+ adres przy wysyłce wydruku) → **płatność online**.
 6. Potwierdzenie zamówienia + dostawa cyfrowa / status wysyłki.

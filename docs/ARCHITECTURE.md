@@ -2,91 +2,80 @@
 
 ## Model biznesowy
 
-**Aplikacja typowo webowa — sprzedaż wyłącznie online.** Klient korzysta ze strony w przeglądarce (telefon lub komputer), płaci przez internet (Stripe), otrzymuje pliki e-mailem lub — przy wyższym pakiecie — wydruk **wysyłany na adres**. Brak kiosku, stanowiska w salonie i odbioru osobistego.
-
-Szczegóły produktów: [PRODUCT_MODEL.md](./PRODUCT_MODEL.md)
+**Samodzielna aplikacja webowa — sprzedaż wyłącznie online.** Brak integracji ze starym programem desktop ani z zewnętrznymi silnikami. Szczegóły: [PRODUCT_MODEL.md](./PRODUCT_MODEL.md), [STANDALONE.md](./STANDALONE.md).
 
 ## Kontekst techniczny
 
-Program **Dokumenty ID** (desktop) jest **przebudowywany** na usługę `apps/engine` (HTTP). Sklep (`apps/api` + `apps/web`) łączy się przez adapter w `apps/api/src/adapters/dokumenty-id/`. Logika biometryczna migruje do `apps/engine/src/core/` — nie do frontendu. Plan: [ENGINE_REBUILD.md](./ENGINE_REBUILD.md).
+Analiza zdjęć, generacja elektroniczna i impozycja 1×8 na 10×15 są implementowane **w tym repozytorium** (`packages/processing`), wywoływane z `apps/api`.
 
 ## Stack technologiczny MVP
 
 | Warstwa | Technologia | Uzasadnienie |
 |--------|-------------|--------------|
-| **Frontend (sklep www)** | Next.js 15 (App Router), React 19, CSS modules / vanilla CSS | Landing SEO, capture w przeglądarce, routing `/m/[token]` tylko przy opcjonalnym QR desktop→telefon |
-| **Panel admin** | Next.js 15 (osobna app `apps/admin`) | Izolacja powierzchni ataku, osobne domeny/cookies, współdzielone typy z `packages/shared` |
-| **Backend** | Node.js 20 + **Fastify** + REST `/api/v1` | Lekki, szybki, dobra obsługa multipart (upload), niski narzut vs Nest — wystarczający na MVP |
-| **ORM / DB** | **PostgreSQL 16** + **Prisma** | Relacje Order/Payment/Audit, migracje, typy TS; standard produkcyjny |
-| **Storage** | **S3-compatible** (MinIO lokalnie, R2/S3 w prod, region **EU**) | Obrazy biometryczne poza DB; signed URLs; lifecycle/retencja |
-| **Kolejka** | **BullMQ** + **Redis** | Analiza, generacja, e-mail — asynchronicznie, retry, idempotencja (etap 3–4) |
-| **E-mail** | **Resend** (lub AWS SES) | Transakcyjne maile, webhook delivery status; prosta integracja |
-| **Płatności** | **Stripe** (PLN, BLIK/karty) | Webhooks, idempotency keys, dojrzały ekosystem |
-| **Auth — klient** | Sesja e-commerce (cookie/token wizyty, opcjonalny QR) | Bez kont użytkownika; krótki TTL; identyfikacja po e-mail przy checkout |
-| **Auth — admin** | JWT + refresh + **RBAC** w DB (etap 5) | Role: viewer, operator, superadmin; audit kto/co/kiedy |
-| **Monitoring** | **Pino** (structured logs) + **Sentry** + **OpenTelemetry** → Grafana/Datadog | Błędy, latency API/kolejek; **redakcja** danych biometrycznych w logach |
-| **IaC / deploy** | Docker Compose (dev), **Terraform** lub Pulumi (prod) | Powtarzalne środowiska; staging → prod |
+| **Frontend (sklep www)** | Next.js 15 (App Router), React 19 | Landing, capture w przeglądarce, koszyk |
+| **Panel admin** | Next.js 15 (`apps/admin`) | Izolacja, RBAC |
+| **Backend** | Node.js 20 + **Fastify** + REST `/api/v1` | Upload, sesje, płatności |
+| **Przetwarzanie** | **`packages/processing`** (TypeScript) | Analiza + generacja — część tej samej aplikacji |
+| **ORM / DB** | PostgreSQL 16 + Prisma | Zamówienia, sesje, audit |
+| **Storage** | S3-compatible (MinIO / R2 / S3 EU) | Obrazy poza DB |
+| **Kolejka** | BullMQ + Redis | Długie joby analyze/generate w API |
+| **E-mail** | Resend / SES | Dostawa cyfrowa |
+| **Płatności** | Stripe (PLN) | Wyłącznie online |
+| **Auth — klient** | Sesja wizyty (cookie/token) | Bez kont; e-mail przy checkout |
+| **Auth — admin** | JWT + RBAC | Panel operacyjny |
+| **Monitoring** | Pino + Sentry + OTEL | Logi bez danych biometrycznych |
 
 ### Bezpieczeństwo danych biometrycznych
 
-- Pliki tylko w S3; dostęp przez **signed URLs** z krótkim TTL + watermark na miniaturach.
-- **Retencja**: job cron usuwa surowe pliki po X dniach po dostarczeniu (konfigurowalne).
-- **Audit log**: każda zmiana statusu, dostęp admina do pliku, webhook płatności.
-- **RODO**: hosting UE, DPA z dostawcami, polityka usuwania na żądanie (etap 7).
-- **Zero sekretów w repo** — `.env` lokalnie, secrets manager w chmurze.
+- Pliki w S3; dostęp przez signed URLs; watermark na miniaturach.
+- Retencja i audit log; hosting UE; zero sekretów w repo.
 
 ## Struktura monorepo
 
 ```
 dokumenty-id-web/
 ├── apps/
-│   ├── web/          # Sklep www: landing, capture, koszyk, płatność
-│   ├── api/          # REST sklepu, adapter → engine, workers
-│   ├── engine/       # Silnik: analiza + generacja (port z desktopu)
-│   └── admin/        # Panel administracyjny
+│   ├── web/              # Sklep www
+│   ├── api/              # REST + workers + ProcessingService
+│   └── admin/            # Panel admin
 ├── packages/
-│   ├── shared/       # Kontrakty sklepu
-│   └── engine-contract/  # Kontrakty HTTP silnika
-├── docs/
-│   ├── ARCHITECTURE.md
-│   └── DEPLOYMENT_PLAN.md
-├── docker-compose.yml
-└── turbo.json + pnpm workspaces
+│   ├── shared/           # Kontrakty sklepu
+│   └── processing/       # Analiza + generacja (własna logika)
+└── docs/
 ```
 
-## Przepływ danych (docelowy)
+## Przepływ danych
 
 ```mermaid
 sequenceDiagram
-  participant Browser as apps/web (przeglądarka)
+  participant Browser as apps/web
   participant API as apps/api
-  participant S3 as S3 storage
-  participant Engine as Dokumenty ID Engine
+  participant Proc as packages/processing
+  participant S3 as S3
   participant Queue as BullMQ
   participant Stripe as Stripe
 
-  Browser->>API: POST /sessions (wizyta w sklepie)
-  Browser->>API: POST /sessions/:id/upload
+  Browser->>API: POST /sessions, upload
   API->>S3: raw image
-  API->>Engine: startAnalysis (adapter)
-  Engine-->>API: AnalysisResult
+  API->>Proc: analyze (w procesie API / worker)
+  Proc-->>API: AnalysisResult
   alt compliance 100%
-    API->>Queue: generate assets
-    Queue->>Engine: electronic + 1x8
-    Queue->>S3: outputs
+    API->>Queue: generate job
+    Queue->>Proc: generate
+    Proc-->>API: files → S3
   end
-  Browser->>API: checkout (e-mail, adres przy wysyłce)
-  API->>Stripe: PaymentIntent (online)
-  Stripe-->>API: webhook paid
-  API->>Queue: e-mail z plikami / zlecenie wysyłki wydruku
+  Browser->>API: checkout
+  API->>Stripe: PaymentIntent
+  Stripe-->>API: webhook
+  API->>Queue: email / shipment
 ```
 
 ## Granice modułów
 
 | Moduł | Odpowiedzialność |
 |-------|------------------|
-| `apps/web` | Sklep online: capture, maska, analiza, podgląd, koszyk, płatność |
-| `apps/api` | Sesje, upload, adapter, kolejki, płatności, e-mail |
-| `apps/admin` | Zamówienia, pliki (ograniczony dostęp), KPI, RBAC |
-| `packages/shared` | Kontrakty API, enums, mapy błędów PL |
-| Adapter `dokumenty-id` | Tłumaczenie API silnika → `AnalysisResult` |
+| `apps/web` | UX sklepu, capture, koszyk |
+| `apps/api` | HTTP, DB, S3, kolejki, Stripe, orchestracja `processing` |
+| `packages/processing` | Reguły biometryczne, scoring, generacja JPEG |
+| `apps/admin` | Zamówienia, KPI, RBAC |
+| `packages/shared` | Typy współdzielone |

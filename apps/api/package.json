@@ -13,7 +13,7 @@
     "test:e2e": "node --import tsx --test test/e2e/**/*.test.ts"
   },
   "dependencies": {
-    "@dokumenty-id/engine-contract": "workspace:*",
+    "@dokumenty-id/processing": "workspace:*",
     "@dokumenty-id/shared": "workspace:*",
     "@fastify/cors": "^10.0.1",
     "@fastify/multipart": "^9.0.1",

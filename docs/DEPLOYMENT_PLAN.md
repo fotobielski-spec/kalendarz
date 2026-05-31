@@ -33,19 +33,18 @@
 
 ---
 
-## ETAP 2 — Integracja silnika (apps/engine)
+## ETAP 2 — Analiza biometryczna (własna, w packages/processing)
 
-**Zakres:** Podłączenie API sklepu do `apps/engine` (mock lub pierwszy port legacy), polling analizy, UI wyników, `hair_on_face` / `hair_on_eyebrows`. Równolegle: port modułów do `apps/engine/src/core/` (E2 w ENGINE_REBUILD.md).
+**Zakres:** Implementacja reguł w `packages/processing` (bez zewnętrznych systemów), endpointy API, UI wyników, `hair_on_face` / `hair_on_eyebrows`, joby BullMQ.
 
 ### Definition of Done
 
-- [x] `engine-contract` + klient adaptera w API (szkielet)
-- [ ] Route’y API: `POST /sessions/:id/analyze`, polling statusu
-- [ ] Testy integracyjne API ↔ engine (docker compose)
-- [ ] Model `AnalysisRun` + statusy w DB
-- [ ] Mapa kodów błędów → komunikaty PL (UI)
-- [ ] Logi techniczne bez base64/twarzy (tylko sessionId, jobId)
-- [ ] TODO w adapterze jeśli silnik nie zwraca nowych reguł — kontrakt gotowy
+- [x] `ProcessingService` + `MockBiometricProcessor` (dev)
+- [ ] Prawdziwe reguły w `packages/processing/src/analysis/`
+- [ ] `POST /sessions/:id/analyze` + polling / SSE
+- [ ] Model `AnalysisRun` w DB
+- [ ] Mapa kodów → komunikaty PL (`violation-messages.ts`)
+- [ ] Logi bez pikseli (sessionId only)
 
 ---
 
@@ -56,7 +55,7 @@
 ### Definition of Done
 
 - [ ] BullMQ job `generate-assets` z idempotencją
-- [ ] Adapter wywołuje silnik (nie duplikuje logiki)
+- [ ] `packages/processing` generuje oba pliki (nie zewnętrzne API)
 - [ ] `GET /sessions/:id/preview` — signed URL TTL ≤ 15 min
 - [ ] E2E test: upload → analyze mock 100% → preview ready
 

@@ -48,9 +48,9 @@ importers:
 
   apps/api:
     dependencies:
-      '@dokumenty-id/engine-contract':
+      '@dokumenty-id/processing':
         specifier: workspace:*
-        version: link:../../packages/engine-contract
+        version: link:../../packages/processing
       '@dokumenty-id/shared':
         specifier: workspace:*
         version: link:../../packages/shared
@@ -86,31 +86,6 @@ importers:
         specifier: ^5.7.2
         version: 5.9.3
 
-  apps/engine:
-    dependencies:
-      '@dokumenty-id/engine-contract':
-        specifier: workspace:*
-        version: link:../../packages/engine-contract
-      '@fastify/cors':
-        specifier: ^10.0.1
-        version: 10.1.0
-      fastify:
-        specifier: ^5.2.0
-        version: 5.8.5
-      zod:
-        specifier: ^3.24.1
-        version: 3.25.76
-    devDependencies:
-      '@types/node':
-        specifier: ^22.10.2
-        version: 22.19.19
-      tsx:
-        specifier: ^4.19.2
-        version: 4.22.4
-      typescript:
-        specifier: ^5.7.2
-        version: 5.9.3
-
   apps/web:
     dependencies:
       '@dokumenty-id/shared':
@@ -139,12 +114,21 @@ importers:
         specifier: ^5.7.2
         version: 5.9.3
 
-  packages/engine-contract:
+  packages/processing:
     dependencies:
+      '@dokumenty-id/shared':
+        specifier: workspace:*
+        version: link:../shared
       zod:
         specifier: ^3.24.1
         version: 3.25.76
     devDependencies:
+      '@types/node':
+        specifier: ^22.10.2
+        version: 22.19.19
+      tsx:
+        specifier: ^4.19.2
+        version: 4.22.4
       typescript:
         specifier: ^5.7.2
         version: 5.9.3

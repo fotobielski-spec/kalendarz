@@ -1,9 +1,9 @@
 # Dokumenty ID Web
 
-**Sklep internetowy** do zdjęć biometrycznych (sprzedaż wyłącznie online): przeglądarka → capture → analiza (zewnętrzny silnik Dokumenty ID) → generacja → płatność Stripe → dostawa e-mail / wysyłka wydruku.
+**Niezależny sklep internetowy** do zdjęć biometrycznych: przeglądarka → capture → analiza i generacja (własny moduł `packages/processing`) → płatność Stripe → dostawa e-mail / wysyłka wydruku.
 
 Model produktu: [docs/PRODUCT_MODEL.md](docs/PRODUCT_MODEL.md)  
-Przebudowa silnika desktop → HTTP: [docs/ENGINE_REBUILD.md](docs/ENGINE_REBUILD.md)
+Niezależna aplikacja (bez integracji z innymi programami): [docs/STANDALONE.md](docs/STANDALONE.md)
 
 ## Monorepo
 
@@ -11,10 +11,9 @@ Przebudowa silnika desktop → HTTP: [docs/ENGINE_REBUILD.md](docs/ENGINE_REBUIL
 |--------|------|
 | `apps/web` | Sklep www — frontend klienta (Next.js, port 3000) |
 | `apps/api` | REST API sklepu (Fastify, port 4000) |
-| `apps/engine` | Przebudowany silnik Dokumenty ID — HTTP (port 4100) |
 | `apps/admin` | Panel admin (Next.js, port 3001) |
 | `packages/shared` | Typy sklepu (Zod) |
-| `packages/engine-contract` | Kontrakt API silnika |
+| `packages/processing` | Analiza + generacja zdjęć (wewnętrzna logika) |
 
 Szczegóły architektury: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)  
 Plan etapów 0–5: [docs/DEPLOYMENT_PLAN.md](docs/DEPLOYMENT_PLAN.md)
@@ -41,9 +40,8 @@ pnpm db:generate
 pnpm db:migrate
 
 # 4. Build pakietu shared (wymagany przez api/web)
-pnpm --filter @dokumenty-id/engine-contract build
+pnpm --filter @dokumenty-id/processing build
 pnpm --filter @dokumenty-id/shared build
-pnpm --filter @dokumenty-id/engine build
 
 # 5. Dev — wszystkie aplikacje równolegle
 pnpm dev
@@ -53,7 +51,6 @@ Aplikacje:
 
 - Web: http://localhost:3000  
 - API: http://localhost:4000/api/v1/health  
-- Engine: http://localhost:4100/v1/health  
 - Admin: http://localhost:3001  
 - MinIO console: http://localhost:9001  
 

@@ -18,8 +18,8 @@ export const AnalysisViolationSchema = z.object({
 export type AnalysisViolation = z.infer<typeof AnalysisViolationSchema>;
 
 /**
- * Kontrakt wyniku analizy — mapowany z zewnętrznego silnika Dokumenty ID.
- * hair_on_face / hair_on_eyebrows: nowe reguły (etap 2).
+ * Wynik analizy biometrycznej — generowany przez @dokumenty-id/processing (ta sama aplikacja).
+ * hair_on_face / hair_on_eyebrows: reguły (etap 2).
  */
 export const AnalysisResultSchema = z.object({
   sessionId: z.string().uuid(),
@@ -43,7 +43,7 @@ export const AnalysisResultSchema = z.object({
         .optional(),
     })
     .optional(),
-  engineVersion: z.string().optional(),
+  processorVersion: z.string().optional(),
   analyzedAt: z.string().datetime().optional(),
 });
 export type AnalysisResult = z.infer<typeof AnalysisResultSchema>;

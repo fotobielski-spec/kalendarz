@@ -25,7 +25,7 @@ export const API_ERROR_MESSAGES_PL: Record<ApiErrorCode, string> = {
   UPLOAD_INVALID_TYPE: 'Nieobsługiwany format pliku. Użyj JPEG lub PNG.',
   ANALYSIS_IN_PROGRESS: 'Trwa analiza zdjęcia. Proszę czekać.',
   ANALYSIS_FAILED: 'Analiza nie powiodła się. Spróbuj ponownie.',
-  ENGINE_UNAVAILABLE: 'Usługa analizy jest chwilowo niedostępna.',
+  PROCESSING_UNAVAILABLE: 'Przetwarzanie zdjęcia jest chwilowo niedostępne. Spróbuj za chwilę.',
   GENERATION_FAILED: 'Nie udało się wygenerować zdjęć. Skontaktuj się z obsługą.',
   PAYMENT_FAILED: 'Płatność nie powiodła się.',
   UNAUTHORIZED: 'Brak autoryzacji.',
