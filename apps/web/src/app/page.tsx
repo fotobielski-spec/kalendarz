@@ -18,8 +18,8 @@ export default function HomePage() {
     >
       <h1 style={{ fontSize: '2.25rem', marginBottom: '0.5rem' }}>Dokumenty ID Web</h1>
       <p style={{ maxWidth: 520, color: '#475569', marginBottom: '2rem' }}>
-        Zrób zdjęcie biometryczne do dowodu lub paszportu. Zeskanuj kod QR telefonem, załaduj
-        zdjęcie lub użyj aparatu — resztą zajmiemy się my.
+        Zrób zdjęcie biometryczne do dowodu lub paszportu — w całości online. Załaduj zdjęcie lub
+        użyj aparatu w telefonie. Po akceptacji analizy opłać zamówienie i odbierz pliki na e-mail.
       </p>
       <Link
         href="/start"
@@ -34,10 +34,13 @@ export default function HomePage() {
           boxShadow: 'var(--shadow)',
         }}
       >
-        Rozpocznij — wygeneruj kod QR
+        Zamów zdjęcie online
       </Link>
-      <p style={{ marginTop: '2rem', fontSize: '0.875rem', color: '#94a3b8' }}>
-        ETAP 0: szkielet UI · pełny flow w etapie 1
+      <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#64748b' }}>
+        Pakiety: pliki cyfrowe · opcjonalnie wydruk z wysyłką na adres
+      </p>
+      <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#94a3b8' }}>
+        ETAP 0: szkielet UI · pełny sklep w etapach 1–4
       </p>
     </main>
   );

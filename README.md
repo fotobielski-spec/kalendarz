@@ -1,12 +1,14 @@
 # Dokumenty ID Web
 
-Aplikacja webowa do procesu zdjęć biometrycznych: kiosk (QR) → mobile capture → analiza (zewnętrzny silnik Dokumenty ID) → generacja → płatność → dostawa.
+**Sklep internetowy** do zdjęć biometrycznych (sprzedaż wyłącznie online): przeglądarka → capture → analiza (zewnętrzny silnik Dokumenty ID) → generacja → płatność Stripe → dostawa e-mail / wysyłka wydruku.
+
+Model produktu: [docs/PRODUCT_MODEL.md](docs/PRODUCT_MODEL.md)
 
 ## Monorepo
 
 | Pakiet | Opis |
 |--------|------|
-| `apps/web` | Frontend klienta (Next.js, port 3000) |
+| `apps/web` | Sklep www — frontend klienta (Next.js, port 3000) |
 | `apps/api` | REST API (Fastify, port 4000) |
 | `apps/admin` | Panel admin (Next.js, port 3001) |
 | `packages/shared` | Wspólne typy i schematy Zod |

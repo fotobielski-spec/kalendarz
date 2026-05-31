@@ -1,7 +1,7 @@
 type Props = { params: Promise<{ qrToken: string }> };
 
 /**
- * Mobile flow po QR — upload / aparat selfie + maska (etap 1–2).
+ * Capture na telefonie — bezpośredni link lub po opcjonalnym QR z desktopu (etap 1–2).
  */
 export default async function MobileCapturePage({ params }: Props) {
   const { qrToken } = await params;

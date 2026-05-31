@@ -8,7 +8,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-/// Sesja capture (kiosk → QR → mobile)
+/// Sesja wizyty w sklepie online (capture + koszyk techniczny)
 model CaptureSession {
   id        String   @id @default(uuid()) @db.Uuid
   qrToken   String   @unique @map("qr_token")

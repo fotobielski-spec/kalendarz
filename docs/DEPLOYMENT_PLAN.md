@@ -16,14 +16,15 @@
 
 ---
 
-## ETAP 1 — MVP Capture
+## ETAP 1 — MVP Capture (web, bez kiosku)
 
-**Zakres:** Landing + CTA, sesja + QR, mobile flow (upload / aparat selfie), upload do S3, metadane w DB, status sesji, błędy.
+**Zakres:** Landing sklepu online + CTA, sesja wizyty, capture w przeglądarce (upload / aparat selfie), opcjonalny QR desktop→telefon, upload do S3, metadane w DB, status sesji, błędy.
 
 ### Definition of Done
 
 - [ ] `POST /sessions` zapisuje `CaptureSession` w Postgres
-- [ ] QR kod (PNG/SVG) na `/start` z `mobileUrl`
+- [ ] Na mobile: bezpośredni capture na `/capture` lub `/m/[token]`
+- [ ] Na desktop: upload lub opcjonalny QR z `mobileUrl` (nie jest to flow kioskowy)
 - [ ] `/m/[qrToken]` — wybór upload vs `getUserMedia` (front camera)
 - [ ] `POST /sessions/:id/upload` → S3 + `CaptureUpload`
 - [ ] Polling / SSE statusu sesji
@@ -59,9 +60,9 @@
 
 ---
 
-## ETAP 4 — Zamówienie i finalizacja
+## ETAP 4 — Zamówienie i finalizacja (e-commerce online)
 
-**Zakres:** Koszyk (email / email+print), Stripe, webhook, e-mail po opłaceniu, porzucone koszyki, audit trail.
+**Zakres:** Koszyk (`digital_email` / `digital_email_print_shipped`), płatność Stripe wyłącznie online, webhook, e-mail z plikami po opłaceniu, adres dostawy przy wysyłce wydruku, porzucone koszyki, audit trail.
 
 ### Definition of Done
 

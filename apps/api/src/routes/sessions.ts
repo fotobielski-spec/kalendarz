@@ -3,8 +3,8 @@ import { CreateSessionResponseSchema } from '@dokumenty-id/shared';
 import { loadConfig } from '../config.js';
 
 /**
- * Sesje capture — pełna implementacja w ETAPIE 1.
- * Placeholder: tworzenie sesji zwraca kontrakt zgodny z packages/shared.
+ * Sesje sklepu online — pełna implementacja w ETAPIE 1.
+ * QR opcjonalny (desktop → telefon); domyślnie capture w tej samej przeglądarce.
  */
 export const sessionRoutes: FastifyPluginAsync = async (app) => {
   const config = loadConfig();

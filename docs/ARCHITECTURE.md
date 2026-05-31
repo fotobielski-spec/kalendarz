@@ -1,6 +1,12 @@
 # Dokumenty ID Web — architektura MVP
 
-## Kontekst
+## Model biznesowy
+
+**Aplikacja typowo webowa — sprzedaż wyłącznie online.** Klient korzysta ze strony w przeglądarce (telefon lub komputer), płaci przez internet (Stripe), otrzymuje pliki e-mailem lub — przy wyższym pakiecie — wydruk **wysyłany na adres**. Brak kiosku, stanowiska w salonie i odbioru osobistego.
+
+Szczegóły produktów: [PRODUCT_MODEL.md](./PRODUCT_MODEL.md)
+
+## Kontekst techniczny
 
 Istniejący system **Dokumenty ID** (analiza, generacja elektroniczna, impozycja 1×8 na 10×15) jest **stabilnym komponentem zewnętrznym**. Integracja wyłącznie przez adapter HTTP w `apps/api/src/adapters/dokumenty-id/` — bez przepisywania logiki.
 
@@ -8,7 +14,7 @@ Istniejący system **Dokumenty ID** (analiza, generacja elektroniczna, impozycja
 
 | Warstwa | Technologia | Uzasadnienie |
 |--------|-------------|--------------|
-| **Frontend (kiosk + mobile)** | Next.js 15 (App Router), React 19, CSS modules / vanilla CSS | SSR/ISR dla landingu, routing `/m/[token]` pod mobile, jeden stack TS z adminem |
+| **Frontend (sklep www)** | Next.js 15 (App Router), React 19, CSS modules / vanilla CSS | Landing SEO, capture w przeglądarce, routing `/m/[token]` tylko przy opcjonalnym QR desktop→telefon |
 | **Panel admin** | Next.js 15 (osobna app `apps/admin`) | Izolacja powierzchni ataku, osobne domeny/cookies, współdzielone typy z `packages/shared` |
 | **Backend** | Node.js 20 + **Fastify** + REST `/api/v1` | Lekki, szybki, dobra obsługa multipart (upload), niski narzut vs Nest — wystarczający na MVP |
 | **ORM / DB** | **PostgreSQL 16** + **Prisma** | Relacje Order/Payment/Audit, migracje, typy TS; standard produkcyjny |
@@ -16,7 +22,7 @@ Istniejący system **Dokumenty ID** (analiza, generacja elektroniczna, impozycja
 | **Kolejka** | **BullMQ** + **Redis** | Analiza, generacja, e-mail — asynchronicznie, retry, idempotencja (etap 3–4) |
 | **E-mail** | **Resend** (lub AWS SES) | Transakcyjne maile, webhook delivery status; prosta integracja |
 | **Płatności** | **Stripe** (PLN, BLIK/karty) | Webhooks, idempotency keys, dojrzały ekosystem |
-| **Auth — klient** | Token sesji powiązany z QR (bez kont użytkownika) | UX na stanowisku; krótki TTL; brak haseł |
+| **Auth — klient** | Sesja e-commerce (cookie/token wizyty, opcjonalny QR) | Bez kont użytkownika; krótki TTL; identyfikacja po e-mail przy checkout |
 | **Auth — admin** | JWT + refresh + **RBAC** w DB (etap 5) | Role: viewer, operator, superadmin; audit kto/co/kiedy |
 | **Monitoring** | **Pino** (structured logs) + **Sentry** + **OpenTelemetry** → Grafana/Datadog | Błędy, latency API/kolejek; **redakcja** danych biometrycznych w logach |
 | **IaC / deploy** | Docker Compose (dev), **Terraform** lub Pulumi (prod) | Powtarzalne środowiska; staging → prod |
@@ -34,7 +40,7 @@ Istniejący system **Dokumenty ID** (analiza, generacja elektroniczna, impozycja
 ```
 dokumenty-id-web/
 ├── apps/
-│   ├── web/          # Landing, QR, mobile capture, checkout UI
+│   ├── web/          # Sklep www: landing, capture, koszyk, płatność
 │   ├── api/          # REST API, adapter silnika, workers
 │   └── admin/        # Panel administracyjny
 ├── packages/
@@ -50,15 +56,15 @@ dokumenty-id-web/
 
 ```mermaid
 sequenceDiagram
-  participant Kiosk as apps/web
+  participant Browser as apps/web (przeglądarka)
   participant API as apps/api
   participant S3 as S3 storage
   participant Engine as Dokumenty ID Engine
   participant Queue as BullMQ
   participant Stripe as Stripe
 
-  Kiosk->>API: POST /sessions (QR)
-  Kiosk->>API: POST /sessions/:id/upload
+  Browser->>API: POST /sessions (wizyta w sklepie)
+  Browser->>API: POST /sessions/:id/upload
   API->>S3: raw image
   API->>Engine: startAnalysis (adapter)
   Engine-->>API: AnalysisResult
@@ -67,17 +73,17 @@ sequenceDiagram
     Queue->>Engine: electronic + 1x8
     Queue->>S3: outputs
   end
-  Kiosk->>API: checkout
-  API->>Stripe: PaymentIntent
+  Browser->>API: checkout (e-mail, adres przy wysyłce)
+  API->>Stripe: PaymentIntent (online)
   Stripe-->>API: webhook paid
-  API->>Queue: send email (signed links)
+  API->>Queue: e-mail z plikami / zlecenie wysyłki wydruku
 ```
 
 ## Granice modułów
 
 | Moduł | Odpowiedzialność |
 |-------|------------------|
-| `apps/web` | UX capture, maska, wyniki analizy, podgląd, koszyk |
+| `apps/web` | Sklep online: capture, maska, analiza, podgląd, koszyk, płatność |
 | `apps/api` | Sesje, upload, adapter, kolejki, płatności, e-mail |
 | `apps/admin` | Zamówienia, pliki (ograniczony dostęp), KPI, RBAC |
 | `packages/shared` | Kontrakty API, enums, mapy błędów PL |

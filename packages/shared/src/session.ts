@@ -1,9 +1,12 @@
 import { z } from 'zod';
 
-/** Status sesji capture (etap 1+) */
+/**
+ * Status sesji wizyty w sklepie online (etap 1+).
+ * QR opcjonalny: tylko gdy użytkownik na desktopie przenosi capture na telefon.
+ */
 export const SessionStatusSchema = z.enum([
   'created',
-  'qr_displayed',
+  'qr_displayed', // opcjonalnie: desktop → kontynuacja na telefonie
   'mobile_opened',
   'uploading',
   'uploaded',

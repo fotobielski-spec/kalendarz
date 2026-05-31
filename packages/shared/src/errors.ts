@@ -20,7 +20,7 @@ export type ApiErrorCode = (typeof ApiErrorCode)[keyof typeof ApiErrorCode];
 /** Placeholder mapy PL — uzupełniana w etapie 2 */
 export const API_ERROR_MESSAGES_PL: Record<ApiErrorCode, string> = {
   SESSION_NOT_FOUND: 'Sesja nie została znaleziona. Zeskanuj kod QR ponownie.',
-  SESSION_EXPIRED: 'Sesja wygasła. Rozpocznij proces od nowa na stanowisku.',
+  SESSION_EXPIRED: 'Sesja wygasła. Odśwież stronę i rozpocznij zamówienie od nowa.',
   UPLOAD_TOO_LARGE: 'Plik jest zbyt duży. Wybierz mniejsze zdjęcie.',
   UPLOAD_INVALID_TYPE: 'Nieobsługiwany format pliku. Użyj JPEG lub PNG.',
   ANALYSIS_IN_PROGRESS: 'Trwa analiza zdjęcia. Proszę czekać.',

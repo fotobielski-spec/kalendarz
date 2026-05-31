@@ -1,11 +1,11 @@
 /**
- * Ekran QR + status sesji — implementacja w ETAPIE 1.
+ * Start zamówienia online — capture lub opcjonalny QR (desktop → telefon). Etap 1.
  */
 export default function StartPage() {
   return (
     <main style={{ padding: '2rem', maxWidth: 640, margin: '0 auto' }}>
-      <h1>Twoja sesja</h1>
-      <p>Tutaj pojawi się kod QR i status sesji (etap 1).</p>
+      <h1>Zrób zdjęcie</h1>
+      <p>Na telefonie: od razu aparat lub galeria. Na komputerze: upload albo kod QR do otwarcia na telefonie.</p>
       <p style={{ color: '#64748b' }}>
         API: <code>POST /api/v1/sessions</code>
       </p>
