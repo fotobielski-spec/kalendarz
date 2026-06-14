@@ -11,7 +11,7 @@ export function ClassicPreviewPage() {
       title="Podgląd stycznia —"
       subtitle="20 szablonów kalendarzy A4 pion · 1 miesiąc na stronę · ze zdjęciami klienta"
       links={[
-        { href: '/podglad-art.html', label: 'Kolekcja Art 40/60 →' },
+        { href: '/?view=art', label: 'Kolekcja Art 40/60 →' },
         { href: '/', label: '← Aplikacja' },
       ]}
     />

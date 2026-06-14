@@ -38,7 +38,7 @@ export function ArtPreviewPage() {
         </label>
       }
       links={[
-        { href: '/podglad.html', label: '← Klasyczne (20)' },
+        { href: '/?view=podglad', label: '← Klasyczne (20)' },
         { href: '/', label: 'Aplikacja' },
       ]}
     />
