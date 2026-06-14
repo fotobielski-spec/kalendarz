@@ -63,7 +63,7 @@ export function PrintCalendarGrid({
   /** Skala imienin względem wysokości wiersza (krótka strefa kalendarza) */
   const seniorRowHmm = senior ? Math.max(12, (area.wysokosc - 14) / 6) : 0;
   const seniorImieninyScale = senior
-    ? Math.min(1.12, Math.max(0.88, seniorRowHmm / 16.5))
+    ? Math.min(1.05, Math.max(0.9, seniorRowHmm / 17))
     : 1;
 
   const firstDay = new Date(year, monthIndex, 1);

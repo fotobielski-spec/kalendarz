@@ -268,7 +268,7 @@
 .print-cal--senior .print-cal__cell {
   container-type: size;
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: minmax(44cqh, auto) minmax(0, 1fr);
   align-content: start;
   justify-items: center;
   padding: 0;
@@ -282,20 +282,17 @@
 }
 
 .print-cal--senior .print-cal__day-num {
-  font-size: min(
-    calc(var(--day-size, 11) * 1.12 * 100cqw / var(--zone-w-mm, 186)),
-    38cqh
-  );
+  font-size: calc(var(--day-size, 14) * 1.32 * 100cqw / var(--zone-w-mm, 186));
   font-weight: 800;
   line-height: 1;
   flex-shrink: 0;
-  align-self: center;
+  align-self: end;
 }
 
 .print-cal--senior .print-cal__imieniny {
   font-size: min(
-    calc(var(--day-size, 11) * 0.58 * var(--senior-imieniny-scale, 1) * 100cqw / var(--zone-w-mm, 186)),
-    30cqh
+    calc(var(--day-size, 14) * 0.5 * var(--senior-imieniny-scale, 1) * 100cqw / var(--zone-w-mm, 186)),
+    32cqh
   );
   font-weight: 500;
   line-height: 1.06;
@@ -318,16 +315,13 @@
 }
 
 .print-cal--senior-compact .print-cal__day-num {
-  font-size: min(
-    calc(var(--day-size, 10) * 1.08 * 100cqw / var(--zone-w-mm, 186)),
-    36cqh
-  );
+  font-size: calc(var(--day-size, 14) * 1.28 * 100cqw / var(--zone-w-mm, 186));
 }
 
 .print-cal--senior-compact .print-cal__imieniny {
   font-size: min(
-    calc(var(--day-size, 10) * 0.55 * var(--senior-imieniny-scale, 1) * 100cqw / var(--zone-w-mm, 186)),
-    28cqh
+    calc(var(--day-size, 14) * 0.48 * var(--senior-imieniny-scale, 1) * 100cqw / var(--zone-w-mm, 186)),
+    30cqh
   );
   -webkit-line-clamp: 3;
   line-height: 1.05;
@@ -371,16 +365,13 @@
 }
 
 .print-cal--senior-side .print-cal__day-num {
-  font-size: min(
-    calc(var(--day-size, 9) * 1.05 * 100cqw / var(--zone-w-mm, 74)),
-    34cqh
-  );
+  font-size: calc(var(--day-size, 13) * 1.22 * 100cqw / var(--zone-w-mm, 74));
 }
 
 .print-cal--senior-side .print-cal__imieniny {
   font-size: min(
-    calc(var(--day-size, 9) * 0.52 * var(--senior-imieniny-scale, 1) * 100cqw / var(--zone-w-mm, 74)),
-    26cqh
+    calc(var(--day-size, 13) * 0.46 * var(--senior-imieniny-scale, 1) * 100cqw / var(--zone-w-mm, 74)),
+    28cqh
   );
   line-height: 1.05;
   overflow-wrap: break-word;
