@@ -1,6 +1,6 @@
 /**
  * 10 zróżnicowanych kalendarzy dla babci i dziadka
- * Duże cyfry + imieniny · 60% kalendarium / 40% zdjęcie
+ * Duże cyfry + imieniny · 40% kalendarium / 60% zdjęcie
  * node scripts/generate-plan-senior.mjs
  */
 
@@ -17,10 +17,12 @@ const MIESIACE = [
 ];
 
 const M = 12, W = 186, H = 273;
-const PH = Math.round(H * 0.40);  // 109 — strefa zdjęcia
-const CH = H - PH;                // 164 — strefa kalendarza
-const PW = Math.round(W * 0.40); // 74 — zdjęcie w układzie poziomym
-const CW = W - PW;                // 112 — kalendarz w układzie poziomym
+const PH = Math.round(H * 0.60);  // 164 — strefa zdjęcia
+const CH = H - PH;                // 109 — strefa kalendarza
+const PW = Math.round(W * 0.60);  // 112 — zdjęcie w układzie poziomym
+const CW = W - PW;                // 74  — kalendarz w układzie poziomym
+
+const PROP = { kalendarium: 40, zdjecie: 60 };
 
 function zone(id, typ, x, y, w, h, opts = {}) {
   return {
@@ -44,13 +46,13 @@ const CAL_TOP = calSenior({ x: M, y: M, szerokosc: W, wysokosc: CH });
 const CAL_LEFT = calSenior({ x: M, y: M, szerokosc: CW, wysokosc: H });
 const CAL_RIGHT = calSenior({ x: M + PW, y: M, szerokosc: CW, wysokosc: H });
 
-function calTitle(cal, paleta, rozmiar = 20, opts = {}) {
-  const sidebar = cal.szerokosc < 120;
+function calTitle(cal, paleta, rozmiar = 18, opts = {}) {
+  const sidebar = cal.szerokosc < 95;
   return {
     nazwaMiesiaca: {
-      x: opts.left ? cal.x + 4 : cal.x + cal.szerokosc / 2,
-      y: cal.y + (sidebar ? 6 : 3),
-      rozmiar,
+      x: opts.left ? cal.x + 3 : cal.x + cal.szerokosc / 2,
+      y: cal.y + (sidebar ? 4 : 2),
+      rozmiar: sidebar ? Math.min(rozmiar, 14) : rozmiar,
       wyrownanie: opts.left ? 'left' : 'center',
       kolor: opts.kolor ?? paleta.akcent,
       waga: 'bold',
@@ -65,12 +67,12 @@ function monthPage(layout, miesiacNr, nazwaMiesiaca, paleta) {
     typ: 'miesiac',
     etykieta: nazwaMiesiaca,
     miesiac: miesiacNr,
-    proporcja: { kalendarium: 60, zdjecie: 40 },
+    proporcja: PROP,
     uklad: layout.ukladMiesiac,
     strefyZdjec: layout.strefyMiesiac(miesiacNr, nazwaMiesiaca),
     strefaKalendarza: cal,
     typografia: layout.typografiaMiesiac ?? calTitle(cal, paleta, layout.titleRozmiar, layout.titleOpts),
-    dekoracje: layout.dekoracjeMiesiac?.(miesiacNr) ?? [],
+    dekoracje: [],
     efektyStrony: layout.efektyStrony ?? null,
   };
 }
@@ -78,209 +80,154 @@ function monthPage(layout, miesiacNr, nazwaMiesiaca, paleta) {
 const DEFINICJE = [
   {
     id: 'SEN-01', nazwa: 'Ciepła Babcia', kategoria: 'babcia',
-    opis: 'Różowo-kremowa elegancja — zdjęcie wnuków u góry, duże cyfry z imieninami u dołu.',
+    opis: 'Duże zdjęcie wnuków (60%) — czytelny kalendarz z imieninami u dołu.',
     tagi: ['senior', 'babcia', 'wnuki'],
-    paleta: { tlo: '#FFFBF5', akcent: '#9B2C2C', tekst: '#1A1A1A', roz: '#FECDD3' },
-    typografia: { naglowek: 'Cormorant Garamond', tekst: 'Lato', rozmiarMiesiac: 19, rozmiarDzien: 14, senior: true },
+    paleta: { tlo: '#FFFBF5', akcent: '#9B2C2C', tekst: '#1A1A1A' },
+    typografia: { naglowek: 'Cormorant Garamond', tekst: 'Lato', rozmiarMiesiac: 17, rozmiarDzien: 13, senior: true },
     layout: {
       ukladMiesiac: 'senior-foto-top',
-      titleRozmiar: 19,
-      strefyMiesiac: () => [zone('foto', 'hero', M + 4, 22, W - 8, PH - 18, {
-        opis: 'Zdjęcie wnuków lub rodziny',
-        ramka: { szerokosc: 2, kolor: '#9B2C2C' },
-      })],
+      titleRozmiar: 17,
+      strefyMiesiac: () => [zone('foto', 'hero', M, M + 8, W, PH - 10, { opis: 'Zdjęcie wnuków lub rodziny' })],
       strefaKalendarza: CAL_BOTTOM,
-      dekoracjeMiesiac: () => [
-        { typ: 'linia', x: M + 20, y: M + PH - 2, szerokosc: W - 40, kolor: '#FECDD3', grubosc: 2 },
-        { typ: 'linia', x: M + 20, y: M + PH, szerokosc: W - 40, kolor: '#9B2C2C', grubosc: 1 },
-      ],
     },
   },
   {
     id: 'SEN-02', nazwa: 'Mądry Dziadek', kategoria: 'dziadek',
-    opis: 'Portret po lewej, wysoki kalendarz z imieninami po prawej — granat na bieli.',
+    opis: 'Szeroki portret po lewej (60%) — kalendarz z imieninami po prawej.',
     tagi: ['senior', 'dziadek', 'portret'],
     paleta: { tlo: '#FFFFFF', akcent: '#1E3A8A', tekst: '#0F172A' },
-    typografia: { naglowek: 'Atkinson Hyperlegible', tekst: 'Source Sans 3', rozmiarMiesiac: 16, rozmiarDzien: 13, senior: true },
+    typografia: { naglowek: 'Atkinson Hyperlegible', tekst: 'Source Sans 3', rozmiarMiesiac: 14, rozmiarDzien: 12, senior: true },
     layout: {
       ukladMiesiac: 'senior-foto-left',
-      titleRozmiar: 16,
+      titleRozmiar: 14,
       titleOpts: { left: true },
-      strefyMiesiac: () => [zone('foto', 'kolumna', M, M, PW, H, {
-        opis: 'Portret dziadka lub rodzinne',
-        ramka: { szerokosc: 2, kolor: '#1E3A8A' },
-      })],
+      strefyMiesiac: () => [zone('foto', 'kolumna', M, M, PW, H, { opis: 'Portret dziadka lub rodzinne' })],
       strefaKalendarza: CAL_RIGHT,
-      dekoracjeMiesiac: () => [
-        { typ: 'linia-pionowa', x: M + PW, y: M, wysokosc: H, kolor: '#1E3A8A', grubosc: 2 },
-      ],
     },
   },
   {
     id: 'SEN-03', nazwa: 'Rodzinne Wspomnienia', kategoria: 'rodzina',
-    opis: 'Kalendarz po lewej, zdjęcie rodzinne po prawej — zielona, spokojna paleta.',
+    opis: 'Kalendarz po lewej, duże zdjęcie rodzinne po prawej (60%).',
     tagi: ['senior', 'rodzina'],
     paleta: { tlo: '#F0FDF4', akcent: '#047857', tekst: '#064E3B' },
-    typografia: { naglowek: 'Playfair Display', tekst: 'Karla', rozmiarMiesiac: 17, rozmiarDzien: 14, senior: true },
+    typografia: { naglowek: 'Playfair Display', tekst: 'Karla', rozmiarMiesiac: 14, rozmiarDzien: 12, senior: true },
     layout: {
       ukladMiesiac: 'senior-foto-right',
-      titleRozmiar: 17,
+      titleRozmiar: 14,
       titleOpts: { left: true },
       strefyMiesiac: () => [zone('foto', 'kolumna', M + PW, M, PW, H, { opis: 'Rodzinne zdjęcie — uroczystość' })],
       strefaKalendarza: CAL_LEFT,
-      dekoracjeMiesiac: () => [
-        { typ: 'linia-pionowa', x: M + CW, y: M, wysokosc: H, kolor: '#047857', grubosc: 2 },
-      ],
     },
   },
   {
     id: 'SEN-04', nazwa: 'Ogród Babci', kategoria: 'babcia',
-    opis: 'Okrągłe zdjęcie kwiatów lub ogrodu — duża siatka z imieninami pod spodem.',
+    opis: 'Duże okrągłe zdjęcie ogrodu (60% góry) — kalendarz z imieninami pod spodem.',
     tagi: ['senior', 'babcia', 'ogród'],
     paleta: { tlo: '#F0FDF4', akcent: '#166534', tekst: '#14532D' },
-    typografia: { naglowek: 'Fraunces', tekst: 'Nunito', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
+    typografia: { naglowek: 'Fraunces', tekst: 'Nunito', rozmiarMiesiac: 17, rozmiarDzien: 13, senior: true },
     layout: {
       ukladMiesiac: 'senior-kolo',
-      titleRozmiar: 18,
-      strefyMiesiac: () => [zone('foto', 'okrag', M + 38, M + 6, 110, 110, {
+      titleRozmiar: 17,
+      strefyMiesiac: () => [zone('foto', 'okrag', M + 22, M + 10, 142, 142, {
         opis: 'Kwiaty lub ogród babci',
         maska: 'okrag',
-        ramka: { szerokosc: 4, kolor: '#166534' },
       })],
       strefaKalendarza: CAL_BOTTOM,
-      dekoracjeMiesiac: () => [
-        { typ: 'pierścienie', cx: 105, cy: M + 58, promienie: [58, 64], kolor: '#166534' },
-      ],
     },
   },
   {
     id: 'SEN-05', nazwa: 'Fotel Dziadka', kategoria: 'dziadek',
-    opis: 'Polaroid z hobby dziadka — ciepły brąz, duże cyfry i imieniny.',
+    opis: 'Dwa polaroidy na szerokiej strefie zdjęć — ciepły, spokojny układ.',
     tagi: ['senior', 'dziadek'],
     paleta: { tlo: '#FAF6F0', akcent: '#78350F', tekst: '#292524' },
-    typografia: { naglowek: 'EB Garamond', tekst: 'Lexend', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
+    typografia: { naglowek: 'EB Garamond', tekst: 'Lexend', rozmiarMiesiac: 17, rozmiarDzien: 13, senior: true },
     layout: {
       ukladMiesiac: 'senior-polaroid',
-      titleRozmiar: 18,
+      titleRozmiar: 17,
       strefyMiesiac: () => [
-        zone('foto', 'polaroid', M + 20, M + 14, 80, 88, {
+        zone('foto', 'polaroid', M + 14, M + 12, 96, 108, {
           opis: 'Dziadek w fotelu lub hobby',
           obrot: -2,
           ramka: { szerokosc: 1, kolor: '#D6D3D1', marginesDolny: 14 },
         }),
-        zone('foto2', 'polaroid', M + 108, M + 20, 68, 76, {
+        zone('foto2', 'polaroid', M + 118, M + 18, 88, 100, {
           opis: 'Drugie zdjęcie — wspomnienie',
           obrot: 2,
           ramka: { szerokosc: 1, kolor: '#D6D3D1', marginesDolny: 12 },
         }),
       ],
       strefaKalendarza: CAL_BOTTOM,
-      dekoracjeMiesiac: () => [
-        { typ: 'linia', x: M + 30, y: M + PH - 4, szerokosc: W - 60, kolor: '#78350F', grubosc: 1 },
-      ],
     },
   },
   {
     id: 'SEN-06', nazwa: 'Kontrast MAX', kategoria: 'kontrast',
-    opis: 'Czarno-biały układ WCAG — najwyższa czytelność cyfr i imienin.',
+    opis: 'Duże czarno-białe zdjęcie (60%) — maksymalna czytelność cyfr i imienin.',
     tagi: ['senior', 'kontrast', 'wcag'],
     paleta: { tlo: '#FFFFFF', akcent: '#000000', tekst: '#000000' },
-    typografia: { naglowek: 'Atkinson Hyperlegible', tekst: 'Roboto', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
+    typografia: { naglowek: 'Atkinson Hyperlegible', tekst: 'Roboto', rozmiarMiesiac: 17, rozmiarDzien: 13, senior: true },
     layout: {
       ukladMiesiac: 'senior-kontrast',
-      titleRozmiar: 18,
-      strefyMiesiac: () => [zone('foto', 'hero', M + 6, M + 14, W - 12, PH - 20, {
-        opis: 'Czarno-białe zdjęcie rodziny',
-        ramka: { szerokosc: 4, kolor: '#000000' },
-      })],
+      titleRozmiar: 17,
+      strefyMiesiac: () => [zone('foto', 'hero', M, M + 10, W, PH - 12, { opis: 'Czarno-białe zdjęcie rodziny' })],
       strefaKalendarza: CAL_BOTTOM,
-      dekoracjeMiesiac: () => [
-        { typ: 'linia', x: M, y: M + PH, szerokosc: W, kolor: '#000000', grubosc: 4 },
-      ],
     },
   },
   {
     id: 'SEN-07', nazwa: 'Żółto-Czarny', kategoria: 'kontrast',
-    opis: 'Kalendarz u góry (od razu widoczny!), zdjęcie u dołu — żółto-czarny kontrast.',
+    opis: 'Kalendarz u góry, duże zdjęcie u dołu (60%) — żółto-czarny kontrast.',
     tagi: ['senior', 'kontrast', 'widoczność'],
     paleta: { tlo: '#FEF9C3', akcent: '#000000', tekst: '#000000' },
-    typografia: { naglowek: 'Bebas Neue', tekst: 'Lexend', rozmiarMiesiac: 20, rozmiarDzien: 14, senior: true },
+    typografia: { naglowek: 'Bebas Neue', tekst: 'Lexend', rozmiarMiesiac: 17, rozmiarDzien: 13, senior: true },
     layout: {
       ukladMiesiac: 'senior-kal-gora',
-      titleRozmiar: 20,
-      strefyMiesiac: () => [zone('foto', 'hero', M + 4, M + CH + 10, W - 8, PH - 14, {
-        opis: 'Jasne, wyraziste zdjęcie rodziny',
-        ramka: { szerokosc: 3, kolor: '#000000' },
-      })],
+      titleRozmiar: 17,
+      strefyMiesiac: () => [zone('foto', 'hero', M, M + CH + 6, W, PH - 8, { opis: 'Jasne, wyraziste zdjęcie rodziny' })],
       strefaKalendarza: CAL_TOP,
-      dekoracjeMiesiac: () => [
-        { typ: 'linia', x: M, y: M + CH, szerokosc: W, kolor: '#000000', grubosc: 3 },
-      ],
     },
   },
   {
     id: 'SEN-08', nazwa: 'Spokojny Błękit', kategoria: 'babcia',
-    opis: 'Duet zdjęć wnuków u góry — łagodny błękit, czytelna siatka z imieninami.',
+    opis: 'Duet dużych zdjęć wnuków (60% góry) — łagodny błękit.',
     tagi: ['senior', 'babcia', 'wnuki'],
     paleta: { tlo: '#EFF6FF', akcent: '#1D4ED8', tekst: '#1E3A8A' },
-    typografia: { naglowek: 'DM Serif Display', tekst: 'Open Sans', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
+    typografia: { naglowek: 'DM Serif Display', tekst: 'Open Sans', rozmiarMiesiac: 17, rozmiarDzien: 13, senior: true },
     layout: {
       ukladMiesiac: 'senior-duet',
-      titleRozmiar: 18,
+      titleRozmiar: 17,
       strefyMiesiac: () => [
-        zone('foto-a', 'kafelek', M + 6, M + 14, 84, PH - 22, {
-          opis: 'Wnuk lub wnuczka — zdjęcie 1',
-          ramka: { szerokosc: 2, kolor: '#1D4ED8' },
-        }),
-        zone('foto-b', 'kafelek', M + 96, M + 14, 84, PH - 22, {
-          opis: 'Wnuk lub wnuczka — zdjęcie 2',
-          ramka: { szerokosc: 2, kolor: '#1D4ED8' },
-        }),
+        zone('foto-a', 'kafelek', M, M + 10, 90, PH - 14, { opis: 'Wnuk lub wnuczka — zdjęcie 1' }),
+        zone('foto-b', 'kafelek', M + 96, M + 10, 90, PH - 14, { opis: 'Wnuk lub wnuczka — zdjęcie 2' }),
       ],
       strefaKalendarza: CAL_BOTTOM,
-      dekoracjeMiesiac: () => [
-        { typ: 'kropka', x: 105, y: M + PH - 6, rozmiar: 5, kolor: '#1D4ED8' },
-      ],
     },
   },
   {
     id: 'SEN-09', nazwa: 'Uśmiech Wnuków', kategoria: 'rodzina',
-    opis: 'Łuk katedralny nad kalendarzem — radosna paleta, duże cyfry z imieninami.',
+    opis: 'Szeroki łuk katedralny nad kalendarzem — dużo miejsca na zdjęcie wnuków.',
     tagi: ['senior', 'wnuki', 'prezent'],
     paleta: { tlo: '#FFF1F2', akcent: '#BE123C', tekst: '#4C0519' },
-    typografia: { naglowek: 'Baloo 2', tekst: 'Lexend', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
+    typografia: { naglowek: 'Baloo 2', tekst: 'Lexend', rozmiarMiesiac: 17, rozmiarDzien: 13, senior: true },
     layout: {
       ukladMiesiac: 'senior-luk',
-      titleRozmiar: 18,
-      strefyMiesiac: () => [zone('foto', 'luk', M + 20, M + 8, 146, 96, {
+      titleRozmiar: 17,
+      strefyMiesiac: () => [zone('foto', 'luk', M + 8, M + 6, 170, 148, {
         opis: 'Wnuki na zdjęciu — portret rodzinny',
         maska: 'luk',
-        ramka: { szerokosc: 2, kolor: '#BE123C' },
       })],
       strefaKalendarza: CAL_BOTTOM,
-      dekoracjeMiesiac: () => [
-        { typ: 'linia', x: M + 24, y: M + PH - 2, szerokosc: W - 48, kolor: '#BE123C', grubosc: 2 },
-      ],
     },
   },
   {
     id: 'SEN-10', nazwa: 'Złota Jesień', kategoria: 'dziadek',
-    opis: 'Jesienna elegancja ze złotą ramą — kalendarz z imieninami i ciepłym portretem.',
+    opis: 'Szerokie jesienne zdjęcie (60%) — elegancki kalendarz z imieninami.',
     tagi: ['senior', 'dziadek', 'jesień'],
-    paleta: { tlo: '#FFFBEB', akcent: '#B45309', tekst: '#451A03', metal: '#D97706' },
-    typografia: { naglowek: 'Libre Baskerville', tekst: 'Spectral', rozmiarMiesiac: 17, rozmiarDzien: 14, senior: true },
+    paleta: { tlo: '#FFFBEB', akcent: '#B45309', tekst: '#451A03' },
+    typografia: { naglowek: 'Libre Baskerville', tekst: 'Spectral', rozmiarMiesiac: 16, rozmiarDzien: 13, senior: true },
     layout: {
       ukladMiesiac: 'senior-zlota-rama',
-      titleRozmiar: 17,
-      strefyMiesiac: () => [zone('foto', 'hero', M + 10, M + 16, W - 20, PH - 22, {
-        opis: 'Jesienny krajobraz lub portret dziadka',
-        ramka: { szerokosc: 3, kolor: '#D97706', podwojna: true },
-      })],
+      titleRozmiar: 16,
+      strefyMiesiac: () => [zone('foto', 'hero', M, M + 10, W, PH - 12, { opis: 'Jesienny krajobraz lub portret dziadka' })],
       strefaKalendarza: CAL_BOTTOM,
-      dekoracjeMiesiac: () => [
-        { typ: 'linia-zlota', pozycja: { x: M + 8, y: M + PH - 3 }, szerokosc: W - 16 },
-        { typ: 'linia', x: M + 8, y: M + PH + 1, szerokosc: W - 16, kolor: '#B45309', grubosc: 1 },
-      ],
     },
   },
 ];
@@ -294,7 +241,7 @@ const kalendaria = DEFINICJE.map((def) => ({
   tagi: def.tagi,
   paleta: def.paleta,
   typografia: def.typografia,
-  proporcja: { kalendarium: 60, zdjecie: 40 },
+  proporcja: PROP,
   strony: MIESIACE.map((m, idx) => monthPage(def.layout, idx + 1, m, def.paleta)),
 }));
 
@@ -302,13 +249,13 @@ const plan = {
   meta: {
     rokDomyslny: 2026,
     liczbaSzablonow: kalendaria.length,
-    opis: '10 zróżnicowanych kalendarzy senior — duże cyfry + imieniny · 60/40',
+    opis: '10 kalendarzy senior — duże cyfry + imieniny · 40/60 (kalendarz/zdjęcie)',
   },
   formatWspolny: {
     szerokosc: 210,
     wysokosc: 297,
     siatkaDni: { etykietyDni: ['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'Sb', 'Nd'] },
-    proporcja: { kalendarium: 60, zdjecie: 40 },
+    proporcja: PROP,
     imieniny: true,
     senior: true,
   },

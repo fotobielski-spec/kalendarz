@@ -63,10 +63,11 @@ export function fitDayFontSize(
   senior = false,
 ): number {
   if (senior) {
-    const isNarrow = cal.szerokosc < 120;
+    const isNarrow = cal.szerokosc < 95;
+    const isShort = cal.wysokosc < 115;
     let size = baseSize;
-    if (hasImieniny) size -= isNarrow ? 3 : 2.5;
-    return Math.max(10, Math.min(size, isNarrow ? 12 : 14));
+    if (hasImieniny) size -= isNarrow ? 2.5 : isShort ? 2 : 1.5;
+    return Math.max(9, Math.min(size, isNarrow ? 11 : isShort ? 12 : 14));
   }
 
   const isNarrow = cal.szerokosc < 95;

@@ -235,10 +235,10 @@
   flex: 1;
   min-height: 0;
   overflow: hidden;
-  gap: calc(0.35 * 100cqw / var(--zone-w-mm, 186));
-  background: color-mix(in srgb, var(--accent, currentColor) 14%, transparent);
-  border-radius: calc(1.5 * 100cqw / var(--zone-w-mm, 186));
-  padding: calc(0.35 * 100cqw / var(--zone-w-mm, 186));
+  gap: calc(0.25 * 100cqw / var(--zone-w-mm, 186));
+  background: color-mix(in srgb, currentColor 6%, transparent);
+  border-radius: calc(1 * 100cqw / var(--zone-w-mm, 186));
+  padding: calc(0.25 * 100cqw / var(--zone-w-mm, 186));
   box-sizing: border-box;
 }
 

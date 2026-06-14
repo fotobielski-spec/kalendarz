@@ -89,7 +89,7 @@ export function PrintCalendarGrid({
         isSidebar && 'print-cal--sidebar',
         showImieniny && imieninyMaxLen > 0 && 'print-cal--imieniny',
         senior && 'print-cal--senior',
-        senior && area.szerokosc < 130 && 'print-cal--senior-side',
+        senior && area.szerokosc < 95 && 'print-cal--senior-side',
         embedded && 'print-cal--embedded',
       ].filter(Boolean).join(' ')}
       style={{
