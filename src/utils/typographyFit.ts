@@ -65,8 +65,8 @@ export function fitDayFontSize(
   if (senior) {
     const isNarrow = cal.szerokosc < 95;
     let size = baseSize;
-    if (hasImieniny && isNarrow) size -= 1;
-    return Math.max(12, Math.min(size, isNarrow ? 13 : 16));
+    if (hasImieniny && isNarrow) size -= 0.5;
+    return Math.max(12, Math.min(size, isNarrow ? 13 : 15));
   }
 
   const isNarrow = cal.szerokosc < 95;
