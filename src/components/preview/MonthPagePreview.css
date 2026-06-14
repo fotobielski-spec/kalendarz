@@ -38,6 +38,24 @@
   letter-spacing: 0.04em;
 }
 
+.month-preview__collection {
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 0.08rem 0.4rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.month-preview__collection--tematyczne {
+  color: #9a3412;
+  background: #ffedd5;
+}
+
+.month-preview__collection--art {
+  color: #5b21b6;
+  background: #ede9fe;
+}
+
 .month-preview__fonts {
   display: flex;
   align-items: baseline;
@@ -83,28 +101,7 @@
 }
 
 .month-preview__month-title {
-  position: absolute;
-  z-index: 6;
-  margin: 0;
-  pointer-events: none;
-  display: flex;
-  flex-direction: column;
-  gap: calc(1 * 100cqw / 210);
-  line-height: 1.05;
-  font-size: calc(var(--title-mm, 20) * 100cqw / 210);
-}
-
-.month-preview__month-name {
-  display: block;
-}
-
-.month-preview__year {
-  display: block;
-  font-size: 0.55em;
-  font-weight: 400;
-  opacity: 0.75;
-  font-family: var(--font-body, inherit);
-  letter-spacing: 0.02em;
+  display: none;
 }
 
 .month-preview__overlay {

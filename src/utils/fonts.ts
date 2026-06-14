@@ -46,6 +46,15 @@ const GOOGLE_FAMILIES: Record<string, string> = {
   'Poppins': 'Poppins:wght@400;600;700',
   'Lobster Two': 'Lobster+Two:ital,wght@0,400;0,700;1,400',
   'Spectral': 'Spectral:ital,wght@0,400;0,600;1,400',
+  'Fredoka': 'Fredoka:wght@400;600;700',
+  'Baloo 2': 'Baloo+2:wght@400;600;700',
+  'Comfortaa': 'Comfortaa:wght@400;600;700',
+  'Anton': 'Anton',
+  'Righteous': 'Righteous',
+  'Teko': 'Teko:wght@400;600;700',
+  'Space Mono': 'Space+Mono:wght@400;700',
+  'Lobster': 'Lobster',
+  'Bitter': 'Bitter:wght@400;600;700',
 };
 
 /** Czcionki niedostępne w Google Fonts → zamiennik */

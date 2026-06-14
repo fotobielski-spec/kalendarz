@@ -123,15 +123,18 @@ export interface Kalendarium {
   };
   efekty?: { zdjecia?: string; kontrast?: number };
   proporcja?: { kalendarium: number; zdjecie: number };
+  kolekcja?: string;
   strony: StronaMiesiaca[];
 }
 
 export interface PlanKalendaria {
-  meta: { rokDomyslny?: number };
+  meta: { rokDomyslny?: number; liczbaSzablonow?: number; opis?: string };
   formatWspolny: {
-    szerokosc: number;
-    wysokosc: number;
-    siatkaDni: { etykietyDni: string[] };
+    szerokosc?: number;
+    wysokosc?: number;
+    siatkaDni?: { etykietyDni: string[] };
+    proporcja?: { kalendarium: number; zdjecie: number };
+    imieniny?: boolean;
   };
   kalendaria: Kalendarium[];
 }

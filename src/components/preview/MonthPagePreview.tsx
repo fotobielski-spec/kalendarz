@@ -1,6 +1,7 @@
 import type { Kalendarium, StronaMiesiaca } from '../../types/plan';
 import { fontStack } from '../../utils/fonts';
 import { getLayoutOrientation, getUkladLabel } from '../../utils/layoutLabels';
+import { fitTitleInCalendarZone } from '../../utils/typographyFit';
 import {
   januarySeasonPalette,
   mmPosStyle,
@@ -32,7 +33,7 @@ export function MonthPagePreview({
   year = 2026,
   scale = 1,
   showProportion = false,
-  showLayoutZones = true,
+  showLayoutZones = false,
 }: MonthPagePreviewProps) {
   const page = getJanuaryPage(kalendarium);
   if (!page) return null;
@@ -52,10 +53,11 @@ export function MonthPagePreview({
 
   const headingFont = fontStack(kalendarium.typografia.naglowek);
   const bodyFont = fontStack(kalendarium.typografia.tekst);
-  const titleSize = monthTitle?.rozmiar ?? kalendarium.typografia.rozmiarMiesiac ?? 20;
   const daySize = kalendarium.typografia.rozmiarDzien ?? 9;
   const layoutLabel = getUkladLabel(page.uklad);
   const layoutOrient = getLayoutOrientation(page.uklad);
+
+  const fittedTitle = fitTitleInCalendarZone(monthTitle, page.strefaKalendarza, 15);
 
   const calBg =
     semiPanel ? `rgba(${hexToRgb(bg)}, 0.88)` :
@@ -64,12 +66,28 @@ export function MonthPagePreview({
 
   const gridProps = {
     year,
+    monthIndex: 0,
     area: page.strefaKalendarza,
     dayFontSize: daySize,
     compact,
     backgroundColor: calBg,
     headingFont,
     bodyFont,
+    showImieniny: true,
+    monthTitle: {
+      monthName: 'Styczeń',
+      year,
+      fontFamily: headingFont,
+      color: monthTitle?.kolor ?? (isFullscreen ? '#fff' : accent),
+      fontSize: fittedTitle.fontSizePx,
+      maxWidth: fittedTitle.maxWidthPct,
+      textAlign: fittedTitle.textAlign,
+      transform: fittedTitle.transform,
+      letterSpacing: fittedTitle.letterSpacing,
+      fontWeight: monthTitle?.waga === 'bold' ? 700 : monthTitle?.waga === 'semibold' ? 600 : 500,
+      fontStyle: monthTitle?.styl === 'kursywa' ? 'italic' : undefined,
+      textTransform: monthTitle?.transform === 'uppercase' ? 'uppercase' : undefined,
+    },
   };
 
   return (
@@ -81,6 +99,11 @@ export function MonthPagePreview({
         <span className="month-preview__id">{kalendarium.id}</span>
         <h3 className="month-preview__name">{kalendarium.nazwa}</h3>
         <span className="month-preview__layout" title={page.uklad}>{layoutLabel}</span>
+        {kalendarium.kolekcja && (
+          <span className={`month-preview__collection month-preview__collection--${kalendarium.kolekcja}`}>
+            {kalendarium.kolekcja === 'tematyczne' ? kalendarium.kategoria : 'art'}
+          </span>
+        )}
         <p className="month-preview__fonts">
           <span className="month-preview__font-heading" style={{ fontFamily: headingFont }}>
             {kalendarium.typografia.naglowek}
@@ -92,7 +115,7 @@ export function MonthPagePreview({
         </p>
         {showProportion && proporcja && (
           <span className="month-preview__ratio">
-            {proporcja.zdjecie}% foto · {proporcja.kalendarium}% kalendarz
+            {proporcja.zdjecie}% foto · {proporcja.kalendarium}% kalendarz · imieniny
           </span>
         )}
       </header>
@@ -106,7 +129,6 @@ export function MonthPagePreview({
             fontFamily: bodyFont,
             '--font-heading': headingFont,
             '--font-body': bodyFont,
-            '--title-mm': titleSize,
             '--accent': accent,
           } as React.CSSProperties}
         >
@@ -136,32 +158,6 @@ export function MonthPagePreview({
                 background: page.separator.kolor ?? kalendarium.paleta.separator ?? '#ccc',
               }}
             />
-          )}
-
-          {monthTitle && (
-            <h4
-              className="month-preview__month-title"
-              style={{
-                left: `${(monthTitle.x / 210) * 100}%`,
-                top: `${(monthTitle.y / 297) * 100}%`,
-                color: monthTitle.kolor ?? (isFullscreen ? '#fff' : accent),
-                fontFamily: headingFont,
-                textAlign: (monthTitle.wyrownanie as React.CSSProperties['textAlign']) ?? 'left',
-                textTransform: monthTitle.transform === 'uppercase' ? 'uppercase' : undefined,
-                letterSpacing: monthTitle.letterSpacing
-                  ? `${monthTitle.letterSpacing * 0.04}px`
-                  : undefined,
-                fontStyle: monthTitle.styl === 'kursywa' ? 'italic' : undefined,
-                fontWeight: monthTitle.waga === 'semibold' ? 600 : monthTitle.waga === 'bold' ? 700 : 400,
-                transform:
-                  monthTitle.x > 100 || monthTitle.wyrownanie === 'center'
-                    ? 'translateX(-50%)'
-                    : undefined,
-              }}
-            >
-              <span className="month-preview__month-name">Styczeń</span>
-              <span className="month-preview__year">{year}</span>
-            </h4>
           )}
 
           {isRadial ? (

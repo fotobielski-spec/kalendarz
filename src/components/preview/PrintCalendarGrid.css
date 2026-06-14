@@ -4,37 +4,69 @@
   z-index: 3;
   pointer-events: none;
   container-type: inline-size;
-  padding: calc(3 * 100cqw / 210);
+  padding: calc(2 * 100cqw / 210);
   box-sizing: border-box;
   border-radius: calc(2 * 100cqw / 210);
+  overflow: hidden;
+  min-height: 0;
+}
+
+.print-cal__title {
+  display: flex;
+  align-items: baseline;
+  gap: calc(3 * 100cqw / 210);
+  flex-shrink: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.1;
+  margin-bottom: calc(2 * 100cqw / 210);
+  padding-right: calc(2 * 100cqw / 210);
+  box-sizing: border-box;
+}
+
+.print-cal__title-month {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.print-cal__title-year {
+  font-family: var(--font-body, inherit);
+  font-size: 0.58em;
+  font-weight: 400;
+  opacity: 0.7;
+  flex-shrink: 0;
 }
 
 .print-cal__labels {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 1px;
-  margin-bottom: calc(3 * 100cqw / 210);
+  gap: 0;
+  margin-bottom: calc(1 * 100cqw / 210);
   flex-shrink: 0;
 }
 
 .print-cal__label {
   font-family: var(--font-heading, inherit);
-  font-size: calc(var(--day-size, 9) * 0.78 * 100cqw / 210);
+  font-size: calc(var(--day-size, 9) * 0.72 * 100cqw / 210);
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   color: var(--accent, currentColor);
   line-height: 1;
+  overflow: hidden;
 }
 
 .print-cal__label--weekend {
-  opacity: 0.65;
+  opacity: 0.6;
 }
 
 .print-cal--compact .print-cal__label {
-  font-size: calc(var(--day-size, 8) * 0.7 * 100cqw / 210);
-  letter-spacing: 0.02em;
+  font-size: calc(var(--day-size, 8) * 0.65 * 100cqw / 210);
+  letter-spacing: 0;
 }
 
 .print-cal__grid {
@@ -42,42 +74,80 @@
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(6, 1fr);
   flex: 1;
-  gap: calc(1 * 100cqw / 210);
+  gap: 0;
   min-height: 0;
+  overflow: hidden;
 }
 
-.print-cal__day {
+.print-cal__cell {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  min-height: 0;
+  overflow: hidden;
+  padding: calc(0.5 * 100cqw / 210) calc(0.5 * 100cqw / 210) 0;
+  box-sizing: border-box;
+}
+
+.print-cal__day-num {
   font-family: var(--font-body, inherit);
   font-size: calc(var(--day-size, 9) * 100cqw / 210);
-  font-weight: 500;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
-  border-radius: calc(2 * 100cqw / 210);
   line-height: 1;
-  aspect-ratio: 1;
+  flex-shrink: 0;
 }
 
-.print-cal--compact .print-cal__day {
-  font-size: calc(var(--day-size, 8) * 0.88 * 100cqw / 210);
-  aspect-ratio: auto;
+.print-cal--compact .print-cal__day-num {
+  font-size: calc(var(--day-size, 8) * 0.9 * 100cqw / 210);
 }
 
-.print-cal__day--muted {
-  opacity: 0.2;
+.print-cal__imieniny {
+  font-family: var(--font-body, inherit);
+  font-size: calc(var(--day-size, 9) * 0.48 * 100cqw / 210);
+  line-height: 1;
+  margin-top: calc(0.5 * 100cqw / 210);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.65;
   font-weight: 400;
 }
 
-.print-cal__day--weekend {
-  color: color-mix(in srgb, var(--accent, currentColor) 80%, var(--day-color, currentColor));
-  font-weight: 400;
+.print-cal--compact .print-cal__imieniny {
+  font-size: calc(var(--day-size, 8) * 0.42 * 100cqw / 210);
 }
 
-.print-cal__day--today {
-  background: var(--accent, #6366f1);
-  color: #fff !important;
-  font-weight: 700;
-  border-radius: 50%;
-  aspect-ratio: 1;
+.print-cal--imieniny .print-cal__cell {
+  justify-content: center;
+}
+
+.print-cal__cell--muted {
+  opacity: 0.15;
+}
+
+.print-cal__cell--muted .print-cal__imieniny {
+  display: none;
+}
+
+.print-cal__cell--weekend .print-cal__day-num {
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.print-cal__cell--today {
+  background: color-mix(in srgb, var(--accent, #6366f1) 18%, transparent);
+  border-radius: calc(2 * 100cqw / 210);
+}
+
+.print-cal__cell--today .print-cal__day-num {
+  color: var(--accent, #6366f1);
+  font-weight: 800;
+}
+
+.print-cal__cell--today .print-cal__imieniny {
+  opacity: 0.85;
+  font-weight: 500;
 }
