@@ -66,8 +66,8 @@ export function fitDayFontSize(
     const isNarrow = cal.szerokosc < 95;
     const isShort = cal.wysokosc < 120;
     let size = baseSize;
-    if (hasImieniny) size -= isNarrow ? 3 : isShort ? 3.5 : 2;
-    return Math.max(8, Math.min(size, isNarrow ? 9 : isShort ? 10 : 12));
+    if (hasImieniny) size -= isNarrow ? 2 : isShort ? 2.5 : 1.5;
+    return Math.max(10, Math.min(size, isNarrow ? 11 : isShort ? 12 : 14));
   }
 
   const isNarrow = cal.szerokosc < 95;

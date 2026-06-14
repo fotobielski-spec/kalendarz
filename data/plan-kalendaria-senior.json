@@ -46,7 +46,7 @@
         "naglowek": "Cormorant Garamond",
         "tekst": "Lato",
         "rozmiarMiesiac": 15,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true
       },
       "proporcja": {
@@ -652,7 +652,7 @@
         "naglowek": "Atkinson Hyperlegible",
         "tekst": "Source Sans 3",
         "rozmiarMiesiac": 14,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true
       },
       "proporcja": {
@@ -1257,7 +1257,7 @@
         "naglowek": "Playfair Display",
         "tekst": "Karla",
         "rozmiarMiesiac": 14,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true
       },
       "proporcja": {
@@ -1863,7 +1863,7 @@
         "naglowek": "Fraunces",
         "tekst": "Nunito",
         "rozmiarMiesiac": 15,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true
       },
       "proporcja": {
@@ -2468,7 +2468,7 @@
         "naglowek": "EB Garamond",
         "tekst": "Lexend",
         "rozmiarMiesiac": 15,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true
       },
       "proporcja": {
@@ -3362,7 +3362,7 @@
         "naglowek": "Atkinson Hyperlegible",
         "tekst": "Roboto",
         "rozmiarMiesiac": 15,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true
       },
       "proporcja": {
@@ -3968,7 +3968,7 @@
         "naglowek": "Bebas Neue",
         "tekst": "Lexend",
         "rozmiarMiesiac": 15,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true
       },
       "proporcja": {
@@ -4574,7 +4574,7 @@
         "naglowek": "DM Serif Display",
         "tekst": "Open Sans",
         "rozmiarMiesiac": 15,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true
       },
       "proporcja": {
@@ -5372,7 +5372,7 @@
         "naglowek": "Baloo 2",
         "tekst": "Lexend",
         "rozmiarMiesiac": 15,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true
       },
       "proporcja": {
@@ -5978,7 +5978,7 @@
         "naglowek": "Libre Baskerville",
         "tekst": "Spectral",
         "rozmiarMiesiac": 16,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true
       },
       "proporcja": {
