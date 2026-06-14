@@ -38,10 +38,22 @@ function zone(id, typ, x, y, w, h, opts = {}) {
 }
 
 function calArea(pos, plannerTyp) {
-  return { ...pos, uklad: 'planer', plannerTyp };
+  return { ...pos, uklad: 'planer', plannerTyp, kalendarium: true };
 }
 
-function monthPage(layout, miesiacNr, nazwaMiesiaca) {
+function calTitle(cal, paleta) {
+  return {
+    nazwaMiesiaca: {
+      x: cal.x + 2,
+      y: cal.y + 2,
+      rozmiar: cal.szerokosc < 95 ? 10 : 12,
+      kolor: paleta.akcent,
+      wyrownanie: 'left',
+    },
+  };
+}
+
+function monthPage(layout, miesiacNr, nazwaMiesiaca, paleta) {
   return {
     numer: miesiacNr + 1,
     typ: 'miesiac',
@@ -51,6 +63,7 @@ function monthPage(layout, miesiacNr, nazwaMiesiaca) {
     uklad: layout.ukladMiesiac,
     strefyZdjec: layout.strefyMiesiac(miesiacNr, nazwaMiesiaca),
     strefaKalendarza: layout.strefaKalendarza,
+    typografia: calTitle(layout.strefaKalendarza, paleta),
     dekoracje: layout.dekoracjeMiesiac?.(miesiacNr) ?? [],
   };
 }
@@ -123,7 +136,7 @@ const DEFINICJE = PLANER_TYPES.map((plannerTyp, i) => {
     id,
     nazwa: NAZWY[i],
     kategoria: KATEGORIE[i],
-    opis: `Planer miesięczny — ${plannerTyp.replace('planer-', '').replace(/-/g, ' ')}. Foto ${variant.uklad.includes('left') ? 'lewo' : variant.uklad.includes('right') ? 'prawo' : 'góra'} 60%.`,
+    opis: `Planer z kalendarium (siatka + imieniny) i panelem: ${plannerTyp.replace('planer-', '').replace(/-/g, ' ')}.`,
     tagi: ['planer', plannerTyp.replace('planer-', '')],
     paleta: PALETY[i],
     typografia: { naglowek: FONTS[i][0], tekst: FONTS[i][1], rozmiarMiesiac: 11, rozmiarDzien: 7 },
@@ -145,14 +158,14 @@ const kalendaria = DEFINICJE.map((def) => ({
   paleta: def.paleta,
   typografia: def.typografia,
   proporcja: { kalendarium: 40, zdjecie: 60 },
-  strony: MIESIACE.map((m, idx) => monthPage(def.layout, idx + 1, m)),
+  strony: MIESIACE.map((m, idx) => monthPage(def.layout, idx + 1, m, def.paleta)),
 }));
 
 const plan = {
   meta: {
     rokDomyslny: 2026,
     liczbaSzablonow: kalendaria.length,
-    opis: '20 kalendarzy-planerów A4 pion — tygodniowy, nawyki, cele, kanban i więcej',
+    opis: '20 planerów A4 — kalendarium (siatka + imieniny) + panel planera · 40/60',
   },
   formatWspolny: {
     szerokosc: 210,
@@ -160,6 +173,7 @@ const plan = {
     siatkaDni: { etykietyDni: ['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'Sb', 'Nd'] },
     proporcja: { kalendarium: 40, zdjecie: 60 },
     imieniny: true,
+    kalendarium: true,
     planery: true,
   },
   kalendaria,

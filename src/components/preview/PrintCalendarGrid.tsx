@@ -32,6 +32,8 @@ interface PrintCalendarGridProps {
   bodyFont?: string;
   showImieniny?: boolean;
   monthTitle?: MonthTitleProps;
+  /** Wewnątrz planera — bez pozycjonowania mm */
+  embedded?: boolean;
 }
 
 export function PrintCalendarGrid({
@@ -47,6 +49,7 @@ export function PrintCalendarGrid({
   bodyFont,
   showImieniny = true,
   monthTitle,
+  embedded = false,
 }: PrintCalendarGridProps) {
   const days = getMonthDaysWithImieniny(year, monthIndex);
   const labels = getDayLabels();
@@ -56,9 +59,16 @@ export function PrintCalendarGrid({
 
   return (
     <div
-      className={`print-cal${isCompact ? ' print-cal--compact' : ''}${showImieniny ? ' print-cal--imieniny' : ''}`}
+      className={[
+        'print-cal',
+        isCompact && 'print-cal--compact',
+        showImieniny && 'print-cal--imieniny',
+        embedded && 'print-cal--embedded',
+      ].filter(Boolean).join(' ')}
       style={{
-        ...mmPosStyle(area),
+        ...(embedded
+          ? { position: 'relative', width: '100%', height: '100%' }
+          : mmPosStyle(area)),
         color: textColor,
         background: backgroundColor,
         '--font-heading': headingFont,

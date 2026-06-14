@@ -5,27 +5,29 @@
   overflow: hidden;
   z-index: 3;
   box-sizing: border-box;
-  padding: calc(2 * 100cqw / 210);
-  gap: calc(2 * 100cqw / 210);
+  padding: calc(1.5 * 100cqw / 210);
+  gap: calc(1 * 100cqw / 210);
 }
 
-.planner-cal__head {
+.planner-cal__kalendarium {
+  flex: 0 0 62%;
+  min-height: 0;
+  overflow: hidden;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  padding-bottom: calc(1 * 100cqw / 210);
+}
+
+.planner-cal__panel {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
   display: flex;
-  align-items: baseline;
-  gap: calc(3 * 100cqw / 210);
-  font-size: calc(12 * 100cqw / 210);
-  font-weight: 700;
-  color: var(--accent);
-  flex-shrink: 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
-  padding-bottom: calc(2 * 100cqw / 210);
+  flex-direction: column;
 }
 
-.planner-cal__year {
-  font-family: var(--font-body, inherit);
-  font-size: calc(7 * 100cqw / 210);
-  font-weight: 400;
-  opacity: 0.6;
+.planner-cal--planer-foto-left .planner-cal__kalendarium,
+.planner-cal--planer-foto-right .planner-cal__kalendarium {
+  flex-basis: 55%;
 }
 
 .planner-cal__section-title {

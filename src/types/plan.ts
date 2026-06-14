@@ -31,6 +31,7 @@ export interface StrefaKalendarza extends PozycjaMm {
   uklad?: string;
   krawedz?: 'lewo' | 'prawo';
   plannerTyp?: string;
+  kalendarium?: boolean;
   przezroczysteTlo?: number;
   srodek?: { x: number; y: number };
   promienDni?: number;

@@ -197,8 +197,21 @@ export function MonthPagePreview({
               accentColor={accent}
               headingFont={headingFont}
               bodyFont={bodyFont}
-              monthName="Styczeń"
-              yearNum={year}
+              dayFontSize={daySize}
+              monthTitle={{
+                monthName: 'Styczeń',
+                year,
+                fontFamily: headingFont,
+                color: monthTitle?.kolor ?? accent,
+                fontSize: fittedTitle.fontSizePx,
+                maxWidth: fittedTitle.maxWidthPct,
+                textAlign: fittedTitle.textAlign,
+                transform: fittedTitle.transform,
+                letterSpacing: fittedTitle.letterSpacing,
+                fontWeight: monthTitle?.waga === 'bold' ? 700 : monthTitle?.waga === 'semibold' ? 600 : 500,
+                fontStyle: monthTitle?.styl === 'kursywa' ? 'italic' : undefined,
+                textTransform: monthTitle?.transform === 'uppercase' ? 'uppercase' : undefined,
+              }}
             />
           ) : isFullscreen ? (
             <>

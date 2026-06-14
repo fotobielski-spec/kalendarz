@@ -1,7 +1,23 @@
 import type { StrefaKalendarza } from '../../types/plan';
 import { getMonthDaysWithImieniny } from '../../utils/imieniny';
 import { mmPosStyle } from '../../utils/previewUtils';
+import { PrintCalendarGrid } from './PrintCalendarGrid';
 import './PlannerCalendarGrid.css';
+
+interface MonthTitleProps {
+  monthName: string;
+  year: number;
+  fontFamily?: string;
+  color?: string;
+  fontSize?: string;
+  maxWidth?: string;
+  textAlign?: 'left' | 'center' | 'right';
+  transform?: string;
+  letterSpacing?: string;
+  fontWeight?: number;
+  fontStyle?: string;
+  textTransform?: string;
+}
 
 interface PlannerCalendarGridProps {
   year: number;
@@ -12,8 +28,8 @@ interface PlannerCalendarGridProps {
   accentColor: string;
   headingFont?: string;
   bodyFont?: string;
-  monthName?: string;
-  yearNum?: number;
+  dayFontSize?: number;
+  monthTitle?: MonthTitleProps;
 }
 
 export function PlannerCalendarGrid({
@@ -25,10 +41,19 @@ export function PlannerCalendarGrid({
   accentColor,
   headingFont,
   bodyFont,
-  monthName = 'Styczeń',
-  yearNum,
+  dayFontSize = 7,
+  monthTitle,
 }: PlannerCalendarGridProps) {
   const days = getMonthDaysWithImieniny(year, monthIndex).filter((d) => d.isCurrentMonth && d.day);
+  const compact = area.szerokosc < 95;
+
+  const title = monthTitle ?? {
+    monthName: 'Styczeń',
+    year,
+    fontFamily: headingFont,
+    color: accentColor,
+    fontSize: compact ? 'calc(9 * 100cqw / 210)' : 'calc(11 * 100cqw / 210)',
+  };
 
   return (
     <div
@@ -41,16 +66,30 @@ export function PlannerCalendarGrid({
         '--accent': accentColor,
       } as React.CSSProperties}
     >
-      <div className="planner-cal__head">
-        <span style={{ fontFamily: headingFont }}>{monthName}</span>
-        {yearNum && <span className="planner-cal__year">{yearNum}</span>}
+      <div className="planner-cal__kalendarium">
+        <PrintCalendarGrid
+          year={year}
+          monthIndex={monthIndex}
+          area={area}
+          textColor={textColor}
+          accentColor={accentColor}
+          dayFontSize={dayFontSize}
+          compact
+          embedded
+          headingFont={headingFont}
+          bodyFont={bodyFont}
+          showImieniny
+          monthTitle={title}
+        />
       </div>
-      {renderPlannerBody(plannerTyp, days, accentColor)}
+      <div className="planner-cal__panel">
+        {renderPlannerPanel(plannerTyp, days, accentColor)}
+      </div>
     </div>
   );
 }
 
-function renderPlannerBody(
+function renderPlannerPanel(
   typ: string,
   days: { day: number | null; imieniny: string; isWeekend: boolean }[],
   accent: string,
@@ -62,14 +101,6 @@ function renderPlannerBody(
           {[0, 1, 2, 3, 4].map((w) => (
             <div key={w} className="planner-cal__week-block">
               <span className="planner-cal__week-label">Tydzień {w + 1}</span>
-              <div className="planner-cal__week-days">
-                {days.slice(w * 7, w * 7 + 7).map((d, i) => (
-                  <span key={i} className={`planner-cal__mini-day${d.isWeekend ? ' planner-cal__mini-day--we' : ''}`}>
-                    <b>{d.day}</b>
-                    <small>{d.imieniny}</small>
-                  </span>
-                ))}
-              </div>
               <div className="planner-cal__lines"><span /><span /><span /></div>
             </div>
           ))}
@@ -94,17 +125,10 @@ function renderPlannerBody(
 
     case 'planer-cele':
       return (
-        <>
-          <div className="planner-cal__goals">
-            <span className="planner-cal__section-title">Cele miesiąca</span>
-            <div className="planner-cal__lines"><span /><span /><span /></div>
-          </div>
-          <div className="planner-cal__mini-grid">
-            {days.map((d) => (
-              <span key={d.day} className="planner-cal__mini-cell">{d.day}</span>
-            ))}
-          </div>
-        </>
+        <div className="planner-cal__goals">
+          <span className="planner-cal__section-title">Cele miesiąca</span>
+          <div className="planner-cal__lines"><span /><span /><span /><span /></div>
+        </div>
       );
 
     case 'planer-kanban':
@@ -113,7 +137,7 @@ function renderPlannerBody(
           {['Do zrobienia', 'W toku', 'Zrobione'].map((col) => (
             <div key={col} className="planner-cal__kanban-col">
               <span className="planner-cal__section-title">{col}</span>
-              <div className="planner-cal__lines"><span /><span /><span /><span /></div>
+              <div className="planner-cal__lines"><span /><span /><span /></div>
             </div>
           ))}
         </div>
@@ -122,7 +146,7 @@ function renderPlannerBody(
     case 'planer-czas':
       return (
         <div className="planner-cal__hours">
-          {['7:00', '9:00', '11:00', '13:00', '15:00', '17:00', '19:00'].map((h) => (
+          {['7:00', '9:00', '11:00', '13:00', '15:00', '17:00'].map((h) => (
             <div key={h} className="planner-cal__hour-row">
               <span className="planner-cal__hour">{h}</span>
               <span className="planner-cal__hour-line" />
@@ -134,7 +158,7 @@ function renderPlannerBody(
     case 'planer-finanse':
       return (
         <div className="planner-cal__finance">
-          {['Przychody', 'Rachunki', 'Oszczędności', 'Inne'].map((cat) => (
+          {['Przychody', 'Rachunki', 'Oszczędności'].map((cat) => (
             <div key={cat} className="planner-cal__finance-row">
               <span>{cat}</span>
               <span className="planner-cal__finance-val">______ zł</span>
@@ -146,7 +170,7 @@ function renderPlannerBody(
     case 'planer-wellness':
       return (
         <div className="planner-cal__wellness">
-          {['Śniadanie', 'Medytacja', 'Spacer', 'Woda 2L', 'Sen 8h'].map((item) => (
+          {['Śniadanie', 'Medytacja', 'Spacer', 'Sen 8h'].map((item) => (
             <label key={item} className="planner-cal__wellness-item">
               <span className="planner-cal__check" style={{ borderColor: accent }} />
               {item}
@@ -161,7 +185,7 @@ function renderPlannerBody(
           {['Pilne', 'Ważne', 'Później', 'Deleguj'].map((col) => (
             <div key={col} className="planner-cal__kanban-col">
               <span className="planner-cal__section-title">{col}</span>
-              <div className="planner-cal__lines"><span /><span /><span /></div>
+              <div className="planner-cal__lines"><span /><span /></div>
             </div>
           ))}
         </div>
@@ -173,7 +197,7 @@ function renderPlannerBody(
           {['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'Sb', 'Nd'].map((d) => (
             <div key={d} className="planner-cal__menu-day">
               <span className="planner-cal__section-title">{d}</span>
-              <div className="planner-cal__lines"><span /><span /></div>
+              <div className="planner-cal__lines"><span /></div>
             </div>
           ))}
         </div>
@@ -182,7 +206,7 @@ function renderPlannerBody(
     case 'planer-trening':
       return (
         <div className="planner-cal__habits">
-          {['Rozgrzewka', 'Siła', 'Cardio', 'Stretching'].map((h) => (
+          {['Rozgrzewka', 'Siła', 'Cardio'].map((h) => (
             <div key={h} className="planner-cal__habit-row">
               <span>{h}</span>
               <div className="planner-cal__checks">
@@ -199,7 +223,7 @@ function renderPlannerBody(
       return (
         <div className="planner-cal__notes">
           <span className="planner-cal__section-title">Lista lektur</span>
-          {['Tytuł 1', 'Tytuł 2', 'Tytuł 3', 'Tytuł 4', 'Tytuł 5'].map((t) => (
+          {['Tytuł 1', 'Tytuł 2', 'Tytuł 3'].map((t) => (
             <div key={t} className="planner-cal__note-row">
               <span className="planner-cal__check" style={{ borderColor: accent }} />
               <span className="planner-cal__note-line" />
@@ -212,7 +236,7 @@ function renderPlannerBody(
     case 'planer-podroze':
       return (
         <div className="planner-cal__finance">
-          {['Cel podróży', 'Budżet', 'Bilety', 'Noclegi'].map((cat) => (
+          {['Cel', 'Budżet', 'Bilety'].map((cat) => (
             <div key={cat} className="planner-cal__finance-row">
               <span>{cat}</span>
               <span className="planner-cal__finance-val">______</span>
@@ -224,14 +248,8 @@ function renderPlannerBody(
     case 'planer-urodziny':
       return (
         <div className="planner-cal__notes">
-          <span className="planner-cal__section-title">Urodziny w miesiącu</span>
-          {days.filter((d) => d.imieniny).slice(0, 10).map((d) => (
-            <div key={d.day} className="planner-cal__note-row">
-              <span className="planner-cal__note-day" style={{ color: accent }}>{d.day}</span>
-              <span className="planner-cal__note-line" />
-              <small className="planner-cal__note-name">{d.imieniny}</small>
-            </div>
-          ))}
+          <span className="planner-cal__section-title">Notatki urodzinowe</span>
+          <div className="planner-cal__lines"><span /><span /><span /></div>
         </div>
       );
 
@@ -240,8 +258,8 @@ function renderPlannerBody(
         <div className="planner-cal__weeks">
           {[0, 1, 2, 3].map((w) => (
             <div key={w} className="planner-cal__week-block">
-              <span className="planner-cal__week-label">Tydzień rodzinny {w + 1}</span>
-              <div className="planner-cal__lines"><span /><span /><span /></div>
+              <span className="planner-cal__week-label">Tydzień {w + 1}</span>
+              <div className="planner-cal__lines"><span /><span /></div>
             </div>
           ))}
         </div>
@@ -253,7 +271,7 @@ function renderPlannerBody(
           {['Backlog', 'Sprint', 'Review'].map((col) => (
             <div key={col} className="planner-cal__kanban-col">
               <span className="planner-cal__section-title">{col}</span>
-              <div className="planner-cal__lines"><span /><span /><span /><span /></div>
+              <div className="planner-cal__lines"><span /><span /></div>
             </div>
           ))}
         </div>
@@ -262,24 +280,18 @@ function renderPlannerBody(
     case 'planer-gratitude':
       return (
         <div className="planner-cal__notes">
-          <span className="planner-cal__section-title">Za co jestem wdzięczny/a</span>
-          {days.slice(0, 6).map((d) => (
-            <div key={d.day} className="planner-cal__note-row">
-              <span className="planner-cal__note-day" style={{ color: accent }}>{d.day}</span>
-              <span className="planner-cal__note-line" />
-            </div>
-          ))}
+          <span className="planner-cal__section-title">Wdzięczność</span>
+          <div className="planner-cal__lines"><span /><span /><span /></div>
         </div>
       );
 
     case 'planer-zakupy':
       return (
         <div className="planner-cal__wellness">
-          {['Warzywa', 'Owoce', 'Nabiał', 'Pieczywo', 'Inne'].map((item) => (
+          {['Warzywa', 'Owoce', 'Nabiał', 'Inne'].map((item) => (
             <label key={item} className="planner-cal__wellness-item">
               <span className="planner-cal__check" style={{ borderColor: accent }} />
               {item}
-              <span className="planner-cal__note-line" style={{ flex: 1, margin: '0 0 0 8px' }} />
             </label>
           ))}
         </div>
@@ -288,10 +300,10 @@ function renderPlannerBody(
     case 'planer-kontakty':
       return (
         <div className="planner-cal__finance">
-          {['Rodzina', 'Praca', 'Znajomi', 'Usługi'].map((cat) => (
+          {['Rodzina', 'Praca', 'Znajomi'].map((cat) => (
             <div key={cat} className="planner-cal__finance-row">
               <span>{cat}</span>
-              <span className="planner-cal__finance-val">tel. ______</span>
+              <span className="planner-cal__finance-val">tel. ___</span>
             </div>
           ))}
         </div>
@@ -300,7 +312,7 @@ function renderPlannerBody(
     case 'planer-nauka':
       return (
         <div className="planner-cal__habits">
-          {['Lekcja', 'Powtórka', 'Notatki', 'Test'].map((h) => (
+          {['Lekcja', 'Powtórka', 'Test'].map((h) => (
             <div key={h} className="planner-cal__habit-row">
               <span>{h}</span>
               <div className="planner-cal__checks">
@@ -314,32 +326,11 @@ function renderPlannerBody(
       );
 
     case 'planer-notatki':
-      return (
-        <div className="planner-cal__notes">
-          <span className="planner-cal__section-title">Notatki</span>
-          {days.slice(0, 8).map((d) => (
-            <div key={d.day} className="planner-cal__note-row">
-              <span className="planner-cal__note-day" style={{ color: accent }}>{d.day}</span>
-              <span className="planner-cal__note-line" />
-              <small className="planner-cal__note-name">{d.imieniny}</small>
-            </div>
-          ))}
-          <div className="planner-cal__lines"><span /><span /><span /></div>
-        </div>
-      );
-
     default:
       return (
         <div className="planner-cal__notes">
           <span className="planner-cal__section-title">Notatki</span>
-          {days.slice(0, 8).map((d) => (
-            <div key={d.day} className="planner-cal__note-row">
-              <span className="planner-cal__note-day" style={{ color: accent }}>{d.day}</span>
-              <span className="planner-cal__note-line" />
-              <small className="planner-cal__note-name">{d.imieniny}</small>
-            </div>
-          ))}
-          <div className="planner-cal__lines"><span /><span /><span /></div>
+          <div className="planner-cal__lines"><span /><span /><span /><span /></div>
         </div>
       );
   }

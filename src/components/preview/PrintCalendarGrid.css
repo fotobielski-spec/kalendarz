@@ -151,3 +151,12 @@
   opacity: 0.85;
   font-weight: 500;
 }
+
+.print-cal--embedded {
+  padding: calc(1 * 100cqw / 210);
+}
+
+.print-cal--embedded .print-cal__title {
+  margin-bottom: calc(1 * 100cqw / 210);
+  font-size: calc(10 * 100cqw / 210);
+}
