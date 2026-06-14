@@ -1,0 +1,54 @@
+KALENDARIUM+ — pakiet do pobrania
+================================
+
+ZAWARTOŚĆ ARCHIWUM
+------------------
+podglad/          Gotowy podgląd HTML (po zbudowaniu — otwórz przez serwer lokalny)
+  podglad-art.html    Galeria 75 kalendarzy (Art + Tematyczne + Pionowe + Planery)
+  podglad.html        20 kalendarzy klasycznych
+  index.html          Aplikacja Kalendarium+
+  assets/             Skrypty i style
+
+zrodla/           Kod źródłowy projektu
+  src/              React + TypeScript
+  data/             JSON kalendarzy i imienin
+  scripts/          Generatory i audyt
+  docs/             Dokumentacja (HANDOFF-GPT.md)
+
+JAK OTWORZYĆ PODGLĄD KALENDARZY
+-------------------------------
+Metoda 1 — serwer lokalny (zalecane):
+
+  cd podglad
+  npx --yes serve -l 3000
+
+  Potem w przeglądarce:
+  http://localhost:3000/podglad-art.html   — 75 szablonów
+  http://localhost:3000/podglad.html       — 20 klasycznych
+  http://localhost:3000/index.html         — aplikacja
+
+  Lub po rozpakowaniu całego projektu:
+  npm install && npm run dev
+  http://localhost:5173/art
+
+Metoda 2 — bezpośredni link do szablonu:
+  http://localhost:3000/podglad-art.html?id=TEM-05
+
+JAK URUCHOMIĆ Z KODU ŹRÓDŁOWEGO
+-------------------------------
+  cd zrodla
+  npm install
+  npm run dev
+
+  Galeria: http://localhost:5173/art
+
+GENERATORY JSON
+---------------
+  node scripts/generate-plan-art-40-60.mjs
+  node scripts/generate-plan-tematyczne.mjs
+  node scripts/generate-plan-pionowe.mjs
+  node scripts/generate-plan-planery.mjs
+  node scripts/audit-layouts.mjs
+
+Repo: https://github.com/fotobielski-spec/kalendarz
+Branch: cursor/kalendarium-plus-82fd
