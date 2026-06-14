@@ -62,11 +62,6 @@ export function PrintCalendarGrid({
   const isSidebar = isSidebarCalendarZone(area);
   const isSeniorShort = senior && area.wysokosc < 130;
   const imieninyMaxLen = fitImieninyMaxLen(area, senior);
-  /** Skala imienin względem wysokości wiersza (krótka strefa kalendarza) */
-  const seniorRowHmm = senior ? Math.max(12, (area.wysokosc - 14) / 6) : 0;
-  const seniorImieninyScale = senior
-    ? Math.min(1.05, Math.max(0.9, seniorRowHmm / 17))
-    : 1;
 
   const firstDay = new Date(year, monthIndex, 1);
   const startOffset = (firstDay.getDay() + 6) % 7;
@@ -85,7 +80,7 @@ export function PrintCalendarGrid({
       imieniny: isCurrentMonth
         ? (senior
           ? (seniorDense
-            ? formatImieninyShort(monthIndex + 1, d, 9, true)
+            ? formatImieninyShort(monthIndex + 1, d, 11, true)
             : normalizeImieninyName(getImieniny(monthIndex + 1, d)[0] ?? ''))
           : (imieninyMaxLen > 0 ? formatImieninyShort(monthIndex + 1, d, imieninyMaxLen, false) : ''))
         : '',
@@ -117,7 +112,6 @@ export function PrintCalendarGrid({
         '--font-body': bodyFont,
         '--day-size': fittedDaySize,
         '--accent': accentColor,
-        ...(senior ? { '--senior-imieniny-scale': seniorImieninyScale } as React.CSSProperties : {}),
       } as React.CSSProperties}
     >
       {monthTitle && (

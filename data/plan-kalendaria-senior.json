@@ -2,7 +2,7 @@
   "meta": {
     "rokDomyslny": 2026,
     "liczbaSzablonow": 10,
-    "opis": "10 kalendarzy senior — SEN-01…03: 48/52 · SEN-04…10: 52/48 (kalendarz/zdjęcie)"
+    "opis": "10 kalendarzy senior — SEN-01…03: 50/50 · SEN-04…10: 54/46 (kalendarz/zdjęcie)"
   },
   "formatWspolny": {
     "szerokosc": 210,
@@ -19,8 +19,8 @@
       ]
     },
     "proporcja": {
-      "kalendarium": 48,
-      "zdjecie": 52
+      "kalendarium": 50,
+      "zdjecie": 50
     },
     "imieniny": true,
     "senior": true
@@ -50,8 +50,8 @@
         "senior": true
       },
       "proporcja": {
-        "kalendarium": 48,
-        "zdjecie": 52
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -60,8 +60,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -69,10 +69,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -83,16 +83,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -108,8 +108,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -117,10 +117,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -131,16 +131,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -156,8 +156,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -165,10 +165,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -179,16 +179,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -204,8 +204,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -213,10 +213,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -227,16 +227,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -252,8 +252,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -261,10 +261,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -275,16 +275,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -300,8 +300,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -309,10 +309,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -323,16 +323,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -348,8 +348,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -357,10 +357,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -371,16 +371,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -396,8 +396,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -405,10 +405,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -419,16 +419,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -444,8 +444,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -453,10 +453,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -467,16 +467,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -492,8 +492,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -501,10 +501,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -515,16 +515,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -540,8 +540,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -549,10 +549,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -563,16 +563,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -588,8 +588,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-top",
           "strefyZdjec": [
@@ -597,10 +597,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 132
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -611,16 +611,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 154,
+            "x": 10,
+            "y": 151,
             "szerokosc": 186,
-            "wysokosc": 131,
+            "wysokosc": 140,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 156,
+              "x": 103,
+              "y": 153,
               "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
@@ -656,8 +656,8 @@
         "senior": true
       },
       "proporcja": {
-        "kalendarium": 48,
-        "zdjecie": 52
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -666,8 +666,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -675,10 +675,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -689,16 +689,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -714,8 +714,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -723,10 +723,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -737,16 +737,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -762,8 +762,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -771,10 +771,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -785,16 +785,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -810,8 +810,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -819,10 +819,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -833,16 +833,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -858,8 +858,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -867,10 +867,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -881,16 +881,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -906,8 +906,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -915,10 +915,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -929,16 +929,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -954,8 +954,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -963,10 +963,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -977,16 +977,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -1002,8 +1002,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -1011,10 +1011,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1025,16 +1025,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -1050,8 +1050,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -1059,10 +1059,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1073,16 +1073,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -1098,8 +1098,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -1107,10 +1107,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1121,16 +1121,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -1146,8 +1146,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -1155,10 +1155,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1169,16 +1169,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -1194,8 +1194,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-left",
           "strefyZdjec": [
@@ -1203,10 +1203,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 12,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 10,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1217,16 +1217,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 103,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 112,
-              "y": 16,
+              "x": 106,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#1E3A8A",
@@ -1261,8 +1261,8 @@
         "senior": true
       },
       "proporcja": {
-        "kalendarium": 48,
-        "zdjecie": 52
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -1271,8 +1271,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1280,10 +1280,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1294,16 +1294,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1319,8 +1319,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1328,10 +1328,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1342,16 +1342,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1367,8 +1367,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1376,10 +1376,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1390,16 +1390,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1415,8 +1415,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1424,10 +1424,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1438,16 +1438,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1463,8 +1463,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1472,10 +1472,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1486,16 +1486,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1511,8 +1511,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1520,10 +1520,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1534,16 +1534,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1559,8 +1559,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1568,10 +1568,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1582,16 +1582,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1607,8 +1607,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1616,10 +1616,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1630,16 +1630,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1655,8 +1655,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1664,10 +1664,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1678,16 +1678,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1703,8 +1703,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1712,10 +1712,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1726,16 +1726,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1751,8 +1751,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1760,10 +1760,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1774,16 +1774,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1799,8 +1799,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "senior-foto-right",
           "strefyZdjec": [
@@ -1808,10 +1808,10 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 109,
-                "y": 12,
-                "szerokosc": 97,
-                "wysokosc": 273
+                "x": 103,
+                "y": 10,
+                "szerokosc": 93,
+                "wysokosc": 281
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -1822,16 +1822,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
-            "szerokosc": 89,
-            "wysokosc": 273,
+            "x": 10,
+            "y": 10,
+            "szerokosc": 93,
+            "wysokosc": 281,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 15,
-              "y": 16,
+              "x": 13,
+              "y": 14,
               "rozmiar": 13,
               "wyrownanie": "left",
               "kolor": "#047857",
@@ -1863,13 +1863,13 @@
         "naglowek": "Fraunces",
         "tekst": "Nunito",
         "rozmiarMiesiac": 13,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true,
         "dense": true
       },
       "proporcja": {
-        "kalendarium": 52,
-        "zdjecie": 48
+        "kalendarium": 54,
+        "zdjecie": 46
       },
       "strony": [
         {
@@ -1878,8 +1878,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -1887,8 +1887,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -1901,16 +1901,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -1926,8 +1926,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -1935,8 +1935,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -1949,16 +1949,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -1974,8 +1974,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -1983,8 +1983,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -1997,16 +1997,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -2022,8 +2022,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -2031,8 +2031,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -2045,16 +2045,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -2070,8 +2070,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -2079,8 +2079,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -2093,16 +2093,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -2118,8 +2118,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -2127,8 +2127,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -2141,16 +2141,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -2166,8 +2166,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -2175,8 +2175,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -2189,16 +2189,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -2214,8 +2214,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -2223,8 +2223,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -2237,16 +2237,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -2262,8 +2262,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -2271,8 +2271,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -2285,16 +2285,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -2310,8 +2310,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -2319,8 +2319,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -2333,16 +2333,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -2358,8 +2358,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -2367,8 +2367,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -2381,16 +2381,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -2406,8 +2406,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kolo",
           "strefyZdjec": [
@@ -2415,8 +2415,8 @@
               "id": "foto",
               "typStrefy": "okrag",
               "pozycja": {
-                "x": 46,
-                "y": 18,
+                "x": 44,
+                "y": 16,
                 "szerokosc": 118,
                 "wysokosc": 118
               },
@@ -2429,16 +2429,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -2469,13 +2469,13 @@
         "naglowek": "EB Garamond",
         "tekst": "Lexend",
         "rozmiarMiesiac": 13,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true,
         "dense": true
       },
       "proporcja": {
-        "kalendarium": 52,
-        "zdjecie": 48
+        "kalendarium": 54,
+        "zdjecie": 46
       },
       "strony": [
         {
@@ -2484,8 +2484,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -2493,8 +2493,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -2513,8 +2513,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -2531,16 +2531,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -2556,8 +2556,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -2565,8 +2565,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -2585,8 +2585,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -2603,16 +2603,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -2628,8 +2628,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -2637,8 +2637,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -2657,8 +2657,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -2675,16 +2675,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -2700,8 +2700,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -2709,8 +2709,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -2729,8 +2729,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -2747,16 +2747,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -2772,8 +2772,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -2781,8 +2781,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -2801,8 +2801,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -2819,16 +2819,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -2844,8 +2844,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -2853,8 +2853,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -2873,8 +2873,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -2891,16 +2891,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -2916,8 +2916,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -2925,8 +2925,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -2945,8 +2945,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -2963,16 +2963,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -2988,8 +2988,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -2997,8 +2997,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -3017,8 +3017,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -3035,16 +3035,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -3060,8 +3060,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -3069,8 +3069,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -3089,8 +3089,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -3107,16 +3107,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -3132,8 +3132,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -3141,8 +3141,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -3161,8 +3161,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -3179,16 +3179,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -3204,8 +3204,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -3213,8 +3213,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -3233,8 +3233,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -3251,16 +3251,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -3276,8 +3276,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-polaroid",
           "strefyZdjec": [
@@ -3285,8 +3285,8 @@
               "id": "foto",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 24,
-                "y": 22,
+                "x": 22,
+                "y": 20,
                 "szerokosc": 88,
                 "wysokosc": 98
               },
@@ -3305,8 +3305,8 @@
               "id": "foto2",
               "typStrefy": "polaroid",
               "pozycja": {
-                "x": 124,
-                "y": 26,
+                "x": 122,
+                "y": 24,
                 "szerokosc": 82,
                 "wysokosc": 92
               },
@@ -3323,16 +3323,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#78350F",
@@ -3364,13 +3364,13 @@
         "naglowek": "Atkinson Hyperlegible",
         "tekst": "Roboto",
         "rozmiarMiesiac": 13,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true,
         "dense": true
       },
       "proporcja": {
-        "kalendarium": 52,
-        "zdjecie": 48
+        "kalendarium": 54,
+        "zdjecie": 46
       },
       "strony": [
         {
@@ -3379,8 +3379,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3388,10 +3388,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3402,16 +3402,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3427,8 +3427,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3436,10 +3436,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3450,16 +3450,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3475,8 +3475,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3484,10 +3484,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3498,16 +3498,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3523,8 +3523,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3532,10 +3532,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3546,16 +3546,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3571,8 +3571,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3580,10 +3580,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3594,16 +3594,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3619,8 +3619,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3628,10 +3628,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3642,16 +3642,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3667,8 +3667,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3676,10 +3676,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3690,16 +3690,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3715,8 +3715,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3724,10 +3724,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3738,16 +3738,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3763,8 +3763,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3772,10 +3772,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3786,16 +3786,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3811,8 +3811,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3820,10 +3820,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3834,16 +3834,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3859,8 +3859,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3868,10 +3868,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3882,16 +3882,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3907,8 +3907,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kontrast",
           "strefyZdjec": [
@@ -3916,10 +3916,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3930,16 +3930,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -3971,13 +3971,13 @@
         "naglowek": "Bebas Neue",
         "tekst": "Lexend",
         "rozmiarMiesiac": 13,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true,
         "dense": true
       },
       "proporcja": {
-        "kalendarium": 52,
-        "zdjecie": 48
+        "kalendarium": 54,
+        "zdjecie": 46
       },
       "strony": [
         {
@@ -3986,8 +3986,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -3995,10 +3995,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4009,16 +4009,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4034,8 +4034,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4043,10 +4043,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4057,16 +4057,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4082,8 +4082,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4091,10 +4091,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4105,16 +4105,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4130,8 +4130,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4139,10 +4139,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4153,16 +4153,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4178,8 +4178,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4187,10 +4187,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4201,16 +4201,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4226,8 +4226,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4235,10 +4235,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4249,16 +4249,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4274,8 +4274,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4283,10 +4283,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4297,16 +4297,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4322,8 +4322,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4331,10 +4331,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4345,16 +4345,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4370,8 +4370,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4379,10 +4379,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4393,16 +4393,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4418,8 +4418,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4427,10 +4427,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4441,16 +4441,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4466,8 +4466,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4475,10 +4475,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4489,16 +4489,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4514,8 +4514,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-kal-gora",
           "strefyZdjec": [
@@ -4523,10 +4523,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 160,
+                "x": 10,
+                "y": 168,
                 "szerokosc": 186,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4537,16 +4537,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 12,
+            "x": 10,
+            "y": 10,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 14,
+              "x": 103,
+              "y": 12,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -4578,13 +4578,13 @@
         "naglowek": "DM Serif Display",
         "tekst": "Open Sans",
         "rozmiarMiesiac": 13,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true,
         "dense": true
       },
       "proporcja": {
-        "kalendarium": 52,
-        "zdjecie": 48
+        "kalendarium": 54,
+        "zdjecie": 46
       },
       "strony": [
         {
@@ -4593,8 +4593,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -4602,10 +4602,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4618,10 +4618,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4632,16 +4632,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -4657,8 +4657,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -4666,10 +4666,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4682,10 +4682,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4696,16 +4696,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -4721,8 +4721,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -4730,10 +4730,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4746,10 +4746,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4760,16 +4760,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -4785,8 +4785,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -4794,10 +4794,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4810,10 +4810,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4824,16 +4824,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -4849,8 +4849,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -4858,10 +4858,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4874,10 +4874,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4888,16 +4888,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -4913,8 +4913,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -4922,10 +4922,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4938,10 +4938,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4952,16 +4952,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -4977,8 +4977,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -4986,10 +4986,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5002,10 +5002,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5016,16 +5016,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -5041,8 +5041,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -5050,10 +5050,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5066,10 +5066,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5080,16 +5080,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -5105,8 +5105,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -5114,10 +5114,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5130,10 +5130,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5144,16 +5144,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -5169,8 +5169,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -5178,10 +5178,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5194,10 +5194,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5208,16 +5208,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -5233,8 +5233,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -5242,10 +5242,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5258,10 +5258,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5272,16 +5272,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -5297,8 +5297,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-duet",
           "strefyZdjec": [
@@ -5306,10 +5306,10 @@
               "id": "foto-a",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5322,10 +5322,10 @@
               "id": "foto-b",
               "typStrefy": "kafelek",
               "pozycja": {
-                "x": 108,
-                "y": 20,
+                "x": 106,
+                "y": 18,
                 "szerokosc": 90,
-                "wysokosc": 119
+                "wysokosc": 117
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5336,16 +5336,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -5377,13 +5377,13 @@
         "naglowek": "Baloo 2",
         "tekst": "Lexend",
         "rozmiarMiesiac": 13,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true,
         "dense": true
       },
       "proporcja": {
-        "kalendarium": 52,
-        "zdjecie": 48
+        "kalendarium": 54,
+        "zdjecie": 46
       },
       "strony": [
         {
@@ -5392,8 +5392,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5401,10 +5401,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5415,16 +5415,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5440,8 +5440,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5449,10 +5449,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5463,16 +5463,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5488,8 +5488,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5497,10 +5497,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5511,16 +5511,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5536,8 +5536,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5545,10 +5545,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5559,16 +5559,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5584,8 +5584,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5593,10 +5593,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5607,16 +5607,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5632,8 +5632,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5641,10 +5641,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5655,16 +5655,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5680,8 +5680,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5689,10 +5689,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5703,16 +5703,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5728,8 +5728,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5737,10 +5737,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5751,16 +5751,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5776,8 +5776,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5785,10 +5785,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5799,16 +5799,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5824,8 +5824,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5833,10 +5833,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5847,16 +5847,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5872,8 +5872,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5881,10 +5881,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5895,16 +5895,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5920,8 +5920,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-luk",
           "strefyZdjec": [
@@ -5929,10 +5929,10 @@
               "id": "foto",
               "typStrefy": "luk",
               "pozycja": {
-                "x": 20,
-                "y": 16,
+                "x": 18,
+                "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 123
+                "wysokosc": 121
               },
               "maska": "luk",
               "obrot": 0,
@@ -5943,16 +5943,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#BE123C",
@@ -5984,13 +5984,13 @@
         "naglowek": "Libre Baskerville",
         "tekst": "Spectral",
         "rozmiarMiesiac": 13,
-        "rozmiarDzien": 12,
+        "rozmiarDzien": 14,
         "senior": true,
         "dense": true
       },
       "proporcja": {
-        "kalendarium": 52,
-        "zdjecie": 48
+        "kalendarium": 54,
+        "zdjecie": 46
       },
       "strony": [
         {
@@ -5999,8 +5999,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6008,10 +6008,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6022,16 +6022,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6047,8 +6047,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6056,10 +6056,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6070,16 +6070,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6095,8 +6095,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6104,10 +6104,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6118,16 +6118,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6143,8 +6143,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6152,10 +6152,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6166,16 +6166,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6191,8 +6191,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6200,10 +6200,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6214,16 +6214,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6239,8 +6239,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6248,10 +6248,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6262,16 +6262,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6287,8 +6287,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6296,10 +6296,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6310,16 +6310,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6335,8 +6335,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6344,10 +6344,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6358,16 +6358,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6383,8 +6383,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6392,10 +6392,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6406,16 +6406,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6431,8 +6431,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6440,10 +6440,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6454,16 +6454,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6479,8 +6479,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6488,10 +6488,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6502,16 +6502,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",
@@ -6527,8 +6527,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 54,
+            "zdjecie": 46
           },
           "uklad": "senior-zlota-rama",
           "strefyZdjec": [
@@ -6536,10 +6536,10 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 12,
-                "y": 20,
+                "x": 10,
+                "y": 18,
                 "szerokosc": 186,
-                "wysokosc": 121
+                "wysokosc": 119
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6550,16 +6550,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
-            "y": 143,
+            "x": 10,
+            "y": 139,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 152,
             "uklad": "senior"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 105,
-              "y": 145,
+              "x": 103,
+              "y": 141,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#B45309",

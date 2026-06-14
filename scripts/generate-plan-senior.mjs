@@ -1,6 +1,6 @@
 /**
  * 10 zróżnicowanych kalendarzy dla babci i dziadka
- * SEN-01…03: 48% kalendarz · SEN-04…10: 52% kalendarz (więcej miejsca na cyfry + imieniny)
+ * SEN-01…03: 50% kalendarz · SEN-04…10: 54% kalendarz
  * node scripts/generate-plan-senior.mjs
  */
 
@@ -16,10 +16,10 @@ const MIESIACE = [
   'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień',
 ];
 
-const M = 12, W = 186, H = 273;
+const M = 10, W = 186, H = 281;
 
-const PROP_STD = { kalendarium: 48, zdjecie: 52 };
-const PROP_CAL = { kalendarium: 52, zdjecie: 48 };
+const PROP_STD = { kalendarium: 50, zdjecie: 50 };
+const PROP_CAL = { kalendarium: 54, zdjecie: 46 };
 
 function makeZones(prop) {
   const ph = Math.round(H * prop.zdjecie / 100);
@@ -132,7 +132,7 @@ const DEFINICJE = [
     opis: 'Okrągłe zdjęcie ogrodu u góry — przestronny kalendarz z imieninami.',
     tagi: ['senior', 'babcia', 'ogród'],
     paleta: { tlo: '#F0FDF4', akcent: '#166534', tekst: '#14532D' },
-    typografia: { naglowek: 'Fraunces', tekst: 'Nunito', rozmiarMiesiac: 13, rozmiarDzien: 12, senior: true, dense: true },
+    typografia: { naglowek: 'Fraunces', tekst: 'Nunito', rozmiarMiesiac: 13, rozmiarDzien: 14, senior: true, dense: true },
     proporcja: PROP_CAL,
     layout: {
       ukladMiesiac: 'senior-kolo',
@@ -149,7 +149,7 @@ const DEFINICJE = [
     opis: 'Dwa polaroidy — spokojny układ z czytelnym kalendarzem.',
     tagi: ['senior', 'dziadek'],
     paleta: { tlo: '#FAF6F0', akcent: '#78350F', tekst: '#292524' },
-    typografia: { naglowek: 'EB Garamond', tekst: 'Lexend', rozmiarMiesiac: 13, rozmiarDzien: 12, senior: true, dense: true },
+    typografia: { naglowek: 'EB Garamond', tekst: 'Lexend', rozmiarMiesiac: 13, rozmiarDzien: 14, senior: true, dense: true },
     proporcja: PROP_CAL,
     layout: {
       ukladMiesiac: 'senior-polaroid',
@@ -174,7 +174,7 @@ const DEFINICJE = [
     opis: 'Czarno-białe zdjęcie — maksymalna czytelność cyfr i imienin.',
     tagi: ['senior', 'kontrast', 'wcag'],
     paleta: { tlo: '#FFFFFF', akcent: '#000000', tekst: '#000000' },
-    typografia: { naglowek: 'Atkinson Hyperlegible', tekst: 'Roboto', rozmiarMiesiac: 13, rozmiarDzien: 12, senior: true, dense: true },
+    typografia: { naglowek: 'Atkinson Hyperlegible', tekst: 'Roboto', rozmiarMiesiac: 13, rozmiarDzien: 14, senior: true, dense: true },
     proporcja: PROP_CAL,
     layout: {
       ukladMiesiac: 'senior-kontrast',
@@ -188,7 +188,7 @@ const DEFINICJE = [
     opis: 'Kalendarz u góry, zdjęcie u dołu — żółto-czarny kontrast.',
     tagi: ['senior', 'kontrast', 'widoczność'],
     paleta: { tlo: '#FEF9C3', akcent: '#000000', tekst: '#000000' },
-    typografia: { naglowek: 'Bebas Neue', tekst: 'Lexend', rozmiarMiesiac: 13, rozmiarDzien: 12, senior: true, dense: true },
+    typografia: { naglowek: 'Bebas Neue', tekst: 'Lexend', rozmiarMiesiac: 13, rozmiarDzien: 14, senior: true, dense: true },
     proporcja: PROP_CAL,
     layout: {
       ukladMiesiac: 'senior-kal-gora',
@@ -202,7 +202,7 @@ const DEFINICJE = [
     opis: 'Duet zdjęć wnuków u góry — łagodny błękit, czytelny kalendarz.',
     tagi: ['senior', 'babcia', 'wnuki'],
     paleta: { tlo: '#EFF6FF', akcent: '#1D4ED8', tekst: '#1E3A8A' },
-    typografia: { naglowek: 'DM Serif Display', tekst: 'Open Sans', rozmiarMiesiac: 13, rozmiarDzien: 12, senior: true, dense: true },
+    typografia: { naglowek: 'DM Serif Display', tekst: 'Open Sans', rozmiarMiesiac: 13, rozmiarDzien: 14, senior: true, dense: true },
     proporcja: PROP_CAL,
     layout: {
       ukladMiesiac: 'senior-duet',
@@ -219,7 +219,7 @@ const DEFINICJE = [
     opis: 'Łuk katedralny nad kalendarzem — dużo miejsca na zdjęcie wnuków.',
     tagi: ['senior', 'wnuki', 'prezent'],
     paleta: { tlo: '#FFF1F2', akcent: '#BE123C', tekst: '#4C0519' },
-    typografia: { naglowek: 'Baloo 2', tekst: 'Lexend', rozmiarMiesiac: 13, rozmiarDzien: 12, senior: true, dense: true },
+    typografia: { naglowek: 'Baloo 2', tekst: 'Lexend', rozmiarMiesiac: 13, rozmiarDzien: 14, senior: true, dense: true },
     proporcja: PROP_CAL,
     layout: {
       ukladMiesiac: 'senior-luk',
@@ -236,7 +236,7 @@ const DEFINICJE = [
     opis: 'Jesienne zdjęcie — elegancki kalendarz z imieninami.',
     tagi: ['senior', 'dziadek', 'jesień'],
     paleta: { tlo: '#FFFBEB', akcent: '#B45309', tekst: '#451A03' },
-    typografia: { naglowek: 'Libre Baskerville', tekst: 'Spectral', rozmiarMiesiac: 13, rozmiarDzien: 12, senior: true, dense: true },
+    typografia: { naglowek: 'Libre Baskerville', tekst: 'Spectral', rozmiarMiesiac: 13, rozmiarDzien: 14, senior: true, dense: true },
     proporcja: PROP_CAL,
     layout: {
       ukladMiesiac: 'senior-zlota-rama',
@@ -264,7 +264,7 @@ const plan = {
   meta: {
     rokDomyslny: 2026,
     liczbaSzablonow: kalendaria.length,
-    opis: '10 kalendarzy senior — SEN-01…03: 48/52 · SEN-04…10: 52/48 (kalendarz/zdjęcie)',
+    opis: '10 kalendarzy senior — SEN-01…03: 50/50 · SEN-04…10: 54/46 (kalendarz/zdjęcie)',
   },
   formatWspolny: {
     szerokosc: 210,
