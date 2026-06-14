@@ -58,7 +58,7 @@ export function PrintCalendarGrid({
   const fittedDaySize = fitDayFontSize(dayFontSize, area, showImieniny, senior);
   const isCompact = compact || area.szerokosc < 95;
   const isSidebar = isSidebarCalendarZone(area);
-  const imieninyMaxLen = fitImieninyMaxLen(area);
+  const imieninyMaxLen = fitImieninyMaxLen(area, senior);
 
   const firstDay = new Date(year, monthIndex, 1);
   const startOffset = (firstDay.getDay() + 6) % 7;
@@ -88,6 +88,7 @@ export function PrintCalendarGrid({
         isSidebar && 'print-cal--sidebar',
         showImieniny && imieninyMaxLen > 0 && 'print-cal--imieniny',
         senior && 'print-cal--senior',
+        senior && area.szerokosc < 130 && 'print-cal--senior-side',
         embedded && 'print-cal--embedded',
       ].filter(Boolean).join(' ')}
       style={{

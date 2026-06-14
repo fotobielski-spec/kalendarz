@@ -182,65 +182,122 @@
   padding: calc(0.3 * 100cqw / var(--zone-w-mm, 74)) 0 0;
 }
 
-/* Senior — bardzo duże, czytelne cyfry dla babci i dziadka */
+/* Senior — duże cyfry + imieniny dla babci i dziadka */
 .print-cal--senior {
-  padding: calc(3 * 100cqw / var(--zone-w-mm, 186));
+  padding: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  overflow: visible;
 }
 
 .print-cal--senior .print-cal__title {
-  margin-bottom: calc(3 * 100cqw / var(--zone-w-mm, 186));
+  flex-direction: column;
+  align-items: center;
+  gap: calc(1 * 100cqw / var(--zone-w-mm, 186));
+  margin-bottom: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  line-height: 1.15;
+}
+
+.print-cal--senior .print-cal__title-month {
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
 }
 
 .print-cal--senior .print-cal__title-year {
-  font-size: 0.65em;
+  font-size: 0.55em;
   font-weight: 600;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .print-cal--senior .print-cal__labels {
-  margin-bottom: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  margin-bottom: calc(1.5 * 100cqw / var(--zone-w-mm, 186));
 }
 
 .print-cal--senior .print-cal__label {
-  font-size: calc(var(--day-size, 18) * 0.78 * 100cqw / var(--zone-w-mm, 186));
-  font-weight: 800;
-  letter-spacing: 0.04em;
+  font-size: calc(var(--day-size, 15) * 0.7 * 100cqw / var(--zone-w-mm, 186));
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .print-cal--senior .print-cal__grid {
-  border: calc(1.2 * 100cqw / var(--zone-w-mm, 186)) solid color-mix(in srgb, var(--accent, currentColor) 35%, transparent);
+  border: calc(0.8 * 100cqw / var(--zone-w-mm, 186)) solid color-mix(in srgb, var(--accent, currentColor) 30%, transparent);
   border-radius: calc(2 * 100cqw / var(--zone-w-mm, 186));
 }
 
 .print-cal--senior .print-cal__cell {
-  justify-content: center;
-  padding: calc(1 * 100cqw / var(--zone-w-mm, 186));
-  border: calc(0.6 * 100cqw / var(--zone-w-mm, 186)) solid color-mix(in srgb, currentColor 12%, transparent);
+  justify-content: flex-start;
+  align-items: center;
+  padding: calc(0.4 * 100cqw / var(--zone-w-mm, 186)) calc(0.3 * 100cqw / var(--zone-w-mm, 186)) 0;
+  border: calc(0.4 * 100cqw / var(--zone-w-mm, 186)) solid color-mix(in srgb, currentColor 10%, transparent);
   box-sizing: border-box;
+  gap: calc(0.3 * 100cqw / var(--zone-w-mm, 186));
 }
 
 .print-cal--senior .print-cal__day-num {
-  font-size: calc(var(--day-size, 18) * 1.08 * 100cqw / var(--zone-w-mm, 186));
+  font-size: calc(var(--day-size, 15) * 100cqw / var(--zone-w-mm, 186));
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1;
+}
+
+.print-cal--senior .print-cal__imieniny {
+  font-size: calc(var(--day-size, 15) * 0.52 * 100cqw / var(--zone-w-mm, 186));
+  font-weight: 500;
+  line-height: 1.05;
+  opacity: 0.75;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.print-cal--senior.print-cal--imieniny .print-cal__cell {
+  justify-content: flex-start;
 }
 
 .print-cal--senior .print-cal__cell--muted {
-  opacity: 0.08;
+  opacity: 0.1;
 }
 
 .print-cal--senior .print-cal__cell--weekend .print-cal__day-num {
-  opacity: 1;
+  opacity: 0.85;
   font-weight: 700;
 }
 
 .print-cal--senior .print-cal__cell--today {
-  background: color-mix(in srgb, var(--accent, #6366f1) 28%, transparent);
-  border: calc(1.2 * 100cqw / var(--zone-w-mm, 186)) solid var(--accent, #6366f1);
-  border-radius: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  background: color-mix(in srgb, var(--accent, #6366f1) 22%, transparent);
+  border-color: var(--accent, #6366f1);
+  border-width: calc(0.8 * 100cqw / var(--zone-w-mm, 186));
+  border-radius: calc(1.5 * 100cqw / var(--zone-w-mm, 186));
 }
 
 .print-cal--senior .print-cal__cell--today .print-cal__day-num {
   font-weight: 900;
-  font-size: calc(var(--day-size, 18) * 1.15 * 100cqw / var(--zone-w-mm, 186));
+  color: var(--accent, #6366f1);
+}
+
+.print-cal--senior .print-cal__cell--today .print-cal__imieniny {
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+/* Senior — wąska kolumna (foto lewo / prawo) */
+.print-cal--senior-side .print-cal__title {
+  align-items: flex-start;
+  padding-left: calc(1 * 100cqw / var(--zone-w-mm, 112));
+}
+
+.print-cal--senior-side .print-cal__day-num {
+  font-size: calc(var(--day-size, 14) * 0.95 * 100cqw / var(--zone-w-mm, 112));
+}
+
+.print-cal--senior-side .print-cal__imieniny {
+  font-size: calc(var(--day-size, 14) * 0.48 * 100cqw / var(--zone-w-mm, 112));
+}
+
+.print-cal--senior-side .print-cal__label {
+  font-size: calc(var(--day-size, 14) * 0.62 * 100cqw / var(--zone-w-mm, 112));
+  letter-spacing: 0;
 }

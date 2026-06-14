@@ -83,7 +83,7 @@ export function MonthPagePreview({
     backgroundColor: calBg,
     headingFont,
     bodyFont,
-    showImieniny: !isSenior,
+    showImieniny: true,
     senior: isSenior,
     monthTitle: {
       monthName: 'Styczeń',

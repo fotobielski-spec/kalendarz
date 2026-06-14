@@ -65,7 +65,15 @@ export const UKLAD_LABELS: Record<string, string> = {
   'planer-foto-left': 'Planer — foto lewo 60%',
   'planer-foto-right': 'Planer — foto prawo 60%',
   'senior-foto-top': 'Senior — foto góra · duże cyfry',
+  'senior-foto-left': 'Senior — foto lewo · kalendarz prawo',
+  'senior-foto-right': 'Senior — kalendarz lewo · foto prawo',
+  'senior-kolo': 'Senior — okrągłe zdjęcie',
+  'senior-polaroid': 'Senior — polaroidy',
   'senior-kontrast': 'Senior — kontrast MAX',
+  'senior-kal-gora': 'Senior — kalendarz u góry',
+  'senior-duet': 'Senior — duet zdjęć',
+  'senior-luk': 'Senior — łuk katedralny',
+  'senior-zlota-rama': 'Senior — złota rama',
   'senior-zolty': 'Senior — żółto-czarny',
 };
 
@@ -80,6 +88,9 @@ export function getLayoutOrientation(uklad: string): LayoutOrientation {
   if (uklad.startsWith('planer-foto-left')) return 'horizontal-left';
   if (uklad.startsWith('planer-foto-right')) return 'horizontal-right';
   if (uklad.startsWith('planer-foto-top')) return 'vertical-top';
+  if (uklad.startsWith('senior-foto-left')) return 'horizontal-left';
+  if (uklad.startsWith('senior-foto-right')) return 'horizontal-right';
+  if (uklad.startsWith('senior-kal-gora')) return 'vertical-bottom';
   if (uklad.startsWith('senior-')) return 'vertical-top';
   if (uklad.includes('left') || uklad === 'vogue-left-60') return 'horizontal-left';
   if (uklad.includes('bottom') || uklad === 'cal-top-photo-bottom-60') return 'vertical-bottom';

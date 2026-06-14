@@ -63,7 +63,10 @@ export function fitDayFontSize(
   senior = false,
 ): number {
   if (senior) {
-    return Math.max(14, baseSize);
+    const isNarrow = cal.szerokosc < 120;
+    let size = baseSize;
+    if (hasImieniny) size -= isNarrow ? 2 : 1.5;
+    return Math.max(11, Math.min(size, isNarrow ? 15 : 17));
   }
 
   const isNarrow = cal.szerokosc < 95;
@@ -85,8 +88,13 @@ export function fitDayFontSize(
 }
 
 /** Maks. długość skrótu imienin w komórce */
-export function fitImieninyMaxLen(cal: StrefaKalendarza): number {
+export function fitImieninyMaxLen(cal: StrefaKalendarza, senior = false): number {
   const cellW = cal.szerokosc / 7;
+  if (senior) {
+    if (cellW < 14) return 7;
+    if (cellW < 18) return 9;
+    return 12;
+  }
   if (cal.szerokosc < 58) return 0;
   if (cal.szerokosc < 80) return 6;
   if (cellW < 14) return 7;
