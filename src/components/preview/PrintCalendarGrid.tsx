@@ -169,9 +169,12 @@ export function PrintCalendarGrid({
                 .join(' ')}
             >
               <span className="print-cal__day-num">{d.day ?? ''}</span>
-              {showImieniny && d.isCurrentMonth && d.imieniny && (
-                <span className="print-cal__imieniny" title={d.imieninyFull || d.imieniny}>
-                  {d.imieniny}
+              {showImieniny && d.isCurrentMonth && (
+                <span
+                  className="print-cal__imieniny"
+                  title={d.imieninyFull || d.imieniny || undefined}
+                >
+                  {d.imieniny || ''}
                 </span>
               )}
             </div>
