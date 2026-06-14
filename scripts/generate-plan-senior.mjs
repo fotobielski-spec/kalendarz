@@ -1,6 +1,6 @@
 /**
  * 10 zróżnicowanych kalendarzy dla babci i dziadka
- * Duże cyfry + imieniny · 42% kalendarium / 58% zdjęcie
+ * Duże cyfry + imieniny · 48% kalendarium / 52% zdjęcie
  * node scripts/generate-plan-senior.mjs
  */
 
@@ -17,12 +17,12 @@ const MIESIACE = [
 ];
 
 const M = 12, W = 186, H = 273;
-const PH = Math.round(H * 0.58);  // 158 — strefa zdjęcia
-const CH = H - PH;                // 115 — strefa kalendarza
-const PW = Math.round(W * 0.58);  // 108 — zdjęcie w układzie poziomym
-const CW = W - PW;                // 78  — kalendarz w układzie poziomym
+const PH = Math.round(H * 0.52);  // 142 — strefa zdjęcia
+const CH = H - PH;                // 131 — strefa kalendarza
+const PW = Math.round(W * 0.52);  // 97 — zdjęcie w układzie poziomym
+const CW = W - PW;                // 84  — kalendarz w układzie poziomym
 
-const PROP = { kalendarium: 42, zdjecie: 58 };
+const PROP = { kalendarium: 48, zdjecie: 52 };
 
 function zone(id, typ, x, y, w, h, opts = {}) {
   return {
@@ -249,7 +249,7 @@ const plan = {
   meta: {
     rokDomyslny: 2026,
     liczbaSzablonow: kalendaria.length,
-    opis: '10 kalendarzy senior — duże cyfry + imieniny · 42/58 (kalendarz/zdjęcie)',
+    opis: '10 kalendarzy senior — duże cyfry + imieniny · 45/55 (kalendarz/zdjęcie)',
   },
   formatWspolny: {
     szerokosc: 210,

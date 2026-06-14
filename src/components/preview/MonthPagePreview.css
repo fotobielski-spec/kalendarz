@@ -169,18 +169,27 @@
   background: linear-gradient(145deg, #ede9fe, #f5f5f4);
 }
 
+.month-preview--focus {
+  width: 100%;
+  max-width: min(92vw, 720px);
+  align-self: center;
+}
+
 .month-preview--focus .month-preview__page-wrap {
   padding: 1.5rem;
   background: linear-gradient(145deg, #dbeafe, #f1f5f9);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .month-preview--focus .month-preview__page {
-  max-width: min(92vw, 680px);
+  width: 100%;
+  max-width: 100%;
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 900px) {
-  .month-preview--focus .month-preview__page {
+  .month-preview--focus {
     max-width: min(85vw, 720px);
   }
 }

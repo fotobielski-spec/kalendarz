@@ -1,5 +1,5 @@
 import type { StrefaKalendarza } from '../../types/plan';
-import { formatImieninyShort, getImieniny } from '../../utils/imieniny';
+import { formatImieninyShort, getImieniny, normalizeImieninyName } from '../../utils/imieniny';
 import { fitDayFontSize, fitImieninyMaxLen } from '../../utils/typographyFit';
 import { getDayLabels, isSidebarCalendarZone, mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import './PrintCalendarGrid.css';
@@ -58,7 +58,7 @@ export function PrintCalendarGrid({
   const fittedDaySize = fitDayFontSize(dayFontSize, area, showImieniny, senior);
   const isCompact = compact || area.szerokosc < 95;
   const isSidebar = isSidebarCalendarZone(area);
-  const isSeniorShort = senior && area.wysokosc < 120;
+  const isSeniorShort = senior && area.wysokosc < 130;
   const imieninyMaxLen = fitImieninyMaxLen(area, senior);
   /** Skala imienin względem wysokości wiersza (krótka strefa kalendarza) */
   const seniorRowHmm = senior ? Math.max(12, (area.wysokosc - 14) / 6) : 0;
@@ -80,8 +80,10 @@ export function PrintCalendarGrid({
       day: isCurrentMonth ? d : null,
       isCurrentMonth,
       isWeekend: dow === 0 || dow === 6,
-      imieniny: isCurrentMonth && imieninyMaxLen > 0
-        ? formatImieninyShort(monthIndex + 1, d, imieninyMaxLen, senior)
+      imieniny: isCurrentMonth
+        ? (senior
+          ? normalizeImieninyName(getImieniny(monthIndex + 1, d)[0] ?? '')
+          : (imieninyMaxLen > 0 ? formatImieninyShort(monthIndex + 1, d, imieninyMaxLen, false) : ''))
         : '',
       imieninyFull: isCurrentMonth ? getImieniny(monthIndex + 1, d).join(', ') : '',
     };
@@ -169,12 +171,12 @@ export function PrintCalendarGrid({
                 .join(' ')}
             >
               <span className="print-cal__day-num">{d.day ?? ''}</span>
-              {showImieniny && d.isCurrentMonth && (
+              {showImieniny && d.isCurrentMonth && d.day != null && (
                 <span
-                  className="print-cal__imieniny"
+                  className={['print-cal__imieniny', senior && 'print-cal__imieniny--senior'].filter(Boolean).join(' ')}
                   title={d.imieninyFull || d.imieniny || undefined}
                 >
-                  {d.imieniny || ''}
+                  {d.imieniny}
                 </span>
               )}
             </div>
