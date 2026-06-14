@@ -1,0 +1,25 @@
+.radial-cal {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.radial-cal__day {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7px;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.radial-cal__inner {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
