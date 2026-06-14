@@ -2,7 +2,7 @@
   "meta": {
     "rokDomyslny": 2026,
     "liczbaSzablonow": 10,
-    "opis": "10 zróżnicowanych kalendarzy „Trzy kalendarze” — unikalne układy strony i kompozycje 3 miesięcy"
+    "opis": "10 kalendarzy „Trzy kalendarze” — 50/50 zdjęcie i kalendarium"
   },
   "formatWspolny": {
     "szerokosc": 210,
@@ -19,8 +19,8 @@
       ]
     },
     "proporcja": {
-      "kalendarium": 58,
-      "zdjecie": 42
+      "kalendarium": 50,
+      "zdjecie": 50
     },
     "imieniny": true,
     "trojka": true
@@ -31,7 +31,7 @@
       "nazwa": "Złoty Tryptyk",
       "kategoria": "klasyczny",
       "kolekcja": "trojka",
-      "opis": "Panorama u góry, trzy miesiące w jednym rzędzie — klasyczny układ z wyraźnym środkiem.",
+      "opis": "Panorama u góry (50%), trzy miesiące w rzędzie na dole — klasyczny tryptyk.",
       "tagi": [
         "trojka",
         "rząd",
@@ -50,8 +50,8 @@
         "trojka": true
       },
       "proporcja": {
-        "kalendarium": 55,
-        "zdjecie": 45
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -60,8 +60,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -72,7 +72,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -84,16 +84,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -104,7 +104,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -118,8 +118,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -130,7 +130,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -142,16 +142,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -162,7 +162,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -176,8 +176,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -188,7 +188,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -200,16 +200,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -220,7 +220,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -234,8 +234,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -246,7 +246,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -258,16 +258,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -278,7 +278,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -292,8 +292,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -304,7 +304,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -316,16 +316,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -336,7 +336,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -350,8 +350,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -362,7 +362,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -374,16 +374,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -394,7 +394,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -408,8 +408,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -420,7 +420,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -432,16 +432,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -452,7 +452,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -466,8 +466,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -478,7 +478,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -490,16 +490,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -510,7 +510,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -524,8 +524,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -536,7 +536,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -548,16 +548,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -568,7 +568,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -582,8 +582,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -594,7 +594,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -606,16 +606,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -626,7 +626,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -640,8 +640,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -652,7 +652,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -664,16 +664,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -684,7 +684,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -698,8 +698,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-panorama-rzad",
           "strefyZdjec": [
@@ -710,7 +710,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -722,16 +722,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-zlota-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#B8860B",
@@ -742,7 +742,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 134,
+              "y": 148,
               "szerokosc": 186,
               "kolor": "#B8860B",
               "grubosc": 2
@@ -757,7 +757,7 @@
       "nazwa": "Vogue Filar",
       "kategoria": "editorial",
       "kolekcja": "trojka",
-      "opis": "Portret na całą lewą połowę — kalendarz po prawej: duży środek + dwa mniejsze u góry i dołu.",
+      "opis": "Portret lewa połowa (50%) — kalendarz prawa połowa: filar z trzema miesiącami.",
       "tagi": [
         "trojka",
         "filar",
@@ -776,8 +776,8 @@
         "trojka": true
       },
       "proporcja": {
-        "kalendarium": 48,
-        "zdjecie": 52
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -786,8 +786,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -797,7 +797,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -809,16 +809,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -829,7 +829,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -844,8 +844,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -855,7 +855,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -867,16 +867,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -887,7 +887,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -902,8 +902,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -913,7 +913,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -925,16 +925,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -945,7 +945,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -960,8 +960,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -971,7 +971,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -983,16 +983,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -1003,7 +1003,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -1018,8 +1018,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -1029,7 +1029,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -1041,16 +1041,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -1061,7 +1061,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -1076,8 +1076,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -1087,7 +1087,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -1099,16 +1099,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -1119,7 +1119,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -1134,8 +1134,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -1145,7 +1145,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -1157,16 +1157,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -1177,7 +1177,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -1192,8 +1192,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -1203,7 +1203,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -1215,16 +1215,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -1235,7 +1235,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -1250,8 +1250,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -1261,7 +1261,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -1273,16 +1273,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -1293,7 +1293,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -1308,8 +1308,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -1319,7 +1319,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -1331,16 +1331,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -1351,7 +1351,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -1366,8 +1366,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -1377,7 +1377,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -1389,16 +1389,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -1409,7 +1409,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -1424,8 +1424,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 48,
-            "zdjecie": 52
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-vogue-filar",
           "strefyZdjec": [
@@ -1435,7 +1435,7 @@
               "pozycja": {
                 "x": 12,
                 "y": 12,
-                "szerokosc": 97,
+                "szerokosc": 93,
                 "wysokosc": 273
               },
               "maska": "prostokat",
@@ -1447,16 +1447,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 109,
+            "x": 105,
             "y": 12,
-            "szerokosc": 89,
+            "szerokosc": 93,
             "wysokosc": 273,
             "uklad": "trojka",
             "tripleTyp": "trojka-editorial-filar"
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 153.5,
+              "x": 151.5,
               "y": 14,
               "rozmiar": 11,
               "wyrownanie": "center",
@@ -1467,7 +1467,7 @@
           "dekoracje": [
             {
               "typ": "linia-pionowa",
-              "x": 109,
+              "x": 105,
               "y": 12,
               "wysokosc": 273,
               "kolor": "#1A1A2E",
@@ -1483,7 +1483,7 @@
       "nazwa": "Piramida Czasu",
       "kategoria": "romantyczny",
       "kolekcja": "trojka",
-      "opis": "Łuk nad stroną — duży bieżący miesiąc na górze, grudzień i luty obok siebie pod spodem.",
+      "opis": "Łuk u góry (50%) — duży styczeń na górze kalendarza, grudzień i luty pod spodem.",
       "tagi": [
         "trojka",
         "piramida",
@@ -1502,8 +1502,8 @@
         "trojka": true
       },
       "proporcja": {
-        "kalendarium": 62,
-        "zdjecie": 38
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -1512,8 +1512,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -1524,7 +1524,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -1536,16 +1536,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -1561,8 +1561,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -1573,7 +1573,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -1585,16 +1585,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -1610,8 +1610,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -1622,7 +1622,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -1634,16 +1634,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -1659,8 +1659,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -1671,7 +1671,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -1683,16 +1683,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -1708,8 +1708,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -1720,7 +1720,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -1732,16 +1732,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -1757,8 +1757,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -1769,7 +1769,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -1781,16 +1781,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -1806,8 +1806,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -1818,7 +1818,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -1830,16 +1830,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -1855,8 +1855,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -1867,7 +1867,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -1879,16 +1879,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -1904,8 +1904,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -1916,7 +1916,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -1928,16 +1928,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -1953,8 +1953,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -1965,7 +1965,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -1977,16 +1977,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -2002,8 +2002,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -2014,7 +2014,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -2026,16 +2026,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -2051,8 +2051,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-luk-piramida",
           "strefyZdjec": [
@@ -2063,7 +2063,7 @@
                 "x": 20,
                 "y": 14,
                 "szerokosc": 170,
-                "wysokosc": 100
+                "wysokosc": 133
               },
               "maska": "luk",
               "obrot": 0,
@@ -2075,16 +2075,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-romantyk-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#9F1239",
@@ -2101,7 +2101,7 @@
       "nazwa": "Nordycka Taśma",
       "kategoria": "minimal",
       "kolekcja": "trojka",
-      "opis": "Kalendarze dominują (70%) — wąskie skrajne miesiące, szeroki środek z imieninami. Zdjęcie jako cienki pas u dołu.",
+      "opis": "Kalendarz u góry (50%), zdjęcie u dołu (50%) — nordycka taśma trzech miesięcy.",
       "tagi": [
         "trojka",
         "taśma",
@@ -2120,8 +2120,8 @@
         "trojka": true
       },
       "proporcja": {
-        "kalendarium": 70,
-        "zdjecie": 30
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -2130,8 +2130,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2139,16 +2139,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2156,7 +2156,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2179,8 +2179,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2188,16 +2188,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2205,7 +2205,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2228,8 +2228,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2237,16 +2237,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2254,7 +2254,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2277,8 +2277,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2286,16 +2286,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2303,7 +2303,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2326,8 +2326,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2335,16 +2335,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2352,7 +2352,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2375,8 +2375,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2384,16 +2384,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2401,7 +2401,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2424,8 +2424,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2433,16 +2433,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2450,7 +2450,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2473,8 +2473,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2482,16 +2482,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2499,7 +2499,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2522,8 +2522,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2531,16 +2531,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2548,7 +2548,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2571,8 +2571,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2580,16 +2580,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2597,7 +2597,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2620,8 +2620,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2629,16 +2629,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2646,7 +2646,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2669,8 +2669,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 70,
-            "zdjecie": 30
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-nord-tasma",
           "strefyZdjec": [
@@ -2678,16 +2678,16 @@
               "id": "foto",
               "typStrefy": "hero",
               "pozycja": {
-                "x": 36,
-                "y": 207,
-                "szerokosc": 138,
-                "wysokosc": 76
+                "x": 12,
+                "y": 152,
+                "szerokosc": 186,
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Wąski pas zdjęcia — minimalizm skandynawski",
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
               "wymagane": true
             }
           ],
@@ -2695,7 +2695,7 @@
             "x": 12,
             "y": 12,
             "szerokosc": 186,
-            "wysokosc": 191,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-nord-tasma"
           },
@@ -2719,7 +2719,7 @@
       "nazwa": "Art Deco Scena",
       "kategoria": "deco",
       "kolekcja": "trojka",
-      "opis": "Portret w ramie deco u góry — piramida: styczeń wielki na scenie, grudzień i luty w kulisach.",
+      "opis": "Portret w ramie deco u góry (50%) — piramida miesięcy na dole.",
       "tagi": [
         "trojka",
         "deco",
@@ -2738,8 +2738,8 @@
         "trojka": true
       },
       "proporcja": {
-        "kalendarium": 55,
-        "zdjecie": 45
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -2748,8 +2748,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -2760,7 +2760,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -2775,16 +2775,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -2797,7 +2797,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -2810,8 +2810,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -2822,7 +2822,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -2837,16 +2837,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -2859,7 +2859,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -2872,8 +2872,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -2884,7 +2884,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -2899,16 +2899,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -2921,7 +2921,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -2934,8 +2934,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -2946,7 +2946,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -2961,16 +2961,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -2983,7 +2983,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -2996,8 +2996,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -3008,7 +3008,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3023,16 +3023,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -3045,7 +3045,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -3058,8 +3058,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -3070,7 +3070,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3085,16 +3085,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -3107,7 +3107,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -3120,8 +3120,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -3132,7 +3132,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3147,16 +3147,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -3169,7 +3169,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -3182,8 +3182,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -3194,7 +3194,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3209,16 +3209,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -3231,7 +3231,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -3244,8 +3244,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -3256,7 +3256,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3271,16 +3271,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -3293,7 +3293,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -3306,8 +3306,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -3318,7 +3318,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3333,16 +3333,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -3355,7 +3355,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -3368,8 +3368,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -3380,7 +3380,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3395,16 +3395,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -3417,7 +3417,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -3430,8 +3430,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-deco-scena",
           "strefyZdjec": [
@@ -3442,7 +3442,7 @@
                 "x": 26,
                 "y": 18,
                 "szerokosc": 158,
-                "wysokosc": 113
+                "wysokosc": 127
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -3457,16 +3457,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-deco-piramida"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1C1917",
@@ -3479,7 +3479,7 @@
               "x": 18,
               "y": 16,
               "szerokosc": 174,
-              "wysokosc": 123,
+              "wysokosc": 137,
               "kolor": "#1C1917",
               "grubosc": 0.8
             }
@@ -3493,7 +3493,7 @@
       "nazwa": "Pastelowe Rogi",
       "kategoria": "pastel",
       "kolekcja": "trojka",
-      "opis": "Okrągłe zdjęcie u góry — grudzień i luty w rogach, styczeń z imieninami na szerokim dole.",
+      "opis": "Okrągłe zdjęcie u góry (50%) — grudzień i luty w rogach, styczeń na dole.",
       "tagi": [
         "trojka",
         "rogi",
@@ -3512,8 +3512,8 @@
         "trojka": true
       },
       "proporcja": {
-        "kalendarium": 62,
-        "zdjecie": 38
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -3522,8 +3522,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -3532,7 +3532,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -3546,16 +3546,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -3571,8 +3571,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -3581,7 +3581,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -3595,16 +3595,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -3620,8 +3620,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -3630,7 +3630,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -3644,16 +3644,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -3669,8 +3669,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -3679,7 +3679,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -3693,16 +3693,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -3718,8 +3718,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -3728,7 +3728,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -3742,16 +3742,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -3767,8 +3767,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -3777,7 +3777,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -3791,16 +3791,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -3816,8 +3816,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -3826,7 +3826,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -3840,16 +3840,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -3865,8 +3865,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -3875,7 +3875,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -3889,16 +3889,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -3914,8 +3914,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -3924,7 +3924,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -3938,16 +3938,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -3963,8 +3963,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -3973,7 +3973,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -3987,16 +3987,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -4012,8 +4012,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -4022,7 +4022,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -4036,16 +4036,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -4061,8 +4061,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-pastel-rogi",
           "strefyZdjec": [
@@ -4071,7 +4071,7 @@
               "typStrefy": "okrag",
               "pozycja": {
                 "x": 60,
-                "y": 16,
+                "y": 20,
                 "szerokosc": 90,
                 "wysokosc": 90
               },
@@ -4085,16 +4085,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 96,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 189,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-pastel-rogi"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 98,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#C026D3",
@@ -4111,7 +4111,7 @@
       "nazwa": "Kinowy Noir",
       "kategoria": "nocny",
       "kolekcja": "trojka",
-      "opis": "Pełnoekranowe zdjęcie — półprzezroczysty pasek kalendarza na dole jak napisy w filmie.",
+      "opis": "Zdjęcie u góry (50%), ciemny pasek kalendarza u dołu (50%) — klimat filmowy.",
       "tagi": [
         "trojka",
         "nakładka",
@@ -4130,8 +4130,8 @@
         "trojka": true
       },
       "proporcja": {
-        "kalendarium": 52,
-        "zdjecie": 48
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -4140,8 +4140,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4152,28 +4152,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4181,9 +4181,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 3,
@@ -4191,8 +4189,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4203,28 +4201,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4232,9 +4230,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 4,
@@ -4242,8 +4238,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4254,28 +4250,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4283,9 +4279,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 5,
@@ -4293,8 +4287,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4305,28 +4299,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4334,9 +4328,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 6,
@@ -4344,8 +4336,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4356,28 +4348,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4385,9 +4377,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 7,
@@ -4395,8 +4385,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4407,28 +4397,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4436,9 +4426,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 8,
@@ -4446,8 +4434,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4458,28 +4446,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4487,9 +4475,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 9,
@@ -4497,8 +4483,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4509,28 +4495,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4538,9 +4524,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 10,
@@ -4548,8 +4532,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4560,28 +4544,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4589,9 +4573,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 11,
@@ -4599,8 +4581,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4611,28 +4593,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4640,9 +4622,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 12,
@@ -4650,8 +4630,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4662,28 +4642,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4691,9 +4671,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         },
         {
           "numer": 13,
@@ -4701,8 +4679,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 52,
-            "zdjecie": 48
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-noir-nakladka",
           "strefyZdjec": [
@@ -4713,28 +4691,28 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 186,
-                "wysokosc": 273
+                "wysokosc": 137
               },
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Pełnostronicowe zdjęcie — portret lub miasto nocą",
+              "opis": "Portret lub miasto nocą — górna połowa",
               "wymagane": true
             }
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 143,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 142,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-noir-nakladka"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 145,
+              "y": 151,
               "rozmiar": 11,
               "wyrownanie": "center",
               "kolor": "#E2E8F0",
@@ -4742,9 +4720,7 @@
             }
           },
           "dekoracje": [],
-          "efektyStrony": {
-            "frostedGlass": true
-          }
+          "efektyStrony": null
         }
       ]
     },
@@ -4753,7 +4729,7 @@
       "nazwa": "Oś Botaniczna",
       "kategoria": "botaniczny",
       "kolekcja": "trojka",
-      "opis": "Zdjęcie ogrodu u góry — pozioma taśma trzech miesięcy z zielonym akcentem jak oś czasu.",
+      "opis": "Ogród u góry (50%) — pozioma taśma trzech miesięcy u dołu.",
       "tagi": [
         "trojka",
         "taśma",
@@ -4772,8 +4748,8 @@
         "trojka": true
       },
       "proporcja": {
-        "kalendarium": 68,
-        "zdjecie": 32
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -4782,8 +4758,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -4794,7 +4770,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4806,16 +4782,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -4826,7 +4802,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -4840,8 +4816,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -4852,7 +4828,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4864,16 +4840,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -4884,7 +4860,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -4898,8 +4874,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -4910,7 +4886,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4922,16 +4898,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -4942,7 +4918,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -4956,8 +4932,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -4968,7 +4944,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4980,16 +4956,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -5000,7 +4976,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -5014,8 +4990,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -5026,7 +5002,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5038,16 +5014,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -5058,7 +5034,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -5072,8 +5048,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -5084,7 +5060,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5096,16 +5072,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -5116,7 +5092,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -5130,8 +5106,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -5142,7 +5118,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5154,16 +5130,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -5174,7 +5150,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -5188,8 +5164,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -5200,7 +5176,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5212,16 +5188,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -5232,7 +5208,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -5246,8 +5222,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -5258,7 +5234,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5270,16 +5246,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -5290,7 +5266,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -5304,8 +5280,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -5316,7 +5292,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5328,16 +5304,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -5348,7 +5324,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -5362,8 +5338,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -5374,7 +5350,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5386,16 +5362,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -5406,7 +5382,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -5420,8 +5396,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 68,
-            "zdjecie": 32
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-botanic-tasma",
           "strefyZdjec": [
@@ -5432,7 +5408,7 @@
                 "x": 28,
                 "y": 18,
                 "szerokosc": 154,
-                "wysokosc": 79
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5444,16 +5420,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 99,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 186,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-botanic-tasma"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 101,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#166534",
@@ -5464,7 +5440,7 @@
             {
               "typ": "linia",
               "x": 12,
-              "y": 100,
+              "y": 150,
               "szerokosc": 186,
               "kolor": "#166534",
               "grubosc": 2.5
@@ -5479,7 +5455,7 @@
       "nazwa": "Blok Betonu",
       "kategoria": "brutalistyczny",
       "kolekcja": "trojka",
-      "opis": "Ukośne zdjęcie architektury — grudzień i luty jak dwa bloki u góry, styczeń jak fundament na dole.",
+      "opis": "Ukośne zdjęcie u góry (50%) — bloki miesięcy na dole.",
       "tagi": [
         "trojka",
         "blok",
@@ -5498,8 +5474,8 @@
         "trojka": true
       },
       "proporcja": {
-        "kalendarium": 55,
-        "zdjecie": 45
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -5508,8 +5484,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -5520,7 +5496,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5532,16 +5508,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -5557,8 +5533,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -5569,7 +5545,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5581,16 +5557,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -5606,8 +5582,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -5618,7 +5594,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5630,16 +5606,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -5655,8 +5631,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -5667,7 +5643,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5679,16 +5655,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -5704,8 +5680,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -5716,7 +5692,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5728,16 +5704,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -5753,8 +5729,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -5765,7 +5741,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5777,16 +5753,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -5802,8 +5778,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -5814,7 +5790,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5826,16 +5802,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -5851,8 +5827,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -5863,7 +5839,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5875,16 +5851,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -5900,8 +5876,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -5912,7 +5888,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5924,16 +5900,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -5949,8 +5925,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -5961,7 +5937,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5973,16 +5949,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -5998,8 +5974,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -6010,7 +5986,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6022,16 +5998,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -6047,8 +6023,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 55,
-            "zdjecie": 45
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-brutalist-blok",
           "strefyZdjec": [
@@ -6059,7 +6035,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 186,
-                "wysokosc": 117
+                "wysokosc": 131
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6071,16 +6047,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 135,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 150,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-brutalist-blok"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 137,
+              "y": 151,
               "rozmiar": 13,
               "wyrownanie": "center",
               "kolor": "#000000",
@@ -6097,7 +6073,7 @@
       "nazwa": "Dwa Światy",
       "kategoria": "kolaż",
       "kolekcja": "trojka",
-      "opis": "Dwa zdjęcia w rogach górnych — kalendarz na dole w rzędzie, jak okno na dwa światy i czas.",
+      "opis": "Dwa zdjęcia w górnej połowie (50%) — kalendarz w rzędzie na dole (50%).",
       "tagi": [
         "trojka",
         "kolaż",
@@ -6116,8 +6092,8 @@
         "trojka": true
       },
       "proporcja": {
-        "kalendarium": 62,
-        "zdjecie": 38
+        "kalendarium": 50,
+        "zdjecie": 50
       },
       "strony": [
         {
@@ -6126,8 +6102,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6138,7 +6114,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6154,7 +6130,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6166,16 +6142,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6186,7 +6162,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6200,8 +6176,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6212,7 +6188,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6228,7 +6204,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6240,16 +6216,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6260,7 +6236,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6274,8 +6250,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6286,7 +6262,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6302,7 +6278,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6314,16 +6290,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6334,7 +6310,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6348,8 +6324,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6360,7 +6336,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6376,7 +6352,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6388,16 +6364,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6408,7 +6384,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6422,8 +6398,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6434,7 +6410,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6450,7 +6426,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6462,16 +6438,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6482,7 +6458,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6496,8 +6472,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6508,7 +6484,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6524,7 +6500,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6536,16 +6512,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6556,7 +6532,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6570,8 +6546,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6582,7 +6558,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6598,7 +6574,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6610,16 +6586,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6630,7 +6606,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6644,8 +6620,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6656,7 +6632,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6672,7 +6648,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6684,16 +6660,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6704,7 +6680,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6718,8 +6694,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6730,7 +6706,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6746,7 +6722,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6758,16 +6734,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6778,7 +6754,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6792,8 +6768,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6804,7 +6780,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6820,7 +6796,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6832,16 +6808,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6852,7 +6828,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6866,8 +6842,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6878,7 +6854,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6894,7 +6870,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6906,16 +6882,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -6926,7 +6902,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
@@ -6940,8 +6916,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 62,
-            "zdjecie": 38
+            "kalendarium": 50,
+            "zdjecie": 50
           },
           "uklad": "trojka-duet-rzad",
           "strefyZdjec": [
@@ -6952,7 +6928,7 @@
                 "x": 12,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6968,7 +6944,7 @@
                 "x": 110,
                 "y": 16,
                 "szerokosc": 88,
-                "wysokosc": 96
+                "wysokosc": 129
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -6980,16 +6956,16 @@
           ],
           "strefaKalendarza": {
             "x": 12,
-            "y": 116,
+            "y": 149,
             "szerokosc": 186,
-            "wysokosc": 169,
+            "wysokosc": 136,
             "uklad": "trojka",
             "tripleTyp": "trojka-duet-rzad"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 105,
-              "y": 118,
+              "y": 151,
               "rozmiar": 12,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
@@ -7000,7 +6976,7 @@
             {
               "typ": "linia",
               "x": 100,
-              "y": 64,
+              "y": 148,
               "szerokosc": 10,
               "kolor": "#1D4ED8",
               "grubosc": 0.5
