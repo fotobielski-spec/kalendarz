@@ -54,6 +54,7 @@ export function MonthPagePreview({
   const isPlanner = page.strefaKalendarza.uklad === 'planer';
   const plannerTyp = page.strefaKalendarza.plannerTyp ?? 'planer-notatki';
   const isSenior = page.strefaKalendarza.uklad === 'senior' || kalendarium.typografia.senior === true;
+  const isSeniorDense = kalendarium.typografia.dense === true;
   const isGrayscale = kalendarium.efekty?.zdjecia === 'grayscale';
   const monthTitle = page.typografia?.nazwaMiesiaca;
   const compact = page.strefaKalendarza.szerokosc < 95;
@@ -86,6 +87,7 @@ export function MonthPagePreview({
     bodyFont,
     showImieniny: true,
     senior: isSenior,
+    seniorDense: isSeniorDense,
     monthTitle: {
       monthName: 'Styczeń',
       year,

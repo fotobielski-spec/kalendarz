@@ -401,3 +401,54 @@
   ) !important;
   line-height: 1.06 !important;
 }
+
+/* SEN-04+ — większa strefa kalendarza, mniejsza typografia, bez nachodzenia */
+.print-cal--senior-dense {
+  padding: calc(0.55 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.print-cal--senior-dense .print-cal__title--senior,
+.print-cal--senior-dense .print-cal__title--senior-inline {
+  margin-bottom: calc(0.2 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.print-cal--senior-dense .print-cal__labels {
+  margin-bottom: calc(0.15 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.print-cal--senior-dense .print-cal__label {
+  font-size: calc(var(--day-size, 11) * 0.62 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.print-cal--senior-dense .print-cal__cell {
+  display: grid;
+  grid-template-rows: minmax(0, 2.4fr) minmax(0, 3.6fr);
+  align-content: stretch;
+}
+
+.print-cal--senior-dense .print-cal__day-num {
+  grid-row: 1;
+  flex: unset;
+  max-height: 100%;
+  align-self: end;
+  justify-self: center;
+  font-size: calc(var(--day-size, 12) * 0.8 * 100cqw / var(--zone-w-mm, 186));
+  overflow: hidden;
+}
+
+.print-cal--senior-dense .print-cal__imieniny--senior,
+.print-cal--senior-dense .print-cal__imieniny {
+  grid-row: 2;
+  flex: unset;
+  max-height: 100%;
+  align-self: start;
+  justify-self: center;
+  font-size: calc(
+    var(--day-size, 12) * 0.36 * var(--senior-imieniny-scale, 1) * 100cqw / var(--zone-w-mm, 186)
+  ) !important;
+  line-height: 1.05 !important;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

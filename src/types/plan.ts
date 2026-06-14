@@ -124,6 +124,8 @@ export interface Kalendarium {
     rozmiarMiesiac?: number;
     rozmiarDzien?: number;
     senior?: boolean;
+    /** Kompaktowa siatka — mniejsze cyfry, krótsze imieniny (SEN-04+) */
+    dense?: boolean;
   };
   efekty?: { zdjecia?: string; kontrast?: number };
   proporcja?: { kalendarium: number; zdjecie: number };

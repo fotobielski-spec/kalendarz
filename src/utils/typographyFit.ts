@@ -61,12 +61,15 @@ export function fitDayFontSize(
   cal: StrefaKalendarza,
   hasImieniny: boolean,
   senior = false,
+  seniorDense = false,
 ): number {
   if (senior) {
     const isNarrow = cal.szerokosc < 95;
     let size = baseSize - 1;
+    if (seniorDense) size -= 1;
     if (hasImieniny && isNarrow) size -= 0.5;
-    return Math.max(11, Math.min(size, isNarrow ? 12 : 13.5));
+    const max = isNarrow ? 11.5 : seniorDense ? 11.5 : 13.5;
+    return Math.max(10, Math.min(size, max));
   }
 
   const isNarrow = cal.szerokosc < 95;
