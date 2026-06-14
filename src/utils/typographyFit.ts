@@ -13,6 +13,7 @@ export function fitTitleInCalendarZone(
   title: TitleConfig | undefined,
   cal: StrefaKalendarza,
   defaultSize = 16,
+  senior = false,
 ): {
   xPct: number;
   yPct: number;
@@ -29,10 +30,12 @@ export function fitTitleInCalendarZone(
   const isSidebar = isNarrow && calH > 200;
 
   const rawSize = title?.rozmiar ?? defaultSize;
-  const cappedSize = Math.min(
-    rawSize,
-    isSidebar ? 14 : isNarrow ? 13 : isShort ? 15 : 20,
-  );
+  const cappedSize = senior
+    ? Math.min(rawSize, 32)
+    : Math.min(
+      rawSize,
+      isSidebar ? 14 : isNarrow ? 13 : isShort ? 15 : 20,
+    );
 
   const yMm = cal.y + 2;
   const xMm = title?.wyrownanie === 'center'
@@ -57,7 +60,12 @@ export function fitDayFontSize(
   baseSize: number,
   cal: StrefaKalendarza,
   hasImieniny: boolean,
+  senior = false,
 ): number {
+  if (senior) {
+    return Math.max(14, baseSize);
+  }
+
   const isNarrow = cal.szerokosc < 95;
   const isShort = cal.wysokosc < 105;
   const isSidebar = isNarrow && cal.wysokosc > 200;

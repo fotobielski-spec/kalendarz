@@ -53,6 +53,7 @@ export function MonthPagePreview({
   const isVertical = page.strefaKalendarza.uklad === 'pionowy' || page.uklad.startsWith('pion-lista');
   const isPlanner = page.strefaKalendarza.uklad === 'planer';
   const plannerTyp = page.strefaKalendarza.plannerTyp ?? 'planer-notatki';
+  const isSenior = page.strefaKalendarza.uklad === 'senior' || kalendarium.typografia.senior === true;
   const isGrayscale = kalendarium.efekty?.zdjecia === 'grayscale';
   const monthTitle = page.typografia?.nazwaMiesiaca;
   const compact = page.strefaKalendarza.szerokosc < 95;
@@ -66,7 +67,7 @@ export function MonthPagePreview({
   const layoutLabel = getUkladLabel(page.uklad);
   const layoutOrient = getLayoutOrientation(page.uklad);
 
-  const fittedTitle = fitTitleInCalendarZone(monthTitle, page.strefaKalendarza, 15);
+  const fittedTitle = fitTitleInCalendarZone(monthTitle, page.strefaKalendarza, isSenior ? 24 : 15, isSenior);
 
   const calBg =
     semiPanel ? `rgba(${hexToRgb(bg)}, 0.88)` :
@@ -82,7 +83,8 @@ export function MonthPagePreview({
     backgroundColor: calBg,
     headingFont,
     bodyFont,
-    showImieniny: true,
+    showImieniny: !isSenior,
+    senior: isSenior,
     monthTitle: {
       monthName: 'Styczeń',
       year,
@@ -121,6 +123,8 @@ export function MonthPagePreview({
                 ? 'pionowy'
                 : kalendarium.kolekcja === 'planery'
                   ? 'planer'
+                  : kalendarium.kolekcja === 'senior'
+                    ? 'babcia i dziadek'
                   : 'art'}
           </span>
         )}

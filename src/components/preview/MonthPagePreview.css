@@ -66,6 +66,11 @@
   background: #dbeafe;
 }
 
+.month-preview__collection--senior {
+  color: #7c2d12;
+  background: #ffedd5;
+}
+
 .month-preview__fonts {
   display: flex;
   align-items: baseline;

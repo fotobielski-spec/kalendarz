@@ -31,6 +31,7 @@ interface PrintCalendarGridProps {
   headingFont?: string;
   bodyFont?: string;
   showImieniny?: boolean;
+  senior?: boolean;
   monthTitle?: MonthTitleProps;
   /** Wewnątrz planera — bez pozycjonowania mm */
   embedded?: boolean;
@@ -48,12 +49,13 @@ export function PrintCalendarGrid({
   headingFont,
   bodyFont,
   showImieniny = true,
+  senior = false,
   monthTitle,
   embedded = false,
 }: PrintCalendarGridProps) {
   const labels = getDayLabels();
   const today = new Date();
-  const fittedDaySize = fitDayFontSize(dayFontSize, area, showImieniny);
+  const fittedDaySize = fitDayFontSize(dayFontSize, area, showImieniny, senior);
   const isCompact = compact || area.szerokosc < 95;
   const isSidebar = isSidebarCalendarZone(area);
   const imieninyMaxLen = fitImieninyMaxLen(area);
@@ -85,6 +87,7 @@ export function PrintCalendarGrid({
         isCompact && 'print-cal--compact',
         isSidebar && 'print-cal--sidebar',
         showImieniny && imieninyMaxLen > 0 && 'print-cal--imieniny',
+        senior && 'print-cal--senior',
         embedded && 'print-cal--embedded',
       ].filter(Boolean).join(' ')}
       style={{

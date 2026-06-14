@@ -65,6 +65,7 @@ const GOOGLE_FAMILIES: Record<string, string> = {
   'Outfit': 'Outfit:wght@400;600;700',
   'Sora': 'Sora:wght@400;600;700',
   'Lexend': 'Lexend:wght@400;600;700',
+  'Atkinson Hyperlegible': 'Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400',
   'Plus Jakarta Sans': 'Plus+Jakarta+Sans:wght@400;600;700',
   'Figtree': 'Figtree:wght@400;600;700',
   'Archivo': 'Archivo:wght@400;600;700',

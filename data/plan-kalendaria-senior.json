@@ -1,0 +1,6207 @@
+{
+  "meta": {
+    "rokDomyslny": 2026,
+    "liczbaSzablonow": 10,
+    "opis": "10 kalendarzy senior — babcia i dziadek, bardzo duże czytelne cyfry · 60/40"
+  },
+  "formatWspolny": {
+    "szerokosc": 210,
+    "wysokosc": 297,
+    "siatkaDni": {
+      "etykietyDni": [
+        "Pn",
+        "Wt",
+        "Śr",
+        "Cz",
+        "Pt",
+        "Sb",
+        "Nd"
+      ]
+    },
+    "proporcja": {
+      "kalendarium": 60,
+      "zdjecie": 40
+    },
+    "imieniny": true,
+    "senior": true
+  },
+  "kalendaria": [
+    {
+      "id": "SEN-01",
+      "nazwa": "Ciepła Babcia",
+      "kategoria": "babcia",
+      "kolekcja": "senior",
+      "opis": "Duże cyfry, wysoki kontrast — zdjęcie wnuków u góry, kalendarz 60% dołu.",
+      "tagi": [
+        "senior",
+        "babcia",
+        "wnuki"
+      ],
+      "paleta": {
+        "tlo": "#FFFBF5",
+        "akcent": "#9B2C2C",
+        "tekst": "#1A1A1A"
+      },
+      "typografia": {
+        "naglowek": "Lexend",
+        "tekst": "Lexend",
+        "rozmiarMiesiac": 26,
+        "rozmiarDzien": 18,
+        "senior": true
+      },
+      "proporcja": {
+        "kalendarium": 60,
+        "zdjecie": 40
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Zdjęcie wnuków lub rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#9B2C2C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        }
+      ]
+    },
+    {
+      "id": "SEN-02",
+      "nazwa": "Mądry Dziadek",
+      "kategoria": "dziadek",
+      "kolekcja": "senior",
+      "opis": "Granat na bieli — maksymalna czytelność numerów dni dla dziadka.",
+      "tagi": [
+        "senior",
+        "dziadek",
+        "kontrast"
+      ],
+      "paleta": {
+        "tlo": "#FFFFFF",
+        "akcent": "#1E3A8A",
+        "tekst": "#0F172A"
+      },
+      "typografia": {
+        "naglowek": "Atkinson Hyperlegible",
+        "tekst": "Atkinson Hyperlegible",
+        "rozmiarMiesiac": 28,
+        "rozmiarDzien": 20,
+        "senior": true
+      },
+      "proporcja": {
+        "kalendarium": 60,
+        "zdjecie": 40
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Portret dziadka lub rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#1E3A8A",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 121,
+              "szerokosc": 186,
+              "kolor": "#1E3A8A",
+              "grubosc": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEN-03",
+      "nazwa": "Rodzinne Wspomnienia",
+      "kategoria": "rodzina",
+      "kolekcja": "senior",
+      "opis": "Kalendarz z bardzo dużymi cyframi — idealny prezent dla babci i dziadka.",
+      "tagi": [
+        "senior",
+        "rodzina"
+      ],
+      "paleta": {
+        "tlo": "#F8FAFC",
+        "akcent": "#047857",
+        "tekst": "#064E3B"
+      },
+      "typografia": {
+        "naglowek": "Lexend",
+        "tekst": "Source Sans 3",
+        "rozmiarMiesiac": 24,
+        "rozmiarDzien": 17,
+        "senior": true
+      },
+      "proporcja": {
+        "kalendarium": 60,
+        "zdjecie": 40
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 22,
+                "szerokosc": 186,
+                "wysokosc": 95
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Rodzinne zdjęcie — uroczystość",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#047857",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        }
+      ]
+    },
+    {
+      "id": "SEN-04",
+      "nazwa": "Ogród Babci",
+      "kategoria": "babcia",
+      "kolekcja": "senior",
+      "opis": "Zielona paleta, ogromne numery dni — kwiaty lub ogród na zdjęciu.",
+      "tagi": [
+        "senior",
+        "babcia",
+        "ogród"
+      ],
+      "paleta": {
+        "tlo": "#F0FDF4",
+        "akcent": "#166534",
+        "tekst": "#14532D"
+      },
+      "typografia": {
+        "naglowek": "Nunito",
+        "tekst": "Nunito",
+        "rozmiarMiesiac": 26,
+        "rozmiarDzien": 18,
+        "senior": true
+      },
+      "proporcja": {
+        "kalendarium": 60,
+        "zdjecie": 40
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Kwiaty lub ogród babci",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        }
+      ]
+    },
+    {
+      "id": "SEN-05",
+      "nazwa": "Fotel Dziadka",
+      "kategoria": "dziadek",
+      "kolekcja": "senior",
+      "opis": "Ciepły brąz i krem — duże cyfry, spokojna typografia.",
+      "tagi": [
+        "senior",
+        "dziadek"
+      ],
+      "paleta": {
+        "tlo": "#FAF6F0",
+        "akcent": "#78350F",
+        "tekst": "#292524"
+      },
+      "typografia": {
+        "naglowek": "Merriweather",
+        "tekst": "Lexend",
+        "rozmiarMiesiac": 24,
+        "rozmiarDzien": 17,
+        "senior": true
+      },
+      "proporcja": {
+        "kalendarium": 60,
+        "zdjecie": 40
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Dziadek w fotelu lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        }
+      ]
+    },
+    {
+      "id": "SEN-06",
+      "nazwa": "Kontrast MAX",
+      "kategoria": "kontrast",
+      "kolekcja": "senior",
+      "opis": "Czarno-biały układ — najwyższa czytelność cyfr dla słabowidzących.",
+      "tagi": [
+        "senior",
+        "kontrast",
+        "wcag"
+      ],
+      "paleta": {
+        "tlo": "#FFFFFF",
+        "akcent": "#000000",
+        "tekst": "#000000"
+      },
+      "typografia": {
+        "naglowek": "Atkinson Hyperlegible",
+        "tekst": "Atkinson Hyperlegible",
+        "rozmiarMiesiac": 30,
+        "rozmiarDzien": 22,
+        "senior": true
+      },
+      "proporcja": {
+        "kalendarium": 60,
+        "zdjecie": 40
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-kontrast",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 3,
+                "kolor": "#000000"
+              },
+              "opis": "Czarno-białe zdjęcie rodziny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 30,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        }
+      ]
+    },
+    {
+      "id": "SEN-07",
+      "nazwa": "Żółto-Czarny",
+      "kategoria": "kontrast",
+      "kolekcja": "senior",
+      "opis": "Żółte tło, czarne cyfry — sprawdzony układ dla słabszego wzroku.",
+      "tagi": [
+        "senior",
+        "kontrast",
+        "widoczność"
+      ],
+      "paleta": {
+        "tlo": "#FEF9C3",
+        "akcent": "#000000",
+        "tekst": "#000000"
+      },
+      "typografia": {
+        "naglowek": "Lexend",
+        "tekst": "Lexend",
+        "rozmiarMiesiac": 28,
+        "rozmiarDzien": 20,
+        "senior": true
+      },
+      "proporcja": {
+        "kalendarium": 60,
+        "zdjecie": 40
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-zolty",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jasne, wyraziste zdjęcie",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 28,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        }
+      ]
+    },
+    {
+      "id": "SEN-08",
+      "nazwa": "Spokojny Błękit",
+      "kategoria": "babcia",
+      "kolekcja": "senior",
+      "opis": "Duże cyfry na jasnoniebieskim tle — łagodny dla oczu.",
+      "tagi": [
+        "senior",
+        "babcia"
+      ],
+      "paleta": {
+        "tlo": "#EFF6FF",
+        "akcent": "#1D4ED8",
+        "tekst": "#1E3A8A"
+      },
+      "typografia": {
+        "naglowek": "Lexend",
+        "tekst": "Open Sans",
+        "rozmiarMiesiac": 26,
+        "rozmiarDzien": 18,
+        "senior": true
+      },
+      "proporcja": {
+        "kalendarium": 60,
+        "zdjecie": 40
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Babcia — portret lub hobby",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        }
+      ]
+    },
+    {
+      "id": "SEN-09",
+      "nazwa": "Uśmiech Wnuków",
+      "kategoria": "rodzina",
+      "kolekcja": "senior",
+      "opis": "Radosne kolory, ogromne numery — prezent od wnucząt.",
+      "tagi": [
+        "senior",
+        "wnuki",
+        "prezent"
+      ],
+      "paleta": {
+        "tlo": "#FFF1F2",
+        "akcent": "#BE123C",
+        "tekst": "#4C0519"
+      },
+      "typografia": {
+        "naglowek": "Fredoka",
+        "tekst": "Lexend",
+        "rozmiarMiesiac": 26,
+        "rozmiarDzien": 18,
+        "senior": true
+      },
+      "proporcja": {
+        "kalendarium": 60,
+        "zdjecie": 40
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 99
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Wnuki na zdjęciu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 26,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "kropka",
+              "x": 20,
+              "y": 125,
+              "rozmiar": 4,
+              "kolor": "#BE123C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEN-10",
+      "nazwa": "Złota Jesień",
+      "kategoria": "dziadek",
+      "kolekcja": "senior",
+      "opis": "Jesienna paleta — duże cyfry i imieniny dla babci lub dziadka.",
+      "tagi": [
+        "senior",
+        "dziadek",
+        "jesień"
+      ],
+      "paleta": {
+        "tlo": "#FFFBEB",
+        "akcent": "#B45309",
+        "tekst": "#451A03"
+      },
+      "typografia": {
+        "naglowek": "Libre Baskerville",
+        "tekst": "Lexend",
+        "rozmiarMiesiac": 24,
+        "rozmiarDzien": 17,
+        "senior": true
+      },
+      "proporcja": {
+        "kalendarium": 60,
+        "zdjecie": 40
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 60,
+            "zdjecie": 40
+          },
+          "uklad": "senior-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 20,
+                "szerokosc": 186,
+                "wysokosc": 97
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "opis": "Jesienny krajobraz lub portret",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 121,
+            "szerokosc": 186,
+            "wysokosc": 164,
+            "uklad": "senior"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 125,
+              "rozmiar": 24,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold",
+              "transform": "uppercase"
+            }
+          },
+          "dekoracje": []
+        }
+      ]
+    }
+  ]
+}

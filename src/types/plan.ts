@@ -123,10 +123,11 @@ export interface Kalendarium {
     tekst?: string;
     rozmiarMiesiac?: number;
     rozmiarDzien?: number;
+    senior?: boolean;
   };
   efekty?: { zdjecia?: string; kontrast?: number };
   proporcja?: { kalendarium: number; zdjecie: number };
-  kolekcja?: 'art' | 'tematyczne' | 'pionowe' | 'planery' | string;
+  kolekcja?: 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | string;
   strony: StronaMiesiaca[];
 }
 
