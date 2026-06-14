@@ -91,7 +91,7 @@ const DEFINICJE = [
     opis: 'Kalendarz psiarza — zdjęcie psa po lewej, kalendarz z imieninami po prawej.',
     tagi: ['psy', 'zwierzęta'],
     paleta: { tlo: '#F0F4F8', akcent: '#2E6DA4', tekst: '#1A2E44' },
-    typografia: { naglowek: 'Baloo 2', tekst: 'Open Sans', rozmiarMiesiac: 12, rozmiarDzien: 7.5 },
+    typografia: { naglowek: 'Baloo 2', tekst: 'Open Sans', rozmiarMiesiac: 12, rozmiarDzien: 8.5 },
     layout: {
       ukladMiesiac: 'tem-psy-left',
       strefyMiesiac: () => [zone('foto', 'kolumna', M, M, PW, H, { opis: 'Portret psa klienta' })],
@@ -137,7 +137,7 @@ const DEFINICJE = [
     opis: 'Krajobraz z psem po prawej — idealny na zdjęcia spacerów i plaży.',
     tagi: ['psy', 'labrador'],
     paleta: { tlo: '#FAFAF5', akcent: '#8B6914', tekst: '#333333' },
-    typografia: { naglowek: 'Merriweather', tekst: 'Source Sans 3', rozmiarMiesiac: 12, rozmiarDzien: 7.5 },
+    typografia: { naglowek: 'Merriweather', tekst: 'Source Sans 3', rozmiarMiesiac: 12, rozmiarDzien: 8.5 },
     layout: {
       ukladMiesiac: 'tem-psy-right',
       strefyMiesiac: () => [zone('foto', 'kolumna', M + CW, M, PW, H, { opis: 'Labrador na zdjęciu klienta' })],
@@ -179,7 +179,7 @@ const DEFINICJE = [
     typografia: { naglowek: 'Rajdhani', tekst: 'Roboto', rozmiarMiesiac: 14, rozmiarDzien: 7.5 },
     layout: {
       ukladMiesiac: 'tem-moto-top',
-      strefyMiesiac: () => [zone('foto', 'hero', M, 24, W, PH - 10, { opis: 'Motocykl na zdjęciu' })],
+      strefyMiesiac: () => [zone('foto', 'hero', M, 28, W, PH - 18, { opis: 'Motocykl na zdjęciu' })],
       strefaKalendarza: CAL_BOTTOM,
       titleOpts: { kolor: '#F97316', rozmiar: 13, uppercase: true, letterSpacing: 3 },
     },
@@ -316,7 +316,7 @@ const DEFINICJE = [
     opis: 'Dla fotografów — kadry, aparaty, czarno-białe ujęcia.',
     tagi: ['foto', 'analog'],
     paleta: { tlo: '#FAFAFA', akcent: '#171717', tekst: '#404040' },
-    typografia: { naglowek: 'Space Mono', tekst: 'Inter', rozmiarMiesiac: 11, rozmiarDzien: 7 },
+    typografia: { naglowek: 'Space Mono', tekst: 'Inter', rozmiarMiesiac: 11, rozmiarDzien: 8 },
     layout: {
       ukladMiesiac: 'tem-foto-left',
       strefyMiesiac: () => [zone('foto', 'kolumna', M, M, PW, H, { opis: 'Zdjęcie fotograficzne' })],

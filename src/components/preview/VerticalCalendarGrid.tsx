@@ -1,6 +1,6 @@
 import type { StrefaKalendarza } from '../../types/plan';
 import { getImieniny } from '../../utils/imieniny';
-import { mmPosStyle } from '../../utils/previewUtils';
+import { mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import './VerticalCalendarGrid.css';
 
 interface VerticalCalendarGridProps {
@@ -58,6 +58,7 @@ export function VerticalCalendarGrid({
         ...mmPosStyle(area),
         color: textColor,
         background: backgroundColor,
+        ...zoneCssVars(area),
         '--font-heading': headingFont,
         '--font-body': bodyFont,
         '--accent': accentColor,

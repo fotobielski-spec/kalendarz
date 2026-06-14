@@ -139,7 +139,7 @@ const DEFINICJE = PLANER_TYPES.map((plannerTyp, i) => {
     opis: `Planer z kalendarium (siatka + imieniny) i panelem: ${plannerTyp.replace('planer-', '').replace(/-/g, ' ')}.`,
     tagi: ['planer', plannerTyp.replace('planer-', '')],
     paleta: PALETY[i],
-    typografia: { naglowek: FONTS[i][0], tekst: FONTS[i][1], rozmiarMiesiac: 11, rozmiarDzien: 7 },
+    typografia: { naglowek: FONTS[i][0], tekst: FONTS[i][1], rozmiarMiesiac: 11, rozmiarDzien: 8 },
     layout: {
       ukladMiesiac: variant.uklad,
       strefyMiesiac: variant.foto,

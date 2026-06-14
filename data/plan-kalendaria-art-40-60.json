@@ -981,8 +981,8 @@
       "typografia": {
         "naglowek": "Playfair Display",
         "tekst": "Source Sans 3",
-        "rozmiarMiesiac": 18,
-        "rozmiarDzien": 8
+        "rozmiarMiesiac": 16,
+        "rozmiarDzien": 8.5
       },
       "strony": [
         {
@@ -1706,8 +1706,8 @@
       "typografia": {
         "naglowek": "Montserrat",
         "tekst": "Open Sans",
-        "rozmiarMiesiac": 17,
-        "rozmiarDzien": 8
+        "rozmiarMiesiac": 15,
+        "rozmiarDzien": 8.5
       },
       "strony": [
         {
@@ -7220,8 +7220,8 @@
       "typografia": {
         "naglowek": "Bodoni Moda",
         "tekst": "Helvetica Neue",
-        "rozmiarMiesiac": 32,
-        "rozmiarDzien": 7
+        "rozmiarMiesiac": 22,
+        "rozmiarDzien": 8
       },
       "strony": [
         {
@@ -7238,12 +7238,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7253,8 +7253,8 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
@@ -7301,12 +7301,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7316,24 +7316,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7354,12 +7354,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7369,24 +7369,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7407,12 +7407,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7422,24 +7422,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7460,12 +7460,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7475,24 +7475,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7513,12 +7513,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7528,24 +7528,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7566,12 +7566,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7581,24 +7581,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7619,12 +7619,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7634,24 +7634,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7672,12 +7672,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7687,24 +7687,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7725,12 +7725,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7740,24 +7740,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7778,12 +7778,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7793,24 +7793,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7831,12 +7831,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7846,24 +7846,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],
@@ -7884,12 +7884,12 @@
               "id": "foto",
               "typStrefy": "kolumna",
               "pozycja": {
-                "x": 0,
-                "y": 0,
-                "szerokosc": 126,
-                "wysokosc": 297
+                "x": 12,
+                "y": 12,
+                "szerokosc": 112,
+                "wysokosc": 273
               },
-              "proporcjeZalecane": "126:297",
+              "proporcjeZalecane": "112:273",
               "maska": "prostokat",
               "obrot": 0,
               "przezroczystosc": 1,
@@ -7899,24 +7899,24 @@
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
-                "szerokosc": 1488,
-                "wysokosc": 3508
+                "szerokosc": 1323,
+                "wysokosc": 3224
               }
             }
           ],
           "strefaKalendarza": {
-            "x": 76,
-            "y": 42,
-            "szerokosc": 76,
-            "wysokosc": 243
+            "x": 124,
+            "y": 36,
+            "szerokosc": 74,
+            "wysokosc": 249
           },
           "typografia": {
             "nazwaMiesiaca": {
-              "x": 80,
-              "y": 20,
-              "rozmiar": 28,
+              "x": 126,
+              "y": 18,
+              "rozmiar": 18,
               "transform": "uppercase",
-              "letterSpacing": 6
+              "letterSpacing": 4
             }
           },
           "dekoracje": [],

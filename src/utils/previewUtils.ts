@@ -28,6 +28,18 @@ export function mmPosStyle(pos: PozycjaMm): CSSProperties {
   };
 }
 
+/** Zmienne CSS do skalowania typografii względem rzeczywistej strefy (nie całego A4) */
+export function zoneCssVars(area: { szerokosc: number; wysokosc: number }): Record<string, number> {
+  return {
+    '--zone-w-mm': area.szerokosc,
+    '--zone-h-mm': area.wysokosc,
+  } as Record<string, number>;
+}
+
+export function isSidebarCalendarZone(area: { szerokosc: number; wysokosc: number }): boolean {
+  return area.szerokosc < 95 && area.wysokosc > 200;
+}
+
 export function getJanuaryDays(year: number): PrintDay[] {
   const month = 0;
   const firstDay = new Date(year, month, 1);

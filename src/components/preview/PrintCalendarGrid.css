@@ -4,9 +4,9 @@
   z-index: 3;
   pointer-events: none;
   container-type: inline-size;
-  padding: calc(2 * 100cqw / 210);
+  padding: calc(2 * 100cqw / var(--zone-w-mm, 186));
   box-sizing: border-box;
-  border-radius: calc(2 * 100cqw / 210);
+  border-radius: calc(2 * 100cqw / var(--zone-w-mm, 186));
   overflow: hidden;
   min-height: 0;
 }
@@ -14,14 +14,14 @@
 .print-cal__title {
   display: flex;
   align-items: baseline;
-  gap: calc(3 * 100cqw / 210);
+  gap: calc(3 * 100cqw / var(--zone-w-mm, 186));
   flex-shrink: 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   line-height: 1.1;
-  margin-bottom: calc(2 * 100cqw / 210);
-  padding-right: calc(2 * 100cqw / 210);
+  margin-bottom: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  padding-right: calc(2 * 100cqw / var(--zone-w-mm, 186));
   box-sizing: border-box;
 }
 
@@ -44,13 +44,13 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 0;
-  margin-bottom: calc(1 * 100cqw / 210);
+  margin-bottom: calc(1 * 100cqw / var(--zone-w-mm, 186));
   flex-shrink: 0;
 }
 
 .print-cal__label {
   font-family: var(--font-heading, inherit);
-  font-size: calc(var(--day-size, 9) * 0.72 * 100cqw / 210);
+  font-size: calc(var(--day-size, 9) * 0.72 * 100cqw / var(--zone-w-mm, 186));
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -65,7 +65,7 @@
 }
 
 .print-cal--compact .print-cal__label {
-  font-size: calc(var(--day-size, 8) * 0.65 * 100cqw / 210);
+  font-size: calc(var(--day-size, 8) * 0.65 * 100cqw / var(--zone-w-mm, 186));
   letter-spacing: 0;
 }
 
@@ -86,13 +86,13 @@
   justify-content: flex-start;
   min-height: 0;
   overflow: hidden;
-  padding: calc(0.5 * 100cqw / 210) calc(0.5 * 100cqw / 210) 0;
+  padding: calc(0.5 * 100cqw / var(--zone-w-mm, 186)) calc(0.5 * 100cqw / var(--zone-w-mm, 186)) 0;
   box-sizing: border-box;
 }
 
 .print-cal__day-num {
   font-family: var(--font-body, inherit);
-  font-size: calc(var(--day-size, 9) * 100cqw / 210);
+  font-size: calc(var(--day-size, 9) * 100cqw / var(--zone-w-mm, 186));
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   line-height: 1;
@@ -100,14 +100,14 @@
 }
 
 .print-cal--compact .print-cal__day-num {
-  font-size: calc(var(--day-size, 8) * 0.9 * 100cqw / 210);
+  font-size: calc(var(--day-size, 8) * 0.9 * 100cqw / var(--zone-w-mm, 186));
 }
 
 .print-cal__imieniny {
   font-family: var(--font-body, inherit);
-  font-size: calc(var(--day-size, 9) * 0.48 * 100cqw / 210);
+  font-size: calc(var(--day-size, 9) * 0.48 * 100cqw / var(--zone-w-mm, 186));
   line-height: 1;
-  margin-top: calc(0.5 * 100cqw / 210);
+  margin-top: calc(0.5 * 100cqw / var(--zone-w-mm, 186));
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -117,7 +117,7 @@
 }
 
 .print-cal--compact .print-cal__imieniny {
-  font-size: calc(var(--day-size, 8) * 0.42 * 100cqw / 210);
+  font-size: calc(var(--day-size, 8) * 0.42 * 100cqw / var(--zone-w-mm, 186));
 }
 
 .print-cal--imieniny .print-cal__cell {
@@ -139,7 +139,7 @@
 
 .print-cal__cell--today {
   background: color-mix(in srgb, var(--accent, #6366f1) 18%, transparent);
-  border-radius: calc(2 * 100cqw / 210);
+  border-radius: calc(2 * 100cqw / var(--zone-w-mm, 186));
 }
 
 .print-cal__cell--today .print-cal__day-num {
@@ -153,10 +153,31 @@
 }
 
 .print-cal--embedded {
-  padding: calc(1 * 100cqw / 210);
+  padding: calc(1 * 100cqw / var(--zone-w-mm, 186));
 }
 
 .print-cal--embedded .print-cal__title {
-  margin-bottom: calc(1 * 100cqw / 210);
-  font-size: calc(10 * 100cqw / 210);
+  margin-bottom: calc(1 * 100cqw / var(--zone-w-mm, 186));
+  font-size: calc(10 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.print-cal--sidebar .print-cal__day-num {
+  font-size: calc(var(--day-size, 8) * 1.02 * 100cqw / var(--zone-w-mm, 74));
+}
+
+.print-cal--sidebar .print-cal__imieniny {
+  font-size: calc(var(--day-size, 8) * 0.52 * 100cqw / var(--zone-w-mm, 74));
+  line-height: 1.05;
+}
+
+.print-cal--sidebar .print-cal__title {
+  margin-bottom: calc(1.5 * 100cqw / var(--zone-w-mm, 74));
+}
+
+.print-cal--sidebar .print-cal__labels {
+  margin-bottom: calc(0.5 * 100cqw / var(--zone-w-mm, 74));
+}
+
+.print-cal--sidebar .print-cal__cell {
+  padding: calc(0.3 * 100cqw / var(--zone-w-mm, 74)) 0 0;
 }

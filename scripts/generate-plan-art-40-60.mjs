@@ -85,7 +85,7 @@ const DEFINICJE = [
     opis: 'Zdjęcie zajmuje lewe 60%, kalendarz prawe 40%. Układ magazynowy.',
     tagi: ['photo-left', 'editorial'],
     paleta: { tlo: '#FFFFFF', akcent: '#1A1A2E', tekst: '#16213E' },
-    typografia: { naglowek: 'Playfair Display', tekst: 'Source Sans 3', rozmiarMiesiac: 18, rozmiarDzien: 8 },
+    typografia: { naglowek: 'Playfair Display', tekst: 'Source Sans 3', rozmiarMiesiac: 16, rozmiarDzien: 8.5 },
     layout: {
       ukladMiesiac: 'photo-left-60',
       strefyMiesiac: () => [zone('foto', 'kolumna', M, M, PW, H, { opis: 'Portret lub scena — lewa strona' })],
@@ -98,7 +98,7 @@ const DEFINICJE = [
     opis: 'Krajobraz po prawej (60%), kalendarz po lewej (40%).',
     tagi: ['photo-right', 'krajobraz'],
     paleta: { tlo: '#F0F4F8', akcent: '#2E86AB', tekst: '#1B2838' },
-    typografia: { naglowek: 'Montserrat', tekst: 'Open Sans', rozmiarMiesiac: 17, rozmiarDzien: 8 },
+    typografia: { naglowek: 'Montserrat', tekst: 'Open Sans', rozmiarMiesiac: 15, rozmiarDzien: 8.5 },
     layout: {
       ukladMiesiac: 'photo-right-60',
       strefyMiesiac: () => [zone('foto', 'kolumna', M + CW, M, PW, H, { opis: 'Krajobraz horyzontalny' })],
@@ -192,12 +192,12 @@ const DEFINICJE = [
     opis: 'Odważna typografia, zdjęcie full-bleed lewa 60%, cienka linia redakcyjna.',
     tagi: ['fashion', 'vogue'],
     paleta: { tlo: '#FFFFFF', akcent: '#000000', tekst: '#111111' },
-    typografia: { naglowek: 'Bodoni Moda', tekst: 'Helvetica Neue', rozmiarMiesiac: 32, rozmiarDzien: 7 },
+    typografia: { naglowek: 'Bodoni Moda', tekst: 'Helvetica Neue', rozmiarMiesiac: 22, rozmiarDzien: 8 },
     layout: {
       ukladMiesiac: 'vogue-left-60',
-      strefyMiesiac: () => [zone('foto', 'kolumna', 0, 0, Math.round(210 * 0.6), 297, { opis: 'Full-bleed fashion photo' })],
-      strefaKalendarza: { x: M + CW - 10, y: M + 30, szerokosc: CW + 2, wysokosc: H - 30 },
-      typografiaMiesiac: { nazwaMiesiaca: { x: M + CW - 6, y: M + 8, rozmiar: 28, transform: 'uppercase', letterSpacing: 6 } },
+      strefyMiesiac: () => [zone('foto', 'kolumna', M, M, PW, H, { opis: 'Full-bleed fashion photo' })],
+      strefaKalendarza: { x: M + PW, y: M + 24, szerokosc: CW, wysokosc: H - 24 },
+      typografiaMiesiac: { nazwaMiesiaca: { x: M + PW + 2, y: M + 6, rozmiar: 18, transform: 'uppercase', letterSpacing: 4 } },
     },
   },
   {

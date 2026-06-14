@@ -1,6 +1,6 @@
 import type { StrefaKalendarza } from '../../types/plan';
 import { getMonthDaysWithImieniny } from '../../utils/imieniny';
-import { mmPosStyle } from '../../utils/previewUtils';
+import { mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import { PrintCalendarGrid } from './PrintCalendarGrid';
 import './PlannerCalendarGrid.css';
 
@@ -52,7 +52,7 @@ export function PlannerCalendarGrid({
     year,
     fontFamily: headingFont,
     color: accentColor,
-    fontSize: compact ? 'calc(9 * 100cqw / 210)' : 'calc(11 * 100cqw / 210)',
+    fontSize: compact ? 'calc(9 * 100cqw / var(--zone-w-mm, 74))' : 'calc(11 * 100cqw / var(--zone-w-mm, 186))',
   };
 
   return (
@@ -60,6 +60,7 @@ export function PlannerCalendarGrid({
       className={`planner-cal planner-cal--${plannerTyp}`}
       style={{
         ...mmPosStyle(area),
+        ...zoneCssVars(area),
         color: textColor,
         '--font-heading': headingFont,
         '--font-body': bodyFont,

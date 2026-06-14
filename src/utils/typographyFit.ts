@@ -26,16 +26,20 @@ export function fitTitleInCalendarZone(
   const calH = cal.wysokosc;
   const isNarrow = calW < 95;
   const isShort = calH < 100;
+  const isSidebar = isNarrow && calH > 200;
 
   const rawSize = title?.rozmiar ?? defaultSize;
-  const cappedSize = Math.min(rawSize, isNarrow ? 13 : isShort ? 15 : 20);
+  const cappedSize = Math.min(
+    rawSize,
+    isSidebar ? 14 : isNarrow ? 13 : isShort ? 15 : 20,
+  );
 
   const yMm = cal.y + 2;
   const xMm = title?.wyrownanie === 'center'
     ? cal.x + calW / 2
     : Math.max(cal.x + 1, Math.min(title?.x ?? cal.x + 1, cal.x + calW - 2));
 
-  const fontSize = `calc(${cappedSize} * 100cqw / 210)`;
+  const fontSize = `calc(${cappedSize} * 100cqw / ${calW})`;
   const maxWidth = `${(calW / 210) * 100}%`;
 
   return {
@@ -56,9 +60,28 @@ export function fitDayFontSize(
 ): number {
   const isNarrow = cal.szerokosc < 95;
   const isShort = cal.wysokosc < 105;
+  const isSidebar = isNarrow && cal.wysokosc > 200;
+  const isStrip = cal.szerokosc < 58;
+
   let size = baseSize;
-  if (isNarrow) size -= 1.5;
+  if (isStrip) size -= 1;
+  else if (isSidebar) size -= 0.25;
+  else if (isNarrow) size -= 1;
   if (isShort) size -= 1;
-  if (hasImieniny) size -= 0.5;
-  return Math.max(5.5, size);
+  if (hasImieniny && isShort) size -= 0.5;
+  else if (hasImieniny && isStrip) size -= 0.75;
+  else if (hasImieniny && !isSidebar) size -= 0.35;
+
+  const minSize = isStrip ? 6 : isSidebar ? 7.5 : isNarrow ? 7 : 5.5;
+  return Math.max(minSize, size);
+}
+
+/** Maks. długość skrótu imienin w komórce */
+export function fitImieninyMaxLen(cal: StrefaKalendarza): number {
+  const cellW = cal.szerokosc / 7;
+  if (cal.szerokosc < 58) return 0;
+  if (cal.szerokosc < 80) return 6;
+  if (cellW < 14) return 7;
+  if (cellW < 18) return 9;
+  return 11;
 }

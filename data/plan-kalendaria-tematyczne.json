@@ -760,7 +760,7 @@
         "naglowek": "Baloo 2",
         "tekst": "Open Sans",
         "rozmiarMiesiac": 12,
-        "rozmiarDzien": 7.5
+        "rozmiarDzien": 8.5
       },
       "kolekcja": "tematyczne",
       "strony": [
@@ -2922,7 +2922,7 @@
         "naglowek": "Merriweather",
         "tekst": "Source Sans 3",
         "rozmiarMiesiac": 12,
-        "rozmiarDzien": 7.5
+        "rozmiarDzien": 8.5
       },
       "kolekcja": "tematyczne",
       "strony": [
@@ -4834,9 +4834,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4870,9 +4870,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4919,9 +4919,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -4968,9 +4968,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5017,9 +5017,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5066,9 +5066,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5115,9 +5115,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5164,9 +5164,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5213,9 +5213,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5262,9 +5262,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5311,9 +5311,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5360,9 +5360,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -5409,9 +5409,9 @@
               "typStrefy": "hero",
               "pozycja": {
                 "x": 12,
-                "y": 24,
+                "y": 28,
                 "szerokosc": 186,
-                "wysokosc": 154
+                "wysokosc": 146
               },
               "maska": "prostokat",
               "obrot": 0,
@@ -12192,7 +12192,7 @@
         "naglowek": "Space Mono",
         "tekst": "Inter",
         "rozmiarMiesiac": 11,
-        "rozmiarDzien": 7
+        "rozmiarDzien": 8
       },
       "kolekcja": "tematyczne",
       "strony": [

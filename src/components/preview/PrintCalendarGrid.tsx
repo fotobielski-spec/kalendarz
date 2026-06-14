@@ -1,7 +1,7 @@
 import type { StrefaKalendarza } from '../../types/plan';
-import { getMonthDaysWithImieniny } from '../../utils/imieniny';
-import { fitDayFontSize } from '../../utils/typographyFit';
-import { getDayLabels, mmPosStyle } from '../../utils/previewUtils';
+import { formatImieninyShort } from '../../utils/imieniny';
+import { fitDayFontSize, fitImieninyMaxLen } from '../../utils/typographyFit';
+import { getDayLabels, isSidebarCalendarZone, mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import './PrintCalendarGrid.css';
 
 interface MonthTitleProps {
@@ -51,18 +51,40 @@ export function PrintCalendarGrid({
   monthTitle,
   embedded = false,
 }: PrintCalendarGridProps) {
-  const days = getMonthDaysWithImieniny(year, monthIndex);
   const labels = getDayLabels();
   const today = new Date();
   const fittedDaySize = fitDayFontSize(dayFontSize, area, showImieniny);
   const isCompact = compact || area.szerokosc < 95;
+  const isSidebar = isSidebarCalendarZone(area);
+  const imieninyMaxLen = fitImieninyMaxLen(area);
+
+  const firstDay = new Date(year, monthIndex, 1);
+  const startOffset = (firstDay.getDay() + 6) % 7;
+  const startDate = new Date(year, monthIndex, 1 - startOffset);
+
+  const days = Array.from({ length: 42 }, (_, i) => {
+    const date = new Date(startDate);
+    date.setDate(startDate.getDate() + i);
+    const isCurrentMonth = date.getMonth() === monthIndex;
+    const dow = date.getDay();
+    const d = date.getDate();
+    return {
+      day: isCurrentMonth ? d : null,
+      isCurrentMonth,
+      isWeekend: dow === 0 || dow === 6,
+      imieniny: isCurrentMonth && imieninyMaxLen > 0
+        ? formatImieninyShort(monthIndex + 1, d, imieninyMaxLen)
+        : '',
+    };
+  });
 
   return (
     <div
       className={[
         'print-cal',
         isCompact && 'print-cal--compact',
-        showImieniny && 'print-cal--imieniny',
+        isSidebar && 'print-cal--sidebar',
+        showImieniny && imieninyMaxLen > 0 && 'print-cal--imieniny',
         embedded && 'print-cal--embedded',
       ].filter(Boolean).join(' ')}
       style={{
@@ -71,6 +93,7 @@ export function PrintCalendarGrid({
           : mmPosStyle(area)),
         color: textColor,
         background: backgroundColor,
+        ...zoneCssVars(area),
         '--font-heading': headingFont,
         '--font-body': bodyFont,
         '--day-size': fittedDaySize,
