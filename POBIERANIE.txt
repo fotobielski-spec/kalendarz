@@ -1,6 +1,12 @@
 KALENDARIUM+ — pakiet do pobrania
 ================================
 
+POBIERZ ZIP Z GITHUB
+--------------------
+https://github.com/fotobielski-spec/kalendarz/raw/cursor/kalendarium-plus-82fd/kalendarium-plus-pakiet.zip
+
+(lub: repo → branch cursor/kalendarium-plus-82fd → plik kalendarium-plus-pakiet.zip → Download)
+
 ZAWARTOŚĆ ARCHIWUM
 ------------------
 podglad/          Gotowy podgląd HTML (po zbudowaniu — otwórz przez serwer lokalny)
