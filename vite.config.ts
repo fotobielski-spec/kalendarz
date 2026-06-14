@@ -17,6 +17,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         podglad: resolve(__dirname, 'podglad.html'),
+        podgladArt: resolve(__dirname, 'podglad-art.html'),
       },
     },
   },

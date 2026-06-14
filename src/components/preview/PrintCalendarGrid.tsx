@@ -9,6 +9,7 @@ interface PrintCalendarGridProps {
   accentColor: string;
   dayFontSize?: number;
   compact?: boolean;
+  backgroundColor?: string;
 }
 
 export function PrintCalendarGrid({
@@ -18,12 +19,16 @@ export function PrintCalendarGrid({
   accentColor,
   dayFontSize = 9,
   compact = false,
+  backgroundColor,
 }: PrintCalendarGridProps) {
   const days = getJanuaryDays(year);
   const labels = getDayLabels();
 
   return (
-    <div className="print-cal" style={{ ...mmPosStyle(area), color: textColor }}>
+    <div
+      className="print-cal"
+      style={{ ...mmPosStyle(area), color: textColor, background: backgroundColor }}
+    >
       <div className={`print-cal__labels${compact ? ' print-cal__labels--compact' : ''}`}>
         {labels.map((label) => (
           <span key={label} className="print-cal__label" style={{ color: accentColor }}>

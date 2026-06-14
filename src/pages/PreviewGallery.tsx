@@ -1,27 +1,48 @@
-import { useState } from 'react';
-import planData from '../../data/plan-kalendaria-13s.json';
+import { useMemo, useState } from 'react';
 import type { PlanKalendaria } from '../types/plan';
 import { MonthPagePreview } from '../components/preview/MonthPagePreview';
 import './PreviewGallery.css';
 
-const plan = planData as PlanKalendaria;
+interface PreviewGalleryProps {
+  plan: PlanKalendaria;
+  title: string;
+  subtitle: string;
+  showProportion?: boolean;
+  links?: { href: string; label: string }[];
+}
 
-export function PreviewGallery() {
+export function PreviewGallery({
+  plan,
+  title,
+  subtitle,
+  showProportion = false,
+  links = [{ href: '/', label: '← Aplikacja' }],
+}: PreviewGalleryProps) {
   const [year, setYear] = useState(2026);
   const [selected, setSelected] = useState<string | null>(null);
+  const [category, setCategory] = useState<string>('');
 
-  const filtered = selected
-    ? plan.kalendaria.filter((k) => k.id === selected)
-    : plan.kalendaria;
+  const categories = useMemo(
+    () => [...new Set(plan.kalendaria.map((k) => k.kategoria))].sort(),
+    [plan],
+  );
+
+  const filtered = plan.kalendaria.filter((k) => {
+    if (selected && k.id !== selected) return false;
+    if (category && k.kategoria !== category) return false;
+    return true;
+  });
+
+  const total = plan.kalendaria.length;
 
   return (
     <div className="preview-gallery">
       <header className="preview-gallery__header">
         <div>
           <h1>
-            Podgląd stycznia — <span>Kalendarium+</span>
+            {title} <span>Kalendarium+</span>
           </h1>
-          <p>20 szablonów kalendarzy A4 pion · 1 miesiąc na stronę · ze zdjęciami klienta</p>
+          <p>{subtitle}</p>
         </div>
         <div className="preview-gallery__controls">
           <label>
@@ -33,23 +54,47 @@ export function PreviewGallery() {
             </select>
           </label>
           <label>
+            Kategoria
+            <select value={category} onChange={(e) => setCategory(e.target.value)}>
+              <option value="">Wszystkie</option>
+              {categories.map((c) => (
+                <option key={c} value={c}>{c}</option>
+              ))}
+            </select>
+          </label>
+          <label>
             Szablon
-            <select value={selected ?? ''} onChange={(e) => setSelected(e.target.value || null)}>
-              <option value="">Wszystkie (20)</option>
+            <select
+              value={selected ?? ''}
+              onChange={(e) => setSelected(e.target.value || null)}
+            >
+              <option value="">Wszystkie ({total})</option>
               {plan.kalendaria.map((k) => (
                 <option key={k.id} value={k.id}>{k.id} — {k.nazwa}</option>
               ))}
             </select>
           </label>
-          <a href="/" className="preview-gallery__link">← Aplikacja</a>
+          {links.map((l) => (
+            <a key={l.href} href={l.href} className="preview-gallery__link">{l.label}</a>
+          ))}
         </div>
       </header>
 
       <div className={`preview-gallery__grid${selected ? ' preview-gallery__grid--single' : ''}`}>
         {filtered.map((k) => (
-          <MonthPagePreview key={k.id} kalendarium={k} year={year} scale={selected ? 1.15 : 1} />
+          <MonthPagePreview
+            key={k.id}
+            kalendarium={k}
+            year={year}
+            scale={selected ? 1.15 : 1}
+            showProportion={showProportion}
+          />
         ))}
       </div>
+
+      {filtered.length === 0 && (
+        <p className="preview-gallery__empty">Brak szablonów dla wybranych filtrów.</p>
+      )}
     </div>
   );
 }

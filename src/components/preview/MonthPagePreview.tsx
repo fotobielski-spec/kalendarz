@@ -5,6 +5,7 @@ import {
   mmToPercent,
   resolvePaletteValue,
 } from '../../utils/previewUtils';
+import { PageDecorations } from './PageDecorations';
 import { PhotoZone } from './PhotoZone';
 import { PrintCalendarGrid } from './PrintCalendarGrid';
 import { RadialCalendarGrid } from './RadialCalendarGrid';
@@ -14,13 +15,19 @@ interface MonthPagePreviewProps {
   kalendarium: Kalendarium;
   year?: number;
   scale?: number;
+  showProportion?: boolean;
 }
 
 function getJanuaryPage(k: Kalendarium): StronaMiesiaca | undefined {
   return k.strony.find((s) => s.typ === 'miesiac' && s.miesiac === 1) as StronaMiesiaca | undefined;
 }
 
-export function MonthPagePreview({ kalendarium, year = 2026, scale = 1 }: MonthPagePreviewProps) {
+export function MonthPagePreview({
+  kalendarium,
+  year = 2026,
+  scale = 1,
+  showProportion = false,
+}: MonthPagePreviewProps) {
   const page = getJanuaryPage(kalendarium);
   if (!page) return null;
 
@@ -33,6 +40,14 @@ export function MonthPagePreview({ kalendarium, year = 2026, scale = 1 }: MonthP
   const isGrayscale = kalendarium.efekty?.zdjecia === 'grayscale';
   const monthTitle = page.typografia?.nazwaMiesiaca;
   const compact = page.strefaKalendarza.szerokosc < 120;
+  const frosted = page.efektyStrony?.frostedGlass;
+  const semiPanel = page.efektyStrony?.panelPolprzezroczysty;
+  const proporcja = page.proporcja ?? kalendarium.proporcja;
+
+  const calBg =
+    semiPanel ? `rgba(${hexToRgb(bg)}, 0.88)` :
+    frosted ? 'transparent' :
+    undefined;
 
   return (
     <article className="month-preview" style={{ '--preview-scale': scale } as React.CSSProperties}>
@@ -40,6 +55,11 @@ export function MonthPagePreview({ kalendarium, year = 2026, scale = 1 }: MonthP
         <span className="month-preview__id">{kalendarium.id}</span>
         <h3 className="month-preview__name">{kalendarium.nazwa}</h3>
         <p className="month-preview__cat">{kalendarium.kategoria}</p>
+        {showProportion && proporcja && (
+          <span className="month-preview__ratio">
+            {proporcja.zdjecie}% foto · {proporcja.kalendarium}% kalendarz
+          </span>
+        )}
       </header>
 
       <div className="month-preview__page-wrap">
@@ -51,73 +71,26 @@ export function MonthPagePreview({ kalendarium, year = 2026, scale = 1 }: MonthP
             fontFamily: kalendarium.typografia.tekst ?? 'system-ui, sans-serif',
           }}
         >
+          {showProportion && (
+            <>
+              <div className="month-preview__zone-label month-preview__zone-label--photo">60% zdjęcie</div>
+              <div
+                className="month-preview__zone-divider"
+                style={{ top: `${((page.strefaKalendarza.y) / 297) * 100}%` }}
+              />
+              <div className="month-preview__zone-label month-preview__zone-label--cal">40% kalendarium</div>
+            </>
+          )}
+
           {page.strefyZdjec.map((zone) => (
             <PhotoZone key={zone.id} kalId={kalendarium.id} zone={zone} grayscale={isGrayscale} />
           ))}
 
-          {page.dekoracje?.map((d, i) => {
-            if (d.typ === 'nakladka' && d.obszar) {
-              return (
-                <div
-                  key={i}
-                  className="month-preview__overlay"
-                  style={{
-                    ...mmPosStyle(d.obszar),
-                    background: d.kolor ?? 'rgba(0,0,0,0.45)',
-                  }}
-                />
-              );
-            }
-            if (d.typ === 'paleta-sezonowa' && d.tlo) {
-              return null;
-            }
-            if (d.typ === 'linia-zlota' && d.pozycja && 'szerokosc' in d) {
-              const p = d.pozycja as { x: number; y: number };
-              return (
-                <div
-                  key={i}
-                  className="month-preview__gold-line"
-                  style={{
-                    position: 'absolute',
-                    left: `${(p.x / 210) * 100}%`,
-                    top: `${(p.y / 297) * 100}%`,
-                    width: `${((d.szerokosc ?? 186) / 210) * 100}%`,
-                  }}
-                />
-              );
-            }
-            if (d.typ === 'ramka-zewnetrzna') {
-              return (
-                <div
-                  key={i}
-                  className="month-preview__outer-frame"
-                  style={{ borderColor: d.kolor ?? accent, margin: `${d.margines ?? 8}px` }}
-                />
-              );
-            }
-            if (d.typ === 'motyw-sezonowy') {
-              return (
-                <div key={i} className="month-preview__season-badge" style={{ color: accent }}>
-                  {d.sezon}
-                </div>
-              );
-            }
-            if (d.typ === 'plama-akwarelowa' && d.pozycja) {
-              const p = d.pozycja as { x: number; y: number };
-              return (
-                <div
-                  key={i}
-                  className="month-preview__watercolor"
-                  style={{
-                    left: `${(p.x / 210) * 100}%`,
-                    top: `${(p.y / 297) * 100}%`,
-                    background: d.kolor,
-                  }}
-                />
-              );
-            }
-            return null;
-          })}
+          <PageDecorations
+            dekoracje={page.dekoracje ?? []}
+            accent={accent}
+            paleta={kalendarium.paleta}
+          />
 
           {page.nakladka && (
             <div
@@ -160,8 +133,8 @@ export function MonthPagePreview({ kalendarium, year = 2026, scale = 1 }: MonthP
                 letterSpacing: monthTitle.letterSpacing ? `${monthTitle.letterSpacing * 0.1}px` : undefined,
                 fontStyle: monthTitle.styl === 'kursywa' ? 'italic' : undefined,
                 fontWeight: monthTitle.waga === 'semibold' ? 600 : monthTitle.waga === 'bold' ? 700 : 400,
-                transform: monthTitle.x > 100 ? 'translateX(-50%)' : undefined,
-                width: monthTitle.wyrownanie === 'center' ? '100%' : undefined,
+                transform: monthTitle.x > 100 || monthTitle.wyrownanie === 'center' ? 'translateX(-50%)' : undefined,
+                width: monthTitle.wyrownanie === 'center' ? 'auto' : undefined,
               }}
             >
               Styczeń {year}
@@ -201,10 +174,23 @@ export function MonthPagePreview({ kalendarium, year = 2026, scale = 1 }: MonthP
               accentColor={accent}
               dayFontSize={(kalendarium.typografia.rozmiarDzien ?? 9) * 0.85}
               compact={compact}
+              backgroundColor={calBg}
             />
           )}
         </div>
       </div>
+      {kalendarium.opis && (
+        <p className="month-preview__desc">{kalendarium.opis}</p>
+      )}
     </article>
   );
+}
+
+function hexToRgb(hex: string): string {
+  const h = hex.replace('#', '');
+  if (h.length < 6) return '255,255,255';
+  const r = parseInt(h.slice(0, 2), 16);
+  const g = parseInt(h.slice(2, 4), 16);
+  const b = parseInt(h.slice(4, 6), 16);
+  return `${r},${g},${b}`;
 }

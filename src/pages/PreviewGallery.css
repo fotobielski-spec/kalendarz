@@ -82,6 +82,13 @@
   max-width: 400px;
 }
 
+.preview-gallery__empty {
+  text-align: center;
+  color: #64748b;
+  padding: 3rem;
+  grid-column: 1 / -1;
+}
+
 @media (min-width: 900px) {
   .preview-gallery__grid {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));

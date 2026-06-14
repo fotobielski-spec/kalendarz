@@ -20,9 +20,10 @@ export interface StrefaZdjecia {
     marginesDolny?: number;
     podwojna?: boolean;
   } | null;
+  clipPath?: string | null;
+  efekt?: string;
   opis?: string;
   wymagane?: boolean;
-  efekt?: string;
   szczelina?: number;
 }
 
@@ -58,20 +59,32 @@ export interface StronaMiesiaca {
   dekoracje?: Dekoracja[];
   separator?: { x: number; y: number; szerokosc: number; wysokosc: number; kolor?: string };
   nakladka?: { kolor: string; obszar: PozycjaMm };
+  efektyStrony?: { frostedGlass?: boolean; panelPolprzezroczysty?: boolean; nakladkaZaluzja?: boolean };
+  proporcja?: { kalendarium: number; zdjecie: number };
 }
 
 export interface Dekoracja {
   typ: string;
   kolor?: string;
   pozycja?: PozycjaMm | { x: number; y: number };
+  x?: number;
+  y?: number;
+  cx?: number;
+  cy?: number;
   szerokosc?: number;
+  wysokosc?: number;
+  grubosc?: number;
   obszar?: PozycjaMm;
   sezon?: string;
   tlo?: string;
   akcent?: string;
   promienie?: number[];
-  grubosc?: number;
+  promien?: number;
+  rozmiar?: number;
   margines?: number;
+  paski?: number;
+  od?: string;
+  do?: string;
 }
 
 export interface Paleta {
@@ -109,6 +122,7 @@ export interface Kalendarium {
     rozmiarDzien?: number;
   };
   efekty?: { zdjecia?: string; kontrast?: number };
+  proporcja?: { kalendarium: number; zdjecie: number };
   strony: StronaMiesiaca[];
 }
 
