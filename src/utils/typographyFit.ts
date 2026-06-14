@@ -31,7 +31,7 @@ export function fitTitleInCalendarZone(
 
   const rawSize = title?.rozmiar ?? defaultSize;
   const cappedSize = senior
-    ? Math.min(rawSize, calW < 95 ? 13 : calH < 120 ? 15 : 17)
+    ? Math.min(rawSize, calW < 95 ? 12 : calH < 120 ? 13 : 15)
     : Math.min(
       rawSize,
       isSidebar ? 14 : isNarrow ? 13 : isShort ? 15 : 20,
