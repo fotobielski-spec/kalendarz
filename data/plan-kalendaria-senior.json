@@ -45,8 +45,8 @@
       "typografia": {
         "naglowek": "Cormorant Garamond",
         "tekst": "Lato",
-        "rozmiarMiesiac": 17,
-        "rozmiarDzien": 13,
+        "rozmiarMiesiac": 15,
+        "rozmiarDzien": 12,
         "senior": true
       },
       "proporcja": {
@@ -93,7 +93,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -141,7 +141,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -189,7 +189,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -237,7 +237,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -285,7 +285,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -333,7 +333,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -381,7 +381,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -429,7 +429,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -477,7 +477,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -525,7 +525,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -573,7 +573,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -621,7 +621,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#9B2C2C",
               "waga": "bold"
@@ -1862,8 +1862,8 @@
       "typografia": {
         "naglowek": "Fraunces",
         "tekst": "Nunito",
-        "rozmiarMiesiac": 17,
-        "rozmiarDzien": 13,
+        "rozmiarMiesiac": 15,
+        "rozmiarDzien": 12,
         "senior": true
       },
       "proporcja": {
@@ -1910,7 +1910,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -1958,7 +1958,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2006,7 +2006,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2054,7 +2054,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2102,7 +2102,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2150,7 +2150,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2198,7 +2198,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2246,7 +2246,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2294,7 +2294,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2342,7 +2342,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2390,7 +2390,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2438,7 +2438,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#166534",
               "waga": "bold"
@@ -2467,8 +2467,8 @@
       "typografia": {
         "naglowek": "EB Garamond",
         "tekst": "Lexend",
-        "rozmiarMiesiac": 17,
-        "rozmiarDzien": 13,
+        "rozmiarMiesiac": 15,
+        "rozmiarDzien": 12,
         "senior": true
       },
       "proporcja": {
@@ -2539,7 +2539,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -2611,7 +2611,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -2683,7 +2683,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -2755,7 +2755,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -2827,7 +2827,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -2899,7 +2899,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -2971,7 +2971,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -3043,7 +3043,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -3115,7 +3115,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -3187,7 +3187,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -3259,7 +3259,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -3331,7 +3331,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#78350F",
               "waga": "bold"
@@ -3361,8 +3361,8 @@
       "typografia": {
         "naglowek": "Atkinson Hyperlegible",
         "tekst": "Roboto",
-        "rozmiarMiesiac": 17,
-        "rozmiarDzien": 13,
+        "rozmiarMiesiac": 15,
+        "rozmiarDzien": 12,
         "senior": true
       },
       "proporcja": {
@@ -3409,7 +3409,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3457,7 +3457,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3505,7 +3505,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3553,7 +3553,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3601,7 +3601,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3649,7 +3649,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3697,7 +3697,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3745,7 +3745,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3793,7 +3793,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3841,7 +3841,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3889,7 +3889,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3937,7 +3937,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -3967,8 +3967,8 @@
       "typografia": {
         "naglowek": "Bebas Neue",
         "tekst": "Lexend",
-        "rozmiarMiesiac": 17,
-        "rozmiarDzien": 13,
+        "rozmiarMiesiac": 15,
+        "rozmiarDzien": 12,
         "senior": true
       },
       "proporcja": {
@@ -4015,7 +4015,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4063,7 +4063,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4111,7 +4111,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4159,7 +4159,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4207,7 +4207,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4255,7 +4255,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4303,7 +4303,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4351,7 +4351,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4399,7 +4399,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4447,7 +4447,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4495,7 +4495,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4543,7 +4543,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 14,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#000000",
               "waga": "bold"
@@ -4573,8 +4573,8 @@
       "typografia": {
         "naglowek": "DM Serif Display",
         "tekst": "Open Sans",
-        "rozmiarMiesiac": 17,
-        "rozmiarDzien": 13,
+        "rozmiarMiesiac": 15,
+        "rozmiarDzien": 12,
         "senior": true
       },
       "proporcja": {
@@ -4637,7 +4637,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -4701,7 +4701,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -4765,7 +4765,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -4829,7 +4829,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -4893,7 +4893,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -4957,7 +4957,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -5021,7 +5021,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -5085,7 +5085,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -5149,7 +5149,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -5213,7 +5213,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -5277,7 +5277,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -5341,7 +5341,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#1D4ED8",
               "waga": "bold"
@@ -5371,8 +5371,8 @@
       "typografia": {
         "naglowek": "Baloo 2",
         "tekst": "Lexend",
-        "rozmiarMiesiac": 17,
-        "rozmiarDzien": 13,
+        "rozmiarMiesiac": 15,
+        "rozmiarDzien": 12,
         "senior": true
       },
       "proporcja": {
@@ -5419,7 +5419,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5467,7 +5467,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5515,7 +5515,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5563,7 +5563,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5611,7 +5611,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5659,7 +5659,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5707,7 +5707,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5755,7 +5755,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5803,7 +5803,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5851,7 +5851,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5899,7 +5899,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5947,7 +5947,7 @@
             "nazwaMiesiaca": {
               "x": 105,
               "y": 178,
-              "rozmiar": 17,
+              "rozmiar": 15,
               "wyrownanie": "center",
               "kolor": "#BE123C",
               "waga": "bold"
@@ -5978,7 +5978,7 @@
         "naglowek": "Libre Baskerville",
         "tekst": "Spectral",
         "rozmiarMiesiac": 16,
-        "rozmiarDzien": 13,
+        "rozmiarDzien": 12,
         "senior": true
       },
       "proporcja": {

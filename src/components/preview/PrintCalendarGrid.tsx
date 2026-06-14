@@ -58,6 +58,7 @@ export function PrintCalendarGrid({
   const fittedDaySize = fitDayFontSize(dayFontSize, area, showImieniny, senior);
   const isCompact = compact || area.szerokosc < 95;
   const isSidebar = isSidebarCalendarZone(area);
+  const isSeniorShort = senior && area.wysokosc < 120;
   const imieninyMaxLen = fitImieninyMaxLen(area, senior);
 
   const firstDay = new Date(year, monthIndex, 1);
@@ -89,6 +90,7 @@ export function PrintCalendarGrid({
         isSidebar && 'print-cal--sidebar',
         showImieniny && imieninyMaxLen > 0 && 'print-cal--imieniny',
         senior && 'print-cal--senior',
+        isSeniorShort && 'print-cal--senior-compact',
         senior && area.szerokosc < 95 && 'print-cal--senior-side',
         embedded && 'print-cal--embedded',
       ].filter(Boolean).join(' ')}
@@ -107,7 +109,11 @@ export function PrintCalendarGrid({
     >
       {monthTitle && (
         <div
-          className="print-cal__title"
+          className={[
+            'print-cal__title',
+            senior && 'print-cal__title--senior',
+            isSeniorShort && 'print-cal__title--senior-inline',
+          ].filter(Boolean).join(' ')}
           style={{
             fontFamily: monthTitle.fontFamily,
             color: monthTitle.color ?? accentColor,
