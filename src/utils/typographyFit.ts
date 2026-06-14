@@ -31,7 +31,7 @@ export function fitTitleInCalendarZone(
 
   const rawSize = title?.rozmiar ?? defaultSize;
   const cappedSize = senior
-    ? Math.min(rawSize, calW < 95 ? 12 : calH < 120 ? 13 : 15)
+    ? Math.min(rawSize, calW < 95 ? 11 : calH < 120 ? 12 : 13)
     : Math.min(
       rawSize,
       isSidebar ? 14 : isNarrow ? 13 : isShort ? 15 : 20,
@@ -64,9 +64,9 @@ export function fitDayFontSize(
 ): number {
   if (senior) {
     const isNarrow = cal.szerokosc < 95;
-    let size = baseSize;
+    let size = baseSize - 1;
     if (hasImieniny && isNarrow) size -= 0.5;
-    return Math.max(12, Math.min(size, isNarrow ? 13 : 15));
+    return Math.max(11, Math.min(size, isNarrow ? 12 : 13.5));
   }
 
   const isNarrow = cal.szerokosc < 95;

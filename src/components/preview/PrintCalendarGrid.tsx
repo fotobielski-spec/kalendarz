@@ -120,7 +120,7 @@ export function PrintCalendarGrid({
           className={[
             'print-cal__title',
             senior && 'print-cal__title--senior',
-            isSeniorShort && 'print-cal__title--senior-inline',
+            senior && 'print-cal__title--senior-inline',
           ].filter(Boolean).join(' ')}
           style={{
             fontFamily: monthTitle.fontFamily,
