@@ -1,0 +1,6833 @@
+{
+  "meta": {
+    "rokDomyslny": 2026,
+    "liczbaSzablonow": 10,
+    "opis": "10 kalendarzy „Trzy kalendarze” — główny miesiąc z imieninami + poprzedni i następny"
+  },
+  "formatWspolny": {
+    "szerokosc": 210,
+    "wysokosc": 297,
+    "siatkaDni": {
+      "etykietyDni": [
+        "Pn",
+        "Wt",
+        "Śr",
+        "Cz",
+        "Pt",
+        "Sb",
+        "Nd"
+      ]
+    },
+    "proporcja": {
+      "kalendarium": 58,
+      "zdjecie": 42
+    },
+    "imieniny": true,
+    "trojka": true
+  },
+  "kalendaria": [
+    {
+      "id": "TRZ-01",
+      "nazwa": "Harmonia Trzech",
+      "kategoria": "klasyczny",
+      "kolekcja": "trojka",
+      "opis": "Złota godzina u góry — trzy miesiące w harmonijnym tryptyku, środek z imieninami.",
+      "tagi": [
+        "trojka",
+        "klasyczny",
+        "ciepły"
+      ],
+      "paleta": {
+        "tlo": "#FFFBF5",
+        "akcent": "#B8860B",
+        "tekst": "#2C2416"
+      },
+      "typografia": {
+        "naglowek": "Cormorant Garamond",
+        "tekst": "Lato",
+        "rozmiarMiesiac": 14,
+        "rozmiarDzien": 8.5,
+        "trojka": true
+      },
+      "proporcja": {
+        "kalendarium": 58,
+        "zdjecie": 42
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-top",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 107
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret lub pejzaż — złota godzina",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-klasyczna"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B8860B",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 126,
+              "szerokosc": 186,
+              "kolor": "#B8860B",
+              "grubosc": 1.5
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "TRZ-02",
+      "nazwa": "Editorial Vogue",
+      "kategoria": "editorial",
+      "kolekcja": "trojka",
+      "opis": "Magazynowy układ — zdjęcie po lewej, trzy kalendarze po prawej jak spread Vogue.",
+      "tagi": [
+        "trojka",
+        "editorial"
+      ],
+      "paleta": {
+        "tlo": "#FAFAFA",
+        "akcent": "#1A1A2E",
+        "tekst": "#16213E"
+      },
+      "typografia": {
+        "naglowek": "Playfair Display",
+        "tekst": "Source Sans 3",
+        "rozmiarMiesiac": 13,
+        "rozmiarDzien": 8,
+        "trojka": true
+      },
+      "proporcja": {
+        "kalendarium": 58,
+        "zdjecie": 42
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-foto-left",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 78,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret editorial — lewa strona",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 90,
+            "y": 12,
+            "szerokosc": 108,
+            "wysokosc": 273,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-editorial"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 144,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#1A1A2E",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia-pionowa",
+              "x": 90,
+              "y": 12,
+              "wysokosc": 273,
+              "kolor": "#1A1A2E",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "TRZ-03",
+      "nazwa": "Most Czasu",
+      "kategoria": "romantyczny",
+      "kolekcja": "trojka",
+      "opis": "Łuk katedralny nad kalendarzem — środkowy miesiąc unosi się jak most między przeszłością a przyszłością.",
+      "tagi": [
+        "trojka",
+        "łuk",
+        "romantyczny"
+      ],
+      "paleta": {
+        "tlo": "#FFF5F5",
+        "akcent": "#9F1239",
+        "tekst": "#4C0519"
+      },
+      "typografia": {
+        "naglowek": "Cormorant Infant",
+        "tekst": "Nunito",
+        "rozmiarMiesiac": 14,
+        "rozmiarDzien": 8.5,
+        "trojka": true
+      },
+      "proporcja": {
+        "kalendarium": 58,
+        "zdjecie": 42
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-luk",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 22,
+                "y": 16,
+                "szerokosc": 166,
+                "wysokosc": 109
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Para lub rodzina w łuku",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-most"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#9F1239",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "TRZ-04",
+      "nazwa": "Nordycki Spokój",
+      "kategoria": "minimal",
+      "kolekcja": "trojka",
+      "opis": "Kalendarze u góry, zdjęcie u dołu — skandynawski minimalizm, dużo oddechu.",
+      "tagi": [
+        "trojka",
+        "nordycki",
+        "minimal"
+      ],
+      "paleta": {
+        "tlo": "#F8FAFC",
+        "akcent": "#334155",
+        "tekst": "#0F172A"
+      },
+      "typografia": {
+        "naglowek": "DM Sans",
+        "tekst": "Inter",
+        "rozmiarMiesiac": 13,
+        "rozmiarDzien": 8,
+        "trojka": true
+      },
+      "proporcja": {
+        "kalendarium": 58,
+        "zdjecie": 42
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-kal-gora",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 176,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Minimalistyczne zdjęcie — natura lub wnętrze",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-nord"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 14,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#334155",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "TRZ-05",
+      "nazwa": "Art Deco Gala",
+      "kategoria": "deco",
+      "kolekcja": "trojka",
+      "opis": "Geometryczna elegancja lat 20. — czarno-złote narożniki, trzy miesiące w ramie deco.",
+      "tagi": [
+        "trojka",
+        "art-deco",
+        "elegancki"
+      ],
+      "paleta": {
+        "tlo": "#FFFEF5",
+        "akcent": "#1C1917",
+        "tekst": "#1C1917"
+      },
+      "typografia": {
+        "naglowek": "Poiret One",
+        "tekst": "Josefin Sans",
+        "rozmiarMiesiac": 14,
+        "rozmiarDzien": 8,
+        "trojka": true
+      },
+      "proporcja": {
+        "kalendarium": 58,
+        "zdjecie": 42
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-deco",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 20,
+                "y": 20,
+                "szerokosc": 170,
+                "wysokosc": 101
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": {
+                "szerokosc": 2,
+                "kolor": "#1C1917",
+                "marginesDolny": 0
+              },
+              "clipPath": null,
+              "opis": "Portret glamour — styl lat 20.",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-deco"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#1C1917",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 16,
+              "y": 16,
+              "szerokosc": 178,
+              "wysokosc": 111,
+              "kolor": "#1C1917",
+              "grubosc": 1
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "TRZ-06",
+      "nazwa": "Pastelowy Sen",
+      "kategoria": "pastel",
+      "kolekcja": "trojka",
+      "opis": "Miękkie pastele i zaokrąglone panele — jak akwarela, delikatny tryptyk miesięcy.",
+      "tagi": [
+        "trojka",
+        "pastel",
+        "akwarela"
+      ],
+      "paleta": {
+        "tlo": "#FDF4FF",
+        "akcent": "#C026D3",
+        "tekst": "#581C87"
+      },
+      "typografia": {
+        "naglowek": "Quicksand",
+        "tekst": "Nunito",
+        "rozmiarMiesiac": 13,
+        "rozmiarDzien": 8,
+        "trojka": true
+      },
+      "proporcja": {
+        "kalendarium": 58,
+        "zdjecie": 42
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-pastel",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "okrag",
+              "pozycja": {
+                "x": 50,
+                "y": 18,
+                "szerokosc": 110,
+                "wysokosc": 110
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Delikatne zdjęcie — kwiaty lub dziecko",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-pastel"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#C026D3",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "TRZ-07",
+      "nazwa": "Galeria Noir",
+      "kategoria": "nocny",
+      "kolekcja": "trojka",
+      "opis": "Filmowy kontrast — ciemne boczne miesiące, jasny środek z imieninami jak reflektor na scenie.",
+      "tagi": [
+        "trojka",
+        "noir",
+        "kontrast"
+      ],
+      "paleta": {
+        "tlo": "#0F172A",
+        "akcent": "#E2E8F0",
+        "tekst": "#F1F5F9"
+      },
+      "typografia": {
+        "naglowek": "Bodoni Moda",
+        "tekst": "Raleway",
+        "rozmiarMiesiac": 13,
+        "rozmiarDzien": 8,
+        "trojka": true
+      },
+      "proporcja": {
+        "kalendarium": 58,
+        "zdjecie": 42
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-noir",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 16,
+                "szerokosc": 186,
+                "wysokosc": 109
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Czarno-białe zdjęcie — portret lub miasto nocą",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-noir"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 12,
+              "wyrownanie": "center",
+              "kolor": "#E2E8F0",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "TRZ-08",
+      "nazwa": "Ogród Botaniczny",
+      "kategoria": "botaniczny",
+      "kolekcja": "trojka",
+      "opis": "Zielone akcenty i botaniczna finezja — wieniec zdjęcia, trzy miesiące jak podział pór roku.",
+      "tagi": [
+        "trojka",
+        "ogród",
+        "botaniczny"
+      ],
+      "paleta": {
+        "tlo": "#F0FDF4",
+        "akcent": "#166534",
+        "tekst": "#14532D"
+      },
+      "typografia": {
+        "naglowek": "Fraunces",
+        "tekst": "Karla",
+        "rozmiarMiesiac": 14,
+        "rozmiarDzien": 8.5,
+        "trojka": true
+      },
+      "proporcja": {
+        "kalendarium": 58,
+        "zdjecie": 42
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-botanic",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 32,
+                "y": 20,
+                "szerokosc": 146,
+                "wysokosc": 103
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Kwiaty, ogród lub rośliny doniczkowe",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-botanic"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#166534",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 32,
+              "y": 125,
+              "szerokosc": 146,
+              "kolor": "#166534",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "TRZ-09",
+      "nazwa": "Brutalist Bold",
+      "kategoria": "brutalistyczny",
+      "kolekcja": "trojka",
+      "opis": "Surowa typografia, grube linie — odważny brutalizm w służbie czytelności trzech miesięcy.",
+      "tagi": [
+        "trojka",
+        "brutalistyczny",
+        "bold"
+      ],
+      "paleta": {
+        "tlo": "#FFFFFF",
+        "akcent": "#000000",
+        "tekst": "#000000"
+      },
+      "typografia": {
+        "naglowek": "Bebas Neue",
+        "tekst": "Roboto",
+        "rozmiarMiesiac": 14,
+        "rozmiarDzien": 8.5,
+        "trojka": true
+      },
+      "proporcja": {
+        "kalendarium": 58,
+        "zdjecie": 42
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-brutalist",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 18,
+                "szerokosc": 186,
+                "wysokosc": 105
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": "polygon(0 0, 100% 0, 100% 88%, 0 100%)",
+              "opis": "Architektura betonowa lub abstrakcyjna tekstura",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-brutalist"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#000000",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "TRZ-10",
+      "nazwa": "Złota Linia",
+      "kategoria": "luksus",
+      "kolekcja": "trojka",
+      "opis": "Imperialna elegancja — złote linie, szlachetna typografia, trzy miesiące jak trzy rozdziały roku.",
+      "tagi": [
+        "trojka",
+        "złoto",
+        "luksus"
+      ],
+      "paleta": {
+        "tlo": "#FFFBEB",
+        "akcent": "#B45309",
+        "tekst": "#451A03"
+      },
+      "typografia": {
+        "naglowek": "Libre Baskerville",
+        "tekst": "Spectral",
+        "rozmiarMiesiac": 14,
+        "rozmiarDzien": 8.5,
+        "trojka": true
+      },
+      "proporcja": {
+        "kalendarium": 58,
+        "zdjecie": 42
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 58,
+            "zdjecie": 42
+          },
+          "uklad": "trojka-zlota",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "luk",
+              "pozycja": {
+                "x": 18,
+                "y": 16,
+                "szerokosc": 174,
+                "wysokosc": 111
+              },
+              "maska": "luk",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Elegancki portret lub krajobraz jesienny",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 127,
+            "szerokosc": 186,
+            "wysokosc": 158,
+            "uklad": "trojka",
+            "tripleTyp": "trojka-zlota"
+          },
+          "typografia": {
+            "nazwaMiesiaca": {
+              "x": 105,
+              "y": 129,
+              "rozmiar": 13,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 12,
+              "y": 129,
+              "szerokosc": 186,
+              "kolor": "#B45309",
+              "grubosc": 0.8
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    }
+  ]
+}

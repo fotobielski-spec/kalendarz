@@ -73,6 +73,11 @@
   background: #ffedd5;
 }
 
+.month-preview__collection--trojka {
+  color: #5b21b6;
+  background: #ede9fe;
+}
+
 .month-preview__fonts {
   display: flex;
   align-items: baseline;

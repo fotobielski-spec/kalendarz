@@ -75,6 +75,16 @@ export const UKLAD_LABELS: Record<string, string> = {
   'senior-luk': 'Senior — łuk katedralny',
   'senior-zlota-rama': 'Senior — złota rama',
   'senior-zolty': 'Senior — żółto-czarny',
+  'trojka-foto-top': 'Trzy kalendarze — foto góra',
+  'trojka-foto-left': 'Trzy kalendarze — foto lewo',
+  'trojka-luk': 'Trzy kalendarze — łuk',
+  'trojka-kal-gora': 'Trzy kalendarze — kalendarz góra',
+  'trojka-deco': 'Trzy kalendarze — Art Deco',
+  'trojka-pastel': 'Trzy kalendarze — pastel',
+  'trojka-noir': 'Trzy kalendarze — galeria noir',
+  'trojka-botanic': 'Trzy kalendarze — botaniczny',
+  'trojka-brutalist': 'Trzy kalendarze — brutalist',
+  'trojka-zlota': 'Trzy kalendarze — złota linia',
 };
 
 export function getUkladLabel(uklad: string): string {
@@ -92,6 +102,9 @@ export function getLayoutOrientation(uklad: string): LayoutOrientation {
   if (uklad.startsWith('senior-foto-right')) return 'horizontal-right';
   if (uklad.startsWith('senior-kal-gora')) return 'vertical-bottom';
   if (uklad.startsWith('senior-')) return 'vertical-top';
+  if (uklad.startsWith('trojka-kal-gora')) return 'vertical-bottom';
+  if (uklad.startsWith('trojka-foto-left')) return 'horizontal-left';
+  if (uklad.startsWith('trojka-')) return 'vertical-top';
   if (uklad.includes('left') || uklad === 'vogue-left-60') return 'horizontal-left';
   if (uklad.includes('bottom') || uklad === 'cal-top-photo-bottom-60') return 'vertical-bottom';
   if (uklad.includes('split')) return 'horizontal-left';

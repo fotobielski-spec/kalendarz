@@ -64,10 +64,11 @@ function auditKalendarium(k, source) {
   }
 
   const intentionalOverlap =
-    /diagonal|double|duet|overlay|fullscreen|polaroid|action|frosted|spiral|L-frame|wave-divider|imperial|split/i.test(jan.uklad ?? '') ||
+    /diagonal|double|duet|overlay|fullscreen|polaroid|action|frosted|spiral|L-frame|wave-divider|imperial|split|trojka/i.test(jan.uklad ?? '') ||
     jan.efektyStrony?.frostedGlass ||
     jan.efektyStrony?.panelPolprzezroczysty ||
-    cal.uklad === 'pionowy';
+    cal.uklad === 'pionowy' ||
+    cal.uklad === 'trojka';
 
   const photos = (jan.strefyZdjec ?? []).map(zoneBox);
   const calBox = { x: cal.x, y: cal.y, w: cal.szerokosc, h: cal.wysokosc };

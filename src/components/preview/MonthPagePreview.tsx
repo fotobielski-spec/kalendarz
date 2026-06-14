@@ -14,6 +14,7 @@ import { PhotoZone } from './PhotoZone';
 import { PlannerCalendarGrid } from './PlannerCalendarGrid';
 import { PrintCalendarGrid } from './PrintCalendarGrid';
 import { RadialCalendarGrid } from './RadialCalendarGrid';
+import { TripleCalendarGrid } from './TripleCalendarGrid';
 import { VerticalCalendarGrid } from './VerticalCalendarGrid';
 import './LayoutZones.css';
 import './MonthPagePreview.css';
@@ -52,6 +53,8 @@ export function MonthPagePreview({
   const isRadial = page.strefaKalendarza.uklad === 'radialny';
   const isVertical = page.strefaKalendarza.uklad === 'pionowy' || page.uklad.startsWith('pion-lista');
   const isPlanner = page.strefaKalendarza.uklad === 'planer';
+  const isTriple = page.strefaKalendarza.uklad === 'trojka' || kalendarium.typografia.trojka === true;
+  const tripleTyp = page.strefaKalendarza.tripleTyp ?? 'trojka-klasyczna';
   const plannerTyp = page.strefaKalendarza.plannerTyp ?? 'planer-notatki';
   const isSenior = page.strefaKalendarza.uklad === 'senior' || kalendarium.typografia.senior === true;
   const isSeniorDense = kalendarium.typografia.dense === true;
@@ -128,6 +131,8 @@ export function MonthPagePreview({
                   ? 'planer'
                   : kalendarium.kolekcja === 'senior'
                     ? 'babcia i dziadek'
+                    : kalendarium.kolekcja === 'trojka'
+                      ? 'trzy kalendarze'
                   : 'art'}
           </span>
         )}
@@ -142,7 +147,8 @@ export function MonthPagePreview({
         </p>
         {showProportion && proporcja && (
           <span className="month-preview__ratio">
-            {proporcja.zdjecie}% foto · {proporcja.kalendarium}% kalendarz · imieniny
+            {proporcja.zdjecie}% foto · {proporcja.kalendarium}% kalendarz
+            {isTriple ? ' · 3× miesiąc' : ' · imieniny'}
           </span>
         )}
       </header>
@@ -216,6 +222,33 @@ export function MonthPagePreview({
               headingFont={headingFont}
               bodyFont={bodyFont}
               dayFontSize={daySize}
+              monthTitle={{
+                monthName: 'Styczeń',
+                year,
+                fontFamily: headingFont,
+                color: monthTitle?.kolor ?? accent,
+                fontSize: fittedTitle.fontSizePx,
+                maxWidth: fittedTitle.maxWidthPct,
+                textAlign: fittedTitle.textAlign,
+                transform: fittedTitle.transform,
+                letterSpacing: fittedTitle.letterSpacing,
+                fontWeight: monthTitle?.waga === 'bold' ? 700 : monthTitle?.waga === 'semibold' ? 600 : 500,
+                fontStyle: monthTitle?.styl === 'kursywa' ? 'italic' : undefined,
+                textTransform: monthTitle?.transform === 'uppercase' ? 'uppercase' : undefined,
+              }}
+            />
+          ) : isTriple ? (
+            <TripleCalendarGrid
+              year={year}
+              monthIndex={0}
+              area={page.strefaKalendarza}
+              tripleTyp={tripleTyp}
+              textColor={text}
+              accentColor={accent}
+              headingFont={headingFont}
+              bodyFont={bodyFont}
+              dayFontSize={daySize}
+              backgroundColor={semiPanel ? calBg : isTriple && kalendarium.paleta.tlo === '#0F172A' ? 'transparent' : bg}
               monthTitle={{
                 monthName: 'Styczeń',
                 year,

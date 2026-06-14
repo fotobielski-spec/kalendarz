@@ -31,6 +31,7 @@ export interface StrefaKalendarza extends PozycjaMm {
   uklad?: string;
   krawedz?: 'lewo' | 'prawo';
   plannerTyp?: string;
+  tripleTyp?: string;
   kalendarium?: boolean;
   przezroczysteTlo?: number;
   srodek?: { x: number; y: number };
@@ -126,10 +127,12 @@ export interface Kalendarium {
     senior?: boolean;
     /** Kompaktowa siatka — mniejsze cyfry, krótsze imieniny (SEN-04+) */
     dense?: boolean;
+    /** Tryb trzech kalendarzy na karcie */
+    trojka?: boolean;
   };
   efekty?: { zdjecia?: string; kontrast?: number };
   proporcja?: { kalendarium: number; zdjecie: number };
-  kolekcja?: 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | string;
+  kolekcja?: 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | 'trojka' | string;
   strony: StronaMiesiaca[];
 }
 
