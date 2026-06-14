@@ -56,6 +56,16 @@
   background: #ede9fe;
 }
 
+.month-preview__collection--pionowe {
+  color: #065f46;
+  background: #d1fae5;
+}
+
+.month-preview__collection--planery {
+  color: #1e40af;
+  background: #dbeafe;
+}
+
 .month-preview__fonts {
   display: flex;
   align-items: baseline;

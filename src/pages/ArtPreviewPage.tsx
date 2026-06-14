@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import artPlanData from '../../data/plan-kalendaria-art-40-60.json';
+import pionPlanData from '../../data/plan-kalendaria-pionowe.json';
+import planerPlanData from '../../data/plan-kalendaria-planery.json';
 import temPlanData from '../../data/plan-kalendaria-tematyczne.json';
 import type { Kalendarium, PlanKalendaria } from '../types/plan';
 import { collectFontsFromPlan, loadGoogleFonts } from '../utils/fonts';
@@ -7,23 +9,35 @@ import { PreviewGallery } from './PreviewGallery';
 
 const artPlan = artPlanData as unknown as PlanKalendaria;
 const temPlan = temPlanData as unknown as PlanKalendaria;
+const pionPlan = pionPlanData as unknown as PlanKalendaria;
+const planerPlan = planerPlanData as unknown as PlanKalendaria;
 
 const mergedKalendaria: Kalendarium[] = [
   ...artPlan.kalendaria.map((k) => ({ ...k, kolekcja: 'art' as const })),
   ...temPlan.kalendaria.map((k) => ({ ...k, kolekcja: 'tematyczne' as const })),
+  ...pionPlan.kalendaria.map((k) => ({ ...k, kolekcja: 'pionowe' as const })),
+  ...planerPlan.kalendaria.map((k) => ({ ...k, kolekcja: 'planery' as const })),
 ];
 
 const mergedPlan: PlanKalendaria = {
   meta: {
     ...artPlan.meta,
     liczbaSzablonow: mergedKalendaria.length,
-    opis: '50 kalendarzy A4 — 30 Art + 20 Tematyczne (koty, psy, OSP…)',
+    opis: '75 kalendarzy A4 — Art + Tematyczne + Pionowe + Planery',
   },
   formatWspolny: artPlan.formatWspolny,
   kalendaria: mergedKalendaria,
 };
 
-type KolekcjaFilter = '' | 'art' | 'tematyczne';
+type KolekcjaFilter = '' | 'art' | 'tematyczne' | 'pionowe' | 'planery';
+
+const KOLEKCJA_LABELS: Record<KolekcjaFilter, string> = {
+  '': 'Wszystkie (75)',
+  art: 'Art (30)',
+  tematyczne: 'Tematyczne (20)',
+  pionowe: 'Pionowe (5)',
+  planery: 'Planery (20)',
+};
 
 export function ArtPreviewPage() {
   const [fontsReady, setFontsReady] = useState(false);
@@ -50,7 +64,7 @@ export function ArtPreviewPage() {
     <PreviewGallery
       plan={filteredPlan}
       title="Typografia & Układy —"
-      subtitle={`${filteredPlan.kalendaria.length} kalendarzy A4 · 60/40 · czcionki · imieniny · koty · psy · OSP`}
+      subtitle={`${filteredPlan.kalendaria.length} kalendarzy A4 · 60/40 · imieniny · pionowe · planery`}
       showProportion
       showLayoutZones={showZones}
       fontsReady={fontsReady}
@@ -62,9 +76,9 @@ export function ArtPreviewPage() {
               value={kolekcja}
               onChange={(e) => setKolekcja(e.target.value as KolekcjaFilter)}
             >
-              <option value="">Wszystkie (50)</option>
-              <option value="art">Art (30)</option>
-              <option value="tematyczne">Tematyczne (20)</option>
+              {(Object.keys(KOLEKCJA_LABELS) as KolekcjaFilter[]).map((key) => (
+                <option key={key || 'all'} value={key}>{KOLEKCJA_LABELS[key]}</option>
+              ))}
             </select>
           </label>
           <label className="preview-gallery__toggle">

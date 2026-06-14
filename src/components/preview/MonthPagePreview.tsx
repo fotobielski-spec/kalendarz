@@ -11,8 +11,10 @@ import {
 import { LayoutZones } from './LayoutZones';
 import { PageDecorations } from './PageDecorations';
 import { PhotoZone } from './PhotoZone';
+import { PlannerCalendarGrid } from './PlannerCalendarGrid';
 import { PrintCalendarGrid } from './PrintCalendarGrid';
 import { RadialCalendarGrid } from './RadialCalendarGrid';
+import { VerticalCalendarGrid } from './VerticalCalendarGrid';
 import './LayoutZones.css';
 import './MonthPagePreview.css';
 
@@ -42,8 +44,11 @@ export function MonthPagePreview({
   const bg = season?.tlo ?? resolvePaletteValue(kalendarium.paleta.tlo, '#FFFFFF');
   const accent = season?.akcent ?? resolvePaletteValue(kalendarium.paleta.akcent, '#333333');
   const text = resolvePaletteValue(kalendarium.paleta.tekst, '#1A1A1A');
-  const isFullscreen = page.uklad.includes('fullscreen');
+  const isFullscreen = page.uklad.includes('fullscreen') || page.uklad.includes('overlay');
   const isRadial = page.strefaKalendarza.uklad === 'radialny';
+  const isVertical = page.strefaKalendarza.uklad === 'pionowy' || page.uklad.startsWith('pion-lista');
+  const isPlanner = page.strefaKalendarza.uklad === 'planer';
+  const plannerTyp = page.strefaKalendarza.plannerTyp ?? 'planer-notatki';
   const isGrayscale = kalendarium.efekty?.zdjecia === 'grayscale';
   const monthTitle = page.typografia?.nazwaMiesiaca;
   const compact = page.strefaKalendarza.szerokosc < 95;
@@ -101,7 +106,13 @@ export function MonthPagePreview({
         <span className="month-preview__layout" title={page.uklad}>{layoutLabel}</span>
         {kalendarium.kolekcja && (
           <span className={`month-preview__collection month-preview__collection--${kalendarium.kolekcja}`}>
-            {kalendarium.kolekcja === 'tematyczne' ? kalendarium.kategoria : 'art'}
+            {kalendarium.kolekcja === 'tematyczne'
+              ? kalendarium.kategoria
+              : kalendarium.kolekcja === 'pionowe'
+                ? 'pionowy'
+                : kalendarium.kolekcja === 'planery'
+                  ? 'planer'
+                  : 'art'}
           </span>
         )}
         <p className="month-preview__fonts">
@@ -162,6 +173,33 @@ export function MonthPagePreview({
 
           {isRadial ? (
             <RadialCalendarGrid year={year} area={page.strefaKalendarza} textColor={text} accentColor={accent} />
+          ) : isVertical ? (
+            <VerticalCalendarGrid
+              year={year}
+              monthIndex={0}
+              area={page.strefaKalendarza}
+              textColor={isFullscreen ? '#fff' : text}
+              accentColor={isFullscreen ? '#F5E6C8' : accent}
+              headingFont={headingFont}
+              bodyFont={bodyFont}
+              monthName="Styczeń"
+              yearNum={year}
+              edge={page.strefaKalendarza.krawedz}
+              backgroundColor={semiPanel ? calBg : undefined}
+            />
+          ) : isPlanner ? (
+            <PlannerCalendarGrid
+              year={year}
+              monthIndex={0}
+              area={page.strefaKalendarza}
+              plannerTyp={plannerTyp}
+              textColor={text}
+              accentColor={accent}
+              headingFont={headingFont}
+              bodyFont={bodyFont}
+              monthName="Styczeń"
+              yearNum={year}
+            />
           ) : isFullscreen ? (
             <>
               <div

@@ -56,6 +56,14 @@ export const UKLAD_LABELS: Record<string, string> = {
   'tem-foto-left': 'Foto — lewo 60%',
   'tem-kuchnia-top': 'Kuchnia — foto góra',
   'tem-osp-mlodziez': 'OSP młodzieżowa',
+  'pion-lista-lewo': 'Pionowa lista — lewy brzeg',
+  'pion-lista-prawo': 'Pionowa lista — prawy brzeg',
+  'pion-lista-bottom-lewo': 'Pionowa lista — dół lewo',
+  'pion-lista-bottom-prawo': 'Pionowa lista — dół prawo',
+  'pion-lista-overlay-prawo': 'Pionowa lista — nakładka prawo',
+  'planer-foto-top': 'Planer — foto góra 60%',
+  'planer-foto-left': 'Planer — foto lewo 60%',
+  'planer-foto-right': 'Planer — foto prawo 60%',
 };
 
 export function getUkladLabel(uklad: string): string {
@@ -65,8 +73,11 @@ export function getUkladLabel(uklad: string): string {
 export type LayoutOrientation = 'vertical-top' | 'vertical-bottom' | 'horizontal-left' | 'horizontal-right' | 'composite' | 'special';
 
 export function getLayoutOrientation(uklad: string): LayoutOrientation {
+  if (uklad.startsWith('pion-lista')) return 'horizontal-left';
+  if (uklad.startsWith('planer-foto-left')) return 'horizontal-left';
+  if (uklad.startsWith('planer-foto-right')) return 'horizontal-right';
+  if (uklad.startsWith('planer-foto-top')) return 'vertical-top';
   if (uklad.includes('left') || uklad === 'vogue-left-60') return 'horizontal-left';
-  if (uklad.includes('right')) return 'horizontal-right';
   if (uklad.includes('bottom') || uklad === 'cal-top-photo-bottom-60') return 'vertical-bottom';
   if (uklad.includes('split')) return 'horizontal-left';
   if (uklad.includes('radial') || uklad.includes('L-frame') || uklad.includes('filmstrip') ||

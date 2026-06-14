@@ -29,6 +29,8 @@ export interface StrefaZdjecia {
 
 export interface StrefaKalendarza extends PozycjaMm {
   uklad?: string;
+  krawedz?: 'lewo' | 'prawo';
+  plannerTyp?: string;
   przezroczysteTlo?: number;
   srodek?: { x: number; y: number };
   promienDni?: number;
@@ -123,7 +125,7 @@ export interface Kalendarium {
   };
   efekty?: { zdjecia?: string; kontrast?: number };
   proporcja?: { kalendarium: number; zdjecie: number };
-  kolekcja?: string;
+  kolekcja?: 'art' | 'tematyczne' | 'pionowe' | 'planery' | string;
   strony: StronaMiesiaca[];
 }
 
