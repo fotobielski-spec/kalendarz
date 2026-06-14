@@ -53,6 +53,12 @@
 .header__actions {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
+}
+
+.header__preview-link {
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 /* Buttons */

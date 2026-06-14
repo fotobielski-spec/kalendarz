@@ -1,0 +1,105 @@
+.month-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.month-preview__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.75rem;
+}
+
+.month-preview__id {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #6366f1;
+  background: #eef2ff;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.month-preview__name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.month-preview__cat {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.month-preview__page-wrap {
+  background: #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.month-preview__page {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 210 / 297;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transform: scale(var(--preview-scale, 1));
+  transform-origin: top center;
+}
+
+.month-preview__month-title {
+  z-index: 4;
+  margin: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.month-preview__overlay {
+  z-index: 2;
+  pointer-events: none;
+}
+
+.month-preview__separator {
+  z-index: 5;
+}
+
+.month-preview__gold-line {
+  position: absolute;
+  height: 1px;
+  background: #d4af37;
+  z-index: 2;
+}
+
+.month-preview__outer-frame {
+  position: absolute;
+  inset: 0;
+  border: 1px solid;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.month-preview__season-badge {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  z-index: 4;
+}
+
+.month-preview__watercolor {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 0.35;
+  filter: blur(12px);
+  z-index: 1;
+  pointer-events: none;
+}

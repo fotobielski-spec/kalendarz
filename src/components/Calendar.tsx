@@ -45,6 +45,9 @@ export function Header({
       </div>
 
       <div className="header__actions">
+        <a href="/podglad.html" className="btn btn--ghost header__preview-link">
+          Podgląd szablonów
+        </a>
         <button
           className="btn btn--icon"
           onClick={onToggleTheme}

@@ -1,0 +1,53 @@
+.print-cal {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.print-cal__labels {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  margin-bottom: 2px;
+}
+
+.print-cal__labels--compact {
+  margin-bottom: 1px;
+}
+
+.print-cal__label {
+  font-size: 6px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.print-cal__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  flex: 1;
+  gap: 1px;
+}
+
+.print-cal__grid--compact .print-cal__day {
+  font-size: 6px !important;
+}
+
+.print-cal__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.print-cal__day--muted {
+  opacity: 0.25;
+}
+
+.print-cal__day--weekend {
+  opacity: 0.75;
+}
