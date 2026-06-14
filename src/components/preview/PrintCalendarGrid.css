@@ -182,75 +182,102 @@
   padding: calc(0.3 * 100cqw / var(--zone-w-mm, 74)) 0 0;
 }
 
-/* Senior — duże cyfry + imieniny dla babci i dziadka */
+/* Senior — duże cyfry + pełne imieniny, bez wychodzenia poza strefę */
 .print-cal--senior {
-  padding: calc(2 * 100cqw / var(--zone-w-mm, 186));
-  overflow: visible;
+  padding: calc(1.2 * 100cqw / var(--zone-w-mm, 186));
+  overflow: hidden;
+  min-height: 0;
 }
 
 .print-cal--senior .print-cal__title {
   flex-direction: column;
   align-items: center;
-  gap: calc(1 * 100cqw / var(--zone-w-mm, 186));
-  margin-bottom: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  gap: calc(0.5 * 100cqw / var(--zone-w-mm, 186));
+  margin-bottom: calc(1 * 100cqw / var(--zone-w-mm, 186));
+  padding-right: 0;
   white-space: normal;
-  overflow: visible;
+  overflow: hidden;
   text-overflow: unset;
-  line-height: 1.15;
+  line-height: 1.1;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .print-cal--senior .print-cal__title-month {
   overflow: visible;
   text-overflow: unset;
   white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  width: 100%;
 }
 
 .print-cal--senior .print-cal__title-year {
-  font-size: 0.55em;
+  font-size: 0.5em;
   font-weight: 600;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 .print-cal--senior .print-cal__labels {
-  margin-bottom: calc(1.5 * 100cqw / var(--zone-w-mm, 186));
+  margin-bottom: calc(0.8 * 100cqw / var(--zone-w-mm, 186));
+  flex-shrink: 0;
 }
 
 .print-cal--senior .print-cal__label {
-  font-size: calc(var(--day-size, 15) * 0.7 * 100cqw / var(--zone-w-mm, 186));
+  font-size: calc(var(--day-size, 13) * 0.68 * 100cqw / var(--zone-w-mm, 186));
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
 }
 
 .print-cal--senior .print-cal__grid {
-  border: calc(0.8 * 100cqw / var(--zone-w-mm, 186)) solid color-mix(in srgb, var(--accent, currentColor) 30%, transparent);
-  border-radius: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  gap: calc(0.35 * 100cqw / var(--zone-w-mm, 186));
+  background: color-mix(in srgb, var(--accent, currentColor) 14%, transparent);
+  border-radius: calc(1.5 * 100cqw / var(--zone-w-mm, 186));
+  padding: calc(0.35 * 100cqw / var(--zone-w-mm, 186));
+  box-sizing: border-box;
 }
 
 .print-cal--senior .print-cal__cell {
   justify-content: flex-start;
   align-items: center;
-  padding: calc(0.4 * 100cqw / var(--zone-w-mm, 186)) calc(0.3 * 100cqw / var(--zone-w-mm, 186)) 0;
-  border: calc(0.4 * 100cqw / var(--zone-w-mm, 186)) solid color-mix(in srgb, currentColor 10%, transparent);
+  padding: calc(0.2 * 100cqw / var(--zone-w-mm, 186)) calc(0.15 * 100cqw / var(--zone-w-mm, 186)) 0;
+  border: none;
+  background: var(--senior-cal-bg, #fff);
+  border-radius: calc(0.8 * 100cqw / var(--zone-w-mm, 186));
   box-sizing: border-box;
-  gap: calc(0.3 * 100cqw / var(--zone-w-mm, 186));
+  gap: calc(0.15 * 100cqw / var(--zone-w-mm, 186));
+  overflow: hidden;
 }
 
 .print-cal--senior .print-cal__day-num {
-  font-size: calc(var(--day-size, 15) * 100cqw / var(--zone-w-mm, 186));
+  font-size: calc(var(--day-size, 13) * 100cqw / var(--zone-w-mm, 186));
   font-weight: 800;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .print-cal--senior .print-cal__imieniny {
-  font-size: calc(var(--day-size, 15) * 0.52 * 100cqw / var(--zone-w-mm, 186));
+  font-size: calc(var(--day-size, 13) * 0.44 * 100cqw / var(--zone-w-mm, 186));
   font-weight: 500;
-  line-height: 1.05;
-  opacity: 0.75;
+  line-height: 1.08;
+  opacity: 0.8;
+  width: 100%;
   max-width: 100%;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  word-break: break-word;
+  hyphens: auto;
   text-align: center;
+  flex-shrink: 1;
+  min-height: 0;
 }
 
 .print-cal--senior.print-cal--imieniny .print-cal__cell {
@@ -258,19 +285,17 @@
 }
 
 .print-cal--senior .print-cal__cell--muted {
-  opacity: 0.1;
+  opacity: 0.08;
+  background: transparent;
 }
 
 .print-cal--senior .print-cal__cell--weekend .print-cal__day-num {
   opacity: 0.85;
-  font-weight: 700;
 }
 
 .print-cal--senior .print-cal__cell--today {
-  background: color-mix(in srgb, var(--accent, #6366f1) 22%, transparent);
-  border-color: var(--accent, #6366f1);
-  border-width: calc(0.8 * 100cqw / var(--zone-w-mm, 186));
-  border-radius: calc(1.5 * 100cqw / var(--zone-w-mm, 186));
+  background: color-mix(in srgb, var(--accent, #6366f1) 18%, var(--senior-cal-bg, #fff));
+  box-shadow: inset 0 0 0 calc(0.5 * 100cqw / var(--zone-w-mm, 186)) var(--accent, #6366f1);
 }
 
 .print-cal--senior .print-cal__cell--today .print-cal__day-num {
@@ -279,25 +304,20 @@
 }
 
 .print-cal--senior .print-cal__cell--today .print-cal__imieniny {
-  opacity: 0.9;
+  opacity: 0.95;
   font-weight: 600;
 }
 
 /* Senior — wąska kolumna (foto lewo / prawo) */
 .print-cal--senior-side .print-cal__title {
   align-items: flex-start;
-  padding-left: calc(1 * 100cqw / var(--zone-w-mm, 112));
 }
 
-.print-cal--senior-side .print-cal__day-num {
-  font-size: calc(var(--day-size, 14) * 0.95 * 100cqw / var(--zone-w-mm, 112));
+.print-cal--senior-side .print-cal__title-month {
+  text-align: left;
 }
 
 .print-cal--senior-side .print-cal__imieniny {
-  font-size: calc(var(--day-size, 14) * 0.48 * 100cqw / var(--zone-w-mm, 112));
-}
-
-.print-cal--senior-side .print-cal__label {
-  font-size: calc(var(--day-size, 14) * 0.62 * 100cqw / var(--zone-w-mm, 112));
-  letter-spacing: 0;
+  font-size: calc(var(--day-size, 12) * 0.42 * 100cqw / var(--zone-w-mm, 112));
+  -webkit-line-clamp: 2;
 }

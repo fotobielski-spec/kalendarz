@@ -1,5 +1,5 @@
 import type { StrefaKalendarza } from '../../types/plan';
-import { formatImieninyShort } from '../../utils/imieniny';
+import { formatImieninyShort, getImieniny } from '../../utils/imieniny';
 import { fitDayFontSize, fitImieninyMaxLen } from '../../utils/typographyFit';
 import { getDayLabels, isSidebarCalendarZone, mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import './PrintCalendarGrid.css';
@@ -75,8 +75,9 @@ export function PrintCalendarGrid({
       isCurrentMonth,
       isWeekend: dow === 0 || dow === 6,
       imieniny: isCurrentMonth && imieninyMaxLen > 0
-        ? formatImieninyShort(monthIndex + 1, d, imieninyMaxLen)
+        ? formatImieninyShort(monthIndex + 1, d, imieninyMaxLen, senior)
         : '',
+      imieninyFull: isCurrentMonth ? getImieniny(monthIndex + 1, d).join(', ') : '',
     };
   });
 
@@ -96,7 +97,7 @@ export function PrintCalendarGrid({
           ? { position: 'relative', width: '100%', height: '100%' }
           : mmPosStyle(area)),
         color: textColor,
-        background: backgroundColor,
+        background: backgroundColor ?? (senior ? 'var(--senior-cal-bg, #fff)' : undefined),
         ...zoneCssVars(area),
         '--font-heading': headingFont,
         '--font-body': bodyFont,
@@ -157,7 +158,7 @@ export function PrintCalendarGrid({
             >
               <span className="print-cal__day-num">{d.day ?? ''}</span>
               {showImieniny && d.isCurrentMonth && d.imieniny && (
-                <span className="print-cal__imieniny" title={d.imieniny}>
+                <span className="print-cal__imieniny" title={d.imieninyFull || d.imieniny}>
                   {d.imieniny}
                 </span>
               )}

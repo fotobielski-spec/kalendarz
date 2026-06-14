@@ -81,10 +81,10 @@ const DEFINICJE = [
     opis: 'Różowo-kremowa elegancja — zdjęcie wnuków u góry, duże cyfry z imieninami u dołu.',
     tagi: ['senior', 'babcia', 'wnuki'],
     paleta: { tlo: '#FFFBF5', akcent: '#9B2C2C', tekst: '#1A1A1A', roz: '#FECDD3' },
-    typografia: { naglowek: 'Cormorant Garamond', tekst: 'Lexend', rozmiarMiesiac: 22, rozmiarDzien: 15, senior: true },
+    typografia: { naglowek: 'Cormorant Garamond', tekst: 'Lato', rozmiarMiesiac: 19, rozmiarDzien: 14, senior: true },
     layout: {
       ukladMiesiac: 'senior-foto-top',
-      titleRozmiar: 22,
+      titleRozmiar: 19,
       strefyMiesiac: () => [zone('foto', 'hero', M + 4, 22, W - 8, PH - 18, {
         opis: 'Zdjęcie wnuków lub rodziny',
         ramka: { szerokosc: 2, kolor: '#9B2C2C' },
@@ -101,10 +101,10 @@ const DEFINICJE = [
     opis: 'Portret po lewej, wysoki kalendarz z imieninami po prawej — granat na bieli.',
     tagi: ['senior', 'dziadek', 'portret'],
     paleta: { tlo: '#FFFFFF', akcent: '#1E3A8A', tekst: '#0F172A' },
-    typografia: { naglowek: 'Atkinson Hyperlegible', tekst: 'Atkinson Hyperlegible', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
+    typografia: { naglowek: 'Atkinson Hyperlegible', tekst: 'Source Sans 3', rozmiarMiesiac: 16, rozmiarDzien: 13, senior: true },
     layout: {
       ukladMiesiac: 'senior-foto-left',
-      titleRozmiar: 18,
+      titleRozmiar: 16,
       titleOpts: { left: true },
       strefyMiesiac: () => [zone('foto', 'kolumna', M, M, PW, H, {
         opis: 'Portret dziadka lub rodzinne',
@@ -121,10 +121,10 @@ const DEFINICJE = [
     opis: 'Kalendarz po lewej, zdjęcie rodzinne po prawej — zielona, spokojna paleta.',
     tagi: ['senior', 'rodzina'],
     paleta: { tlo: '#F0FDF4', akcent: '#047857', tekst: '#064E3B' },
-    typografia: { naglowek: 'Libre Baskerville', tekst: 'Source Sans 3', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
+    typografia: { naglowek: 'Playfair Display', tekst: 'Karla', rozmiarMiesiac: 17, rozmiarDzien: 14, senior: true },
     layout: {
       ukladMiesiac: 'senior-foto-right',
-      titleRozmiar: 18,
+      titleRozmiar: 17,
       titleOpts: { left: true },
       strefyMiesiac: () => [zone('foto', 'kolumna', M + PW, M, PW, H, { opis: 'Rodzinne zdjęcie — uroczystość' })],
       strefaKalendarza: CAL_LEFT,
@@ -138,10 +138,10 @@ const DEFINICJE = [
     opis: 'Okrągłe zdjęcie kwiatów lub ogrodu — duża siatka z imieninami pod spodem.',
     tagi: ['senior', 'babcia', 'ogród'],
     paleta: { tlo: '#F0FDF4', akcent: '#166534', tekst: '#14532D' },
-    typografia: { naglowek: 'Nunito', tekst: 'Nunito', rozmiarMiesiac: 22, rozmiarDzien: 15, senior: true },
+    typografia: { naglowek: 'Fraunces', tekst: 'Nunito', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
     layout: {
       ukladMiesiac: 'senior-kolo',
-      titleRozmiar: 22,
+      titleRozmiar: 18,
       strefyMiesiac: () => [zone('foto', 'okrag', M + 38, M + 6, 110, 110, {
         opis: 'Kwiaty lub ogród babci',
         maska: 'okrag',
@@ -158,19 +158,19 @@ const DEFINICJE = [
     opis: 'Polaroid z hobby dziadka — ciepły brąz, duże cyfry i imieniny.',
     tagi: ['senior', 'dziadek'],
     paleta: { tlo: '#FAF6F0', akcent: '#78350F', tekst: '#292524' },
-    typografia: { naglowek: 'Merriweather', tekst: 'Lexend', rozmiarMiesiac: 22, rozmiarDzien: 15, senior: true },
+    typografia: { naglowek: 'EB Garamond', tekst: 'Lexend', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
     layout: {
       ukladMiesiac: 'senior-polaroid',
-      titleRozmiar: 22,
+      titleRozmiar: 18,
       strefyMiesiac: () => [
-        zone('foto', 'polaroid', M + 16, M + 10, 88, 96, {
+        zone('foto', 'polaroid', M + 20, M + 14, 80, 88, {
           opis: 'Dziadek w fotelu lub hobby',
-          obrot: -3,
+          obrot: -2,
           ramka: { szerokosc: 1, kolor: '#D6D3D1', marginesDolny: 14 },
         }),
-        zone('foto2', 'polaroid', M + 108, M + 18, 72, 80, {
+        zone('foto2', 'polaroid', M + 108, M + 20, 68, 76, {
           opis: 'Drugie zdjęcie — wspomnienie',
-          obrot: 4,
+          obrot: 2,
           ramka: { szerokosc: 1, kolor: '#D6D3D1', marginesDolny: 12 },
         }),
       ],
@@ -185,10 +185,10 @@ const DEFINICJE = [
     opis: 'Czarno-biały układ WCAG — najwyższa czytelność cyfr i imienin.',
     tagi: ['senior', 'kontrast', 'wcag'],
     paleta: { tlo: '#FFFFFF', akcent: '#000000', tekst: '#000000' },
-    typografia: { naglowek: 'Atkinson Hyperlegible', tekst: 'Atkinson Hyperlegible', rozmiarMiesiac: 24, rozmiarDzien: 16, senior: true },
+    typografia: { naglowek: 'Atkinson Hyperlegible', tekst: 'Roboto', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
     layout: {
       ukladMiesiac: 'senior-kontrast',
-      titleRozmiar: 24,
+      titleRozmiar: 18,
       strefyMiesiac: () => [zone('foto', 'hero', M + 6, M + 14, W - 12, PH - 20, {
         opis: 'Czarno-białe zdjęcie rodziny',
         ramka: { szerokosc: 4, kolor: '#000000' },
@@ -204,10 +204,10 @@ const DEFINICJE = [
     opis: 'Kalendarz u góry (od razu widoczny!), zdjęcie u dołu — żółto-czarny kontrast.',
     tagi: ['senior', 'kontrast', 'widoczność'],
     paleta: { tlo: '#FEF9C3', akcent: '#000000', tekst: '#000000' },
-    typografia: { naglowek: 'Lexend', tekst: 'Lexend', rozmiarMiesiac: 22, rozmiarDzien: 15, senior: true },
+    typografia: { naglowek: 'Bebas Neue', tekst: 'Lexend', rozmiarMiesiac: 20, rozmiarDzien: 14, senior: true },
     layout: {
       ukladMiesiac: 'senior-kal-gora',
-      titleRozmiar: 22,
+      titleRozmiar: 20,
       strefyMiesiac: () => [zone('foto', 'hero', M + 4, M + CH + 10, W - 8, PH - 14, {
         opis: 'Jasne, wyraziste zdjęcie rodziny',
         ramka: { szerokosc: 3, kolor: '#000000' },
@@ -223,10 +223,10 @@ const DEFINICJE = [
     opis: 'Duet zdjęć wnuków u góry — łagodny błękit, czytelna siatka z imieninami.',
     tagi: ['senior', 'babcia', 'wnuki'],
     paleta: { tlo: '#EFF6FF', akcent: '#1D4ED8', tekst: '#1E3A8A' },
-    typografia: { naglowek: 'Lexend', tekst: 'Open Sans', rozmiarMiesiac: 22, rozmiarDzien: 15, senior: true },
+    typografia: { naglowek: 'DM Serif Display', tekst: 'Open Sans', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
     layout: {
       ukladMiesiac: 'senior-duet',
-      titleRozmiar: 22,
+      titleRozmiar: 18,
       strefyMiesiac: () => [
         zone('foto-a', 'kafelek', M + 6, M + 14, 84, PH - 22, {
           opis: 'Wnuk lub wnuczka — zdjęcie 1',
@@ -248,10 +248,10 @@ const DEFINICJE = [
     opis: 'Łuk katedralny nad kalendarzem — radosna paleta, duże cyfry z imieninami.',
     tagi: ['senior', 'wnuki', 'prezent'],
     paleta: { tlo: '#FFF1F2', akcent: '#BE123C', tekst: '#4C0519' },
-    typografia: { naglowek: 'Fredoka', tekst: 'Lexend', rozmiarMiesiac: 22, rozmiarDzien: 15, senior: true },
+    typografia: { naglowek: 'Baloo 2', tekst: 'Lexend', rozmiarMiesiac: 18, rozmiarDzien: 14, senior: true },
     layout: {
       ukladMiesiac: 'senior-luk',
-      titleRozmiar: 22,
+      titleRozmiar: 18,
       strefyMiesiac: () => [zone('foto', 'luk', M + 20, M + 8, 146, 96, {
         opis: 'Wnuki na zdjęciu — portret rodzinny',
         maska: 'luk',
@@ -268,10 +268,10 @@ const DEFINICJE = [
     opis: 'Jesienna elegancja ze złotą ramą — kalendarz z imieninami i ciepłym portretem.',
     tagi: ['senior', 'dziadek', 'jesień'],
     paleta: { tlo: '#FFFBEB', akcent: '#B45309', tekst: '#451A03', metal: '#D97706' },
-    typografia: { naglowek: 'Libre Baskerville', tekst: 'Lexend', rozmiarMiesiac: 22, rozmiarDzien: 15, senior: true },
+    typografia: { naglowek: 'Libre Baskerville', tekst: 'Spectral', rozmiarMiesiac: 17, rozmiarDzien: 14, senior: true },
     layout: {
       ukladMiesiac: 'senior-zlota-rama',
-      titleRozmiar: 22,
+      titleRozmiar: 17,
       strefyMiesiac: () => [zone('foto', 'hero', M + 10, M + 16, W - 20, PH - 22, {
         opis: 'Jesienny krajobraz lub portret dziadka',
         ramka: { szerokosc: 3, kolor: '#D97706', podwojna: true },

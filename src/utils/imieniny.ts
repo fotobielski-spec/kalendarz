@@ -9,12 +9,12 @@ export function getImieniny(month: number, day: number): string[] {
   return names ?? [];
 }
 
-/** Skrócona forma do komórki kalendarza (max ~10 znaków) */
-export function formatImieninyShort(month: number, day: number, maxLen = 11): string {
+/** Skrócona forma do komórki kalendarza; full = pełne imię (senior, zawijanie w CSS) */
+export function formatImieninyShort(month: number, day: number, maxLen = 11, full = false): string {
   const names = getImieniny(month, day);
   if (names.length === 0) return '';
   const first = names[0].replace(/'ego$/, '').replace(/'ej$/, '');
-  if (first.length <= maxLen) return first;
+  if (full || first.length <= maxLen) return first;
   return `${first.slice(0, maxLen - 1)}…`;
 }
 

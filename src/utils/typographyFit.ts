@@ -31,7 +31,7 @@ export function fitTitleInCalendarZone(
 
   const rawSize = title?.rozmiar ?? defaultSize;
   const cappedSize = senior
-    ? Math.min(rawSize, 32)
+    ? Math.min(rawSize, calW < 120 ? 16 : 19)
     : Math.min(
       rawSize,
       isSidebar ? 14 : isNarrow ? 13 : isShort ? 15 : 20,
@@ -43,7 +43,7 @@ export function fitTitleInCalendarZone(
     : Math.max(cal.x + 1, Math.min(title?.x ?? cal.x + 1, cal.x + calW - 2));
 
   const fontSize = `calc(${cappedSize} * 100cqw / ${calW})`;
-  const maxWidth = `${(calW / 210) * 100}%`;
+  const maxWidth = senior ? '100%' : `${(calW / 210) * 100}%`;
 
   return {
     xPct: (xMm / 210) * 100,
@@ -51,7 +51,7 @@ export function fitTitleInCalendarZone(
     fontSizePx: fontSize,
     maxWidthPct: maxWidth,
     textAlign: title?.wyrownanie === 'center' ? 'center' : 'left',
-    transform: title?.wyrownanie === 'center' || xMm > 105 ? 'translateX(-50%)' : undefined,
+    transform: senior ? undefined : (title?.wyrownanie === 'center' || xMm > 105 ? 'translateX(-50%)' : undefined),
     letterSpacing: title?.letterSpacing ? `${title.letterSpacing * 0.03}px` : undefined,
   };
 }
@@ -65,8 +65,8 @@ export function fitDayFontSize(
   if (senior) {
     const isNarrow = cal.szerokosc < 120;
     let size = baseSize;
-    if (hasImieniny) size -= isNarrow ? 2 : 1.5;
-    return Math.max(11, Math.min(size, isNarrow ? 15 : 17));
+    if (hasImieniny) size -= isNarrow ? 3 : 2.5;
+    return Math.max(10, Math.min(size, isNarrow ? 12 : 14));
   }
 
   const isNarrow = cal.szerokosc < 95;
@@ -91,9 +91,7 @@ export function fitDayFontSize(
 export function fitImieninyMaxLen(cal: StrefaKalendarza, senior = false): number {
   const cellW = cal.szerokosc / 7;
   if (senior) {
-    if (cellW < 14) return 7;
-    if (cellW < 18) return 9;
-    return 12;
+    return 99;
   }
   if (cal.szerokosc < 58) return 0;
   if (cal.szerokosc < 80) return 6;

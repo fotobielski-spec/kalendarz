@@ -72,6 +72,7 @@ export function MonthPagePreview({
   const calBg =
     semiPanel ? `rgba(${hexToRgb(bg)}, 0.88)` :
     frosted ? 'transparent' :
+    isSenior ? bg :
     undefined;
 
   const gridProps = {
@@ -155,6 +156,7 @@ export function MonthPagePreview({
             '--font-heading': headingFont,
             '--font-body': bodyFont,
             '--accent': accent,
+            ...(isSenior ? { '--senior-cal-bg': bg } as React.CSSProperties : {}),
           } as React.CSSProperties}
         >
           {page.strefyZdjec.map((zone) => (
