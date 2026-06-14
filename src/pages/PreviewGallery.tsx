@@ -1,5 +1,6 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { PlanKalendaria } from '../types/plan';
+import { collectFontsFromPlan, loadGoogleFonts } from '../utils/fonts';
 import { MonthPagePreview } from '../components/preview/MonthPagePreview';
 import './PreviewGallery.css';
 
@@ -8,6 +9,9 @@ interface PreviewGalleryProps {
   title: string;
   subtitle: string;
   showProportion?: boolean;
+  showLayoutZones?: boolean;
+  fontsReady?: boolean;
+  extraControls?: React.ReactNode;
   links?: { href: string; label: string }[];
 }
 
@@ -16,6 +20,9 @@ export function PreviewGallery({
   title,
   subtitle,
   showProportion = false,
+  showLayoutZones = false,
+  fontsReady = true,
+  extraControls,
   links = [{ href: '/', label: '← Aplikacja' }],
 }: PreviewGalleryProps) {
   const [year, setYear] = useState(2026);
@@ -27,6 +34,10 @@ export function PreviewGallery({
     [plan],
   );
 
+  useEffect(() => {
+    loadGoogleFonts(collectFontsFromPlan(plan.kalendaria));
+  }, [plan]);
+
   const filtered = plan.kalendaria.filter((k) => {
     if (selected && k.id !== selected) return false;
     if (category && k.kategoria !== category) return false;
@@ -36,7 +47,7 @@ export function PreviewGallery({
   const total = plan.kalendaria.length;
 
   return (
-    <div className="preview-gallery">
+    <div className={`preview-gallery${fontsReady ? '' : ' preview-gallery--loading'}`}>
       <header className="preview-gallery__header">
         <div>
           <h1>
@@ -64,21 +75,23 @@ export function PreviewGallery({
           </label>
           <label>
             Szablon
-            <select
-              value={selected ?? ''}
-              onChange={(e) => setSelected(e.target.value || null)}
-            >
+            <select value={selected ?? ''} onChange={(e) => setSelected(e.target.value || null)}>
               <option value="">Wszystkie ({total})</option>
               {plan.kalendaria.map((k) => (
                 <option key={k.id} value={k.id}>{k.id} — {k.nazwa}</option>
               ))}
             </select>
           </label>
+          {extraControls}
           {links.map((l) => (
             <a key={l.href} href={l.href} className="preview-gallery__link">{l.label}</a>
           ))}
         </div>
       </header>
+
+      {!fontsReady && (
+        <p className="preview-gallery__loading">Ładowanie czcionek…</p>
+      )}
 
       <div className={`preview-gallery__grid${selected ? ' preview-gallery__grid--single' : ''}`}>
         {filtered.map((k) => (
@@ -86,8 +99,9 @@ export function PreviewGallery({
             key={k.id}
             kalendarium={k}
             year={year}
-            scale={selected ? 1.15 : 1}
+            scale={selected ? 1.2 : 1}
             showProportion={showProportion}
+            showLayoutZones={showLayoutZones}
           />
         ))}
       </div>

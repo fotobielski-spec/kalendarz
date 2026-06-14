@@ -3,25 +3,38 @@
   flex-direction: column;
   z-index: 3;
   pointer-events: none;
+  container-type: inline-size;
+  padding: calc(3 * 100cqw / 210);
+  box-sizing: border-box;
+  border-radius: calc(2 * 100cqw / 210);
 }
 
 .print-cal__labels {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 1px;
-  margin-bottom: 2px;
-}
-
-.print-cal__labels--compact {
-  margin-bottom: 1px;
+  margin-bottom: calc(3 * 100cqw / 210);
+  flex-shrink: 0;
 }
 
 .print-cal__label {
-  font-size: 6px;
+  font-family: var(--font-heading, inherit);
+  font-size: calc(var(--day-size, 9) * 0.78 * 100cqw / 210);
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
+  color: var(--accent, currentColor);
+  line-height: 1;
+}
+
+.print-cal__label--weekend {
+  opacity: 0.65;
+}
+
+.print-cal--compact .print-cal__label {
+  font-size: calc(var(--day-size, 8) * 0.7 * 100cqw / 210);
+  letter-spacing: 0.02em;
 }
 
 .print-cal__grid {
@@ -29,25 +42,42 @@
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(6, 1fr);
   flex: 1;
-  gap: 1px;
-}
-
-.print-cal__grid--compact .print-cal__day {
-  font-size: 6px !important;
+  gap: calc(1 * 100cqw / 210);
+  min-height: 0;
 }
 
 .print-cal__day {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--font-body, inherit);
+  font-size: calc(var(--day-size, 9) * 100cqw / 210);
   font-weight: 500;
-  border-radius: 2px;
+  font-variant-numeric: tabular-nums;
+  border-radius: calc(2 * 100cqw / 210);
+  line-height: 1;
+  aspect-ratio: 1;
+}
+
+.print-cal--compact .print-cal__day {
+  font-size: calc(var(--day-size, 8) * 0.88 * 100cqw / 210);
+  aspect-ratio: auto;
 }
 
 .print-cal__day--muted {
-  opacity: 0.25;
+  opacity: 0.2;
+  font-weight: 400;
 }
 
 .print-cal__day--weekend {
-  opacity: 0.75;
+  color: color-mix(in srgb, var(--accent, currentColor) 80%, var(--day-color, currentColor));
+  font-weight: 400;
+}
+
+.print-cal__day--today {
+  background: var(--accent, #6366f1);
+  color: #fff !important;
+  font-weight: 700;
+  border-radius: 50%;
+  aspect-ratio: 1;
 }

@@ -1,14 +1,18 @@
 import type { Kalendarium, StronaMiesiaca } from '../../types/plan';
+import { fontStack } from '../../utils/fonts';
+import { getLayoutOrientation, getUkladLabel } from '../../utils/layoutLabels';
 import {
   januarySeasonPalette,
   mmPosStyle,
   mmToPercent,
   resolvePaletteValue,
 } from '../../utils/previewUtils';
+import { LayoutZones } from './LayoutZones';
 import { PageDecorations } from './PageDecorations';
 import { PhotoZone } from './PhotoZone';
 import { PrintCalendarGrid } from './PrintCalendarGrid';
 import { RadialCalendarGrid } from './RadialCalendarGrid';
+import './LayoutZones.css';
 import './MonthPagePreview.css';
 
 interface MonthPagePreviewProps {
@@ -16,6 +20,7 @@ interface MonthPagePreviewProps {
   year?: number;
   scale?: number;
   showProportion?: boolean;
+  showLayoutZones?: boolean;
 }
 
 function getJanuaryPage(k: Kalendarium): StronaMiesiaca | undefined {
@@ -27,6 +32,7 @@ export function MonthPagePreview({
   year = 2026,
   scale = 1,
   showProportion = false,
+  showLayoutZones = true,
 }: MonthPagePreviewProps) {
   const page = getJanuaryPage(kalendarium);
   if (!page) return null;
@@ -39,22 +45,51 @@ export function MonthPagePreview({
   const isRadial = page.strefaKalendarza.uklad === 'radialny';
   const isGrayscale = kalendarium.efekty?.zdjecia === 'grayscale';
   const monthTitle = page.typografia?.nazwaMiesiaca;
-  const compact = page.strefaKalendarza.szerokosc < 120;
+  const compact = page.strefaKalendarza.szerokosc < 95;
   const frosted = page.efektyStrony?.frostedGlass;
   const semiPanel = page.efektyStrony?.panelPolprzezroczysty;
   const proporcja = page.proporcja ?? kalendarium.proporcja;
+
+  const headingFont = fontStack(kalendarium.typografia.naglowek);
+  const bodyFont = fontStack(kalendarium.typografia.tekst);
+  const titleSize = monthTitle?.rozmiar ?? kalendarium.typografia.rozmiarMiesiac ?? 20;
+  const daySize = kalendarium.typografia.rozmiarDzien ?? 9;
+  const layoutLabel = getUkladLabel(page.uklad);
+  const layoutOrient = getLayoutOrientation(page.uklad);
 
   const calBg =
     semiPanel ? `rgba(${hexToRgb(bg)}, 0.88)` :
     frosted ? 'transparent' :
     undefined;
 
+  const gridProps = {
+    year,
+    area: page.strefaKalendarza,
+    dayFontSize: daySize,
+    compact,
+    backgroundColor: calBg,
+    headingFont,
+    bodyFont,
+  };
+
   return (
-    <article className="month-preview" style={{ '--preview-scale': scale } as React.CSSProperties}>
+    <article
+      className={`month-preview month-preview--${layoutOrient}`}
+      style={{ '--preview-scale': scale } as React.CSSProperties}
+    >
       <header className="month-preview__meta">
         <span className="month-preview__id">{kalendarium.id}</span>
         <h3 className="month-preview__name">{kalendarium.nazwa}</h3>
-        <p className="month-preview__cat">{kalendarium.kategoria}</p>
+        <span className="month-preview__layout" title={page.uklad}>{layoutLabel}</span>
+        <p className="month-preview__fonts">
+          <span className="month-preview__font-heading" style={{ fontFamily: headingFont }}>
+            {kalendarium.typografia.naglowek}
+          </span>
+          <span className="month-preview__font-sep">/</span>
+          <span className="month-preview__font-body" style={{ fontFamily: bodyFont }}>
+            {kalendarium.typografia.tekst}
+          </span>
+        </p>
         {showProportion && proporcja && (
           <span className="month-preview__ratio">
             {proporcja.zdjecie}% foto · {proporcja.kalendarium}% kalendarz
@@ -68,20 +103,13 @@ export function MonthPagePreview({
           style={{
             background: isFullscreen ? '#111' : bg,
             color: text,
-            fontFamily: kalendarium.typografia.tekst ?? 'system-ui, sans-serif',
-          }}
+            fontFamily: bodyFont,
+            '--font-heading': headingFont,
+            '--font-body': bodyFont,
+            '--title-mm': titleSize,
+            '--accent': accent,
+          } as React.CSSProperties}
         >
-          {showProportion && (
-            <>
-              <div className="month-preview__zone-label month-preview__zone-label--photo">60% zdjęcie</div>
-              <div
-                className="month-preview__zone-divider"
-                style={{ top: `${((page.strefaKalendarza.y) / 297) * 100}%` }}
-              />
-              <div className="month-preview__zone-label month-preview__zone-label--cal">40% kalendarium</div>
-            </>
-          )}
-
           {page.strefyZdjec.map((zone) => (
             <PhotoZone key={zone.id} kalId={kalendarium.id} zone={zone} grayscale={isGrayscale} />
           ))}
@@ -95,10 +123,7 @@ export function MonthPagePreview({
           {page.nakladka && (
             <div
               className="month-preview__overlay"
-              style={{
-                ...mmPosStyle(page.nakladka.obszar),
-                background: page.nakladka.kolor,
-              }}
+              style={{ ...mmPosStyle(page.nakladka.obszar), background: page.nakladka.kolor }}
             />
           )}
 
@@ -106,12 +131,7 @@ export function MonthPagePreview({
             <div
               className="month-preview__separator"
               style={{
-                ...mmToPercent(
-                  page.separator.x,
-                  page.separator.y,
-                  page.separator.szerokosc,
-                  page.separator.wysokosc,
-                ),
+                ...mmToPercent(page.separator.x, page.separator.y, page.separator.szerokosc, page.separator.wysokosc),
                 position: 'absolute',
                 background: page.separator.kolor ?? kalendarium.paleta.separator ?? '#ccc',
               }}
@@ -122,66 +142,51 @@ export function MonthPagePreview({
             <h4
               className="month-preview__month-title"
               style={{
-                position: 'absolute',
                 left: `${(monthTitle.x / 210) * 100}%`,
                 top: `${(monthTitle.y / 297) * 100}%`,
-                fontSize: `${(monthTitle.rozmiar ?? kalendarium.typografia.rozmiarMiesiac ?? 20) * 0.45}px`,
                 color: monthTitle.kolor ?? (isFullscreen ? '#fff' : accent),
-                fontFamily: kalendarium.typografia.naglowek ?? 'inherit',
+                fontFamily: headingFont,
                 textAlign: (monthTitle.wyrownanie as React.CSSProperties['textAlign']) ?? 'left',
                 textTransform: monthTitle.transform === 'uppercase' ? 'uppercase' : undefined,
-                letterSpacing: monthTitle.letterSpacing ? `${monthTitle.letterSpacing * 0.1}px` : undefined,
+                letterSpacing: monthTitle.letterSpacing
+                  ? `${monthTitle.letterSpacing * 0.04}px`
+                  : undefined,
                 fontStyle: monthTitle.styl === 'kursywa' ? 'italic' : undefined,
                 fontWeight: monthTitle.waga === 'semibold' ? 600 : monthTitle.waga === 'bold' ? 700 : 400,
-                transform: monthTitle.x > 100 || monthTitle.wyrownanie === 'center' ? 'translateX(-50%)' : undefined,
-                width: monthTitle.wyrownanie === 'center' ? 'auto' : undefined,
+                transform:
+                  monthTitle.x > 100 || monthTitle.wyrownanie === 'center'
+                    ? 'translateX(-50%)'
+                    : undefined,
               }}
             >
-              Styczeń {year}
+              <span className="month-preview__month-name">Styczeń</span>
+              <span className="month-preview__year">{year}</span>
             </h4>
           )}
 
           {isRadial ? (
-            <RadialCalendarGrid
-              year={year}
-              area={page.strefaKalendarza}
-              textColor={text}
-              accentColor={accent}
-            />
+            <RadialCalendarGrid year={year} area={page.strefaKalendarza} textColor={text} accentColor={accent} />
           ) : isFullscreen ? (
             <>
               <div
                 className="month-preview__overlay"
-                style={{
-                  ...mmPosStyle(page.strefaKalendarza),
-                  background: 'rgba(0,0,0,0.55)',
-                }}
+                style={{ ...mmPosStyle(page.strefaKalendarza), background: 'rgba(0,0,0,0.55)' }}
               />
-              <PrintCalendarGrid
-                year={year}
-                area={page.strefaKalendarza}
-                textColor="#fff"
-                accentColor="#fff"
-                dayFontSize={(kalendarium.typografia.rozmiarDzien ?? 9) * 0.85}
-                compact={compact}
-              />
+              <PrintCalendarGrid {...gridProps} textColor="#fff" accentColor="#fff" />
             </>
           ) : (
-            <PrintCalendarGrid
-              year={year}
-              area={page.strefaKalendarza}
-              textColor={text}
-              accentColor={accent}
-              dayFontSize={(kalendarium.typografia.rozmiarDzien ?? 9) * 0.85}
-              compact={compact}
-              backgroundColor={calBg}
+            <PrintCalendarGrid {...gridProps} textColor={text} accentColor={accent} />
+          )}
+
+          {showLayoutZones && !isFullscreen && (
+            <LayoutZones
+              photoZones={page.strefyZdjec}
+              calendarArea={page.strefaKalendarza}
+              accent={accent}
             />
           )}
         </div>
       </div>
-      {kalendarium.opis && (
-        <p className="month-preview__desc">{kalendarium.opis}</p>
-      )}
     </article>
   );
 }
@@ -189,8 +194,5 @@ export function MonthPagePreview({
 function hexToRgb(hex: string): string {
   const h = hex.replace('#', '');
   if (h.length < 6) return '255,255,255';
-  const r = parseInt(h.slice(0, 2), 16);
-  const g = parseInt(h.slice(2, 4), 16);
-  const b = parseInt(h.slice(4, 6), 16);
-  return `${r},${g},${b}`;
+  return `${parseInt(h.slice(0, 2), 16)},${parseInt(h.slice(2, 4), 16)},${parseInt(h.slice(4, 6), 16)}`;
 }

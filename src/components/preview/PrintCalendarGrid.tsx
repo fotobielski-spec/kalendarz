@@ -10,6 +10,8 @@ interface PrintCalendarGridProps {
   dayFontSize?: number;
   compact?: boolean;
   backgroundColor?: string;
+  headingFont?: string;
+  bodyFont?: string;
 }
 
 export function PrintCalendarGrid({
@@ -20,38 +22,59 @@ export function PrintCalendarGrid({
   dayFontSize = 9,
   compact = false,
   backgroundColor,
+  headingFont,
+  bodyFont,
 }: PrintCalendarGridProps) {
   const days = getJanuaryDays(year);
   const labels = getDayLabels();
+  const today = new Date();
 
   return (
     <div
-      className="print-cal"
-      style={{ ...mmPosStyle(area), color: textColor, background: backgroundColor }}
+      className={`print-cal${compact ? ' print-cal--compact' : ''}`}
+      style={{
+        ...mmPosStyle(area),
+        color: textColor,
+        background: backgroundColor,
+        '--font-heading': headingFont,
+        '--font-body': bodyFont,
+        '--day-size': dayFontSize,
+        '--accent': accentColor,
+      } as React.CSSProperties}
     >
-      <div className={`print-cal__labels${compact ? ' print-cal__labels--compact' : ''}`}>
-        {labels.map((label) => (
-          <span key={label} className="print-cal__label" style={{ color: accentColor }}>
+      <div className="print-cal__labels">
+        {labels.map((label, i) => (
+          <span
+            key={label}
+            className={`print-cal__label${i >= 5 ? ' print-cal__label--weekend' : ''}`}
+          >
             {label}
           </span>
         ))}
       </div>
-      <div className={`print-cal__grid${compact ? ' print-cal__grid--compact' : ''}`}>
-        {days.map((d, i) => (
-          <span
-            key={i}
-            className={[
-              'print-cal__day',
-              !d.isCurrentMonth && 'print-cal__day--muted',
-              d.isWeekend && d.isCurrentMonth && 'print-cal__day--weekend',
-            ]
-              .filter(Boolean)
-              .join(' ')}
-            style={{ fontSize: `${dayFontSize}px` }}
-          >
-            {d.day ?? ''}
-          </span>
-        ))}
+      <div className="print-cal__grid">
+        {days.map((d, i) => {
+          const isToday =
+            d.isCurrentMonth &&
+            d.day === today.getDate() &&
+            today.getMonth() === 0 &&
+            year === today.getFullYear();
+          return (
+            <span
+              key={i}
+              className={[
+                'print-cal__day',
+                !d.isCurrentMonth && 'print-cal__day--muted',
+                d.isWeekend && d.isCurrentMonth && 'print-cal__day--weekend',
+                isToday && 'print-cal__day--today',
+              ]
+                .filter(Boolean)
+                .join(' ')}
+            >
+              {d.day ?? ''}
+            </span>
+          );
+        })}
       </div>
     </div>
   );
