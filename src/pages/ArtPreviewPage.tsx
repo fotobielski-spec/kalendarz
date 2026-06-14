@@ -93,6 +93,7 @@ export function ArtPreviewPage() {
       }
       links={[
         { href: '/?view=podglad', label: '← Klasyczne (20)' },
+        { href: '/podglad-art.html', label: 'Wersja bezpośrednia' },
         { href: '/', label: 'Aplikacja' },
       ]}
     />

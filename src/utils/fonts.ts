@@ -55,6 +55,21 @@ const GOOGLE_FAMILIES: Record<string, string> = {
   'Space Mono': 'Space+Mono:wght@400;700',
   'Lobster': 'Lobster',
   'Bitter': 'Bitter:wght@400;600;700',
+  'Rubik': 'Rubik:wght@400;600;700',
+  'Karla': 'Karla:wght@400;600;700',
+  'Fira Sans': 'Fira+Sans:wght@400;600;700',
+  'PT Sans': 'PT+Sans:wght@400;700',
+  'PT Serif': 'PT+Serif:wght@400;700',
+  'Manrope': 'Manrope:wght@400;600;700',
+  'Space Grotesk': 'Space+Grotesk:wght@400;600;700',
+  'Outfit': 'Outfit:wght@400;600;700',
+  'Sora': 'Sora:wght@400;600;700',
+  'Lexend': 'Lexend:wght@400;600;700',
+  'Plus Jakarta Sans': 'Plus+Jakarta+Sans:wght@400;600;700',
+  'Figtree': 'Figtree:wght@400;600;700',
+  'Archivo': 'Archivo:wght@400;600;700',
+  'Nunito Sans': 'Nunito+Sans:wght@400;600;700',
+  'Cormorant': 'Cormorant:wght@400;600;700',
 };
 
 /** Czcionki niedostępne w Google Fonts → zamiennik */

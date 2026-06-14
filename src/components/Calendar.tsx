@@ -45,7 +45,7 @@ export function Header({
       </div>
 
       <div className="header__actions">
-        <a href="/?view=art" className="btn btn--ghost header__preview-link">
+        <a href="/art" className="btn btn--ghost header__preview-link">
           Kolekcja Art
         </a>
         <a href="/?view=podglad" className="btn btn--ghost header__preview-link">

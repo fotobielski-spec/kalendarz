@@ -44,6 +44,24 @@ export function PreviewGallery({
     return true;
   });
 
+  const BATCH = 12;
+  const [renderCount, setRenderCount] = useState(BATCH);
+
+  useEffect(() => {
+    setRenderCount(selected ? filtered.length : BATCH);
+  }, [selected, category, filtered.length]);
+
+  useEffect(() => {
+    if (selected || renderCount >= filtered.length) return undefined;
+    const timer = window.setTimeout(() => {
+      setRenderCount((n) => Math.min(n + BATCH, filtered.length));
+    }, 60);
+    return () => clearTimeout(timer);
+  }, [renderCount, filtered.length, selected]);
+
+  const visible = filtered.slice(0, renderCount);
+  const remaining = filtered.length - visible.length;
+
   const total = plan.kalendaria.length;
 
   return (
@@ -94,7 +112,7 @@ export function PreviewGallery({
       )}
 
       <div className={`preview-gallery__grid${selected ? ' preview-gallery__grid--single' : ''}`}>
-        {filtered.map((k) => (
+        {visible.map((k) => (
           <MonthPagePreview
             key={k.id}
             kalendarium={k}
@@ -105,6 +123,12 @@ export function PreviewGallery({
           />
         ))}
       </div>
+
+      {remaining > 0 && (
+        <p className="preview-gallery__loading">
+          Ładowanie kolejnych szablonów… ({visible.length}/{filtered.length})
+        </p>
+      )}
 
       {filtered.length === 0 && (
         <p className="preview-gallery__empty">Brak szablonów dla wybranych filtrów.</p>
