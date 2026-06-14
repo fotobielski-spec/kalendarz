@@ -5,56 +5,36 @@ POBIERZ ZIP Z GITHUB
 --------------------
 https://github.com/fotobielski-spec/kalendarz/raw/cursor/kalendarium-plus-82fd/kalendarium-plus-pakiet.zip
 
-(lub: repo → branch cursor/kalendarium-plus-82fd → plik kalendarium-plus-pakiet.zip → Download)
+JAK OTWORZYĆ PODGLĄD (WAŻNE!)
+-----------------------------
+NIE otwieraj plików HTML dwuklikiem z dysku — to NIE zadziała.
+
+Windows:
+  1. Rozpakuj zip
+  2. Wejdź do folderu:  podglad\\
+  3. Kliknij dwukrotnie:  start-podglad.bat
+  4. Otworzy się przeglądarka z galerią
+
+Mac / Linux:
+  1. Rozpakuj zip
+  2. cd podglad
+  3. chmod +x start-podglad.sh && ./start-podglad.sh
+
+Ręcznie (Node.js):
+  cd podglad
+  npx serve -l 3000
+  http://localhost:3000/OTWORZ-PODGLAD.html
+
+GALERIE
+-------
+  OTWORZ-PODGLAD.html   — menu wyboru
+  podglad-art.html      — 75 kalendarzy
+  podglad.html          — 20 klasycznych
 
 ZAWARTOŚĆ ARCHIWUM
 ------------------
-podglad/          Gotowy podgląd HTML (po zbudowaniu — otwórz przez serwer lokalny)
-  podglad-art.html    Galeria 75 kalendarzy (Art + Tematyczne + Pionowe + Planery)
-  podglad.html        20 kalendarzy klasycznych
-  index.html          Aplikacja Kalendarium+
-  assets/             Skrypty i style
-
-zrodla/           Kod źródłowy projektu
-  src/              React + TypeScript
-  data/             JSON kalendarzy i imienin
-  scripts/          Generatory i audyt
-  docs/             Dokumentacja (HANDOFF-GPT.md)
-
-JAK OTWORZYĆ PODGLĄD KALENDARZY
--------------------------------
-Metoda 1 — serwer lokalny (zalecane):
-
-  cd podglad
-  npx --yes serve -l 3000
-
-  Potem w przeglądarce:
-  http://localhost:3000/podglad-art.html   — 75 szablonów
-  http://localhost:3000/podglad.html       — 20 klasycznych
-  http://localhost:3000/index.html         — aplikacja
-
-  Lub po rozpakowaniu całego projektu:
-  npm install && npm run dev
-  http://localhost:5173/art
-
-Metoda 2 — bezpośredni link do szablonu:
-  http://localhost:3000/podglad-art.html?id=TEM-05
-
-JAK URUCHOMIĆ Z KODU ŹRÓDŁOWEGO
--------------------------------
-  cd zrodla
-  npm install
-  npm run dev
-
-  Galeria: http://localhost:5173/art
-
-GENERATORY JSON
----------------
-  node scripts/generate-plan-art-40-60.mjs
-  node scripts/generate-plan-tematyczne.mjs
-  node scripts/generate-plan-pionowe.mjs
-  node scripts/generate-plan-planery.mjs
-  node scripts/audit-layouts.mjs
+podglad/          Gotowy podgląd + start-podglad.bat
+zrodla/           Kod źródłowy (npm install && npm run dev)
 
 Repo: https://github.com/fotobielski-spec/kalendarz
 Branch: cursor/kalendarium-plus-82fd
