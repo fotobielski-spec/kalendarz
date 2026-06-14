@@ -22,8 +22,10 @@ interface MonthPagePreviewProps {
   kalendarium: Kalendarium;
   year?: number;
   scale?: number;
+  variant?: 'card' | 'focus';
   showProportion?: boolean;
   showLayoutZones?: boolean;
+  hideMeta?: boolean;
 }
 
 function getJanuaryPage(k: Kalendarium): StronaMiesiaca | undefined {
@@ -34,8 +36,10 @@ export function MonthPagePreview({
   kalendarium,
   year = 2026,
   scale = 1,
+  variant = 'card',
   showProportion = false,
   showLayoutZones = false,
+  hideMeta = false,
 }: MonthPagePreviewProps) {
   const page = getJanuaryPage(kalendarium);
   if (!page) return null;
@@ -97,9 +101,14 @@ export function MonthPagePreview({
 
   return (
     <article
-      className={`month-preview month-preview--${layoutOrient}`}
+      className={[
+        'month-preview',
+        `month-preview--${layoutOrient}`,
+        variant === 'focus' && 'month-preview--focus',
+      ].filter(Boolean).join(' ')}
       style={{ '--preview-scale': scale } as React.CSSProperties}
     >
+      {!hideMeta && (
       <header className="month-preview__meta">
         <span className="month-preview__id">{kalendarium.id}</span>
         <h3 className="month-preview__name">{kalendarium.nazwa}</h3>
@@ -130,6 +139,7 @@ export function MonthPagePreview({
           </span>
         )}
       </header>
+      )}
 
       <div className="month-preview__page-wrap">
         <div

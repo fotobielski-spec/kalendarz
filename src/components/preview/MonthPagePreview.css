@@ -161,3 +161,19 @@
 .month-preview--special .month-preview__page-wrap {
   background: linear-gradient(145deg, #ede9fe, #f5f5f4);
 }
+
+.month-preview--focus .month-preview__page-wrap {
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #dbeafe, #f1f5f9);
+}
+
+.month-preview--focus .month-preview__page {
+  max-width: min(92vw, 680px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 900px) {
+  .month-preview--focus .month-preview__page {
+    max-width: min(85vw, 720px);
+  }
+}
