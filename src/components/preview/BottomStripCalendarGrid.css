@@ -1,0 +1,70 @@
+.strip-cal {
+  display: flex;
+  align-items: flex-end;
+  gap: calc(1 * 100cqw / var(--zone-w-mm, 273));
+  container-type: size;
+  z-index: 4;
+  pointer-events: none;
+  padding: 0 calc(1.5 * 100cqw / var(--zone-w-mm, 273));
+  box-sizing: border-box;
+  border-top: 1px solid color-mix(in srgb, var(--accent, #6366f1) 35%, transparent);
+}
+
+.strip-cal__year {
+  z-index: 5;
+  font-size: calc(14 * 100cqw / 273);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.85);
+}
+
+.strip-cal__month {
+  flex-shrink: 0;
+  font-size: min(
+    calc(11 * 100cqw / var(--zone-w-mm, 273)),
+    55cqh
+  );
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent, currentColor);
+  padding-bottom: calc(0.5 * 100cqh / var(--zone-h-mm, 19));
+  min-width: calc(22 * 100cqw / var(--zone-w-mm, 273));
+  white-space: nowrap;
+}
+
+.strip-cal__row {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  min-width: 0;
+  gap: 0;
+  padding-bottom: calc(0.3 * 100cqh / var(--zone-h-mm, 19));
+}
+
+.strip-cal__cell {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
+  font-size: min(
+    calc(7.5 * 100cqw / var(--zone-w-mm, 273)),
+    48cqh
+  );
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+.strip-cal__cell--empty {
+  opacity: 0;
+}
+
+.strip-cal__cell--today {
+  color: var(--accent, #6366f1);
+  font-weight: 800;
+  opacity: 1;
+}

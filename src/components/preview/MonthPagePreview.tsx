@@ -11,6 +11,7 @@ import {
   mmToPercent,
   resolvePaletteValue,
 } from '../../utils/previewUtils';
+import { BottomStripCalendarGrid } from './BottomStripCalendarGrid';
 import { LayoutZones } from './LayoutZones';
 import { PageDecorations } from './PageDecorations';
 import { PhotoZone } from './PhotoZone';
@@ -55,6 +56,7 @@ export function MonthPagePreview({
   const bg = season?.tlo ?? resolvePaletteValue(kalendarium.paleta.tlo, '#FFFFFF');
   const accent = season?.akcent ?? resolvePaletteValue(kalendarium.paleta.akcent, '#333333');
   const text = resolvePaletteValue(kalendarium.paleta.tekst, '#1A1A1A');
+  const isStripBottom = page.uklad === 'poz-strip-bottom' || page.strefaKalendarza.uklad === 'pasek-dol';
   const isFullscreen = page.uklad.includes('fullscreen') || page.uklad.includes('overlay');
   const isRadial = page.strefaKalendarza.uklad === 'radialny';
   const isVertical = page.strefaKalendarza.uklad === 'pionowy' || page.uklad.startsWith('pion-lista');
@@ -96,7 +98,7 @@ export function MonthPagePreview({
     backgroundColor: calBg,
     headingFont,
     bodyFont,
-    showImieniny: true,
+    showImieniny: !isStripBottom,
     senior: isSenior,
     seniorDense: isSeniorDense,
     monthTitle: {
@@ -277,6 +279,18 @@ export function MonthPagePreview({
                 fontStyle: monthTitle?.styl === 'kursywa' ? 'italic' : undefined,
                 textTransform: monthTitle?.transform === 'uppercase' ? 'uppercase' : undefined,
               }}
+            />
+          ) : isStripBottom ? (
+            <BottomStripCalendarGrid
+              year={year}
+              monthIndex={0}
+              area={page.strefaKalendarza}
+              monthName="Styczeń"
+              textColor={text}
+              accentColor={accent}
+              headingFont={headingFont}
+              bodyFont={bodyFont}
+              backgroundColor={bg}
             />
           ) : isFullscreen ? (
             <>

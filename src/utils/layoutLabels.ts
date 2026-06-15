@@ -107,6 +107,7 @@ export const UKLAD_LABELS: Record<string, string> = {
   'poz-circle-left': 'Poziom — okrąg lewo',
   'poz-polaroid-top': 'Poziom — Polaroidy góra',
   'poz-gold-left': 'Poziom — złota linia lewo',
+  'poz-strip-bottom': 'Poziom — pasek dolny 10%',
 };
 
 export function getUkladLabel(uklad: string): string {
@@ -124,6 +125,7 @@ export function getLayoutOrientation(uklad: string): LayoutOrientation {
   if (uklad.startsWith('senior-foto-right')) return 'horizontal-right';
   if (uklad.startsWith('senior-kal-gora')) return 'vertical-bottom';
   if (uklad.startsWith('senior-')) return 'vertical-top';
+  if (uklad.startsWith('poz-strip')) return 'vertical-bottom';
   if (uklad.startsWith('poz-')) return uklad.includes('left') || uklad.includes('right') || uklad.includes('split')
     ? 'horizontal-left'
     : uklad.includes('fullscreen') ? 'special' : 'vertical-top';

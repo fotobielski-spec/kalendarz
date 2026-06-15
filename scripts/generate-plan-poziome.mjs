@@ -1,5 +1,5 @@
 /**
- * 12 kalendarzy 13-stronicowych A4 poziom (297×210 mm)
+ * 13 kalendarzy 13-stronicowych A4 poziom (297×210 mm)
  * Okładka + 12 miesięcy · proporcja 40% kalendarium / 60% zdjęcie
  * node scripts/generate-plan-poziome.mjs
  */
@@ -29,6 +29,9 @@ const PH = Math.round(H * PROP.zdjecie / 100);
 const CH = H - PH;
 const PW50 = Math.round(W * 0.5);
 const CW50 = W - PW50;
+const PH90 = Math.round(H * 0.9);
+const CH10 = H - PH90;
+const PROP1090 = { kalendarium: 10, zdjecie: 90 };
 const PH50 = Math.round(H * 0.5);
 const CH50 = H - PH50;
 
@@ -302,6 +305,32 @@ const DEFINICJE = [
       ],
     },
   },
+  {
+    id: 'POZ-13', nazwa: 'Pasek Dolny', kategoria: 'minimal',
+    opis: 'A4 poziom — 90% duże zdjęcie, kalendarz w jednej linii na dole (10%). Miesiąc lewy dół, rok prawy góra, bez imienin.',
+    tagi: ['poziom', 'pasek', '10-90', 'minimal'],
+    paleta: { tlo: '#FFFFFF', akcent: '#18181B', tekst: '#27272A' },
+    typografia: { naglowek: 'Inter', tekst: 'Inter', rozmiarMiesiac: 11, rozmiarDzien: 7 },
+    layout: {
+      proporcja: PROP1090,
+      ukladMiesiac: 'poz-strip-bottom',
+      titleRozmiar: 11,
+      strefyMiesiac: () => [
+        zone('foto', 'hero', M, M, W, PH90, { opis: 'Duże zdjęcie — 90% powierzchni strony' }),
+      ],
+      strefaKalendarza: { x: M, y: M + PH90, szerokosc: W, wysokosc: CH10, uklad: 'pasek-dol' },
+      typografiaMiesiac: {
+        nazwaMiesiaca: { x: M + 2, y: M + H - 3, rozmiar: 11, wyrownanie: 'left', kolor: '#18181B' },
+      },
+      dekoracjeMiesiac: () => [
+        { typ: 'linia', x: M, y: M + PH90, szerokosc: W, kolor: '#18181B', grubosc: 0.5 },
+      ],
+      elementyOkładka: [
+        { id: 'rok', tekst: '{rok}', pozycja: { x: M + W - 4, y: M + 8 }, rozmiar: 28, wyrownanie: 'right', kolor: '#18181B' },
+        { id: 'tytul', tekst: 'Pasek Dolny', pozycja: { x: M + 4, y: M + H - 6 }, rozmiar: 12, wyrownanie: 'left' },
+      ],
+    },
+  },
 ];
 
 const kalendaria = DEFINICJE.map((def) => ({
@@ -326,7 +355,7 @@ const plan = {
     wersja: '1.0.0',
     dataUtworzenia: '2026-06-14',
     projekt: 'Kalendarium+ Poziome',
-    opis: '12 kalendarzy 13-stronicowych A4 poziom — okładka + 12 miesięcy, 40/60',
+    opis: '13 kalendarzy 13-stronicowych A4 poziom — okładka + 12 miesięcy',
     jezyk: 'pl',
     walutaJednostek: 'mm',
     dpiZalecane: 300,
