@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import type { Kalendarium } from '../../types/plan';
 import { getUkladLabel } from '../../utils/layoutLabels';
+import type { PageFormat } from '../../utils/previewUtils';
 import { MonthPagePreview } from './MonthPagePreview';
 import './PreviewLightbox.css';
 
@@ -11,6 +12,7 @@ interface PreviewLightboxProps {
   total: number;
   showProportion?: boolean;
   showLayoutZones?: boolean;
+  pageFormat?: PageFormat;
   onClose: () => void;
   onPrev: () => void;
   onNext: () => void;
@@ -23,6 +25,7 @@ export function PreviewLightbox({
   total,
   showProportion,
   showLayoutZones,
+  pageFormat = 'A4',
   onClose,
   onPrev,
   onNext,
@@ -83,6 +86,7 @@ export function PreviewLightbox({
             showProportion={showProportion}
             showLayoutZones={showLayoutZones}
             hideMeta
+            pageFormat={pageFormat}
           />
         </div>
 

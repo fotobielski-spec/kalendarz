@@ -56,7 +56,7 @@ export function PrintCalendarGrid({
   monthTitle,
   embedded = false,
 }: PrintCalendarGridProps) {
-  const { pageW, pageH } = usePageSize();
+  const { pageW, pageH, layoutScale = 1 } = usePageSize();
   const labels = getDayLabels();
   const today = new Date();
   const fittedDaySize = fitDayFontSize(dayFontSize, area, showImieniny, senior, seniorDense);
@@ -98,7 +98,7 @@ export function PrintCalendarGrid({
       style={{
         ...(embedded
           ? { position: 'relative', width: '100%', height: '100%' }
-          : mmPosStyle(area, pageW, pageH)),
+          : mmPosStyle(area, pageW, pageH, layoutScale)),
         color: textColor,
         background: backgroundColor ?? (senior ? 'var(--senior-cal-bg, #fff)' : undefined),
         ...zoneCssVars(area),

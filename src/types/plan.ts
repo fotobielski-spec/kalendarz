@@ -133,7 +133,7 @@ export interface Kalendarium {
   orientacja?: 'portrait' | 'landscape';
   efekty?: { zdjecia?: string; kontrast?: number };
   proporcja?: { kalendarium: number; zdjecie: number };
-  kolekcja?: 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | 'trojka' | 'poziome' | string;
+  kolekcja?: 'klasyczne' | 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | 'trojka' | 'poziome' | string;
   strony: StronaMiesiaca[];
 }
 

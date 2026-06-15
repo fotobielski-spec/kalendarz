@@ -161,7 +161,7 @@ export function TripleCalendarGrid({
   backgroundColor,
   monthTitle,
 }: TripleCalendarGridProps) {
-  const { pageW, pageH } = usePageSize();
+  const { pageW, pageH, layoutScale = 1 } = usePageSize();
   const prevIdx = monthIndex === 0 ? 11 : monthIndex - 1;
   const prevYear = monthIndex === 0 ? year - 1 : year;
   const nextIdx = monthIndex === 11 ? 0 : monthIndex + 1;
@@ -189,7 +189,7 @@ export function TripleCalendarGrid({
     <div
       className={['triple-cal', layoutClass, `triple-cal--${tripleTyp}`].join(' ')}
       style={{
-        ...mmPosStyle(area, pageW, pageH),
+        ...mmPosStyle(area, pageW, pageH, layoutScale),
         ...zoneCssVars(area),
         color: textColor,
         background: backgroundColor,

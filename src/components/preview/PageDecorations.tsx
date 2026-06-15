@@ -13,11 +13,11 @@ function pctX(mm: number, pageW: number) { return `${(mm / pageW) * 100}%`; }
 function pctY(mm: number, pageH: number) { return `${(mm / pageH) * 100}%`; }
 
 export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsProps) {
-  const { pageW, pageH } = usePageSize();
-  const px = (mm: number) => pctX(mm, pageW);
-  const py = (mm: number) => pctY(mm, pageH);
+  const { pageW, pageH, layoutScale = 1 } = usePageSize();
+  const px = (mm: number) => pctX(mm * layoutScale, pageW);
+  const py = (mm: number) => pctY(mm * layoutScale, pageH);
   const mms = (obs: { x: number; y: number; szerokosc: number; wysokosc: number }) =>
-    mmPosStyle(obs, pageW, pageH);
+    mmPosStyle(obs, pageW, pageH, layoutScale);
   return (
     <>
       {dekoracje.map((d, i) => {

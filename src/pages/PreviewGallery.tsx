@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { PlanKalendaria } from '../types/plan';
 import { collectFontsFromPlan, loadGoogleFonts } from '../utils/fonts';
+import type { PageFormat } from '../utils/previewUtils';
 import { MonthPagePreview } from '../components/preview/MonthPagePreview';
 import { PreviewLightbox } from '../components/preview/PreviewLightbox';
 import './PreviewGallery.css';
@@ -12,6 +13,7 @@ interface PreviewGalleryProps {
   showProportion?: boolean;
   showLayoutZones?: boolean;
   fontsReady?: boolean;
+  pageFormat?: PageFormat;
   extraControls?: React.ReactNode;
   links?: { href: string; label: string }[];
 }
@@ -37,6 +39,7 @@ export function PreviewGallery({
   showProportion = false,
   showLayoutZones = false,
   fontsReady = true,
+  pageFormat = 'A4',
   extraControls,
   links = [{ href: '/', label: '← Aplikacja' }],
 }: PreviewGalleryProps) {
@@ -185,6 +188,7 @@ export function PreviewGallery({
               year={year}
               showProportion={showProportion}
               showLayoutZones={showLayoutZones}
+              pageFormat={pageFormat}
             />
             <span className="preview-gallery__zoom-hint" aria-hidden>🔍 Powiększ</span>
           </button>
@@ -209,6 +213,7 @@ export function PreviewGallery({
           total={navList.length}
           showProportion={showProportion}
           showLayoutZones={showLayoutZones}
+          pageFormat={pageFormat}
           onClose={closeLightbox}
           onPrev={goPrev}
           onNext={goNext}

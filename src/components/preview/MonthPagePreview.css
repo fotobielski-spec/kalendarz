@@ -48,6 +48,11 @@
   text-transform: uppercase;
 }
 
+.month-preview__collection--klasyczne {
+  color: #334155;
+  background: #e2e8f0;
+}
+
 .month-preview__collection--tematyczne {
   color: #9a3412;
   background: #ffedd5;

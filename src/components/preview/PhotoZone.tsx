@@ -10,7 +10,7 @@ interface PhotoZoneProps {
 }
 
 export function PhotoZone({ kalId, zone, grayscale }: PhotoZoneProps) {
-  const { pageW, pageH } = usePageSize();
+  const { pageW, pageH, layoutScale = 1 } = usePageSize();
   const isPolaroid = zone.typStrefy === 'polaroid';
   const isCircle = zone.maska === 'okrag';
   const isOrganic = zone.maska?.startsWith('blob') || zone.maska === 'luk' || zone.maska === 'heksagon';
@@ -49,7 +49,7 @@ export function PhotoZone({ kalId, zone, grayscale }: PhotoZoneProps) {
         .filter(Boolean)
         .join(' ')}
       style={{
-        ...mmPosStyle(zone.pozycja, pageW, pageH),
+        ...mmPosStyle(zone.pozycja, pageW, pageH, layoutScale),
         transform: rotation ? `rotate(${rotation}deg)` : undefined,
         clipPath: clipPath ?? undefined,
         ...(frame?.kolor && frame.szerokosc

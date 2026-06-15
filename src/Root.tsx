@@ -6,17 +6,23 @@ import { ViewLoading } from './components/ViewLoading';
 const ArtPreviewPage = lazy(() =>
   import('./pages/ArtPreviewPage').then((m) => ({ default: m.ArtPreviewPage })),
 );
+const KreatorPionPreviewPage = lazy(() =>
+  import('./pages/KreatorPionPreviewPage').then((m) => ({ default: m.KreatorPionPreviewPage })),
+);
 const ClassicPreviewPage = lazy(() =>
   import('./pages/ClassicPreviewPage').then((m) => ({ default: m.ClassicPreviewPage })),
 );
 
-type View = 'app' | 'podglad' | 'art';
+type View = 'app' | 'podglad' | 'art' | 'kreator-pion';
 
 function resolveView(): View {
   const path = window.location.pathname.toLowerCase();
   const params = new URLSearchParams(window.location.search);
   const view = params.get('view');
 
+  if (view === 'kreator-pion' || path === '/kreator-pion' || path.endsWith('/kreator-pion') || path.includes('kreator-pion')) {
+    return 'kreator-pion';
+  }
   if (view === 'art' || path === '/art' || path.endsWith('/art') || path.includes('podglad-art')) {
     return 'art';
   }
@@ -29,7 +35,8 @@ function resolveView(): View {
 const VIEW_LABELS: Record<View, string> = {
   app: 'aplikacji',
   podglad: 'kalendarzy klasycznych',
-  art: 'galerii Art',
+  art: 'galerii poziomych',
+  'kreator-pion': 'KREATOR PION A4,A3',
 };
 
 export function Root() {
@@ -45,7 +52,12 @@ export function Root() {
     return <App />;
   }
 
-  const Page = view === 'art' ? ArtPreviewPage : ClassicPreviewPage;
+  const Page =
+    view === 'kreator-pion'
+      ? KreatorPionPreviewPage
+      : view === 'art'
+        ? ArtPreviewPage
+        : ClassicPreviewPage;
 
   return (
     <ErrorBoundary label={VIEW_LABELS[view]}>

@@ -45,7 +45,7 @@ export function PlannerCalendarGrid({
   dayFontSize = 7,
   monthTitle,
 }: PlannerCalendarGridProps) {
-  const { pageW, pageH } = usePageSize();
+  const { pageW, pageH, layoutScale = 1 } = usePageSize();
   const days = getMonthDaysWithImieniny(year, monthIndex).filter((d) => d.isCurrentMonth && d.day);
   const compact = area.szerokosc < 95;
 
@@ -61,7 +61,7 @@ export function PlannerCalendarGrid({
     <div
       className={`planner-cal planner-cal--${plannerTyp}`}
       style={{
-        ...mmPosStyle(area, pageW, pageH),
+        ...mmPosStyle(area, pageW, pageH, layoutScale),
         ...zoneCssVars(area),
         color: textColor,
         '--font-heading': headingFont,

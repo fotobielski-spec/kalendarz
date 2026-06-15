@@ -3,15 +3,33 @@ import type { PozycjaMm } from '../types/plan';
 
 export const A4_WIDTH = 210;
 export const A4_HEIGHT = 297;
+export const A3_WIDTH = 297;
+export const A3_HEIGHT = 420;
 export const A4_LANDSCAPE_WIDTH = 297;
 export const A4_LANDSCAPE_HEIGHT = 210;
 
-export type PageOrientation = 'portrait' | 'landscape';
+/** Skala liniowa A4 → A3 (ISO 216, √2) */
+export const A3_LAYOUT_SCALE = A3_WIDTH / A4_WIDTH;
 
-export function getPageDimensions(orientacja: PageOrientation = 'portrait') {
-  return orientacja === 'landscape'
-    ? { pageW: A4_LANDSCAPE_WIDTH, pageH: A4_LANDSCAPE_HEIGHT }
-    : { pageW: A4_WIDTH, pageH: A4_HEIGHT };
+export type PageOrientation = 'portrait' | 'landscape';
+export type PageFormat = 'A4' | 'A3';
+
+export function getLayoutScale(format: PageFormat = 'A4'): number {
+  return format === 'A3' ? A3_LAYOUT_SCALE : 1;
+}
+
+export function getPageDimensions(
+  orientacja: PageOrientation = 'portrait',
+  format: PageFormat = 'A4',
+) {
+  if (orientacja === 'landscape') {
+    return format === 'A3'
+      ? { pageW: A3_HEIGHT, pageH: A3_WIDTH, layoutScale: getLayoutScale(format) }
+      : { pageW: A4_LANDSCAPE_WIDTH, pageH: A4_LANDSCAPE_HEIGHT, layoutScale: 1 };
+  }
+  return format === 'A3'
+    ? { pageW: A3_WIDTH, pageH: A3_HEIGHT, layoutScale: A3_LAYOUT_SCALE }
+    : { pageW: A4_WIDTH, pageH: A4_HEIGHT, layoutScale: 1 };
 }
 
 export function isLandscapeOrientation(orientacja?: string): boolean {
@@ -33,12 +51,14 @@ export function mmToPercent(
   h: number,
   pageW = A4_WIDTH,
   pageH = A4_HEIGHT,
+  layoutScale = 1,
 ) {
+  const s = layoutScale;
   return {
-    left: `${(x / pageW) * 100}%`,
-    top: `${(y / pageH) * 100}%`,
-    width: `${(w / pageW) * 100}%`,
-    height: `${(h / pageH) * 100}%`,
+    left: `${((x * s) / pageW) * 100}%`,
+    top: `${((y * s) / pageH) * 100}%`,
+    width: `${((w * s) / pageW) * 100}%`,
+    height: `${((h * s) / pageH) * 100}%`,
   };
 }
 
@@ -46,10 +66,11 @@ export function mmPosStyle(
   pos: PozycjaMm,
   pageW = A4_WIDTH,
   pageH = A4_HEIGHT,
+  layoutScale = 1,
 ): CSSProperties {
   return {
     position: 'absolute',
-    ...mmToPercent(pos.x, pos.y, pos.szerokosc, pos.wysokosc, pageW, pageH),
+    ...mmToPercent(pos.x, pos.y, pos.szerokosc, pos.wysokosc, pageW, pageH, layoutScale),
   };
 }
 

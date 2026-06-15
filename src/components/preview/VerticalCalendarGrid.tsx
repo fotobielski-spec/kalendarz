@@ -35,7 +35,7 @@ export function VerticalCalendarGrid({
   edge = 'lewo',
   backgroundColor,
 }: VerticalCalendarGridProps) {
-  const { pageW, pageH } = usePageSize();
+  const { pageW, pageH, layoutScale = 1 } = usePageSize();
   const totalDays = daysInMonth(year, monthIndex);
   const today = new Date();
   const isRight = edge === 'prawo' || area.krawedz === 'prawo';
@@ -57,7 +57,7 @@ export function VerticalCalendarGrid({
     <div
       className={`vert-cal vert-cal--${isRight ? 'right' : 'left'}`}
       style={{
-        ...mmPosStyle(area, pageW, pageH),
+        ...mmPosStyle(area, pageW, pageH, layoutScale),
         color: textColor,
         background: backgroundColor,
         ...zoneCssVars(area),

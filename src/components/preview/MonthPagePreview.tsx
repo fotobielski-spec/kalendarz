@@ -3,6 +3,7 @@ import { PageSizeContext } from '../../context/PageSizeContext';
 import { fontStack } from '../../utils/fonts';
 import { getLayoutOrientation, getUkladLabel } from '../../utils/layoutLabels';
 import { fitTitleInCalendarZone } from '../../utils/typographyFit';
+import type { PageFormat } from '../../utils/previewUtils';
 import {
   getPageDimensions,
   isLandscapeOrientation,
@@ -31,6 +32,7 @@ interface MonthPagePreviewProps {
   showProportion?: boolean;
   showLayoutZones?: boolean;
   hideMeta?: boolean;
+  pageFormat?: PageFormat;
 }
 
 function getJanuaryPage(k: Kalendarium): StronaMiesiaca | undefined {
@@ -45,13 +47,17 @@ export function MonthPagePreview({
   showProportion = false,
   showLayoutZones = false,
   hideMeta = false,
+  pageFormat = 'A4',
 }: MonthPagePreviewProps) {
   const page = getJanuaryPage(kalendarium);
   if (!page) return null;
 
   const isLandscape = isLandscapeOrientation(kalendarium.orientacja)
     || kalendarium.kolekcja === 'poziome';
-  const { pageW, pageH } = getPageDimensions(isLandscape ? 'landscape' : 'portrait');
+  const { pageW, pageH, layoutScale } = getPageDimensions(
+    isLandscape ? 'landscape' : 'portrait',
+    pageFormat,
+  );
   const season = kalendarium.id === 'KAL-15' ? januarySeasonPalette() : null;
   const bg = season?.tlo ?? resolvePaletteValue(kalendarium.paleta.tlo, '#FFFFFF');
   const accent = season?.akcent ?? resolvePaletteValue(kalendarium.paleta.akcent, '#333333');
@@ -136,7 +142,9 @@ export function MonthPagePreview({
           <span className={`month-preview__collection month-preview__collection--${kalendarium.kolekcja}`}>
             {kalendarium.kolekcja === 'tematyczne'
               ? kalendarium.kategoria
-              : kalendarium.kolekcja === 'pionowe'
+              : kalendarium.kolekcja === 'klasyczne'
+                ? 'klasyczny'
+                : kalendarium.kolekcja === 'pionowe'
                 ? 'pionowy'
                 : kalendarium.kolekcja === 'planery'
                   ? 'planer'
@@ -168,7 +176,7 @@ export function MonthPagePreview({
       )}
 
       <div className="month-preview__page-wrap">
-        <PageSizeContext.Provider value={{ pageW, pageH }}>
+        <PageSizeContext.Provider value={{ pageW, pageH, layoutScale }}>
         <div
           className="month-preview__page"
           style={{
@@ -196,7 +204,7 @@ export function MonthPagePreview({
           {page.nakladka && (
             <div
               className="month-preview__overlay"
-              style={{ ...mmPosStyle(page.nakladka.obszar, pageW, pageH), background: page.nakladka.kolor }}
+              style={{ ...mmPosStyle(page.nakladka.obszar, pageW, pageH, layoutScale), background: page.nakladka.kolor }}
             />
           )}
 
@@ -204,7 +212,7 @@ export function MonthPagePreview({
             <div
               className="month-preview__separator"
               style={{
-                ...mmToPercent(page.separator.x, page.separator.y, page.separator.szerokosc, page.separator.wysokosc, pageW, pageH),
+                ...mmToPercent(page.separator.x, page.separator.y, page.separator.szerokosc, page.separator.wysokosc, pageW, pageH, layoutScale),
                 position: 'absolute',
                 background: page.separator.kolor ?? kalendarium.paleta.separator ?? '#ccc',
               }}
@@ -296,7 +304,7 @@ export function MonthPagePreview({
             <>
               <div
                 className="month-preview__overlay"
-                style={{ ...mmPosStyle(page.strefaKalendarza, pageW, pageH), background: 'rgba(0,0,0,0.55)' }}
+                style={{ ...mmPosStyle(page.strefaKalendarza, pageW, pageH, layoutScale), background: 'rgba(0,0,0,0.55)' }}
               />
               <PrintCalendarGrid {...gridProps} textColor="#fff" accentColor="#fff" />
             </>

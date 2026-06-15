@@ -11,7 +11,8 @@ export function ClassicPreviewPage() {
       title="Podgląd stycznia —"
       subtitle="20 szablonów kalendarzy A4 pion · 1 miesiąc na stronę · ze zdjęciami klienta"
       links={[
-        { href: '/art', label: 'Kolekcja Art 40/60 →' },
+        { href: '/kreator-pion', label: 'KREATOR PION A4,A3 →' },
+        { href: '/art', label: 'Poziome A4 →' },
         { href: '/', label: '← Aplikacja' },
       ]}
     />

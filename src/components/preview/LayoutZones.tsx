@@ -10,7 +10,7 @@ interface LayoutZonesProps {
 
 /** Subtelne obrysy stref układu 60/40 */
 export function LayoutZones({ photoZones, calendarArea, accent }: LayoutZonesProps) {
-  const { pageW, pageH } = usePageSize();
+  const { pageW, pageH, layoutScale = 1 } = usePageSize();
   return (
     <div className="layout-zones" aria-hidden>
       {photoZones.map((z) => (
@@ -18,7 +18,7 @@ export function LayoutZones({ photoZones, calendarArea, accent }: LayoutZonesPro
           key={`lz-${z.id}`}
           className="layout-zones__photo"
           style={{
-            ...mmPosStyle(z.pozycja, pageW, pageH),
+            ...mmPosStyle(z.pozycja, pageW, pageH, layoutScale),
             '--zone-accent': accent,
           } as React.CSSProperties}
         />
@@ -26,7 +26,7 @@ export function LayoutZones({ photoZones, calendarArea, accent }: LayoutZonesPro
       <div
         className="layout-zones__calendar"
         style={{
-          ...mmPosStyle(calendarArea, pageW, pageH),
+          ...mmPosStyle(calendarArea, pageW, pageH, layoutScale),
           '--zone-accent': accent,
         } as React.CSSProperties}
       />

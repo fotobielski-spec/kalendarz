@@ -19,6 +19,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         podglad: resolve(__dirname, 'podglad.html'),
         podgladArt: resolve(__dirname, 'podglad-art.html'),
+        kreatorPion: resolve(__dirname, 'kreator-pion.html'),
       },
     },
   },
