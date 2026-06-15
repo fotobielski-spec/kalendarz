@@ -1,7 +1,10 @@
 import type { StrefaKalendarza } from '../../types/plan';
 import { usePageSize } from '../../context/PageSizeContext';
-import { getDayLabels, mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
+import { mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import './BottomStripCalendarGrid.css';
+
+/** Skrócone etykiety — mieszczą się w wąskich kolumnach */
+const STRIP_DAY_LABELS = ['P', 'W', 'Ś', 'C', 'Pt', 'S', 'N'];
 
 interface BottomStripCalendarGridProps {
   year: number;
@@ -33,7 +36,7 @@ export function BottomStripCalendarGrid({
   const { pageW, pageH } = usePageSize();
   const today = new Date();
 
-  const dayLabels = getDayLabels();
+  const dayLabels = STRIP_DAY_LABELS;
   const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
   const startOffset = (new Date(year, monthIndex, 1).getDay() + 6) % 7;
   const colCount = Math.ceil((startOffset + daysInMonth) / 7) * 7;

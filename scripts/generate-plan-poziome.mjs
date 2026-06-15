@@ -29,8 +29,8 @@ const PH = Math.round(H * PROP.zdjecie / 100);
 const CH = H - PH;
 const PW50 = Math.round(W * 0.5);
 const CW50 = W - PW50;
-const PH88 = Math.round(H * 0.88);
-const CH12 = H - PH88;
+const PH85 = Math.round(H * 0.85);
+const CH15 = H - PH85;
 const PROP1090 = { kalendarium: 10, zdjecie: 90 };
 const PH50 = Math.round(H * 0.5);
 const CH50 = H - PH50;
@@ -307,23 +307,23 @@ const DEFINICJE = [
   },
   {
     id: 'POZ-13', nazwa: 'Pasek Dolny', kategoria: 'minimal',
-    opis: 'A4 poziom — 88% duże zdjęcie, pasek kalendarza na dole (12%) z dniami tygodnia. Miesiąc lewy dół, rok prawy góra, bez imienin.',
+    opis: 'A4 poziom — 85% duże zdjęcie, pasek kalendarza na dole (15%) z dniami tygodnia. Miesiąc lewy dół, rok prawy góra, bez imienin.',
     tagi: ['poziom', 'pasek', '10-90', 'minimal'],
     paleta: { tlo: '#FFFFFF', akcent: '#18181B', tekst: '#27272A' },
     typografia: { naglowek: 'Inter', tekst: 'Inter', rozmiarMiesiac: 11, rozmiarDzien: 7 },
     layout: {
-      proporcja: { kalendarium: 12, zdjecie: 88 },
+      proporcja: { kalendarium: 15, zdjecie: 85 },
       ukladMiesiac: 'poz-strip-bottom',
       titleRozmiar: 11,
       strefyMiesiac: () => [
-        zone('foto', 'hero', M, M, W, PH88, { opis: 'Duże zdjęcie — 88% powierzchni strony' }),
+        zone('foto', 'hero', M, M, W, PH85, { opis: 'Duże zdjęcie — 85% powierzchni strony' }),
       ],
-      strefaKalendarza: { x: 0, y: M + PH88, szerokosc: PAGE_W, wysokosc: CH12, uklad: 'pasek-dol' },
+      strefaKalendarza: { x: 0, y: M + PH85, szerokosc: PAGE_W, wysokosc: CH15, uklad: 'pasek-dol' },
       typografiaMiesiac: {
-        nazwaMiesiaca: { x: M + 2, y: M + PH88 - 4, rozmiar: 11, wyrownanie: 'left', kolor: '#18181B' },
+        nazwaMiesiaca: { x: M + 2, y: M + PH85 - 4, rozmiar: 11, wyrownanie: 'left', kolor: '#18181B' },
       },
       dekoracjeMiesiac: () => [
-        { typ: 'linia', x: 0, y: M + PH88, szerokosc: PAGE_W, kolor: '#18181B', grubosc: 0.5 },
+        { typ: 'linia', x: 0, y: M + PH85, szerokosc: PAGE_W, kolor: '#18181B', grubosc: 0.5 },
       ],
       elementyOkładka: [
         { id: 'rok', tekst: '{rok}', pozycja: { x: M + W - 4, y: M + 8 }, rozmiar: 28, wyrownanie: 'right', kolor: '#18181B' },
