@@ -1,4 +1,4 @@
-import type { Kalendarium, StronaMiesiaca } from '../../types/plan';
+import type { Kalendarium, StronaMiesiaca, StronaRoczna } from '../../types/plan';
 import { PageSizeContext } from '../../context/PageSizeContext';
 import { fontStack } from '../../utils/fonts';
 import { getLayoutOrientation, getUkladLabel } from '../../utils/layoutLabels';
@@ -21,6 +21,7 @@ import { PrintCalendarGrid } from './PrintCalendarGrid';
 import { RadialCalendarGrid } from './RadialCalendarGrid';
 import { TripleCalendarGrid } from './TripleCalendarGrid';
 import { VerticalCalendarGrid } from './VerticalCalendarGrid';
+import { YearPosterGrid } from './YearPosterGrid';
 import './LayoutZones.css';
 import './MonthPagePreview.css';
 
@@ -39,6 +40,10 @@ function getJanuaryPage(k: Kalendarium): StronaMiesiaca | undefined {
   return k.strony.find((s) => s.typ === 'miesiac' && s.miesiac === 1) as StronaMiesiaca | undefined;
 }
 
+function getYearPage(k: Kalendarium): StronaRoczna | undefined {
+  return k.strony.find((s) => s.typ === 'rok') as StronaRoczna | undefined;
+}
+
 export function MonthPagePreview({
   kalendarium,
   year = 2026,
@@ -49,8 +54,13 @@ export function MonthPagePreview({
   hideMeta = false,
   pageFormat = 'A4',
 }: MonthPagePreviewProps) {
-  const page = getJanuaryPage(kalendarium);
+  const yearPage = getYearPage(kalendarium);
+  const monthPage = getJanuaryPage(kalendarium);
+  const page = yearPage ?? monthPage;
   if (!page) return null;
+
+  const isYearly = page.typ === 'rok';
+  const monthOnlyPage = isYearly ? null : monthPage;
 
   const isLandscape = isLandscapeOrientation(kalendarium.orientacja)
     || kalendarium.kolekcja === 'poziome';
@@ -62,18 +72,20 @@ export function MonthPagePreview({
   const bg = season?.tlo ?? resolvePaletteValue(kalendarium.paleta.tlo, '#FFFFFF');
   const accent = season?.akcent ?? resolvePaletteValue(kalendarium.paleta.akcent, '#333333');
   const text = resolvePaletteValue(kalendarium.paleta.tekst, '#1A1A1A');
-  const isStripBottom = page.uklad === 'poz-strip-bottom' || page.strefaKalendarza.uklad === 'pasek-dol';
-  const isFullscreen = page.uklad.includes('fullscreen') || page.uklad.includes('overlay');
+  const isStripBottom = !isYearly && (page.uklad === 'poz-strip-bottom' || page.strefaKalendarza.uklad === 'pasek-dol');
+  const isFullscreen = !isYearly && (page.uklad.includes('fullscreen') || page.uklad.includes('overlay'));
   const isRadial = page.strefaKalendarza.uklad === 'radialny';
-  const isVertical = page.strefaKalendarza.uklad === 'pionowy' || page.uklad.startsWith('pion-lista');
+  const isYearGrid = page.strefaKalendarza.uklad === 'roczny' || isYearly;
+  const isVertical = !isYearly && (page.strefaKalendarza.uklad === 'pionowy' || page.uklad.startsWith('pion-lista'));
   const isPlanner = page.strefaKalendarza.uklad === 'planer';
-  const isTriple = page.strefaKalendarza.uklad === 'trojka' || kalendarium.typografia.trojka === true;
+  const isTriple = !isYearly && (page.strefaKalendarza.uklad === 'trojka' || kalendarium.typografia.trojka === true);
   const tripleTyp = page.strefaKalendarza.tripleTyp ?? 'trojka-klasyczna';
   const plannerTyp = page.strefaKalendarza.plannerTyp ?? 'planer-notatki';
   const isSenior = page.strefaKalendarza.uklad === 'senior' || kalendarium.typografia.senior === true;
   const isSeniorDense = kalendarium.typografia.dense === true;
   const isGrayscale = kalendarium.efekty?.zdjecia === 'grayscale';
-  const monthTitle = page.typografia?.nazwaMiesiaca;
+  const monthTitle = !isYearly ? monthOnlyPage?.typografia?.nazwaMiesiaca : undefined;
+  const yearTitleSpec = isYearly ? yearPage?.typografia?.tytulRoczny : undefined;
   const compact = page.strefaKalendarza.szerokosc < 95;
   const frosted = page.efektyStrony?.frostedGlass;
   const semiPanel = page.efektyStrony?.panelPolprzezroczysty;
@@ -81,13 +93,15 @@ export function MonthPagePreview({
 
   const headingFont = fontStack(kalendarium.typografia.naglowek);
   const bodyFont = fontStack(kalendarium.typografia.tekst);
-  const daySize = kalendarium.typografia.rozmiarDzien ?? 9;
-  const layoutLabel = getUkladLabel(page.uklad);
+  const daySize = kalendarium.typografia.rozmiarDzien ?? (isYearly ? 5.5 : 9);
+  const layoutLabel = isYearly ? 'Plakat roczny · 12 miesięcy' : getUkladLabel(page.uklad);
   const layoutOrient = getLayoutOrientation(page.uklad);
 
-  const fittedTitle = fitTitleInCalendarZone(
-    monthTitle, page.strefaKalendarza, isSenior ? 24 : 15, isSenior, 'Styczeń', pageW, pageH,
-  );
+  const fittedTitle = !isYearly
+    ? fitTitleInCalendarZone(
+        monthTitle, page.strefaKalendarza, isSenior ? 24 : 15, isSenior, 'Styczeń', pageW, pageH,
+      )
+    : null;
 
   const calBg =
     semiPanel ? `rgba(${hexToRgb(bg)}, 0.88)` :
@@ -95,7 +109,7 @@ export function MonthPagePreview({
     isSenior ? bg :
     undefined;
 
-  const gridProps = {
+  const gridProps = !isYearly && fittedTitle ? {
     year,
     monthIndex: 0,
     area: page.strefaKalendarza,
@@ -121,7 +135,7 @@ export function MonthPagePreview({
       fontStyle: monthTitle?.styl === 'kursywa' ? 'italic' : undefined,
       textTransform: monthTitle?.transform === 'uppercase' ? 'uppercase' : undefined,
     },
-  };
+  } : null;
 
   return (
     <article
@@ -154,6 +168,8 @@ export function MonthPagePreview({
                       ? 'trzy kalendarze'
                       : kalendarium.kolekcja === 'poziome'
                         ? 'A4 poziom'
+                        : kalendarium.kolekcja === 'plakat'
+                          ? 'plakat 1 karta'
                   : 'art'}
           </span>
         )}
@@ -169,7 +185,7 @@ export function MonthPagePreview({
         {showProportion && proporcja && (
           <span className="month-preview__ratio">
             {proporcja.zdjecie}% foto · {proporcja.kalendarium}% kalendarz
-            {isTriple ? ' · 3× miesiąc' : ' · imieniny'}
+            {isYearly ? ' · 12 mies.' : isTriple ? ' · 3× miesiąc' : ' · imieniny'}
           </span>
         )}
       </header>
@@ -201,14 +217,14 @@ export function MonthPagePreview({
             paleta={kalendarium.paleta}
           />
 
-          {page.nakladka && (
+          {'nakladka' in page && page.nakladka && (
             <div
               className="month-preview__overlay"
               style={{ ...mmPosStyle(page.nakladka.obszar, pageW, pageH, layoutScale), background: page.nakladka.kolor }}
             />
           )}
 
-          {page.separator && (
+          {'separator' in page && page.separator && (
             <div
               className="month-preview__separator"
               style={{
@@ -219,7 +235,32 @@ export function MonthPagePreview({
             />
           )}
 
-          {isRadial ? (
+          {isYearGrid ? (
+            <YearPosterGrid
+              year={year}
+              area={page.strefaKalendarza}
+              textColor={text}
+              accentColor={accent}
+              headingFont={headingFont}
+              bodyFont={bodyFont}
+              dayFontSize={daySize}
+              showImieniny={!page.strefaKalendarza.bezImienin}
+              compact={page.strefaKalendarza.kompaktowy === true}
+              yearTitle={yearTitleSpec ? {
+                x: yearTitleSpec.x,
+                y: yearTitleSpec.y,
+                szerokosc: yearTitleSpec.szerokosc,
+                text: yearTitleSpec.tekst,
+                fontFamily: headingFont,
+                color: yearTitleSpec.kolor ?? accent,
+                fontSize: `calc(${yearTitleSpec.rozmiar ?? 14} * 100cqw / ${pageW})`,
+                textAlign: (yearTitleSpec.wyrownanie === 'center' ? 'center' : yearTitleSpec.wyrownanie === 'right' ? 'right' : 'left'),
+                transform: yearTitleSpec.transform,
+                letterSpacing: yearTitleSpec.letterSpacing ? `${yearTitleSpec.letterSpacing}px` : undefined,
+                fontWeight: yearTitleSpec.waga === 'bold' ? 700 : 600,
+              } : undefined}
+            />
+          ) : isRadial ? (
             <RadialCalendarGrid year={year} area={page.strefaKalendarza} textColor={text} accentColor={accent} />
           ) : isVertical ? (
             <VerticalCalendarGrid
@@ -251,11 +292,11 @@ export function MonthPagePreview({
                 year,
                 fontFamily: headingFont,
                 color: monthTitle?.kolor ?? accent,
-                fontSize: fittedTitle.fontSizePx,
-                maxWidth: fittedTitle.maxWidthPct,
-                textAlign: fittedTitle.textAlign,
-                transform: fittedTitle.transform,
-                letterSpacing: fittedTitle.letterSpacing,
+                fontSize: fittedTitle!.fontSizePx,
+                maxWidth: fittedTitle!.maxWidthPct,
+                textAlign: fittedTitle!.textAlign,
+                transform: fittedTitle!.transform,
+                letterSpacing: fittedTitle!.letterSpacing,
                 fontWeight: monthTitle?.waga === 'bold' ? 700 : monthTitle?.waga === 'semibold' ? 600 : 500,
                 fontStyle: monthTitle?.styl === 'kursywa' ? 'italic' : undefined,
                 textTransform: monthTitle?.transform === 'uppercase' ? 'uppercase' : undefined,
@@ -278,11 +319,11 @@ export function MonthPagePreview({
                 year,
                 fontFamily: headingFont,
                 color: monthTitle?.kolor ?? accent,
-                fontSize: fittedTitle.fontSizePx,
-                maxWidth: fittedTitle.maxWidthPct,
-                textAlign: fittedTitle.textAlign,
-                transform: fittedTitle.transform,
-                letterSpacing: fittedTitle.letterSpacing,
+                fontSize: fittedTitle!.fontSizePx,
+                maxWidth: fittedTitle!.maxWidthPct,
+                textAlign: fittedTitle!.textAlign,
+                transform: fittedTitle!.transform,
+                letterSpacing: fittedTitle!.letterSpacing,
                 fontWeight: monthTitle?.waga === 'bold' ? 700 : monthTitle?.waga === 'semibold' ? 600 : 500,
                 fontStyle: monthTitle?.styl === 'kursywa' ? 'italic' : undefined,
                 textTransform: monthTitle?.transform === 'uppercase' ? 'uppercase' : undefined,
@@ -306,10 +347,10 @@ export function MonthPagePreview({
                 className="month-preview__overlay"
                 style={{ ...mmPosStyle(page.strefaKalendarza, pageW, pageH, layoutScale), background: 'rgba(0,0,0,0.55)' }}
               />
-              <PrintCalendarGrid {...gridProps} textColor="#fff" accentColor="#fff" />
+              <PrintCalendarGrid {...gridProps!} textColor="#fff" accentColor="#fff" />
             </>
           ) : (
-            <PrintCalendarGrid {...gridProps} textColor={text} accentColor={accent} />
+            <PrintCalendarGrid {...gridProps!} textColor={text} accentColor={accent} />
           )}
 
           {showLayoutZones && !isFullscreen && (

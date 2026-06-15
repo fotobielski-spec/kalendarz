@@ -83,6 +83,11 @@
   background: #ede9fe;
 }
 
+.month-preview__collection--plakat {
+  color: #7c2d12;
+  background: #ffedd5;
+}
+
 .month-preview__collection--poziome {
   color: #0e7490;
   background: #cffafe;

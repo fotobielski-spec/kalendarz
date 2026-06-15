@@ -1,4 +1,4 @@
-import type { Dekoracja, Kalendarium, PozycjaMm, StronaMiesiaca } from '../types/plan';
+import type { Dekoracja, Kalendarium, PozycjaMm, StronaMiesiaca, StronaRoczna } from '../types/plan';
 import { fontStack } from './fonts';
 import {
   A3_HEIGHT,
@@ -22,6 +22,7 @@ const COLLECTION_MAP: Record<string, string> = {
   senior: 'senior',
   trojka: 'triple',
   poziome: 'horizontal',
+  plakat: 'poster',
 };
 
 type CalendarLayout =
@@ -33,8 +34,9 @@ type CalendarLayout =
   | 'strip-bottom'
   | 'senior-grid';
 
-function getJanuaryPage(k: Kalendarium): StronaMiesiaca | undefined {
-  return k.strony.find((s) => s.typ === 'miesiac' && s.miesiac === 1) as StronaMiesiaca | undefined;
+function getPreviewPage(k: Kalendarium) {
+  return k.strony.find((s) => s.typ === 'rok')
+    ?? k.strony.find((s) => s.typ === 'miesiac' && s.miesiac === 1);
 }
 
 function zoneToRect(z: PozycjaMm) {
@@ -51,10 +53,12 @@ function resolveCollection(k: Kalendarium): string {
   if (k.id.startsWith('SEN-')) return 'senior';
   if (k.id.startsWith('TRZ-')) return 'triple';
   if (k.id.startsWith('POZ-')) return 'horizontal';
+  if (k.id.startsWith('PLAK-')) return 'poster';
   return 'custom';
 }
 
-function detectCalendarLayout(k: Kalendarium, page: StronaMiesiaca): CalendarLayout {
+function detectCalendarLayout(k: Kalendarium, page: StronaMiesiaca | StronaRoczna): CalendarLayout {
+  if (page.typ === 'rok' || page.strefaKalendarza.uklad === 'roczny') return 'week-grid';
   const cal = page.strefaKalendarza;
   if (page.uklad === 'poz-strip-bottom' || cal.uklad === 'pasek-dol') return 'strip-bottom';
   if (cal.uklad === 'pionowy' || page.uklad.startsWith('pion-lista')) return 'vertical-list';
@@ -65,7 +69,7 @@ function detectCalendarLayout(k: Kalendarium, page: StronaMiesiaca): CalendarLay
   return 'week-grid';
 }
 
-function primaryPhotoZone(page: StronaMiesiaca) {
+function primaryPhotoZone(page: { strefyZdjec: { id: string; pozycja: PozycjaMm }[] }) {
   const zone = page.strefyZdjec.find((z) => z.id === 'foto') ?? page.strefyZdjec[0];
   if (!zone) return { x: 0, y: 0, width: A4_WIDTH, height: Math.round(A4_HEIGHT * 0.6) };
   return zoneToRect(zone.pozycja);
@@ -145,11 +149,24 @@ type MonthTitleSpec = NonNullable<NonNullable<StronaMiesiaca['typografia']>['naz
 
 function buildMonthTitle(
   monthTitle: MonthTitleSpec | undefined,
+  yearTitle: { x: number; y: number; rozmiar?: number; kolor?: string; wyrownanie?: string; transform?: string; letterSpacing?: number } | undefined,
   calZone: { x: number; y: number; width: number; height: number },
   kalendarium: Kalendarium,
 ) {
   const accent = kalendarium.paleta.akcent ?? '#333333';
   const size = kalendarium.typografia.rozmiarMiesiac ?? 12;
+
+  if (yearTitle) {
+    return {
+      x: yearTitle.x,
+      y: yearTitle.y,
+      size_mm: yearTitle.rozmiar ?? size,
+      align: mapAlign(yearTitle.wyrownanie),
+      color: yearTitle.kolor ?? accent,
+      transform: yearTitle.transform ?? 'uppercase',
+      letter_spacing_mm: yearTitle.letterSpacing ?? 1.5,
+    };
+  }
 
   if (monthTitle) {
     return {
@@ -175,8 +192,10 @@ function buildMonthTitle(
 }
 
 export function exportThemeSchema(kalendarium: Kalendarium, pageFormat: PageFormat = 'A4') {
-  const page = getJanuaryPage(kalendarium);
-  if (!page) throw new Error(`Brak strony stycznia dla ${kalendarium.id}`);
+  const page = getPreviewPage(kalendarium);
+  if (!page) throw new Error(`Brak strony podglądu dla ${kalendarium.id}`);
+
+  const isYearly = page.typ === 'rok';
 
   const isLandscape = kalendarium.orientacja === 'landscape' || kalendarium.kolekcja === 'poziome';
   const pageW = isLandscape
@@ -190,7 +209,8 @@ export function exportThemeSchema(kalendarium: Kalendarium, pageFormat: PageForm
   const photoZone = primaryPhotoZone(page);
   const calZone = zoneToRect(page.strefaKalendarza);
   const layout = detectCalendarLayout(kalendarium, page);
-  const monthTitle = page.typografia?.nazwaMiesiaca;
+  const monthTitle = page.typ === 'miesiac' ? page.typografia?.nazwaMiesiaca : undefined;
+  const yearTitle = page.typ === 'rok' ? page.typografia?.tytulRoczny : undefined;
   const frosted = page.efektyStrony?.frostedGlass === true;
   const semiPanel = page.efektyStrony?.panelPolprzezroczysty === true;
   const daySize = kalendarium.typografia.rozmiarDzien ?? 9;
@@ -219,7 +239,7 @@ export function exportThemeSchema(kalendarium: Kalendarium, pageFormat: PageForm
     collection: resolveCollection(kalendarium),
     category: kalendarium.kategoria,
     layout_code: page.uklad,
-    calendar_layout: layout,
+    calendar_layout: isYearly ? 'year-poster' : layout,
     page_format: {
       name: isLandscape
         ? (pageFormat === 'A3' ? 'A3 poziom' : 'A4 poziom')
@@ -246,7 +266,7 @@ export function exportThemeSchema(kalendarium: Kalendarium, pageFormat: PageForm
       body_font: fontStack(kalendarium.typografia.tekst),
       day_number_size_mm: daySize,
       name_day_size_mm: Math.round(daySize * 0.62 * 10) / 10,
-      month_title: buildMonthTitle(monthTitle, calZone, kalendarium),
+      month_title: buildMonthTitle(monthTitle, yearTitle, calZone, kalendarium),
     },
     colors: {
       panel_background: kalendarium.paleta.tlo ?? '#FFFFFF',
@@ -261,13 +281,21 @@ export function exportThemeSchema(kalendarium: Kalendarium, pageFormat: PageForm
       blur_intensity_px: frosted ? 12 : 0,
     },
     decorations: (page.dekoracje ?? []).map(mapDecoration),
-    sample_page: {
-      type: 'month',
-      month: page.miesiac,
-      label: page.etykieta,
-    },
+    sample_page: isYearly
+      ? { type: 'year', month: 0, label: page.etykieta }
+      : { type: 'month', month: (page as StronaMiesiaca).miesiac, label: page.etykieta },
     safe_margins_mm: safeMargins(pageW, pageH, photoZone, calZone),
   };
+
+  if (isYearly) {
+    exportDoc.year_poster = {
+      grid_columns: page.strefaKalendarza.siatkaKolumny ?? 4,
+      grid_rows: page.strefaKalendarza.siatkaWiersze ?? 3,
+      gap_mm: page.strefaKalendarza.odstepMm ?? 2,
+      months: 12,
+      single_page: true,
+    };
+  }
 
   if (layout === 'vertical-list') {
     exportDoc.day_list = {

@@ -37,6 +37,38 @@ export interface StrefaKalendarza extends PozycjaMm {
   srodek?: { x: number; y: number };
   promienDni?: number;
   promienZewn?: number;
+  siatkaKolumny?: number;
+  siatkaWiersze?: number;
+  odstepMm?: number;
+  bezImienin?: boolean;
+  kompaktowy?: boolean;
+}
+
+export interface StronaRoczna {
+  numer: number;
+  typ: 'rok';
+  etykieta: string;
+  uklad: string;
+  strefyZdjec: StrefaZdjecia[];
+  strefaKalendarza: StrefaKalendarza;
+  typografia?: {
+    tytulRoczny?: {
+      x: number;
+      y: number;
+      szerokosc: number;
+      wysokosc: number;
+      tekst?: string;
+      rozmiar?: number;
+      kolor?: string;
+      wyrownanie?: string;
+      transform?: string;
+      letterSpacing?: number;
+      waga?: string;
+    };
+  };
+  dekoracje?: Dekoracja[];
+  efektyStrony?: { frostedGlass?: boolean; panelPolprzezroczysty?: boolean; nakladkaZaluzja?: boolean };
+  proporcja?: { kalendarium: number; zdjecie: number };
 }
 
 export interface StronaMiesiaca {
@@ -129,12 +161,14 @@ export interface Kalendarium {
     dense?: boolean;
     /** Tryb trzech kalendarzy na karcie */
     trojka?: boolean;
+    /** Kalendarz roczny na 1 karcie */
+    roczny?: boolean;
   };
   orientacja?: 'portrait' | 'landscape';
   efekty?: { zdjecia?: string; kontrast?: number };
   proporcja?: { kalendarium: number; zdjecie: number };
-  kolekcja?: 'klasyczne' | 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | 'trojka' | 'poziome' | string;
-  strony: StronaMiesiaca[];
+  kolekcja?: 'klasyczne' | 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | 'trojka' | 'poziome' | 'plakat' | string;
+  strony: (StronaMiesiaca | StronaRoczna)[];
 }
 
 export interface PlanKalendaria {
