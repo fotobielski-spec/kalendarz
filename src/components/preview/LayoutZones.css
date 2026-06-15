@@ -1,0 +1,38 @@
+.layout-zones {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 8;
+}
+
+.layout-zones__photo,
+.layout-zones__calendar {
+  border: 1px dashed color-mix(in srgb, var(--zone-accent) 35%, transparent);
+  background: color-mix(in srgb, var(--zone-accent) 4%, transparent);
+  box-sizing: border-box;
+}
+
+.layout-zones__photo::after,
+.layout-zones__calendar::after {
+  position: absolute;
+  font-size: calc(5 * 100cqw / 210);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--zone-accent) 55%, transparent);
+  padding: 1px 3px;
+  background: color-mix(in srgb, white 75%, transparent);
+  border-radius: 2px;
+}
+
+.layout-zones__photo::after {
+  content: '60%';
+  top: 2px;
+  left: 2px;
+}
+
+.layout-zones__calendar::after {
+  content: '40%';
+  bottom: 2px;
+  right: 2px;
+}

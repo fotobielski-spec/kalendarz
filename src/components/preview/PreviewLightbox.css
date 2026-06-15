@@ -1,0 +1,123 @@
+.preview-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.preview-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+
+.preview-lightbox__panel {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 820px);
+  max-height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+  border-radius: 14px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.preview-lightbox__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #e2e8f0;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.preview-lightbox__id {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6366f1;
+  background: #eef2ff;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.preview-lightbox__name {
+  margin: 0.35rem 0 0.2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.preview-lightbox__meta {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.preview-lightbox__actions {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.preview-lightbox__actions button {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #334155;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.preview-lightbox__actions button:hover:not(:disabled) {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.preview-lightbox__actions button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.preview-lightbox__close {
+  font-size: 0.9rem !important;
+}
+
+.preview-lightbox__stage {
+  flex: 1;
+  overflow: auto;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 0;
+}
+
+.preview-lightbox__hint {
+  margin: 0;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .preview-lightbox__panel {
+    width: min(100%, 900px);
+  }
+}
