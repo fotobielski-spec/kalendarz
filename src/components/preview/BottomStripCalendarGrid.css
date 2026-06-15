@@ -10,6 +10,24 @@
   border-top: 1px solid color-mix(in srgb, var(--accent, #6366f1) 35%, transparent);
 }
 
+.strip-cal__month {
+  position: absolute;
+  left: calc(1.5 * 100cqw / var(--zone-w-mm, 273));
+  bottom: 100%;
+  margin-bottom: calc(2.5 * 100cqw / var(--zone-w-mm, 273));
+  flex-shrink: 0;
+  font-size: min(
+    calc(12 * 100cqw / var(--zone-w-mm, 273)),
+    8cqw
+  );
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent, currentColor);
+  min-width: calc(22 * 100cqw / var(--zone-w-mm, 273));
+  white-space: nowrap;
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.9);
+}
+
 .strip-cal__year {
   z-index: 5;
   font-size: calc(14 * 100cqw / 273);
@@ -18,20 +36,6 @@
   letter-spacing: 0.04em;
   pointer-events: none;
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.85);
-}
-
-.strip-cal__month {
-  flex-shrink: 0;
-  font-size: min(
-    calc(11 * 100cqw / var(--zone-w-mm, 273)),
-    55cqh
-  );
-  font-weight: 700;
-  line-height: 1;
-  color: var(--accent, currentColor);
-  padding-bottom: calc(0.5 * 100cqh / var(--zone-h-mm, 19));
-  min-width: calc(22 * 100cqw / var(--zone-w-mm, 273));
-  white-space: nowrap;
 }
 
 .strip-cal__row {

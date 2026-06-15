@@ -64,6 +64,7 @@ export function BottomStripCalendarGrid({
         className="strip-cal"
         style={{
           ...mmPosStyle(area, pageW, pageH),
+          position: 'absolute',
           color: textColor,
           background: backgroundColor,
           ...zoneCssVars(area),
