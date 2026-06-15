@@ -11322,7 +11322,7 @@
       "kategoria": "minimal",
       "kolekcja": "poziome",
       "orientacja": "landscape",
-      "opis": "A4 poziom — 90% duże zdjęcie, kalendarz w jednej linii na dole (10%). Miesiąc lewy dół, rok prawy góra, bez imienin.",
+      "opis": "A4 poziom — 88% duże zdjęcie, pasek kalendarza na dole (12%) z dniami tygodnia. Miesiąc lewy dół, rok prawy góra, bez imienin.",
       "tagi": [
         "poziom",
         "pasek",
@@ -11341,8 +11341,8 @@
         "rozmiarDzien": 7
       },
       "proporcja": {
-        "kalendarium": 10,
-        "zdjecie": 90
+        "kalendarium": 12,
+        "zdjecie": 88
       },
       "strony": [
         {
@@ -11350,8 +11350,8 @@
           "typ": "okladka",
           "etykieta": "Okładka",
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom-cover",
           "strefyZdjec": [
@@ -11362,27 +11362,27 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "elementyTekstowe": [
@@ -11416,8 +11416,8 @@
           "etykieta": "Styczeń",
           "miesiac": 1,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -11428,33 +11428,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11464,7 +11464,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -11478,8 +11478,8 @@
           "etykieta": "Luty",
           "miesiac": 2,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -11490,33 +11490,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11526,7 +11526,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -11540,8 +11540,8 @@
           "etykieta": "Marzec",
           "miesiac": 3,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -11552,33 +11552,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11588,7 +11588,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -11602,8 +11602,8 @@
           "etykieta": "Kwiecień",
           "miesiac": 4,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -11614,33 +11614,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11650,7 +11650,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -11664,8 +11664,8 @@
           "etykieta": "Maj",
           "miesiac": 5,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -11676,33 +11676,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11712,7 +11712,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -11726,8 +11726,8 @@
           "etykieta": "Czerwiec",
           "miesiac": 6,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -11738,33 +11738,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11774,7 +11774,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -11788,8 +11788,8 @@
           "etykieta": "Lipiec",
           "miesiac": 7,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -11800,33 +11800,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11836,7 +11836,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -11850,8 +11850,8 @@
           "etykieta": "Sierpień",
           "miesiac": 8,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -11862,33 +11862,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11898,7 +11898,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -11912,8 +11912,8 @@
           "etykieta": "Wrzesień",
           "miesiac": 9,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -11924,33 +11924,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11960,7 +11960,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -11974,8 +11974,8 @@
           "etykieta": "Październik",
           "miesiac": 10,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -11986,33 +11986,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -12022,7 +12022,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -12036,8 +12036,8 @@
           "etykieta": "Listopad",
           "miesiac": 11,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -12048,33 +12048,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -12084,7 +12084,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
@@ -12098,8 +12098,8 @@
           "etykieta": "Grudzień",
           "miesiac": 12,
           "proporcja": {
-            "kalendarium": 10,
-            "zdjecie": 90
+            "kalendarium": 12,
+            "zdjecie": 88
           },
           "uklad": "poz-strip-bottom",
           "strefyZdjec": [
@@ -12110,33 +12110,33 @@
                 "x": 12,
                 "y": 12,
                 "szerokosc": 273,
-                "wysokosc": 167
+                "wysokosc": 164
               },
-              "proporcjeZalecane": "273:167",
+              "proporcjeZalecane": "273:164",
               "maska": "prostokat",
               "obrot": 0,
               "ramka": null,
               "clipPath": null,
-              "opis": "Duże zdjęcie — 90% powierzchni strony",
+              "opis": "Duże zdjęcie — 88% powierzchni strony",
               "wymagane": true,
               "minDpi": 300,
               "zalecaneRozdzielczosciPx": {
                 "szerokosc": 3224,
-                "wysokosc": 1972
+                "wysokosc": 1937
               }
             }
           ],
           "strefaKalendarza": {
             "x": 0,
-            "y": 179,
+            "y": 176,
             "szerokosc": 297,
-            "wysokosc": 19,
+            "wysokosc": 22,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 175,
+              "y": 172,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -12146,7 +12146,7 @@
             {
               "typ": "linia",
               "x": 0,
-              "y": 179,
+              "y": 176,
               "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5

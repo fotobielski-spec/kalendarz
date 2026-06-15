@@ -29,12 +29,40 @@
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.85);
 }
 
-.strip-cal__row {
+.strip-cal__grid {
   display: grid;
+  grid-template-rows: minmax(0, 0.9fr) minmax(0, 1.1fr);
   width: 100%;
   height: 100%;
   min-width: 0;
   align-items: stretch;
+}
+
+.strip-cal__label {
+  container-type: size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-right: 1px solid color-mix(in srgb, var(--accent, #6366f1) 30%, #c4c4c4);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent, #6366f1) 22%, #d4d4d4);
+  font-family: var(--font-heading, inherit);
+  font-size: min(68cqh, 52cqw);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--accent, currentColor);
+  line-height: 1;
+}
+
+.strip-cal__label--weekend {
+  opacity: 0.55;
+}
+
+.strip-cal__col-end {
+  border-right: none;
 }
 
 .strip-cal__cell {
@@ -46,10 +74,6 @@
   overflow: hidden;
   box-sizing: border-box;
   border-right: 1px solid color-mix(in srgb, var(--accent, #6366f1) 30%, #c4c4c4);
-}
-
-.strip-cal__cell:last-child {
-  border-right: none;
 }
 
 .strip-cal__num {

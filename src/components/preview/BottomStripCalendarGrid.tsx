@@ -1,6 +1,6 @@
 import type { StrefaKalendarza } from '../../types/plan';
 import { usePageSize } from '../../context/PageSizeContext';
-import { mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
+import { getDayLabels, mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import './BottomStripCalendarGrid.css';
 
 interface BottomStripCalendarGridProps {
@@ -33,6 +33,7 @@ export function BottomStripCalendarGrid({
   const { pageW, pageH } = usePageSize();
   const today = new Date();
 
+  const dayLabels = getDayLabels();
   const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
   const startOffset = (new Date(year, monthIndex, 1).getDay() + 6) % 7;
   const colCount = Math.ceil((startOffset + daysInMonth) / 7) * 7;
@@ -100,17 +101,35 @@ export function BottomStripCalendarGrid({
         } as React.CSSProperties}
       >
         <div
-          className="strip-cal__row"
-          style={{ fontFamily: bodyFont, gridTemplateColumns: `repeat(${colCount}, minmax(0, 1fr))` }}
+          className="strip-cal__grid"
+          style={{
+            fontFamily: bodyFont,
+            gridTemplateColumns: `repeat(${colCount}, minmax(0, 1fr))`,
+          }}
         >
+          {Array.from({ length: colCount }, (_, i) => (
+            <span
+              key={`lab-${i}`}
+              className={[
+                'strip-cal__label',
+                i % 7 >= 5 && 'strip-cal__label--weekend',
+                (i + 1) % 7 === 0 && 'strip-cal__col-end',
+              ].filter(Boolean).join(' ')}
+              style={{ gridColumn: i + 1, gridRow: 1 }}
+            >
+              {dayLabels[i % 7]}
+            </span>
+          ))}
           {cells.map((cell, i) => (
             <span
-              key={i}
+              key={`day-${i}`}
               className={[
                 'strip-cal__cell',
                 cell.isEmpty && 'strip-cal__cell--empty',
                 cell.isToday && 'strip-cal__cell--today',
+                (i + 1) % 7 === 0 && 'strip-cal__col-end',
               ].filter(Boolean).join(' ')}
+              style={{ gridColumn: i + 1, gridRow: 2 }}
             >
               <span className="strip-cal__num">{cell.day ?? ''}</span>
             </span>
