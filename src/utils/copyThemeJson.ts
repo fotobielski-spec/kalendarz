@@ -1,12 +1,17 @@
 import type { Kalendarium } from '../types/plan';
+import { exportThemeJsonString } from './exportThemeSchema';
+import type { PageFormat } from './previewUtils';
 
-/** Pełny obiekt motywu (szablonu) jako sformatowany JSON. */
-export function themeJsonString(kalendarium: Kalendarium): string {
-  return JSON.stringify(kalendarium, null, 2);
+/** Motyw w formacie schema_version 1 (kompatybilny z zewnętrznym kreatorem). */
+export function themeJsonString(kalendarium: Kalendarium, pageFormat: PageFormat = 'A4'): string {
+  return exportThemeJsonString(kalendarium, pageFormat);
 }
 
-export async function copyThemeJson(kalendarium: Kalendarium): Promise<void> {
-  const text = themeJsonString(kalendarium);
+export async function copyThemeJson(
+  kalendarium: Kalendarium,
+  pageFormat: PageFormat = 'A4',
+): Promise<void> {
+  const text = themeJsonString(kalendarium, pageFormat);
   if (navigator.clipboard?.writeText) {
     await navigator.clipboard.writeText(text);
     return;

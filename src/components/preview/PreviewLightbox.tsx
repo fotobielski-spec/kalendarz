@@ -67,7 +67,7 @@ export function PreviewLightbox({
             </p>
           </div>
           <div className="preview-lightbox__actions">
-            <CopyThemeJsonButton kalendarium={kalendarium} variant="toolbar" />
+            <CopyThemeJsonButton kalendarium={kalendarium} pageFormat={pageFormat} variant="toolbar" />
             <button type="button" onClick={onPrev} disabled={index <= 0} aria-label="Poprzedni szablon">
               ←
             </button>

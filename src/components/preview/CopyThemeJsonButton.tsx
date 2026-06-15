@@ -1,16 +1,19 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Kalendarium } from '../../types/plan';
+import type { PageFormat } from '../../utils/previewUtils';
 import { copyThemeJson } from '../../utils/copyThemeJson';
 import './CopyThemeJsonButton.css';
 
 interface CopyThemeJsonButtonProps {
   kalendarium: Kalendarium;
+  pageFormat?: PageFormat;
   className?: string;
   variant?: 'card' | 'toolbar';
 }
 
 export function CopyThemeJsonButton({
   kalendarium,
+  pageFormat = 'A4',
   className = '',
   variant = 'card',
 }: CopyThemeJsonButtonProps) {
@@ -26,14 +29,14 @@ export function CopyThemeJsonButton({
     e.preventDefault();
     if (timerRef.current) clearTimeout(timerRef.current);
     try {
-      await copyThemeJson(kalendarium);
+      await copyThemeJson(kalendarium, pageFormat);
       setStatus('copied');
       timerRef.current = setTimeout(() => setStatus('idle'), 2000);
     } catch {
       setStatus('error');
       timerRef.current = setTimeout(() => setStatus('idle'), 2500);
     }
-  }, [kalendarium]);
+  }, [kalendarium, pageFormat]);
 
   const label =
     status === 'copied' ? 'Skopiowano!' :

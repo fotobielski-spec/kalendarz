@@ -193,7 +193,7 @@ export function PreviewGallery({
               />
               <span className="preview-gallery__zoom-hint" aria-hidden>🔍 Powiększ</span>
             </button>
-            <CopyThemeJsonButton kalendarium={k} variant="card" />
+            <CopyThemeJsonButton kalendarium={k} pageFormat={pageFormat} variant="card" />
           </article>
         ))}
       </div>
