@@ -3,6 +3,7 @@ import type { PlanKalendaria } from '../types/plan';
 import { collectFontsFromPlan, loadGoogleFonts } from '../utils/fonts';
 import type { PageFormat } from '../utils/previewUtils';
 import { MonthPagePreview } from '../components/preview/MonthPagePreview';
+import { CopyThemeJsonButton } from '../components/preview/CopyThemeJsonButton';
 import { PreviewLightbox } from '../components/preview/PreviewLightbox';
 import './PreviewGallery.css';
 
@@ -176,22 +177,24 @@ export function PreviewGallery({
 
       <div className="preview-gallery__grid">
         {visible.map((k) => (
-          <button
-            key={k.id}
-            type="button"
-            className="preview-gallery__card"
-            onClick={() => openLightbox(k.id)}
-            aria-label={`Powiększ podgląd ${k.id} ${k.nazwa}`}
-          >
-            <MonthPagePreview
-              kalendarium={k}
-              year={year}
-              showProportion={showProportion}
-              showLayoutZones={showLayoutZones}
-              pageFormat={pageFormat}
-            />
-            <span className="preview-gallery__zoom-hint" aria-hidden>🔍 Powiększ</span>
-          </button>
+          <article key={k.id} className="preview-gallery__card">
+            <button
+              type="button"
+              className="preview-gallery__card-open"
+              onClick={() => openLightbox(k.id)}
+              aria-label={`Powiększ podgląd ${k.id} ${k.nazwa}`}
+            >
+              <MonthPagePreview
+                kalendarium={k}
+                year={year}
+                showProportion={showProportion}
+                showLayoutZones={showLayoutZones}
+                pageFormat={pageFormat}
+              />
+              <span className="preview-gallery__zoom-hint" aria-hidden>🔍 Powiększ</span>
+            </button>
+            <CopyThemeJsonButton kalendarium={k} variant="card" />
+          </article>
         ))}
       </div>
 

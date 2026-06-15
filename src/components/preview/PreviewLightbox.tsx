@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import type { Kalendarium } from '../../types/plan';
 import { getUkladLabel } from '../../utils/layoutLabels';
 import type { PageFormat } from '../../utils/previewUtils';
+import { CopyThemeJsonButton } from './CopyThemeJsonButton';
 import { MonthPagePreview } from './MonthPagePreview';
 import './PreviewLightbox.css';
 
@@ -66,6 +67,7 @@ export function PreviewLightbox({
             </p>
           </div>
           <div className="preview-lightbox__actions">
+            <CopyThemeJsonButton kalendarium={kalendarium} variant="toolbar" />
             <button type="button" onClick={onPrev} disabled={index <= 0} aria-label="Poprzedni szablon">
               ←
             </button>
