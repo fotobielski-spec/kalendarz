@@ -9,26 +9,16 @@ export function getImieniny(month: number, day: number): string[] {
   return names ?? [];
 }
 
-/** Genitive (dopełniacz) → krótsza forma nominativu do wyświetlenia */
-export function normalizeImieninyName(name: string): string {
-  if (!name || name === 'Nowy Rok') return name;
-  if (name.endsWith('iego')) return name.slice(0, -3) + 'i';
-  if (name.endsWith('ego')) return name.slice(0, -3);
-  if (name.endsWith('ej')) return name.slice(0, -2) + 'a';
-  if (name.endsWith('ki')) return name.slice(0, -1) + 'a';
-  if (name.endsWith('y')) return name.slice(0, -1) + 'a';
-  if (name.endsWith('i') && name.length > 3) return name.slice(0, -1) + 'a';
-  return name;
-}
-
-/** Skrócona forma do komórki kalendarza; full = pełne imię (senior, zawijanie w CSS) */
-export function formatImieninyShort(month: number, day: number, maxLen = 11, full = false): string {
+/** Pełna nazwa imienin do komórki — bez skracania i bez „…” */
+export function formatImieninyCell(month: number, day: number): string {
   const names = getImieniny(month, day);
   if (names.length === 0) return '';
-  const raw = names[0];
-  const first = full ? normalizeImieninyName(raw) : raw.replace(/ego$/, '').replace(/ej$/, '');
-  if (full || first.length <= maxLen) return first;
-  return `${first.slice(0, maxLen - 1)}…`;
+  return names.join(', ');
+}
+
+/** @deprecated Użyj formatImieninyCell — zachowane dla kompatybilności */
+export function formatImieninyShort(month: number, day: number, _maxLen = 99, _full = true): string {
+  return formatImieninyCell(month, day);
 }
 
 export function getMonthDaysWithImieniny(
@@ -50,7 +40,7 @@ export function getMonthDaysWithImieniny(
       day: isCurrentMonth ? d : null,
       isCurrentMonth,
       isWeekend: dow === 0 || dow === 6,
-      imieniny: isCurrentMonth ? formatImieninyShort(monthIndex + 1, d) : '',
+      imieniny: isCurrentMonth ? formatImieninyCell(monthIndex + 1, d) : '',
     });
   }
   return days;

@@ -1,5 +1,5 @@
 import type { StrefaKalendarza } from '../../types/plan';
-import { fitTitleInCalendarZone } from '../../utils/typographyFit';
+import { fitTitleInCalendarZone, scaleMonthTitleSize } from '../../utils/typographyFit';
 import { mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import { PrintCalendarGrid } from './PrintCalendarGrid';
 import './TripleCalendarGrid.css';
@@ -64,14 +64,17 @@ function buildTitle(
   size: number,
   uppercase = false,
 ) {
+  const monthName = MONTH_NAMES[monthIdx];
+  const scaledSize = scaleMonthTitleSize(monthName, size, area.szerokosc);
   const fitted = fitTitleInCalendarZone(
-    { x: area.x, y: area.y, rozmiar: size, wyrownanie: 'center' },
+    { x: area.x, y: area.y, rozmiar: scaledSize, wyrownanie: 'center' },
     area,
-    size,
+    scaledSize,
     false,
+    monthName,
   );
   return {
-    monthName: MONTH_NAMES[monthIdx],
+    monthName,
     year: yr,
     fontFamily: headingFont,
     color: monthTitle?.color ?? accent,
@@ -198,7 +201,7 @@ export function TripleCalendarGrid({
 
       <div className="triple-cal__months">
         <div className="triple-cal__panel triple-cal__panel--prev">
-          <span className="triple-cal__hint">← {MONTH_NAMES[prevIdx].slice(0, 3)}</span>
+          <span className="triple-cal__hint">{MONTH_NAMES[prevIdx]}</span>
           <PrintCalendarGrid
             {...shared}
             year={prevYear}
@@ -230,7 +233,7 @@ export function TripleCalendarGrid({
         </div>
 
         <div className="triple-cal__panel triple-cal__panel--next">
-          <span className="triple-cal__hint">{MONTH_NAMES[nextIdx].slice(0, 3)} →</span>
+          <span className="triple-cal__hint">{MONTH_NAMES[nextIdx]}</span>
           <PrintCalendarGrid
             {...shared}
             year={nextYear}

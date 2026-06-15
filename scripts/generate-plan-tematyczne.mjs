@@ -1,5 +1,5 @@
 /**
- * 20 kalendarzy tematycznych 40/60 — koty, psy, OSP i więcej
+ * 19 kalendarzy tematycznych 40/60 — koty, psy, OSP i więcej
  * node scripts/generate-plan-tematyczne.mjs
  */
 
@@ -286,20 +286,7 @@ const DEFINICJE = [
     },
   },
   {
-    id: 'TEM-16', nazwa: 'MTB Trasa', kategoria: 'rower',
-    opis: 'Kalendarz rowerowy — góry, trasa, przygoda.',
-    tagi: ['rower', 'mtb'],
-    paleta: { tlo: '#F7FEE7', akcent: '#65A30D', tekst: '#1A2E05' },
-    typografia: { naglowek: 'Teko', tekst: 'Roboto', rozmiarMiesiac: 15, rozmiarDzien: 7.5 },
-    layout: {
-      ukladMiesiac: 'tem-rower-top',
-      strefyMiesiac: () => [zone('foto', 'hero', M, 28, W, PH - 16, { opis: 'Zdjęcie rowerowe' })],
-      strefaKalendarza: CAL_BOTTOM,
-      titleOpts: { kolor: '#65A30D', rozmiar: 14, uppercase: true },
-    },
-  },
-  {
-    id: 'TEM-17', nazwa: 'Polskie Zamki', kategoria: 'zamki',
+    id: 'TEM-16', nazwa: 'Polskie Zamki', kategoria: 'zamki',
     opis: 'Zamki i pałace Polski — turystyczny, historyczny.',
     tagi: ['zamki', 'historia'],
     paleta: { tlo: '#FAF5EF', akcent: '#78350F', tekst: '#292524' },
@@ -312,7 +299,7 @@ const DEFINICJE = [
     },
   },
   {
-    id: 'TEM-18', nazwa: 'Fotografia Analog', kategoria: 'fotografia',
+    id: 'TEM-17', nazwa: 'Fotografia Analog', kategoria: 'fotografia',
     opis: 'Dla fotografów — kadry, aparaty, czarno-białe ujęcia.',
     tagi: ['foto', 'analog'],
     paleta: { tlo: '#FAFAFA', akcent: '#171717', tekst: '#404040' },
@@ -325,7 +312,7 @@ const DEFINICJE = [
     },
   },
   {
-    id: 'TEM-19', nazwa: 'Smaki Domu', kategoria: 'kuchnia',
+    id: 'TEM-18', nazwa: 'Smaki Domu', kategoria: 'kuchnia',
     opis: 'Kulinarny kalendarz — potrawy, gotowanie, rodzinne chwile.',
     tagi: ['kuchnia', 'jedzenie'],
     paleta: { tlo: '#FFFBEB', akcent: '#D97706', tekst: '#451A03' },
@@ -338,7 +325,7 @@ const DEFINICJE = [
     },
   },
   {
-    id: 'TEM-20', nazwa: 'Młodzieżowa OSP', kategoria: 'osp',
+    id: 'TEM-19', nazwa: 'Młodzieżowa OSP', kategoria: 'osp',
     opis: 'Kalendarz młodzieżowej OSP — przyszłość straży pożarnej.',
     tagi: ['osp', 'młodzież'],
     paleta: { tlo: '#FFFFFF', akcent: '#DC2626', tekst: '#1F2937', drugi: '#2563EB' },
@@ -385,8 +372,8 @@ const plan = {
     wersja: '1.0.0',
     dataUtworzenia: '2026-06-14',
     projekt: 'Kalendarium+ Tematyczne',
-    opis: '20 kalendarzy tematycznych 40/60 — koty, psy, OSP i więcej, z imieninami',
-    liczbaSzablonow: 20,
+    opis: '19 kalendarzy tematycznych 40/60 — koty, psy, OSP i więcej, z imieninami',
+    liczbaSzablonow: 19,
     kolekcja: 'tematyczne',
   },
   formatWspolny: {

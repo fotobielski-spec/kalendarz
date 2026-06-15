@@ -14,22 +14,24 @@
 .print-cal__title {
   display: flex;
   align-items: baseline;
-  gap: calc(3 * 100cqw / var(--zone-w-mm, 186));
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc(2 * 100cqw / var(--zone-w-mm, 186));
   flex-shrink: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   line-height: 1.1;
   margin-bottom: calc(2 * 100cqw / var(--zone-w-mm, 186));
-  padding-right: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  padding: 0 calc(2 * 100cqw / var(--zone-w-mm, 186));
   box-sizing: border-box;
+  width: 100%;
+  text-align: center;
 }
 
 .print-cal__title-month {
-  overflow: hidden;
-  text-overflow: ellipsis;
   flex-shrink: 1;
   min-width: 0;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .print-cal__title-year {
@@ -105,23 +107,35 @@
 
 .print-cal__imieniny {
   font-family: var(--font-body, inherit);
-  font-size: calc(var(--day-size, 9) * 0.48 * 100cqw / var(--zone-w-mm, 186));
-  line-height: 1;
-  margin-top: calc(0.5 * 100cqw / var(--zone-w-mm, 186));
+  font-size: min(
+    calc(var(--day-size, 9) * 0.44 * 100cqw / var(--zone-w-mm, 186)),
+    2.6cqh
+  );
+  line-height: 1.05;
+  margin-top: calc(0.35 * 100cqw / var(--zone-w-mm, 186));
   max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: 100%;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
   opacity: 0.65;
   font-weight: 400;
+  overflow: hidden;
 }
 
 .print-cal--compact .print-cal__imieniny {
-  font-size: calc(var(--day-size, 8) * 0.42 * 100cqw / var(--zone-w-mm, 186));
+  font-size: min(
+    calc(var(--day-size, 8) * 0.4 * 100cqw / var(--zone-w-mm, 186)),
+    2.2cqh
+  );
 }
 
 .print-cal--imieniny .print-cal__cell {
-  justify-content: center;
+  justify-content: flex-start;
+  display: grid;
+  grid-template-rows: minmax(0, 1.1fr) minmax(0, 1.9fr);
+  align-content: stretch;
 }
 
 .print-cal__cell--muted {
@@ -165,9 +179,26 @@
   font-size: calc(var(--day-size, 8) * 1.02 * 100cqw / var(--zone-w-mm, 74));
 }
 
+.print-cal--imieniny {
+  container-type: size;
+}
+
 .print-cal--sidebar .print-cal__imieniny {
-  font-size: calc(var(--day-size, 8) * 0.52 * 100cqw / var(--zone-w-mm, 74));
+  font-size: min(
+    calc(var(--day-size, 8) * 0.48 * 100cqw / var(--zone-w-mm, 74)),
+    2.4cqh
+  );
   line-height: 1.05;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.print-cal--imieniny .print-cal__day-num {
+  align-self: end;
+}
+
+.print-cal--imieniny .print-cal__imieniny {
+  align-self: start;
 }
 
 .print-cal--sidebar .print-cal__title {
@@ -200,25 +231,23 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: center;
-  flex-wrap: nowrap;
-  gap: calc(2.5 * 100cqw / var(--zone-w-mm, 186));
+  flex-wrap: wrap;
+  gap: calc(2 * 100cqw / var(--zone-w-mm, 186));
   margin-bottom: calc(0.3 * 100cqw / var(--zone-w-mm, 186));
-  padding-right: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1;
+  padding: 0 calc(1 * 100cqw / var(--zone-w-mm, 186));
+  line-height: 1.05;
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .print-cal--senior .print-cal__title--senior-inline {
   flex-direction: row;
   justify-content: center;
-  flex-wrap: nowrap;
-  gap: calc(2.5 * 100cqw / var(--zone-w-mm, 186));
+  flex-wrap: wrap;
+  gap: calc(2 * 100cqw / var(--zone-w-mm, 186));
   margin-bottom: calc(0.3 * 100cqw / var(--zone-w-mm, 186));
 }
 
@@ -228,10 +257,9 @@
 }
 
 .print-cal--senior .print-cal__title-month {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-break: normal;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
   text-align: center;
   width: auto;
   flex-shrink: 1;

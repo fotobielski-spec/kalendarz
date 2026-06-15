@@ -41,7 +41,7 @@ export function VerticalCalendarGrid({
   const rows = Array.from({ length: totalDays }, (_, i) => {
     const day = i + 1;
     const names = getImieniny(monthIndex + 1, day);
-    const imieniny = names.map((n) => n.replace(/'ego$/, '').replace(/'ej$/, '')).join(', ');
+    const imieniny = names.join(', ');
     const isToday =
       day === today.getDate() &&
       today.getMonth() === monthIndex &&

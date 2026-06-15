@@ -1,5 +1,5 @@
 .vert-cal {
-  container-type: inline-size;
+  container-type: size;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -11,21 +11,22 @@
 .vert-cal__header {
   display: flex;
   align-items: baseline;
-  gap: calc(3 * 100cqw / var(--zone-w-mm, 52));
+  flex-wrap: wrap;
+  gap: calc(2 * 100cqw / var(--zone-w-mm, 52));
   flex-shrink: 0;
   margin-bottom: calc(2 * 100cqw / var(--zone-w-mm, 52));
   padding-bottom: calc(2 * 100cqw / var(--zone-w-mm, 52));
   border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
-  overflow: hidden;
 }
 
 .vert-cal__month {
-  font-size: calc(13 * 100cqw / var(--zone-w-mm, 52));
+  font-size: calc(11 * 100cqw / var(--zone-w-mm, 52));
   font-weight: 700;
   color: var(--accent);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.1;
 }
 
 .vert-cal__year {
@@ -83,11 +84,14 @@
 .vert-cal__names {
   flex: 1;
   font-family: var(--font-body, inherit);
-  font-size: calc(5.5 * 100cqw / var(--zone-w-mm, 52));
-  line-height: 1.1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: min(
+    calc(5.2 * 100cqw / var(--zone-w-mm, 52)),
+    1.35cqh
+  );
+  line-height: 1.08;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
   min-width: 0;
   opacity: 0.85;
 }

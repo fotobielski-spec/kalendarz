@@ -1,5 +1,5 @@
 /**
- * 10 zróżnicowanych kalendarzy „Trzy kalendarze”
+ * 7 kalendarzy „Trzy kalendarze” — bez duplikatów układu
  * Proporcja: 50% zdjęcie · 50% kalendarium
  * node scripts/generate-plan-trojka.mjs
  */
@@ -132,26 +132,7 @@ const DEFINICJE = [
     },
   },
   {
-    id: 'TRZ-05', nazwa: 'Art Deco Scena', kategoria: 'deco',
-    opis: 'Portret w ramie deco u góry (50%) — piramida miesięcy na dole.',
-    tagi: ['trojka', 'deco', 'piramida'],
-    paleta: { tlo: '#FFFEF5', akcent: '#1C1917', tekst: '#1C1917' },
-    typografia: { naglowek: 'Poiret One', tekst: 'Josefin Sans', rozmiarMiesiac: 13, rozmiarDzien: 7.5, trojka: true },
-    layout: {
-      ukladMiesiac: 'trojka-deco-scena',
-      titleRozmiar: 12,
-      strefyMiesiac: () => [zone('foto', 'hero', M + 14, M + 6, W - 28, Z.ph - 10, {
-        opis: 'Portret glamour w ramie Art Deco',
-        ramka: { szerokosc: 2, kolor: '#1C1917' },
-      })],
-      strefaKalendarza: calTriple({ x: M, y: M + Z.ph, szerokosc: W, wysokosc: Z.ch }, 'trojka-deco-piramida'),
-      dekoracjeMiesiac: () => [
-        { typ: 'ramka', x: M + 6, y: M + 4, szerokosc: W - 12, wysokosc: Z.ph, kolor: '#1C1917', grubosc: 0.8 },
-      ],
-    },
-  },
-  {
-    id: 'TRZ-06', nazwa: 'Pastelowe Rogi', kategoria: 'pastel',
+    id: 'TRZ-05', nazwa: 'Pastelowe Rogi', kategoria: 'pastel',
     opis: 'Okrągłe zdjęcie u góry (50%) — grudzień i luty w rogach, styczeń na dole.',
     tagi: ['trojka', 'rogi', 'pastel'],
     paleta: { tlo: '#FDF4FF', akcent: '#C026D3', tekst: '#581C87' },
@@ -164,7 +145,7 @@ const DEFINICJE = [
     },
   },
   {
-    id: 'TRZ-07', nazwa: 'Kinowy Noir', kategoria: 'nocny',
+    id: 'TRZ-06', nazwa: 'Kinowy Noir', kategoria: 'nocny',
     opis: 'Zdjęcie u góry (50%), ciemny pasek kalendarza u dołu (50%) — klimat filmowy.',
     tagi: ['trojka', 'nakładka', 'noir'],
     paleta: { tlo: '#0F172A', akcent: '#E2E8F0', tekst: '#F1F5F9' },
@@ -177,23 +158,7 @@ const DEFINICJE = [
     },
   },
   {
-    id: 'TRZ-08', nazwa: 'Oś Botaniczna', kategoria: 'botaniczny',
-    opis: 'Ogród u góry (50%) — pozioma taśma trzech miesięcy u dołu.',
-    tagi: ['trojka', 'taśma', 'ogród'],
-    paleta: { tlo: '#F0FDF4', akcent: '#166534', tekst: '#14532D' },
-    typografia: { naglowek: 'Fraunces', tekst: 'Karla', rozmiarMiesiac: 13, rozmiarDzien: 8, trojka: true },
-    layout: {
-      ukladMiesiac: 'trojka-botanic-tasma',
-      titleRozmiar: 12,
-      strefyMiesiac: () => [zone('foto', 'hero', M + 16, M + 6, W - 32, Z.ph - 8, { opis: 'Ogród, kwiaty lub rośliny' })],
-      strefaKalendarza: calTriple({ x: M, y: M + Z.ph, szerokosc: W, wysokosc: Z.ch }, 'trojka-botanic-tasma'),
-      dekoracjeMiesiac: () => [
-        { typ: 'linia', x: M, y: M + Z.ph + 1, szerokosc: W, kolor: '#166534', grubosc: 2.5 },
-      ],
-    },
-  },
-  {
-    id: 'TRZ-09', nazwa: 'Blok Betonu', kategoria: 'brutalistyczny',
+    id: 'TRZ-07', nazwa: 'Blok Betonu', kategoria: 'brutalistyczny',
     opis: 'Ukośne zdjęcie u góry (50%) — bloki miesięcy na dole.',
     tagi: ['trojka', 'blok', 'brutalistyczny'],
     paleta: { tlo: '#FFFFFF', akcent: '#000000', tekst: '#000000' },
@@ -206,25 +171,6 @@ const DEFINICJE = [
         clipPath: 'polygon(0 0, 100% 0, 100% 82%, 0 100%)',
       })],
       strefaKalendarza: calTriple({ x: M, y: M + Z.ph, szerokosc: W, wysokosc: Z.ch }, 'trojka-brutalist-blok'),
-    },
-  },
-  {
-    id: 'TRZ-10', nazwa: 'Dwa Światy', kategoria: 'kolaż',
-    opis: 'Dwa zdjęcia w górnej połowie (50%) — kalendarz w rzędzie na dole (50%).',
-    tagi: ['trojka', 'kolaż', 'duet'],
-    paleta: { tlo: '#EFF6FF', akcent: '#1D4ED8', tekst: '#1E3A8A' },
-    typografia: { naglowek: 'DM Serif Display', tekst: 'Open Sans', rozmiarMiesiac: 13, rozmiarDzien: 8, trojka: true },
-    layout: {
-      ukladMiesiac: 'trojka-duet-rzad',
-      titleRozmiar: 12,
-      strefyMiesiac: () => [
-        zone('foto-a', 'kafelek', M, M + 4, 88, Z.ph - 8, { opis: 'Zdjęcie 1 — wspomnienie' }),
-        zone('foto-b', 'kafelek', M + W - 88, M + 4, 88, Z.ph - 8, { opis: 'Zdjęcie 2 — przyszłość' }),
-      ],
-      strefaKalendarza: calTriple({ x: M, y: M + Z.ph, szerokosc: W, wysokosc: Z.ch }, 'trojka-duet-rzad'),
-      dekoracjeMiesiac: () => [
-        { typ: 'linia', x: M + 88, y: M + Z.ph - 1, szerokosc: W - 176, kolor: '#1D4ED8', grubosc: 0.5 },
-      ],
     },
   },
 ];
@@ -246,7 +192,7 @@ const plan = {
   meta: {
     rokDomyslny: 2026,
     liczbaSzablonow: kalendaria.length,
-    opis: '10 kalendarzy „Trzy kalendarze” — 50/50 zdjęcie i kalendarium',
+    opis: '7 kalendarzy „Trzy kalendarze” — 50/50 zdjęcie i kalendarium, bez duplikatów układu',
   },
   formatWspolny: {
     szerokosc: 210,

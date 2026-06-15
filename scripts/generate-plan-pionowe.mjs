@@ -99,20 +99,7 @@ const DEFINICJE = [
     },
   },
   {
-    id: 'PION-04', nazwa: 'Lista prawa — foto góra',
-    kategoria: 'pionowy',
-    opis: 'Zdjęcie u góry, cyfry przy prawym brzegu dolnej strefy kalendarza z imieninami.',
-    tagi: ['pionowy', 'imieniny', 'góra'],
-    paleta: { tlo: '#FFF5F7', akcent: '#BE185D', tekst: '#3B0A1F' },
-    typografia: { naglowek: 'Cormorant', tekst: 'Nunito Sans', rozmiarMiesiac: 11, rozmiarDzien: 8 },
-    layout: {
-      ukladMiesiac: 'pion-lista-bottom-prawo',
-      strefyMiesiac: () => [zone('foto', 'hero', M, 28, W, PH - 16, { opis: 'Zdjęcie kwiatów lub portret' })],
-      strefaKalendarza: calStrip(M, M + PH, W, CH, 'prawo'),
-    },
-  },
-  {
-    id: 'PION-05', nazwa: 'Lista prawa — pełne tło',
+    id: 'PION-04', nazwa: 'Lista prawa — pełne tło',
     kategoria: 'pionowy',
     opis: 'Zdjęcie na pełnej stronie z pionową listą dni przy prawym brzegu na półprzezroczystym panelu.',
     tagi: ['pionowy', 'imieniny', 'fullscreen'],
@@ -147,7 +134,7 @@ const plan = {
   meta: {
     rokDomyslny: 2026,
     liczbaSzablonow: kalendaria.length,
-    opis: '5 kalendarzy pionowych A4 — cyfry przy brzegu + imieniny',
+    opis: '4 kalendarze pionowe A4 — cyfry przy brzegu + imieniny (bez lustrzanego duplikatu)',
   },
   formatWspolny: {
     szerokosc: 210,

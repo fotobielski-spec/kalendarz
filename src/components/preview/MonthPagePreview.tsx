@@ -71,7 +71,9 @@ export function MonthPagePreview({
   const layoutLabel = getUkladLabel(page.uklad);
   const layoutOrient = getLayoutOrientation(page.uklad);
 
-  const fittedTitle = fitTitleInCalendarZone(monthTitle, page.strefaKalendarza, isSenior ? 24 : 15, isSenior);
+  const fittedTitle = fitTitleInCalendarZone(
+    monthTitle, page.strefaKalendarza, isSenior ? 24 : 15, isSenior, 'Styczeń',
+  );
 
   const calBg =
     semiPanel ? `rgba(${hexToRgb(bg)}, 0.88)` :

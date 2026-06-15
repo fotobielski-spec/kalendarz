@@ -8,12 +8,26 @@ interface TitleConfig {
   letterSpacing?: number;
 }
 
-/** Dopasuj tytuł miesiąca do strefy kalendarza — bez wychodzenia poza obszar */
+const LONG_MONTHS = new Set(['Październik', 'Wrzesień', 'Listopad', 'Sierpień', 'Grudzień']);
+
+/** Skala rozmiaru tytułu wg długości nazwy miesiąca i szerokości strefy */
+export function scaleMonthTitleSize(monthName: string, baseSize: number, calW: number): number {
+  let size = baseSize;
+  if (LONG_MONTHS.has(monthName)) size -= 1.5;
+  else if (monthName.length > 7) size -= 0.75;
+  if (calW < 50) size -= 2;
+  else if (calW < 70) size -= 1.25;
+  else if (calW < 95) size -= 0.5;
+  return Math.max(5.5, size);
+}
+
+/** Dopasuj tytuł miesiąca do strefy kalendarza — pełna nazwa, bez ellipsis */
 export function fitTitleInCalendarZone(
   title: TitleConfig | undefined,
   cal: StrefaKalendarza,
   defaultSize = 16,
   senior = false,
+  monthName?: string,
 ): {
   xPct: number;
   yPct: number;
@@ -30,10 +44,11 @@ export function fitTitleInCalendarZone(
   const isSidebar = isNarrow && calH > 200;
 
   const rawSize = title?.rozmiar ?? defaultSize;
+  const monthScaled = monthName ? scaleMonthTitleSize(monthName, rawSize, calW) : rawSize;
   const cappedSize = senior
-    ? Math.min(rawSize, calW < 95 ? 11 : calH < 120 ? 12 : 13)
+    ? Math.min(monthScaled, calW < 95 ? 11 : calH < 120 ? 12 : 13)
     : Math.min(
-      rawSize,
+      monthScaled,
       isSidebar ? 14 : isNarrow ? 13 : isShort ? 15 : 20,
     );
 
@@ -43,7 +58,7 @@ export function fitTitleInCalendarZone(
     : Math.max(cal.x + 1, Math.min(title?.x ?? cal.x + 1, cal.x + calW - 2));
 
   const fontSize = `calc(${cappedSize} * 100cqw / ${calW})`;
-  const maxWidth = senior ? '100%' : `${(calW / 210) * 100}%`;
+  const maxWidth = '100%';
 
   return {
     xPct: (xMm / 210) * 100,
@@ -75,27 +90,19 @@ export function fitDayFontSize(
   const isStrip = cal.szerokosc < 58;
 
   let size = baseSize;
-  if (isStrip) size -= 1;
+  if (isStrip) size -= 0.5;
   else if (isSidebar) size -= 0.25;
-  else if (isNarrow) size -= 1;
-  if (isShort) size -= 1;
+  else if (isNarrow) size -= 0.75;
+  if (isShort) size -= 0.75;
   if (hasImieniny && isShort) size -= 0.5;
-  else if (hasImieniny && isStrip) size -= 0.75;
-  else if (hasImieniny && !isSidebar) size -= 0.35;
+  else if (hasImieniny && isStrip) size -= 0.5;
+  else if (hasImieniny && !isSidebar) size -= 0.5;
 
-  const minSize = isStrip ? 6 : isSidebar ? 7.5 : isNarrow ? 7 : 5.5;
+  const minSize = isStrip ? 5 : isSidebar ? 6.5 : isNarrow ? 6 : 5;
   return Math.max(minSize, size);
 }
 
-/** Maks. długość skrótu imienin w komórce */
-export function fitImieninyMaxLen(cal: StrefaKalendarza, senior = false): number {
-  const cellW = cal.szerokosc / 7;
-  if (senior) {
-    return 99;
-  }
-  if (cal.szerokosc < 58) return 0;
-  if (cal.szerokosc < 80) return 6;
-  if (cellW < 14) return 7;
-  if (cellW < 18) return 9;
-  return 11;
+/** Imieniny zawsze widoczne — skalowanie w CSS, nie skracanie tekstu */
+export function fitImieninyMaxLen(_cal: StrefaKalendarza, _senior = false): number {
+  return 99;
 }

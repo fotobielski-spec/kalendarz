@@ -42,12 +42,19 @@
   transform: translateX(-50%);
   z-index: 2;
   font-family: var(--font-body, inherit);
-  font-size: calc(4 * 100cqw / var(--zone-w-mm, 186));
+  font-size: min(
+    calc(3.8 * 100cqw / var(--zone-w-mm, 186)),
+    2.2cqh
+  );
   font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-transform: none;
   opacity: 0.42;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
+  max-width: 95%;
+  word-break: break-word;
+  line-height: 1.1;
   pointer-events: none;
 }
 
@@ -55,7 +62,10 @@
   opacity: 0.75;
   color: var(--accent, currentColor);
   font-weight: 700;
-  font-size: calc(4.5 * 100cqw / var(--zone-w-mm, 186));
+  font-size: min(
+    calc(4.2 * 100cqw / var(--zone-w-mm, 186)),
+    2.5cqh
+  );
 }
 
 .triple-cal__panel--prev,

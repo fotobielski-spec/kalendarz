@@ -1,6 +1,6 @@
 import type { StrefaKalendarza } from '../../types/plan';
-import { formatImieninyShort, getImieniny, normalizeImieninyName } from '../../utils/imieniny';
-import { fitDayFontSize, fitImieninyMaxLen } from '../../utils/typographyFit';
+import { formatImieninyCell, getImieniny } from '../../utils/imieniny';
+import { fitDayFontSize } from '../../utils/typographyFit';
 import { getDayLabels, isSidebarCalendarZone, mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import './PrintCalendarGrid.css';
 
@@ -61,8 +61,6 @@ export function PrintCalendarGrid({
   const isCompact = compact || area.szerokosc < 95;
   const isSidebar = isSidebarCalendarZone(area);
   const isSeniorShort = senior && area.wysokosc < 130;
-  const imieninyMaxLen = fitImieninyMaxLen(area, senior);
-
   const firstDay = new Date(year, monthIndex, 1);
   const startOffset = (firstDay.getDay() + 6) % 7;
   const startDate = new Date(year, monthIndex, 1 - startOffset);
@@ -77,13 +75,7 @@ export function PrintCalendarGrid({
       day: isCurrentMonth ? d : null,
       isCurrentMonth,
       isWeekend: dow === 0 || dow === 6,
-      imieniny: isCurrentMonth
-        ? (senior
-          ? (seniorDense
-            ? formatImieninyShort(monthIndex + 1, d, 11, true)
-            : normalizeImieninyName(getImieniny(monthIndex + 1, d)[0] ?? ''))
-          : (imieninyMaxLen > 0 ? formatImieninyShort(monthIndex + 1, d, imieninyMaxLen, false) : ''))
-        : '',
+      imieniny: isCurrentMonth ? formatImieninyCell(monthIndex + 1, d) : '',
       imieninyFull: isCurrentMonth ? getImieniny(monthIndex + 1, d).join(', ') : '',
     };
   });
@@ -94,7 +86,7 @@ export function PrintCalendarGrid({
         'print-cal',
         isCompact && 'print-cal--compact',
         isSidebar && 'print-cal--sidebar',
-        showImieniny && imieninyMaxLen > 0 && 'print-cal--imieniny',
+        showImieniny && 'print-cal--imieniny',
         senior && 'print-cal--senior',
         seniorDense && 'print-cal--senior-dense',
         isSeniorShort && 'print-cal--senior-compact',

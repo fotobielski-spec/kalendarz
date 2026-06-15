@@ -29,7 +29,7 @@ const mergedPlan: PlanKalendaria = {
   meta: {
     ...artPlan.meta,
     liczbaSzablonow: mergedKalendaria.length,
-    opis: '95 kalendarzy A4 — Art + Tematyczne + Pionowe + Planery + Senior + Trzy kalendarze',
+    opis: '90 kalendarzy A4 — Art + Tematyczne + Pionowe + Planery + Senior + Trzy kalendarze',
   },
   formatWspolny: artPlan.formatWspolny,
   kalendaria: mergedKalendaria,
@@ -38,13 +38,13 @@ const mergedPlan: PlanKalendaria = {
 type KolekcjaFilter = '' | 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | 'trojka';
 
 const KOLEKCJA_LABELS: Record<KolekcjaFilter, string> = {
-  '': 'Wszystkie (95)',
+  '': 'Wszystkie (90)',
   art: 'Art (30)',
-  tematyczne: 'Tematyczne (20)',
-  pionowe: 'Pionowe (5)',
+  tematyczne: 'Tematyczne (19)',
+  pionowe: 'Pionowe (4)',
   planery: 'Planery (20)',
   senior: 'Babcia i dziadek (10)',
-  trojka: 'Trzy kalendarze (10)',
+  trojka: 'Trzy kalendarze (7)',
 };
 
 export function ArtPreviewPage() {
