@@ -1,4 +1,5 @@
 import type { StrefaKalendarza } from '../../types/plan';
+import { usePageSize } from '../../context/PageSizeContext';
 import { getImieniny } from '../../utils/imieniny';
 import { mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import './VerticalCalendarGrid.css';
@@ -34,6 +35,7 @@ export function VerticalCalendarGrid({
   edge = 'lewo',
   backgroundColor,
 }: VerticalCalendarGridProps) {
+  const { pageW, pageH } = usePageSize();
   const totalDays = daysInMonth(year, monthIndex);
   const today = new Date();
   const isRight = edge === 'prawo' || area.krawedz === 'prawo';
@@ -55,7 +57,7 @@ export function VerticalCalendarGrid({
     <div
       className={`vert-cal vert-cal--${isRight ? 'right' : 'left'}`}
       style={{
-        ...mmPosStyle(area),
+        ...mmPosStyle(area, pageW, pageH),
         color: textColor,
         background: backgroundColor,
         ...zoneCssVars(area),

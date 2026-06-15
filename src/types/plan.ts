@@ -130,17 +130,20 @@ export interface Kalendarium {
     /** Tryb trzech kalendarzy na karcie */
     trojka?: boolean;
   };
+  orientacja?: 'portrait' | 'landscape';
   efekty?: { zdjecia?: string; kontrast?: number };
   proporcja?: { kalendarium: number; zdjecie: number };
-  kolekcja?: 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | 'trojka' | string;
+  kolekcja?: 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | 'trojka' | 'poziome' | string;
   strony: StronaMiesiaca[];
 }
 
 export interface PlanKalendaria {
   meta: { rokDomyslny?: number; liczbaSzablonow?: number; opis?: string };
   formatWspolny: {
+    nazwa?: string;
     szerokosc?: number;
     wysokosc?: number;
+    orientacja?: 'portrait' | 'landscape';
     siatkaDni?: { etykietyDni: string[] };
     proporcja?: { kalendarium: number; zdjecie: number };
     imieniny?: boolean;

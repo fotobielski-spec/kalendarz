@@ -1,4 +1,5 @@
 import type { StrefaKalendarza } from '../../types/plan';
+import { usePageSize } from '../../context/PageSizeContext';
 import { formatImieninyCell, getImieniny } from '../../utils/imieniny';
 import { fitDayFontSize } from '../../utils/typographyFit';
 import { getDayLabels, isSidebarCalendarZone, mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
@@ -55,6 +56,7 @@ export function PrintCalendarGrid({
   monthTitle,
   embedded = false,
 }: PrintCalendarGridProps) {
+  const { pageW, pageH } = usePageSize();
   const labels = getDayLabels();
   const today = new Date();
   const fittedDaySize = fitDayFontSize(dayFontSize, area, showImieniny, senior, seniorDense);
@@ -96,7 +98,7 @@ export function PrintCalendarGrid({
       style={{
         ...(embedded
           ? { position: 'relative', width: '100%', height: '100%' }
-          : mmPosStyle(area)),
+          : mmPosStyle(area, pageW, pageH)),
         color: textColor,
         background: backgroundColor ?? (senior ? 'var(--senior-cal-bg, #fff)' : undefined),
         ...zoneCssVars(area),

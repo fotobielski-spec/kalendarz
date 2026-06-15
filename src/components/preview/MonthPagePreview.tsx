@@ -1,8 +1,11 @@
 import type { Kalendarium, StronaMiesiaca } from '../../types/plan';
+import { PageSizeContext } from '../../context/PageSizeContext';
 import { fontStack } from '../../utils/fonts';
 import { getLayoutOrientation, getUkladLabel } from '../../utils/layoutLabels';
 import { fitTitleInCalendarZone } from '../../utils/typographyFit';
 import {
+  getPageDimensions,
+  isLandscapeOrientation,
   januarySeasonPalette,
   mmPosStyle,
   mmToPercent,
@@ -45,6 +48,9 @@ export function MonthPagePreview({
   const page = getJanuaryPage(kalendarium);
   if (!page) return null;
 
+  const isLandscape = isLandscapeOrientation(kalendarium.orientacja)
+    || kalendarium.kolekcja === 'poziome';
+  const { pageW, pageH } = getPageDimensions(isLandscape ? 'landscape' : 'portrait');
   const season = kalendarium.id === 'KAL-15' ? januarySeasonPalette() : null;
   const bg = season?.tlo ?? resolvePaletteValue(kalendarium.paleta.tlo, '#FFFFFF');
   const accent = season?.akcent ?? resolvePaletteValue(kalendarium.paleta.akcent, '#333333');
@@ -72,7 +78,7 @@ export function MonthPagePreview({
   const layoutOrient = getLayoutOrientation(page.uklad);
 
   const fittedTitle = fitTitleInCalendarZone(
-    monthTitle, page.strefaKalendarza, isSenior ? 24 : 15, isSenior, 'Styczeń',
+    monthTitle, page.strefaKalendarza, isSenior ? 24 : 15, isSenior, 'Styczeń', pageW, pageH,
   );
 
   const calBg =
@@ -115,6 +121,7 @@ export function MonthPagePreview({
         'month-preview',
         `month-preview--${layoutOrient}`,
         variant === 'focus' && 'month-preview--focus',
+        isLandscape && 'month-preview--landscape',
       ].filter(Boolean).join(' ')}
       style={{ '--preview-scale': scale } as React.CSSProperties}
     >
@@ -135,6 +142,8 @@ export function MonthPagePreview({
                     ? 'babcia i dziadek'
                     : kalendarium.kolekcja === 'trojka'
                       ? 'trzy kalendarze'
+                      : kalendarium.kolekcja === 'poziome'
+                        ? 'A4 poziom'
                   : 'art'}
           </span>
         )}
@@ -157,6 +166,7 @@ export function MonthPagePreview({
       )}
 
       <div className="month-preview__page-wrap">
+        <PageSizeContext.Provider value={{ pageW, pageH }}>
         <div
           className="month-preview__page"
           style={{
@@ -166,6 +176,8 @@ export function MonthPagePreview({
             '--font-heading': headingFont,
             '--font-body': bodyFont,
             '--accent': accent,
+            '--page-w-mm': pageW,
+            '--page-h-mm': pageH,
             ...(isSenior ? { '--senior-cal-bg': bg } as React.CSSProperties : {}),
           } as React.CSSProperties}
         >
@@ -182,7 +194,7 @@ export function MonthPagePreview({
           {page.nakladka && (
             <div
               className="month-preview__overlay"
-              style={{ ...mmPosStyle(page.nakladka.obszar), background: page.nakladka.kolor }}
+              style={{ ...mmPosStyle(page.nakladka.obszar, pageW, pageH), background: page.nakladka.kolor }}
             />
           )}
 
@@ -190,7 +202,7 @@ export function MonthPagePreview({
             <div
               className="month-preview__separator"
               style={{
-                ...mmToPercent(page.separator.x, page.separator.y, page.separator.szerokosc, page.separator.wysokosc),
+                ...mmToPercent(page.separator.x, page.separator.y, page.separator.szerokosc, page.separator.wysokosc, pageW, pageH),
                 position: 'absolute',
                 background: page.separator.kolor ?? kalendarium.paleta.separator ?? '#ccc',
               }}
@@ -270,7 +282,7 @@ export function MonthPagePreview({
             <>
               <div
                 className="month-preview__overlay"
-                style={{ ...mmPosStyle(page.strefaKalendarza), background: 'rgba(0,0,0,0.55)' }}
+                style={{ ...mmPosStyle(page.strefaKalendarza, pageW, pageH), background: 'rgba(0,0,0,0.55)' }}
               />
               <PrintCalendarGrid {...gridProps} textColor="#fff" accentColor="#fff" />
             </>
@@ -286,6 +298,7 @@ export function MonthPagePreview({
             />
           )}
         </div>
+        </PageSizeContext.Provider>
       </div>
     </article>
   );

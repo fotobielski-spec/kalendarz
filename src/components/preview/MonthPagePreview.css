@@ -78,6 +78,11 @@
   background: #ede9fe;
 }
 
+.month-preview__collection--poziome {
+  color: #0e7490;
+  background: #cffafe;
+}
+
 .month-preview__fonts {
   display: flex;
   align-items: baseline;
@@ -114,7 +119,7 @@
   position: relative;
   width: 100%;
   max-width: 340px;
-  aspect-ratio: 210 / 297;
+  aspect-ratio: var(--page-w-mm, 210) / var(--page-h-mm, 297);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.14), 0 1px 4px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transform: scale(var(--preview-scale, 1));
@@ -174,10 +179,26 @@
   background: linear-gradient(145deg, #ede9fe, #f5f5f4);
 }
 
+.month-preview--landscape .month-preview__page {
+  max-width: 480px;
+}
+
+.month-preview--landscape.month-preview--focus .month-preview__page {
+  max-width: 100%;
+}
+
+.month-preview--landscape .month-preview__page-wrap {
+  background: linear-gradient(145deg, #e0f2fe, #f0fdf4);
+}
+
 .month-preview--focus {
   width: 100%;
   max-width: min(92vw, 720px);
   align-self: center;
+}
+
+.month-preview--landscape.month-preview--focus {
+  max-width: min(95vw, 960px);
 }
 
 .month-preview--focus .month-preview__page-wrap {

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import artPlanData from '../../data/plan-kalendaria-art-40-60.json';
 import pionPlanData from '../../data/plan-kalendaria-pionowe.json';
 import planerPlanData from '../../data/plan-kalendaria-planery.json';
+import pozPlanData from '../../data/plan-kalendaria-poziome.json';
 import seniorPlanData from '../../data/plan-kalendaria-senior.json';
 import temPlanData from '../../data/plan-kalendaria-tematyczne.json';
 import trojkaPlanData from '../../data/plan-kalendaria-trojka.json';
@@ -13,6 +14,7 @@ const artPlan = artPlanData as unknown as PlanKalendaria;
 const temPlan = temPlanData as unknown as PlanKalendaria;
 const pionPlan = pionPlanData as unknown as PlanKalendaria;
 const planerPlan = planerPlanData as unknown as PlanKalendaria;
+const pozPlan = pozPlanData as unknown as PlanKalendaria;
 const seniorPlan = seniorPlanData as unknown as PlanKalendaria;
 const trojkaPlan = trojkaPlanData as unknown as PlanKalendaria;
 
@@ -23,28 +25,30 @@ const mergedKalendaria: Kalendarium[] = [
   ...planerPlan.kalendaria.map((k) => ({ ...k, kolekcja: 'planery' as const })),
   ...seniorPlan.kalendaria.map((k) => ({ ...k, kolekcja: 'senior' as const })),
   ...trojkaPlan.kalendaria.map((k) => ({ ...k, kolekcja: 'trojka' as const })),
+  ...pozPlan.kalendaria.map((k) => ({ ...k, kolekcja: 'poziome' as const, orientacja: 'landscape' as const })),
 ];
 
 const mergedPlan: PlanKalendaria = {
   meta: {
     ...artPlan.meta,
     liczbaSzablonow: mergedKalendaria.length,
-    opis: '90 kalendarzy A4 — Art + Tematyczne + Pionowe + Planery + Senior + Trzy kalendarze',
+    opis: '102 kalendarzy A4 — Art + Tematyczne + Pionowe + Planery + Senior + Trzy kalendarze + Poziom',
   },
   formatWspolny: artPlan.formatWspolny,
   kalendaria: mergedKalendaria,
 };
 
-type KolekcjaFilter = '' | 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | 'trojka';
+type KolekcjaFilter = '' | 'art' | 'tematyczne' | 'pionowe' | 'planery' | 'senior' | 'trojka' | 'poziome';
 
 const KOLEKCJA_LABELS: Record<KolekcjaFilter, string> = {
-  '': 'Wszystkie (90)',
+  '': 'Wszystkie (102)',
   art: 'Art (30)',
   tematyczne: 'Tematyczne (19)',
   pionowe: 'Pionowe (4)',
   planery: 'Planery (20)',
   senior: 'Babcia i dziadek (10)',
   trojka: 'Trzy kalendarze (7)',
+  poziome: 'Poziome 13s (12)',
 };
 
 export function ArtPreviewPage() {
@@ -72,7 +76,7 @@ export function ArtPreviewPage() {
     <PreviewGallery
       plan={filteredPlan}
       title="Typografia & Układy —"
-      subtitle={`${filteredPlan.kalendaria.length} kalendarzy A4 · art · tematyczne · pionowe · planery · senior · trzy kalendarze`}
+      subtitle={`${filteredPlan.kalendaria.length} kalendarzy A4 · art · tematyczne · pionowe · planery · senior · trzy kalendarze · poziom`}
       showProportion
       showLayoutZones={showZones}
       fontsReady={fontsReady}

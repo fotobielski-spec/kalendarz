@@ -1,4 +1,5 @@
 import type { StrefaKalendarza } from '../../types/plan';
+import { usePageSize } from '../../context/PageSizeContext';
 import { fitTitleInCalendarZone, scaleMonthTitleSize } from '../../utils/typographyFit';
 import { mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import { PrintCalendarGrid } from './PrintCalendarGrid';
@@ -160,6 +161,7 @@ export function TripleCalendarGrid({
   backgroundColor,
   monthTitle,
 }: TripleCalendarGridProps) {
+  const { pageW, pageH } = usePageSize();
   const prevIdx = monthIndex === 0 ? 11 : monthIndex - 1;
   const prevYear = monthIndex === 0 ? year - 1 : year;
   const nextIdx = monthIndex === 11 ? 0 : monthIndex + 1;
@@ -187,7 +189,7 @@ export function TripleCalendarGrid({
     <div
       className={['triple-cal', layoutClass, `triple-cal--${tripleTyp}`].join(' ')}
       style={{
-        ...mmPosStyle(area),
+        ...mmPosStyle(area, pageW, pageH),
         ...zoneCssVars(area),
         color: textColor,
         background: backgroundColor,

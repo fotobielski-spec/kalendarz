@@ -28,6 +28,8 @@ export function fitTitleInCalendarZone(
   defaultSize = 16,
   senior = false,
   monthName?: string,
+  pageW = 210,
+  pageH = 297,
 ): {
   xPct: number;
   yPct: number;
@@ -41,7 +43,7 @@ export function fitTitleInCalendarZone(
   const calH = cal.wysokosc;
   const isNarrow = calW < 95;
   const isShort = calH < 100;
-  const isSidebar = isNarrow && calH > 200;
+  const isSidebar = isNarrow && calH > 140;
 
   const rawSize = title?.rozmiar ?? defaultSize;
   const monthScaled = monthName ? scaleMonthTitleSize(monthName, rawSize, calW) : rawSize;
@@ -61,12 +63,12 @@ export function fitTitleInCalendarZone(
   const maxWidth = '100%';
 
   return {
-    xPct: (xMm / 210) * 100,
-    yPct: (yMm / 297) * 100,
+    xPct: (xMm / pageW) * 100,
+    yPct: (yMm / pageH) * 100,
     fontSizePx: fontSize,
     maxWidthPct: maxWidth,
     textAlign: title?.wyrownanie === 'center' ? 'center' : 'left',
-    transform: senior ? undefined : (title?.wyrownanie === 'center' || xMm > 105 ? 'translateX(-50%)' : undefined),
+    transform: senior ? undefined : (title?.wyrownanie === 'center' || xMm > pageW / 2 ? 'translateX(-50%)' : undefined),
     letterSpacing: title?.letterSpacing ? `${title.letterSpacing * 0.03}px` : undefined,
   };
 }
@@ -86,7 +88,7 @@ export function fitDayFontSize(
 
   const isNarrow = cal.szerokosc < 95;
   const isShort = cal.wysokosc < 105;
-  const isSidebar = isNarrow && cal.wysokosc > 200;
+  const isSidebar = isNarrow && cal.wysokosc > 140;
   const isStrip = cal.szerokosc < 58;
 
   let size = baseSize;

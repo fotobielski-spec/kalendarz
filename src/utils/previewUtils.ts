@@ -3,6 +3,20 @@ import type { PozycjaMm } from '../types/plan';
 
 export const A4_WIDTH = 210;
 export const A4_HEIGHT = 297;
+export const A4_LANDSCAPE_WIDTH = 297;
+export const A4_LANDSCAPE_HEIGHT = 210;
+
+export type PageOrientation = 'portrait' | 'landscape';
+
+export function getPageDimensions(orientacja: PageOrientation = 'portrait') {
+  return orientacja === 'landscape'
+    ? { pageW: A4_LANDSCAPE_WIDTH, pageH: A4_LANDSCAPE_HEIGHT }
+    : { pageW: A4_WIDTH, pageH: A4_HEIGHT };
+}
+
+export function isLandscapeOrientation(orientacja?: string): boolean {
+  return orientacja === 'landscape';
+}
 
 const DAY_LABELS_MON = ['Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So', 'Nd'];
 
@@ -12,19 +26,30 @@ export interface PrintDay {
   isWeekend: boolean;
 }
 
-export function mmToPercent(x: number, y: number, w: number, h: number) {
+export function mmToPercent(
+  x: number,
+  y: number,
+  w: number,
+  h: number,
+  pageW = A4_WIDTH,
+  pageH = A4_HEIGHT,
+) {
   return {
-    left: `${(x / A4_WIDTH) * 100}%`,
-    top: `${(y / A4_HEIGHT) * 100}%`,
-    width: `${(w / A4_WIDTH) * 100}%`,
-    height: `${(h / A4_HEIGHT) * 100}%`,
+    left: `${(x / pageW) * 100}%`,
+    top: `${(y / pageH) * 100}%`,
+    width: `${(w / pageW) * 100}%`,
+    height: `${(h / pageH) * 100}%`,
   };
 }
 
-export function mmPosStyle(pos: PozycjaMm): CSSProperties {
+export function mmPosStyle(
+  pos: PozycjaMm,
+  pageW = A4_WIDTH,
+  pageH = A4_HEIGHT,
+): CSSProperties {
   return {
     position: 'absolute',
-    ...mmToPercent(pos.x, pos.y, pos.szerokosc, pos.wysokosc),
+    ...mmToPercent(pos.x, pos.y, pos.szerokosc, pos.wysokosc, pageW, pageH),
   };
 }
 
@@ -37,7 +62,7 @@ export function zoneCssVars(area: { szerokosc: number; wysokosc: number }): Reco
 }
 
 export function isSidebarCalendarZone(area: { szerokosc: number; wysokosc: number }): boolean {
-  return area.szerokosc < 95 && area.wysokosc > 200;
+  return area.szerokosc < 95 && area.wysokosc > 140;
 }
 
 export function getJanuaryDays(year: number): PrintDay[] {

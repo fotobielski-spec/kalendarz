@@ -1,4 +1,5 @@
 import type { Dekoracja, Paleta } from '../../types/plan';
+import { usePageSize } from '../../context/PageSizeContext';
 import { mmPosStyle } from '../../utils/previewUtils';
 import './PageDecorations.css';
 
@@ -8,10 +9,15 @@ interface PageDecorationsProps {
   paleta: Paleta;
 }
 
-function pctX(mm: number) { return `${(mm / 210) * 100}%`; }
-function pctY(mm: number) { return `${(mm / 297) * 100}%`; }
+function pctX(mm: number, pageW: number) { return `${(mm / pageW) * 100}%`; }
+function pctY(mm: number, pageH: number) { return `${(mm / pageH) * 100}%`; }
 
 export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsProps) {
+  const { pageW, pageH } = usePageSize();
+  const px = (mm: number) => pctX(mm, pageW);
+  const py = (mm: number) => pctY(mm, pageH);
+  const mms = (obs: { x: number; y: number; szerokosc: number; wysokosc: number }) =>
+    mmPosStyle(obs, pageW, pageH);
   return (
     <>
       {dekoracje.map((d, i) => {
@@ -23,9 +29,9 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--line"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y),
-                width: pctX(d.szerokosc ?? 186),
+                left: px(d.x),
+                top: py(d.y),
+                width: px(d.szerokosc ?? 186),
                 height: `${d.grubosc ?? 1}px`,
                 background: d.kolor ?? accent,
               }}
@@ -39,10 +45,10 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--line-v"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y),
+                left: px(d.x),
+                top: py(d.y),
                 width: `${d.grubosc ?? 1}px`,
-                height: pctY(d.wysokosc ?? 273),
+                height: py(d.wysokosc ?? 273),
                 background: d.kolor ?? accent,
               }}
             />
@@ -55,7 +61,7 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
             <div
               key={key}
               className="deco deco--gold-line"
-              style={{ left: pctX(p.x), top: pctY(p.y), width: pctX(d.szerokosc ?? 186) }}
+              style={{ left: px(p.x), top: py(p.y), width: px(d.szerokosc ?? 186) }}
             />
           );
         }
@@ -66,10 +72,10 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--gradient"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y ?? 0),
-                width: pctX(d.szerokosc ?? 186),
-                height: pctY(d.wysokosc ?? 40),
+                left: px(d.x),
+                top: py(d.y ?? 0),
+                width: px(d.szerokosc ?? 186),
+                height: py(d.wysokosc ?? 40),
                 background: `linear-gradient(to bottom, ${d.od ?? 'transparent'}, ${d.do ?? paleta.tlo ?? '#fff'})`,
               }}
             />
@@ -82,10 +88,10 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--frosted"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y ?? 0),
-                width: pctX(d.szerokosc ?? 186),
-                height: pctY(d.wysokosc ?? 109),
+                left: px(d.x),
+                top: py(d.y ?? 0),
+                width: px(d.szerokosc ?? 186),
+                height: py(d.wysokosc ?? 109),
               }}
             />
           );
@@ -97,9 +103,9 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--wave"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y ?? 0),
-                width: pctX(d.szerokosc ?? 186),
+                left: px(d.x),
+                top: py(d.y ?? 0),
+                width: px(d.szerokosc ?? 186),
                 color: d.kolor ?? paleta.tlo ?? '#E8F4F8',
               }}
             />
@@ -112,9 +118,9 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--torn"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y ?? 0),
-                width: pctX(d.szerokosc ?? 186),
+                left: px(d.x),
+                top: py(d.y ?? 0),
+                width: px(d.szerokosc ?? 186),
                 color: d.kolor ?? paleta.tlo ?? '#F4E8D1',
               }}
             />
@@ -128,10 +134,10 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--blinds"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y ?? 0),
-                width: pctX(d.szerokosc ?? 186),
-                height: pctY(d.wysokosc ?? 164),
+                left: px(d.x),
+                top: py(d.y ?? 0),
+                width: px(d.szerokosc ?? 186),
+                height: py(d.wysokosc ?? 164),
                 background: `repeating-linear-gradient(
                   90deg,
                   transparent,
@@ -150,9 +156,9 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--neon-line"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y ?? 0),
-                width: pctX(d.szerokosc ?? 186),
+                left: px(d.x),
+                top: py(d.y ?? 0),
+                width: px(d.szerokosc ?? 186),
                 boxShadow: `0 0 8px ${d.kolor ?? '#FF00FF'}, 0 0 16px ${d.kolor ?? '#FF00FF'}`,
                 background: d.kolor ?? '#FF00FF',
               }}
@@ -166,10 +172,10 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--neon-glow"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y ?? 0),
-                width: pctX(d.szerokosc ?? 186),
-                height: pctY(d.wysokosc ?? 164),
+                left: px(d.x),
+                top: py(d.y ?? 0),
+                width: px(d.szerokosc ?? 186),
+                height: py(d.wysokosc ?? 164),
                 boxShadow: `inset 0 0 30px ${d.kolor ?? '#FF00FF'}44`,
               }}
             />
@@ -184,10 +190,10 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
                   key={ri}
                   className="deco__ring"
                   style={{
-                    left: pctX((d.cx ?? 105) - r),
-                    top: pctY((d.cy ?? 80) - r),
-                    width: pctX(r * 2),
-                    height: pctY(r * 2),
+                    left: px((d.cx ?? 105) - r),
+                    top: py((d.cy ?? 80) - r),
+                    width: px(r * 2),
+                    height: py(r * 2),
                     borderColor: d.kolor ?? accent,
                   }}
                 />
@@ -202,10 +208,10 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--wreath"
               style={{
-                left: pctX((d.cx ?? 105) - (d.promien ?? 78)),
-                top: pctY((d.cy ?? 80) - (d.promien ?? 78)),
-                width: pctX((d.promien ?? 78) * 2),
-                height: pctY((d.promien ?? 78) * 2),
+                left: px((d.cx ?? 105) - (d.promien ?? 78)),
+                top: py((d.cy ?? 80) - (d.promien ?? 78)),
+                width: px((d.promien ?? 78) * 2),
+                height: py((d.promien ?? 78) * 2),
                 borderColor: d.kolor ?? accent,
               }}
             />
@@ -218,10 +224,10 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--hex-outline"
               style={{
-                left: pctX((d.cx ?? 105) - (d.rozmiar ?? 68)),
-                top: pctY((d.cy ?? 80) - (d.rozmiar ?? 68)),
-                width: pctX((d.rozmiar ?? 68) * 2),
-                height: pctY((d.rozmiar ?? 68) * 2),
+                left: px((d.cx ?? 105) - (d.rozmiar ?? 68)),
+                top: py((d.cy ?? 80) - (d.rozmiar ?? 68)),
+                width: px((d.rozmiar ?? 68) * 2),
+                height: py((d.rozmiar ?? 68) * 2),
                 borderColor: d.kolor ?? accent,
               }}
             />
@@ -230,19 +236,19 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
 
         if (d.typ === 'deco-narozniki' && d.obszar) {
           return (
-            <div key={key} className="deco deco--deco-corners" style={{ ...mmPosStyle(d.obszar), borderColor: d.kolor ?? accent }} />
+            <div key={key} className="deco deco--deco-corners" style={{ ...mms(d.obszar), borderColor: d.kolor ?? accent }} />
           );
         }
 
         if (d.typ === 'ornament-narozniki' && d.obszar) {
           return (
-            <div key={key} className="deco deco--ornament-corners" style={{ ...mmPosStyle(d.obszar), borderColor: d.kolor ?? accent }} />
+            <div key={key} className="deco deco--ornament-corners" style={{ ...mms(d.obszar), borderColor: d.kolor ?? accent }} />
           );
         }
 
         if (d.typ === 'tekstura-beton' && d.obszar) {
           return (
-            <div key={key} className="deco deco--concrete" style={mmPosStyle(d.obszar)} />
+            <div key={key} className="deco deco--concrete" style={mms(d.obszar)} />
           );
         }
 
@@ -251,7 +257,7 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
             <div
               key={key}
               className="deco deco--perforation"
-              style={{ top: pctY(d.y), width: pctX(d.szerokosc ?? 186), left: pctX(12) }}
+              style={{ top: py(d.y), width: px(d.szerokosc ?? 186), left: px(12) }}
             />
           );
         }
@@ -262,10 +268,10 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--spiral"
               style={{
-                left: pctX((d.cx ?? 198) - (d.promien ?? 80)),
-                top: pctY((d.cy ?? 164) - (d.promien ?? 80)),
-                width: pctX((d.promien ?? 80) * 2),
-                height: pctY((d.promien ?? 80) * 2),
+                left: px((d.cx ?? 198) - (d.promien ?? 80)),
+                top: py((d.cy ?? 164) - (d.promien ?? 80)),
+                width: px((d.promien ?? 80) * 2),
+                height: py((d.promien ?? 80) * 2),
                 borderColor: d.kolor ?? accent,
               }}
             />
@@ -278,8 +284,8 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--dot"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y ?? 0),
+                left: px(d.x),
+                top: py(d.y ?? 0),
                 width: `${d.rozmiar ?? 4}px`,
                 height: `${d.rozmiar ?? 4}px`,
                 background: d.kolor ?? accent,
@@ -294,10 +300,10 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--arch-frame"
               style={{
-                left: pctX(d.x),
-                top: pctY(d.y ?? 0),
-                width: pctX(d.szerokosc ?? 166),
-                height: pctY(d.wysokosc ?? 164),
+                left: px(d.x),
+                top: py(d.y ?? 0),
+                width: px(d.szerokosc ?? 166),
+                height: py(d.wysokosc ?? 164),
                 borderColor: d.kolor ?? accent,
               }}
             />
@@ -313,8 +319,8 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
               key={key}
               className="deco deco--watercolor"
               style={{
-                left: pctX(x),
-                top: pctY(y),
+                left: px(x),
+                top: py(y),
                 width: `${size}px`,
                 height: `${size}px`,
                 background: d.kolor,
@@ -328,7 +334,7 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
             <div
               key={key}
               className="deco deco--origami"
-              style={{ left: pctX(d.x), top: pctY(d.y ?? 0), borderColor: d.kolor ?? '#FFF9F0' }}
+              style={{ left: px(d.x), top: py(d.y ?? 0), borderColor: d.kolor ?? '#FFF9F0' }}
             />
           );
         }
@@ -348,7 +354,7 @@ export function PageDecorations({ dekoracje, accent, paleta }: PageDecorationsPr
             <div
               key={key}
               className="deco deco--overlay"
-              style={{ ...mmPosStyle(d.obszar), background: d.kolor ?? 'rgba(0,0,0,0.45)' }}
+              style={{ ...mms(d.obszar), background: d.kolor ?? 'rgba(0,0,0,0.45)' }}
             />
           );
         }

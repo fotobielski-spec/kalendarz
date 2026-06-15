@@ -1,5 +1,6 @@
 import type { StrefaKalendarza } from '../../types/plan';
 import { getMonthDaysWithImieniny } from '../../utils/imieniny';
+import { usePageSize } from '../../context/PageSizeContext';
 import { mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
 import { PrintCalendarGrid } from './PrintCalendarGrid';
 import './PlannerCalendarGrid.css';
@@ -44,6 +45,7 @@ export function PlannerCalendarGrid({
   dayFontSize = 7,
   monthTitle,
 }: PlannerCalendarGridProps) {
+  const { pageW, pageH } = usePageSize();
   const days = getMonthDaysWithImieniny(year, monthIndex).filter((d) => d.isCurrentMonth && d.day);
   const compact = area.szerokosc < 95;
 
@@ -59,7 +61,7 @@ export function PlannerCalendarGrid({
     <div
       className={`planner-cal planner-cal--${plannerTyp}`}
       style={{
-        ...mmPosStyle(area),
+        ...mmPosStyle(area, pageW, pageH),
         ...zoneCssVars(area),
         color: textColor,
         '--font-heading': headingFont,

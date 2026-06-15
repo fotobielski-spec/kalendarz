@@ -95,6 +95,18 @@ export const UKLAD_LABELS: Record<string, string> = {
   'trojka-botanic-tasma': 'Botaniczna oś czasu',
   'trojka-brutalist-blok': 'Brutalist — bloki',
   'trojka-duet-rzad': 'Dwa światy — duet + rząd',
+  'poz-photo-left-60': 'Poziom — foto lewo 60%',
+  'poz-photo-right-60': 'Poziom — foto prawo 60%',
+  'poz-filmstrip-top': 'Poziom — pasek filmowy góra',
+  'poz-split-50': 'Poziom — split 50/50',
+  'poz-vogue-left': 'Poziom — Vogue lewo',
+  'poz-panorama-top-50': 'Poziom — panorama góra 50%',
+  'poz-fullscreen-overlay': 'Poziom — pełny ekran + nakładka',
+  'poz-diagonal-top': 'Poziom — przekątna góra',
+  'poz-L-frame': 'Poziom — rama L',
+  'poz-circle-left': 'Poziom — okrąg lewo',
+  'poz-polaroid-top': 'Poziom — Polaroidy góra',
+  'poz-gold-left': 'Poziom — złota linia lewo',
 };
 
 export function getUkladLabel(uklad: string): string {
@@ -112,6 +124,9 @@ export function getLayoutOrientation(uklad: string): LayoutOrientation {
   if (uklad.startsWith('senior-foto-right')) return 'horizontal-right';
   if (uklad.startsWith('senior-kal-gora')) return 'vertical-bottom';
   if (uklad.startsWith('senior-')) return 'vertical-top';
+  if (uklad.startsWith('poz-')) return uklad.includes('left') || uklad.includes('right') || uklad.includes('split')
+    ? 'horizontal-left'
+    : uklad.includes('fullscreen') ? 'special' : 'vertical-top';
   if (uklad.startsWith('trojka-kal-gora') || uklad.startsWith('trojka-nord')) return 'vertical-bottom';
   if (uklad.startsWith('trojka-vogue') || uklad.startsWith('trojka-foto-left')) return 'horizontal-left';
   if (uklad.startsWith('trojka-noir-nakladka')) return 'special';
