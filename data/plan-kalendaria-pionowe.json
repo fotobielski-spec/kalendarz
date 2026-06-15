@@ -1,0 +1,2286 @@
+{
+  "meta": {
+    "rokDomyslny": 2026,
+    "liczbaSzablonow": 4,
+    "opis": "4 kalendarze pionowe A4 — cyfry przy brzegu + imieniny (bez lustrzanego duplikatu)"
+  },
+  "formatWspolny": {
+    "szerokosc": 210,
+    "wysokosc": 297,
+    "siatkaDni": {
+      "etykietyDni": [
+        "Pn",
+        "Wt",
+        "Śr",
+        "Cz",
+        "Pt",
+        "Sb",
+        "Nd"
+      ]
+    },
+    "proporcja": {
+      "kalendarium": 40,
+      "zdjecie": 60
+    },
+    "imieniny": true,
+    "ukladPionowy": true
+  },
+  "kalendaria": [
+    {
+      "id": "PION-01",
+      "nazwa": "Lista lewa — krawędź",
+      "kategoria": "pionowy",
+      "kolekcja": "pionowe",
+      "opis": "Cyfry dni w pionie przy lewym brzegu kartki, imieniny obok. Zdjęcie po prawej (62%).",
+      "tagi": [
+        "pionowy",
+        "imieniny",
+        "lewo"
+      ],
+      "paleta": {
+        "tlo": "#FAFAF8",
+        "akcent": "#2D5A4A",
+        "tekst": "#1C2B26"
+      },
+      "typografia": {
+        "naglowek": "DM Serif Display",
+        "tekst": "DM Sans",
+        "rozmiarMiesiac": 12,
+        "rozmiarDzien": 9
+      },
+      "proporcja": {
+        "kalendarium": 38,
+        "zdjecie": 62
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 64,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Portret pionowy klienta",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 63,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#2D5A4A",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PION-02",
+      "nazwa": "Lista prawa — krawędź",
+      "kategoria": "pionowy",
+      "kolekcja": "pionowe",
+      "opis": "Cyfry przy prawym brzegu kartki, imieniny po lewej od numeru. Zdjęcie po lewej (62%).",
+      "tagi": [
+        "pionowy",
+        "imieniny",
+        "prawo"
+      ],
+      "paleta": {
+        "tlo": "#F5F0EB",
+        "akcent": "#8B4513",
+        "tekst": "#2A1F14"
+      },
+      "typografia": {
+        "naglowek": "Playfair Display",
+        "tekst": "Source Sans 3",
+        "rozmiarMiesiac": 12,
+        "rozmiarDzien": 9
+      },
+      "proporcja": {
+        "kalendarium": 38,
+        "zdjecie": 62
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 38,
+            "zdjecie": 62
+          },
+          "uklad": "pion-lista-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 134,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie rodzinne",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 146,
+            "y": 12,
+            "szerokosc": 52,
+            "wysokosc": 273,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 147,
+              "y": 12,
+              "szerokosc": 1,
+              "wysokosc": 273,
+              "kolor": "#8B4513",
+              "grubosc": 2
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PION-03",
+      "nazwa": "Lista lewa — foto góra",
+      "kategoria": "pionowy",
+      "kolekcja": "pionowe",
+      "opis": "Zdjęcie u góry (60%), pod spodem pionowa lista dni przy lewym brzegu strefy kalendarza.",
+      "tagi": [
+        "pionowy",
+        "imieniny",
+        "góra"
+      ],
+      "paleta": {
+        "tlo": "#FFFFFF",
+        "akcent": "#1E3A5F",
+        "tekst": "#0F1C2E"
+      },
+      "typografia": {
+        "naglowek": "Libre Baskerville",
+        "tekst": "Work Sans",
+        "rozmiarMiesiac": 11,
+        "rozmiarDzien": 8
+      },
+      "proporcja": {
+        "kalendarium": 40,
+        "zdjecie": 60
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 40,
+            "zdjecie": 60
+          },
+          "uklad": "pion-lista-bottom-lewo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 12,
+                "y": 28,
+                "szerokosc": 186,
+                "wysokosc": 148
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Panorama krajobrazu",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 12,
+            "y": 176,
+            "szerokosc": 186,
+            "wysokosc": 109,
+            "uklad": "pionowy",
+            "krawedz": "lewo"
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PION-04",
+      "nazwa": "Lista prawa — pełne tło",
+      "kategoria": "pionowy",
+      "kolekcja": "pionowe",
+      "opis": "Zdjęcie na pełnej stronie z pionową listą dni przy prawym brzegu na półprzezroczystym panelu.",
+      "tagi": [
+        "pionowy",
+        "imieniny",
+        "fullscreen"
+      ],
+      "paleta": {
+        "tlo": "#111111",
+        "akcent": "#F5E6C8",
+        "tekst": "#FFFFFF"
+      },
+      "typografia": {
+        "naglowek": "Cinzel",
+        "tekst": "Raleway",
+        "rozmiarMiesiac": 11,
+        "rozmiarDzien": 8
+      },
+      "efekty": {
+        "zdjecia": "grayscale",
+        "kontrast": 1.1
+      },
+      "proporcja": {
+        "kalendarium": 22,
+        "zdjecie": 78
+      },
+      "strony": [
+        {
+          "numer": 2,
+          "typ": "miesiac",
+          "etykieta": "Styczeń",
+          "miesiac": 1,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 3,
+          "typ": "miesiac",
+          "etykieta": "Luty",
+          "miesiac": 2,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 4,
+          "typ": "miesiac",
+          "etykieta": "Marzec",
+          "miesiac": 3,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 5,
+          "typ": "miesiac",
+          "etykieta": "Kwiecień",
+          "miesiac": 4,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 6,
+          "typ": "miesiac",
+          "etykieta": "Maj",
+          "miesiac": 5,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 7,
+          "typ": "miesiac",
+          "etykieta": "Czerwiec",
+          "miesiac": 6,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 8,
+          "typ": "miesiac",
+          "etykieta": "Lipiec",
+          "miesiac": 7,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 9,
+          "typ": "miesiac",
+          "etykieta": "Sierpień",
+          "miesiac": 8,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 10,
+          "typ": "miesiac",
+          "etykieta": "Wrzesień",
+          "miesiac": 9,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 11,
+          "typ": "miesiac",
+          "etykieta": "Październik",
+          "miesiac": 10,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 12,
+          "typ": "miesiac",
+          "etykieta": "Listopad",
+          "miesiac": 11,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        },
+        {
+          "numer": 13,
+          "typ": "miesiac",
+          "etykieta": "Grudzień",
+          "miesiac": 12,
+          "proporcja": {
+            "kalendarium": 22,
+            "zdjecie": 78
+          },
+          "uklad": "pion-lista-overlay-prawo",
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "fullscreen",
+              "pozycja": {
+                "x": 12,
+                "y": 12,
+                "szerokosc": 186,
+                "wysokosc": 273
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Pełnostronicowe zdjęcie tła",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 142,
+            "y": 20,
+            "szerokosc": 56,
+            "wysokosc": 257,
+            "uklad": "pionowy",
+            "krawedz": "prawo"
+          },
+          "dekoracje": [],
+          "efektyStrony": {
+            "panelPolprzezroczysty": true
+          }
+        }
+      ]
+    }
+  ]
+}

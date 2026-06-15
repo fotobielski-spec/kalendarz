@@ -1,0 +1,113 @@
+.vert-cal {
+  container-type: size;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 3;
+  box-sizing: border-box;
+  padding: calc(2 * 100cqw / var(--zone-w-mm, 52));
+}
+
+.vert-cal__header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: calc(2 * 100cqw / var(--zone-w-mm, 52));
+  flex-shrink: 0;
+  margin-bottom: calc(2 * 100cqw / var(--zone-w-mm, 52));
+  padding-bottom: calc(2 * 100cqw / var(--zone-w-mm, 52));
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.vert-cal__month {
+  font-size: calc(11 * 100cqw / var(--zone-w-mm, 52));
+  font-weight: 700;
+  color: var(--accent);
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.1;
+}
+
+.vert-cal__year {
+  font-family: var(--font-body, inherit);
+  font-size: calc(8 * 100cqw / var(--zone-w-mm, 52));
+  opacity: 0.65;
+}
+
+.vert-cal__list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  gap: 0;
+}
+
+.vert-cal__row {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-height: 0;
+  gap: calc(2 * 100cqw / var(--zone-w-mm, 52));
+  border-bottom: 1px solid color-mix(in srgb, currentColor 8%, transparent);
+  overflow: hidden;
+  padding: 0 calc(1 * 100cqw / var(--zone-w-mm, 52));
+}
+
+.vert-cal--right .vert-cal__row {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.vert-cal__num {
+  flex-shrink: 0;
+  width: calc(14 * 100cqw / var(--zone-w-mm, 52));
+  font-size: calc(9 * 100cqw / var(--zone-w-mm, 52));
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+  text-align: center;
+  line-height: 1;
+}
+
+.vert-cal--right .vert-cal__num {
+  border-left: 2px solid var(--accent);
+  padding-left: calc(2 * 100cqw / var(--zone-w-mm, 52));
+}
+
+.vert-cal--left .vert-cal__num {
+  border-right: 2px solid var(--accent);
+  padding-right: calc(2 * 100cqw / var(--zone-w-mm, 52));
+}
+
+.vert-cal__names {
+  flex: 1;
+  font-family: var(--font-body, inherit);
+  font-size: min(
+    calc(5.2 * 100cqw / var(--zone-w-mm, 52)),
+    1.35cqh
+  );
+  line-height: 1.08;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  min-width: 0;
+  opacity: 0.85;
+}
+
+.vert-cal__row--weekend .vert-cal__names {
+  opacity: 0.55;
+}
+
+.vert-cal__row--today {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.vert-cal__row--today .vert-cal__num {
+  background: var(--accent);
+  color: #fff;
+  border-radius: calc(2 * 100cqw / var(--zone-w-mm, 52));
+  border: none;
+  padding: calc(1 * 100cqw / var(--zone-w-mm, 52));
+}

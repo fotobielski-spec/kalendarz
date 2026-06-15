@@ -1,0 +1,301 @@
+.planner-cal {
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 3;
+  box-sizing: border-box;
+  padding: calc(1.5 * 100cqw / var(--zone-w-mm, 186));
+  gap: calc(1 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__kalendarium {
+  flex: 0 0 62%;
+  min-height: 0;
+  overflow: hidden;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  padding-bottom: calc(1 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__panel {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.planner-cal--planer-foto-left .planner-cal__kalendarium,
+.planner-cal--planer-foto-right .planner-cal__kalendarium {
+  flex-basis: 55%;
+}
+
+.planner-cal__section-title {
+  font-size: calc(6 * 100cqw / var(--zone-w-mm, 186));
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: calc(1 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__lines span,
+.planner-cal__hour-line,
+.planner-cal__note-line {
+  display: block;
+  height: 1px;
+  background: color-mix(in srgb, currentColor 15%, transparent);
+  margin: calc(2 * 100cqw / var(--zone-w-mm, 186)) 0;
+}
+
+.planner-cal__lines {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Tygodniowy */
+.planner-cal__weeks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  min-height: 0;
+  overflow: hidden;
+}
+
+.planner-cal__week-block {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, currentColor 10%, transparent);
+  border-radius: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  padding: calc(1.5 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__week-label {
+  font-size: calc(5 * 100cqw / var(--zone-w-mm, 186));
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.planner-cal__week-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  margin: calc(1 * 100cqw / var(--zone-w-mm, 186)) 0;
+}
+
+.planner-cal__mini-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(4.5 * 100cqw / var(--zone-w-mm, 186));
+  overflow: hidden;
+  line-height: 1;
+}
+
+.planner-cal__mini-day b {
+  font-size: calc(5.5 * 100cqw / var(--zone-w-mm, 186));
+  color: var(--accent);
+}
+
+.planner-cal__mini-day small {
+  font-size: calc(3.5 * 100cqw / var(--zone-w-mm, 186));
+  opacity: 0.6;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.planner-cal__mini-day--we { opacity: 0.5; }
+
+/* Nawyki */
+.planner-cal__habits {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(3 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__habit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(6 * 100cqw / var(--zone-w-mm, 186));
+  font-weight: 600;
+}
+
+.planner-cal__checks {
+  display: flex;
+  gap: calc(1 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__check {
+  width: calc(5 * 100cqw / var(--zone-w-mm, 186));
+  height: calc(5 * 100cqw / var(--zone-w-mm, 186));
+  border: 1px solid;
+  border-radius: 2px;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+/* Cele */
+.planner-cal__goals { flex-shrink: 0; }
+
+.planner-cal__mini-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  align-content: start;
+}
+
+.planner-cal__mini-cell {
+  font-size: calc(5 * 100cqw / var(--zone-w-mm, 186));
+  text-align: center;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Kanban */
+.planner-cal__kanban {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  min-height: 0;
+}
+
+.planner-cal__kanban-col {
+  border: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+  border-radius: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  padding: calc(1.5 * 100cqw / var(--zone-w-mm, 186));
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.planner-cal__kanban--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.planner-cal__menu {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: calc(1 * 100cqw / var(--zone-w-mm, 186));
+  min-height: 0;
+  overflow: hidden;
+}
+
+.planner-cal__menu-day {
+  border: 1px solid color-mix(in srgb, currentColor 10%, transparent);
+  border-radius: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  padding: calc(1 * 100cqw / var(--zone-w-mm, 186));
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Czas */
+.planner-cal__hours {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.planner-cal__hour-row {
+  display: flex;
+  align-items: center;
+  gap: calc(2 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__hour {
+  font-size: calc(5 * 100cqw / var(--zone-w-mm, 186));
+  font-weight: 600;
+  color: var(--accent);
+  width: calc(16 * 100cqw / var(--zone-w-mm, 186));
+  flex-shrink: 0;
+}
+
+.planner-cal__hour-line { flex: 1; margin: 0; }
+
+/* Finanse */
+.planner-cal__finance {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(4 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__finance-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: calc(6 * 100cqw / var(--zone-w-mm, 186));
+  border-bottom: 1px dashed color-mix(in srgb, currentColor 15%, transparent);
+  padding-bottom: calc(2 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__finance-val {
+  font-size: calc(5 * 100cqw / var(--zone-w-mm, 186));
+  opacity: 0.5;
+}
+
+/* Wellness */
+.planner-cal__wellness {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(3 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__wellness-item {
+  display: flex;
+  align-items: center;
+  gap: calc(3 * 100cqw / var(--zone-w-mm, 186));
+  font-size: calc(6 * 100cqw / var(--zone-w-mm, 186));
+}
+
+/* Notatki (default) */
+.planner-cal__notes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.planner-cal__note-row {
+  display: flex;
+  align-items: center;
+  gap: calc(2 * 100cqw / var(--zone-w-mm, 186));
+  margin-bottom: calc(1 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.planner-cal__note-day {
+  font-size: calc(6 * 100cqw / var(--zone-w-mm, 186));
+  font-weight: 800;
+  width: calc(10 * 100cqw / var(--zone-w-mm, 186));
+  flex-shrink: 0;
+}
+
+.planner-cal__note-line {
+  flex: 1;
+  margin: 0;
+}
+
+.planner-cal__note-name {
+  font-size: calc(4 * 100cqw / var(--zone-w-mm, 186));
+  opacity: 0.55;
+  max-width: calc(30 * 100cqw / var(--zone-w-mm, 186));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

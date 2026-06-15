@@ -1,0 +1,2700 @@
+{
+  "meta": {
+    "rokDomyslny": 2026,
+    "liczbaSzablonow": 30,
+    "opis": "30 kalendarzy plakatowych 50/50 — cały rok na 1 karcie A4 pion"
+  },
+  "formatWspolny": {
+    "nazwa": "A4 pion — plakat 1 karta 50/50",
+    "szerokosc": 210,
+    "wysokosc": 297,
+    "orientacja": "portrait",
+    "siatkaDni": {
+      "etykietyDni": [
+        "Pn",
+        "Wt",
+        "Śr",
+        "Cz",
+        "Pt",
+        "Sb",
+        "Nd"
+      ]
+    },
+    "proporcja": {
+      "zdjecie": 50,
+      "kalendarium": 50
+    },
+    "imieniny": true,
+    "ukladRoczny": true,
+    "stronyNaKarte": 1
+  },
+  "kalendaria": [
+    {
+      "id": "PLAK-01",
+      "nazwa": "Rodzinny Klasyczny",
+      "kategoria": "rodzinne",
+      "kolekcja": "plakat",
+      "opis": "50/50 — zdjęcie góra, siatka 4×3 dół. Klasyczny plakat roczny.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "foto-gora",
+        "rodzinny"
+      ],
+      "paleta": {
+        "tlo": "#FFFBF5",
+        "akcent": "#8B7355",
+        "tekst": "#3D3429"
+      },
+      "typografia": {
+        "naglowek": "Georgia",
+        "tekst": "system-ui",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5.5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#8B7355",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 10,
+              "y": 155,
+              "szerokosc": 190,
+              "grubosc": 1,
+              "kolor": "#8B7355"
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-02",
+      "nazwa": "Minimal Biały",
+      "kategoria": "minimal",
+      "kolekcja": "plakat",
+      "opis": "50/50 — zdjęcie góra, czysta siatka 4×3 dół.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "minimal"
+      ],
+      "paleta": {
+        "tlo": "#FFFFFF",
+        "akcent": "#111111",
+        "tekst": "#333333"
+      },
+      "typografia": {
+        "naglowek": "Inter",
+        "tekst": "Inter",
+        "rozmiarMiesiac": 6.5,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 3
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#111111",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-03",
+      "nazwa": "Noir Elegancki",
+      "kategoria": "elegancki",
+      "kolekcja": "plakat",
+      "opis": "50/50 — zdjęcie góra, ciemna siatka 4×3 dół, złote akcenty.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "ciemny",
+        "elegancki"
+      ],
+      "paleta": {
+        "tlo": "#0F0F0F",
+        "akcent": "#D4AF37",
+        "tekst": "#F5F5F5"
+      },
+      "typografia": {
+        "naglowek": "Cinzel",
+        "tekst": "Raleway",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-bottom-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 156,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — dolna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 22,
+            "szerokosc": 190,
+            "wysokosc": 132,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#D4AF37",
+              "transform": "uppercase",
+              "letterSpacing": 3,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-04",
+      "nazwa": "Portret Lewy",
+      "kategoria": "portret",
+      "kolekcja": "plakat",
+      "opis": "50/50 — zdjęcie lewa połowa, miesiące 3×4 prawo.",
+      "tagi": [
+        "50-50",
+        "3x4",
+        "foto-lewo"
+      ],
+      "paleta": {
+        "tlo": "#FAF8F5",
+        "akcent": "#6B5344",
+        "tekst": "#2A2118"
+      },
+      "typografia": {
+        "naglowek": "Playfair Display",
+        "tekst": "Source Sans 3",
+        "rozmiarMiesiac": 6.5,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-left-50-3x4",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 95,
+                "wysokosc": 265
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — lewa połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 108,
+            "y": 22,
+            "szerokosc": 92,
+            "wysokosc": 265,
+            "uklad": "roczny",
+            "siatkaKolumny": 3,
+            "siatkaWiersze": 4,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#6B5344",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-05",
+      "nazwa": "Portret Prawy",
+      "kategoria": "portret",
+      "kolekcja": "plakat",
+      "opis": "50/50 — zdjęcie prawa połowa, siatka 3×4 lewo.",
+      "tagi": [
+        "50-50",
+        "3x4",
+        "foto-prawo"
+      ],
+      "paleta": {
+        "tlo": "#F8FAFC",
+        "akcent": "#1E40AF",
+        "tekst": "#1E293B"
+      },
+      "typografia": {
+        "naglowek": "Montserrat",
+        "tekst": "Open Sans",
+        "rozmiarMiesiac": 6.5,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-right-50-3x4",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 105,
+                "y": 22,
+                "szerokosc": 95,
+                "wysokosc": 265
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — prawa połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 22,
+            "szerokosc": 92,
+            "wysokosc": 265,
+            "uklad": "roczny",
+            "siatkaKolumny": 3,
+            "siatkaWiersze": 4,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#1E40AF",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-06",
+      "nazwa": "Foto Dół",
+      "kategoria": "rodzinne",
+      "kolekcja": "plakat",
+      "opis": "50/50 — kalendarz 4×3 góra, zdjęcie dół.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "foto-dol"
+      ],
+      "paleta": {
+        "tlo": "#FFF7ED",
+        "akcent": "#C2410C",
+        "tekst": "#431407"
+      },
+      "typografia": {
+        "naglowek": "Lora",
+        "tekst": "Nunito",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-bottom-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 156,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — dolna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 22,
+            "szerokosc": 190,
+            "wysokosc": 132,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#C2410C",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-07",
+      "nazwa": "Pastelowy Dom",
+      "kategoria": "pastelowy",
+      "kolekcja": "plakat",
+      "opis": "50/50 — pastel, zdjęcie góra, siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "pastel",
+        "foto-gora"
+      ],
+      "paleta": {
+        "tlo": "#FDF2F8",
+        "akcent": "#DB2777",
+        "tekst": "#831843"
+      },
+      "typografia": {
+        "naglowek": "Quicksand",
+        "tekst": "Nunito",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 3
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#DB2777",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-08",
+      "nazwa": "Nordycki Spokój",
+      "kategoria": "nordycki",
+      "kolekcja": "plakat",
+      "opis": "50/50 — zdjęcie dół, skandynawska siatka 3×4 góra.",
+      "tagi": [
+        "50-50",
+        "3x4",
+        "nordycki"
+      ],
+      "paleta": {
+        "tlo": "#F0F4F8",
+        "akcent": "#2D3748",
+        "tekst": "#1A202C"
+      },
+      "typografia": {
+        "naglowek": "Josefin Sans",
+        "tekst": "Work Sans",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5.5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-bottom-50-3x4",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 156,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — dolna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 22,
+            "szerokosc": 190,
+            "wysokosc": 132,
+            "uklad": "roczny",
+            "siatkaKolumny": 3,
+            "siatkaWiersze": 4,
+            "odstepMm": 4
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "left",
+              "kolor": "#2D3748",
+              "transform": "none",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-09",
+      "nazwa": "Korporacyjny",
+      "kategoria": "biznes",
+      "kolekcja": "plakat",
+      "opis": "50/50 — niebieski biznes, foto góra, siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "biznes",
+        "foto-gora"
+      ],
+      "paleta": {
+        "tlo": "#EFF6FF",
+        "akcent": "#1D4ED8",
+        "tekst": "#1E3A5F"
+      },
+      "typografia": {
+        "naglowek": "Roboto",
+        "tekst": "Roboto",
+        "rozmiarMiesiac": 6.5,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#1D4ED8",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-10",
+      "nazwa": "Vintage Sepia",
+      "kategoria": "vintage",
+      "kolekcja": "plakat",
+      "opis": "50/50 — zdjęcie góra (sepia), retro siatka 4×3 dół.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "vintage"
+      ],
+      "paleta": {
+        "tlo": "#F5F0E8",
+        "akcent": "#78350F",
+        "tekst": "#44403C"
+      },
+      "typografia": {
+        "naglowek": "EB Garamond",
+        "tekst": "EB Garamond",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "efekty": {
+        "zdjecia": "grayscale"
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#78350F",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-11",
+      "nazwa": "Kolorowy Dziecięcy",
+      "kategoria": "dziecięcy",
+      "kolekcja": "plakat",
+      "opis": "50/50 — jaskrawe kolory, foto góra, siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "dzieci",
+        "kolorowy"
+      ],
+      "paleta": {
+        "tlo": "#FFFBEB",
+        "akcent": "#EA580C",
+        "tekst": "#1C1917",
+        "drugi": "#2563EB",
+        "trzeci": "#16A34A"
+      },
+      "typografia": {
+        "naglowek": "Fredoka",
+        "tekst": "Nunito",
+        "rozmiarMiesiac": 7.5,
+        "rozmiarDzien": 5.5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 3
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#EA580C",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-12",
+      "nazwa": "Lux Złoto-Czarny",
+      "kategoria": "luksus",
+      "kolekcja": "plakat",
+      "opis": "50/50 — zdjęcie góra, premium siatka 4×3 na czerni.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "lux",
+        "zloto"
+      ],
+      "paleta": {
+        "tlo": "#0A0A0A",
+        "akcent": "#C9A227",
+        "tekst": "#FAFAFA"
+      },
+      "typografia": {
+        "naglowek": "Cinzel",
+        "tekst": "Lato",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-bottom-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 156,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — dolna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 22,
+            "szerokosc": 190,
+            "wysokosc": 132,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#C9A227",
+              "transform": "uppercase",
+              "letterSpacing": 4,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-13",
+      "nazwa": "Dwie Kolumny",
+      "kategoria": "kompakt",
+      "kolekcja": "plakat",
+      "opis": "50/50 — foto lewo, siatka 2×6 prawo.",
+      "tagi": [
+        "50-50",
+        "2x6",
+        "foto-lewo"
+      ],
+      "paleta": {
+        "tlo": "#FFFFFF",
+        "akcent": "#0F766E",
+        "tekst": "#134E4A"
+      },
+      "typografia": {
+        "naglowek": "Libre Baskerville",
+        "tekst": "Source Sans 3",
+        "rozmiarMiesiac": 8,
+        "rozmiarDzien": 6,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-left-50-2x6",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 95,
+                "wysokosc": 265
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — lewa połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 108,
+            "y": 22,
+            "szerokosc": 92,
+            "wysokosc": 265,
+            "uklad": "roczny",
+            "siatkaKolumny": 2,
+            "siatkaWiersze": 6,
+            "odstepMm": 3
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#0F766E",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-14",
+      "nazwa": "Sześć Rzędów",
+      "kategoria": "kompakt",
+      "kolekcja": "plakat",
+      "opis": "50/50 — foto prawo, kompaktowa siatka 6×2 lewo.",
+      "tagi": [
+        "50-50",
+        "6x2",
+        "foto-prawo"
+      ],
+      "paleta": {
+        "tlo": "#F8FAFC",
+        "akcent": "#475569",
+        "tekst": "#1E293B"
+      },
+      "typografia": {
+        "naglowek": "Archivo",
+        "tekst": "Inter",
+        "rozmiarMiesiac": 6,
+        "rozmiarDzien": 4.5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-right-50-6x2",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 105,
+                "y": 22,
+                "szerokosc": 95,
+                "wysokosc": 265
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — prawa połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 22,
+            "szerokosc": 92,
+            "wysokosc": 265,
+            "uklad": "roczny",
+            "siatkaKolumny": 6,
+            "siatkaWiersze": 2,
+            "odstepMm": 2,
+            "kompaktowy": true
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#475569",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-15",
+      "nazwa": "Okrągłe Foto",
+      "kategoria": "ozdobny",
+      "kolekcja": "plakat",
+      "opis": "50/50 — pełne zdjęcie góra z okrągłą maską, siatka 4×3 dół.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "okrag",
+        "foto-gora"
+      ],
+      "paleta": {
+        "tlo": "#FFF1F2",
+        "akcent": "#BE123C",
+        "tekst": "#4C0519"
+      },
+      "typografia": {
+        "naglowek": "Dancing Script",
+        "tekst": "Lato",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "okrag",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Okrągłe zdjęcie — strefa 50% góra",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#BE123C",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-16",
+      "nazwa": "Gradient Niebo",
+      "kategoria": "nowoczesny",
+      "kolekcja": "plakat",
+      "opis": "50/50 — błękit, panorama góra, siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "nowoczesny"
+      ],
+      "paleta": {
+        "tlo": "#E0F2FE",
+        "akcent": "#0369A1",
+        "tekst": "#0C4A6E"
+      },
+      "typografia": {
+        "naglowek": "Poppins",
+        "tekst": "Inter",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#0369A1",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "gradient-pas",
+              "x": 10,
+              "y": 151,
+              "szerokosc": 190,
+              "wysokosc": 4,
+              "od": "#0369A1",
+              "do": "#E0F2FE"
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-17",
+      "nazwa": "Ramka Ozdobna",
+      "kategoria": "klasyczny",
+      "kolekcja": "plakat",
+      "opis": "50/50 — zdjęcie góra w ramce, siatka 4×3 dół.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "ramka"
+      ],
+      "paleta": {
+        "tlo": "#FAFAF9",
+        "akcent": "#57534E",
+        "tekst": "#292524",
+        "ramka": "#A8A29E"
+      },
+      "typografia": {
+        "naglowek": "Cormorant Garamond",
+        "tekst": "Lato",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 3
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#57534E",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "ramka",
+              "x": 8,
+              "y": 8,
+              "szerokosc": 194,
+              "wysokosc": 267,
+              "kolor": "#A8A29E",
+              "grubosc": 1
+            },
+            {
+              "typ": "ramka",
+              "x": 12,
+              "y": 22,
+              "szerokosc": 186,
+              "wysokosc": 133,
+              "kolor": "#57534E",
+              "grubosc": 0.5
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-18",
+      "nazwa": "Ogrodniczy Zielony",
+      "kategoria": "natura",
+      "kolekcja": "plakat",
+      "opis": "50/50 — natura, foto góra, siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "natura"
+      ],
+      "paleta": {
+        "tlo": "#F0FDF4",
+        "akcent": "#15803D",
+        "tekst": "#14532D"
+      },
+      "typografia": {
+        "naglowek": "Merriweather",
+        "tekst": "Open Sans",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#15803D",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-19",
+      "nazwa": "Boho Terakota",
+      "kategoria": "boho",
+      "kolekcja": "plakat",
+      "opis": "50/50 — terakota, foto lewo, siatka 3×4 prawo.",
+      "tagi": [
+        "50-50",
+        "3x4",
+        "boho",
+        "foto-lewo"
+      ],
+      "paleta": {
+        "tlo": "#FEF3C7",
+        "akcent": "#B45309",
+        "tekst": "#78350F"
+      },
+      "typografia": {
+        "naglowek": "Libre Baskerville",
+        "tekst": "Work Sans",
+        "rozmiarMiesiac": 6.5,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-left-50-3x4",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 95,
+                "wysokosc": 265
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — lewa połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 108,
+            "y": 22,
+            "szerokosc": 92,
+            "wysokosc": 265,
+            "uklad": "roczny",
+            "siatkaKolumny": 3,
+            "siatkaWiersze": 4,
+            "odstepMm": 3
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#B45309",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-20",
+      "nazwa": "Monochrome",
+      "kategoria": "minimal",
+      "kolekcja": "plakat",
+      "opis": "50/50 — szarości, foto góra B&W, siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "monochrome"
+      ],
+      "paleta": {
+        "tlo": "#F5F5F5",
+        "akcent": "#404040",
+        "tekst": "#171717"
+      },
+      "typografia": {
+        "naglowek": "Space Mono",
+        "tekst": "Inter",
+        "rozmiarMiesiac": 6.5,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "efekty": {
+        "zdjecia": "grayscale"
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-bottom-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 156,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — dolna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 22,
+            "szerokosc": 190,
+            "wysokosc": 132,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#404040",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-21",
+      "nazwa": "Panorama Rodzinna",
+      "kategoria": "rodzinne",
+      "kolekcja": "plakat",
+      "opis": "50/50 — panoramiczne foto góra, kompaktowa siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "panorama"
+      ],
+      "paleta": {
+        "tlo": "#FFFFFF",
+        "akcent": "#7C3AED",
+        "tekst": "#1E1B4B"
+      },
+      "typografia": {
+        "naglowek": "Outfit",
+        "tekst": "DM Sans",
+        "rozmiarMiesiac": 6.5,
+        "rozmiarDzien": 4.5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2,
+            "bezImienin": true,
+            "kompaktowy": true
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#7C3AED",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-22",
+      "nazwa": "Kompakt Kalendarz",
+      "kategoria": "kompakt",
+      "kolekcja": "plakat",
+      "opis": "50/50 — foto dół, gęsta siatka 4×3 góra.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "kompakt"
+      ],
+      "paleta": {
+        "tlo": "#FAFAFA",
+        "akcent": "#525252",
+        "tekst": "#262626"
+      },
+      "typografia": {
+        "naglowek": "Inter",
+        "tekst": "Inter",
+        "rozmiarMiesiac": 6,
+        "rozmiarDzien": 4.5,
+        "roczny": true,
+        "dense": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-bottom-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 156,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — dolna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 22,
+            "szerokosc": 190,
+            "wysokosc": 132,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 1.5,
+            "bezImienin": true,
+            "kompaktowy": true
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#525252",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-23",
+      "nazwa": "Foto Pion Lewo",
+      "kategoria": "portret",
+      "kolekcja": "plakat",
+      "opis": "50/50 — portret lewo, siatka 3×4 prawo.",
+      "tagi": [
+        "50-50",
+        "3x4",
+        "foto-lewo",
+        "portret"
+      ],
+      "paleta": {
+        "tlo": "#FFF7ED",
+        "akcent": "#9A3412",
+        "tekst": "#431407"
+      },
+      "typografia": {
+        "naglowek": "DM Serif Display",
+        "tekst": "DM Sans",
+        "rozmiarMiesiac": 6.5,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-left-50-3x4",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "kolumna",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 95,
+                "wysokosc": 265
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — lewa połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 108,
+            "y": 22,
+            "szerokosc": 92,
+            "wysokosc": 265,
+            "uklad": "roczny",
+            "siatkaKolumny": 3,
+            "siatkaWiersze": 4,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#9A3412",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-24",
+      "nazwa": "Serif Centrum",
+      "kategoria": "elegancki",
+      "kolekcja": "plakat",
+      "opis": "50/50 — elegancki serif, foto góra, siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "serif"
+      ],
+      "paleta": {
+        "tlo": "#FFFBEB",
+        "akcent": "#92400E",
+        "tekst": "#292524"
+      },
+      "typografia": {
+        "naglowek": "Cormorant Garamond",
+        "tekst": "EB Garamond",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 3
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 18,
+              "wyrownanie": "center",
+              "kolor": "#92400E",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-25",
+      "nazwa": "Geometria Nowoczesna",
+      "kategoria": "nowoczesny",
+      "kolekcja": "plakat",
+      "opis": "50/50 — foto góra, geometryczna siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "geometria"
+      ],
+      "paleta": {
+        "tlo": "#F1F5F9",
+        "akcent": "#0EA5E9",
+        "tekst": "#0F172A"
+      },
+      "typografia": {
+        "naglowek": "Archivo Black",
+        "tekst": "Archivo",
+        "rozmiarMiesiac": 6.5,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#0EA5E9",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-26",
+      "nazwa": "Świąteczny",
+      "kategoria": "sezonowy",
+      "kolekcja": "plakat",
+      "opis": "50/50 — świąteczny, foto góra, siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "swieta"
+      ],
+      "paleta": {
+        "tlo": "#FEF2F2",
+        "akcent": "#B91C1C",
+        "tekst": "#1F2937",
+        "drugi": "#15803D"
+      },
+      "typografia": {
+        "naglowek": "Mountains of Christmas",
+        "tekst": "Nunito",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#B91C1C",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-27",
+      "nazwa": "Morski Błękit",
+      "kategoria": "natura",
+      "kolekcja": "plakat",
+      "opis": "50/50 — morze, kalendarz góra, foto dół.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "morze",
+        "foto-dol"
+      ],
+      "paleta": {
+        "tlo": "#ECFEFF",
+        "akcent": "#0891B2",
+        "tekst": "#164E63"
+      },
+      "typografia": {
+        "naglowek": "Raleway",
+        "tekst": "Open Sans",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-bottom-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 156,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — dolna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 22,
+            "szerokosc": 190,
+            "wysokosc": 132,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#0891B2",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-28",
+      "nazwa": "BW Panorama",
+      "kategoria": "fotografia",
+      "kolekcja": "plakat",
+      "opis": "50/50 — czarno-białe foto góra, siatka 4×3.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "bw",
+        "fotografia"
+      ],
+      "paleta": {
+        "tlo": "#FAFAFA",
+        "akcent": "#171717",
+        "tekst": "#404040"
+      },
+      "typografia": {
+        "naglowek": "Roboto Mono",
+        "tekst": "Roboto",
+        "rozmiarMiesiac": 6.5,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "efekty": {
+        "zdjecia": "grayscale"
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#171717",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-29",
+      "nazwa": "Art Deco",
+      "kategoria": "art-deco",
+      "kolekcja": "plakat",
+      "opis": "50/50 — art deco, foto góra, siatka 4×3 na granacie.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "art-deco"
+      ],
+      "paleta": {
+        "tlo": "#1E1B4B",
+        "akcent": "#FCD34D",
+        "tekst": "#E0E7FF"
+      },
+      "typografia": {
+        "naglowek": "Poiret One",
+        "tekst": "Josefin Sans",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-bottom-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 156,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — dolna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 22,
+            "szerokosc": 190,
+            "wysokosc": 132,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 2
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 14,
+              "wyrownanie": "center",
+              "kolor": "#FCD34D",
+              "transform": "uppercase",
+              "letterSpacing": 5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 30,
+              "y": 26,
+              "szerokosc": 150,
+              "grubosc": 2,
+              "kolor": "#FCD34D"
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    },
+    {
+      "id": "PLAK-30",
+      "nazwa": "Premium Rodzinny",
+      "kategoria": "premium",
+      "kolekcja": "plakat",
+      "opis": "50/50 — premium plakat, foto góra, siatka 4×3, ciepła paleta.",
+      "tagi": [
+        "50-50",
+        "4x3",
+        "premium",
+        "rodzinny"
+      ],
+      "paleta": {
+        "tlo": "#FFFBF5",
+        "akcent": "#A16207",
+        "tekst": "#422006"
+      },
+      "typografia": {
+        "naglowek": "Fraunces",
+        "tekst": "Source Sans 3",
+        "rozmiarMiesiac": 7,
+        "rozmiarDzien": 5.5,
+        "roczny": true
+      },
+      "proporcja": {
+        "zdjecie": 50,
+        "kalendarium": 50
+      },
+      "orientacja": "portrait",
+      "strony": [
+        {
+          "numer": 1,
+          "typ": "rok",
+          "etykieta": "Kalendarz roczny",
+          "uklad": "plak-top-50-4x3",
+          "proporcja": {
+            "zdjecie": 50,
+            "kalendarium": 50
+          },
+          "strefyZdjec": [
+            {
+              "id": "foto",
+              "typStrefy": "hero",
+              "pozycja": {
+                "x": 10,
+                "y": 22,
+                "szerokosc": 190,
+                "wysokosc": 133
+              },
+              "maska": "prostokat",
+              "obrot": 0,
+              "ramka": null,
+              "clipPath": null,
+              "opis": "Zdjęcie klienta — górna połowa (50%)",
+              "wymagane": true
+            }
+          ],
+          "strefaKalendarza": {
+            "x": 10,
+            "y": 157,
+            "szerokosc": 190,
+            "wysokosc": 130,
+            "uklad": "roczny",
+            "siatkaKolumny": 4,
+            "siatkaWiersze": 3,
+            "odstepMm": 3
+          },
+          "typografia": {
+            "tytulRoczny": {
+              "x": 10,
+              "y": 12,
+              "szerokosc": 190,
+              "wysokosc": 12,
+              "tekst": "Kalendarz {rok}",
+              "rozmiar": 16,
+              "wyrownanie": "center",
+              "kolor": "#A16207",
+              "transform": "uppercase",
+              "letterSpacing": 1.5,
+              "waga": "bold"
+            }
+          },
+          "dekoracje": [
+            {
+              "typ": "linia",
+              "x": 10,
+              "y": 155,
+              "szerokosc": 190,
+              "grubosc": 1,
+              "kolor": "#A16207"
+            }
+          ],
+          "efektyStrony": null
+        }
+      ]
+    }
+  ]
+}

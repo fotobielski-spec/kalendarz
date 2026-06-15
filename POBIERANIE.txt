@@ -1,0 +1,40 @@
+KALENDARIUM+ — pakiet do pobrania
+================================
+
+POBIERZ ZIP Z GITHUB
+--------------------
+https://github.com/fotobielski-spec/kalendarz/raw/cursor/kalendarium-plus-82fd/kalendarium-plus-pakiet.zip
+
+JAK OTWORZYĆ PODGLĄD (WAŻNE!)
+-----------------------------
+NIE otwieraj plików HTML dwuklikiem z dysku — to NIE zadziała.
+
+Windows:
+  1. Rozpakuj zip
+  2. Wejdź do folderu:  podglad\\
+  3. Kliknij dwukrotnie:  start-podglad.bat
+  4. Otworzy się przeglądarka z galerią
+
+Mac / Linux:
+  1. Rozpakuj zip
+  2. cd podglad
+  3. chmod +x start-podglad.sh && ./start-podglad.sh
+
+Ręcznie (Node.js):
+  cd podglad
+  npx serve -l 3000
+  http://localhost:3000/OTWORZ-PODGLAD.html
+
+GALERIE
+-------
+  OTWORZ-PODGLAD.html   — menu wyboru
+  podglad-art.html      — 75 kalendarzy
+  podglad.html          — 20 klasycznych
+
+ZAWARTOŚĆ ARCHIWUM
+------------------
+podglad/          Gotowy podgląd + start-podglad.bat
+zrodla/           Kod źródłowy (npm install && npm run dev)
+
+Repo: https://github.com/fotobielski-spec/kalendarz
+Branch: cursor/kalendarium-plus-82fd

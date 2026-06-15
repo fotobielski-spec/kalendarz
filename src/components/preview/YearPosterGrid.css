@@ -1,0 +1,90 @@
+.year-poster {
+  position: absolute;
+  container-type: size;
+  overflow: hidden;
+}
+
+.year-poster__title {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.year-poster__grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.year-poster__month {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  padding: 0.15em;
+  border: 0.5px solid color-mix(in srgb, var(--accent, #666) 18%, transparent);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--accent, #666) 4%, transparent);
+}
+
+.year-poster__month-name {
+  font-size: calc(var(--day-size, 5px) * 1.15);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 0.1em;
+  flex-shrink: 0;
+}
+
+.year-poster__weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: calc(var(--day-size, 5px) * 0.75);
+  font-weight: 600;
+  opacity: 0.65;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 0.08em;
+}
+
+.year-poster__wd {
+  overflow: hidden;
+}
+
+.year-poster__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  flex: 1;
+  min-height: 0;
+  font-size: var(--day-size, 5px);
+  line-height: 1.05;
+  text-align: center;
+}
+
+.year-poster__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.year-poster__day--empty {
+  opacity: 0.2;
+}
+
+.year-poster__day--weekend {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.year-poster--compact .year-poster__month-name {
+  font-size: calc(var(--day-size, 4px) * 1.1);
+}
+
+.year-poster--compact .year-poster__days {
+  font-size: calc(var(--day-size, 4px) * 0.95);
+}

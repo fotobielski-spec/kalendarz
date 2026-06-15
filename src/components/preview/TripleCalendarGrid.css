@@ -1,0 +1,301 @@
+.triple-cal {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  pointer-events: none;
+  container-type: size;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: calc(1 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.triple-cal__months {
+  display: grid;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  gap: calc(0.8 * 100cqw / var(--zone-w-mm, 186));
+  align-items: stretch;
+}
+
+.triple-cal__panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: calc(1 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.triple-cal__panel .print-cal {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  padding: calc(0.6 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.triple-cal__hint {
+  position: absolute;
+  top: calc(0.25 * 100cqw / var(--zone-w-mm, 186));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-family: var(--font-body, inherit);
+  font-size: min(
+    calc(3.8 * 100cqw / var(--zone-w-mm, 186)),
+    2.2cqh
+  );
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  opacity: 0.42;
+  white-space: normal;
+  text-align: center;
+  max-width: 95%;
+  word-break: break-word;
+  line-height: 1.1;
+  pointer-events: none;
+}
+
+.triple-cal__hint--main {
+  opacity: 0.75;
+  color: var(--accent, currentColor);
+  font-weight: 700;
+  font-size: min(
+    calc(4.2 * 100cqw / var(--zone-w-mm, 186)),
+    2.5cqh
+  );
+}
+
+.triple-cal__panel--prev,
+.triple-cal__panel--next {
+  opacity: 0.86;
+  background: color-mix(in srgb, var(--accent, #6366f1) 5%, transparent);
+}
+
+.triple-cal__panel--prev .print-cal__day-num,
+.triple-cal__panel--next .print-cal__day-num {
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.triple-cal__panel--main {
+  background: color-mix(in srgb, var(--accent, #6366f1) 8%, #fff);
+  box-shadow: 0 calc(0.8 * 100cqw / var(--zone-w-mm, 186)) calc(2.5 * 100cqw / var(--zone-w-mm, 186)) rgba(0, 0, 0, 0.06);
+}
+
+.triple-cal__panel--main .print-cal__day-num {
+  font-weight: 700;
+}
+
+.triple-cal__panel--main .print-cal__imieniny {
+  font-size: min(
+    calc(var(--day-size, 8) * 0.46 * 100cqw / var(--zone-w-mm, 186)),
+    2.8cqh
+  );
+  line-height: 1.06;
+  opacity: 0.85;
+}
+
+/* ═══ UKŁADY STRUKTURALNE ═══ */
+
+.triple-cal--layout-rzad .triple-cal__months {
+  grid-template-columns: 0.24fr 0.52fr 0.24fr;
+  grid-template-areas: 'prev main next';
+  grid-template-rows: 1fr;
+}
+
+.triple-cal--layout-piramida .triple-cal__months {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.35fr 0.9fr;
+  grid-template-areas:
+    'main main'
+    'prev next';
+  gap: calc(1.2 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.triple-cal--layout-piramida .triple-cal__panel--main {
+  border-radius: calc(2 * 100cqw / var(--zone-w-mm, 186)) calc(2 * 100cqw / var(--zone-w-mm, 186)) 0 0;
+  box-shadow: 0 calc(-0.5 * 100cqw / var(--zone-w-mm, 186)) 0 color-mix(in srgb, var(--accent, #6366f1) 30%, transparent);
+}
+
+.triple-cal--layout-filar .triple-cal__months {
+  grid-template-columns: 1.45fr 0.85fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'main prev'
+    'main next';
+  gap: calc(0.6 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.triple-cal--layout-filar .triple-cal__panel--main {
+  border-right: calc(0.4 * 100cqw / var(--zone-w-mm, 186)) solid color-mix(in srgb, var(--accent, #6366f1) 25%, transparent);
+  border-radius: 0;
+}
+
+.triple-cal--layout-filar .triple-cal__panel--prev,
+.triple-cal--layout-filar .triple-cal__panel--next {
+  border-radius: 0;
+  background: transparent;
+  border-left: calc(0.2 * 100cqw / var(--zone-w-mm, 186)) solid color-mix(in srgb, var(--accent, #6366f1) 15%, transparent);
+}
+
+.triple-cal--layout-rogi .triple-cal__months {
+  grid-template-columns: 0.75fr 0.5fr 0.75fr;
+  grid-template-rows: 0.7fr 1.3fr;
+  grid-template-areas:
+    'prev . next'
+    'main main main';
+  gap: calc(0.5 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.triple-cal--layout-rogi .triple-cal__panel--prev,
+.triple-cal--layout-rogi .triple-cal__panel--next {
+  border-radius: calc(3 * 100cqw / var(--zone-w-mm, 186));
+  align-self: end;
+}
+
+.triple-cal--layout-rogi .triple-cal__panel--main {
+  border-radius: calc(3 * 100cqw / var(--zone-w-mm, 186));
+  margin-top: calc(-0.5 * 100cqw / var(--zone-w-mm, 186));
+  z-index: 1;
+}
+
+.triple-cal--layout-rogi .triple-cal__connector {
+  position: absolute;
+  top: 28%;
+  left: 18%;
+  right: 18%;
+  height: calc(0.3 * 100cqw / var(--zone-w-mm, 186));
+  border-top: calc(0.25 * 100cqw / var(--zone-w-mm, 186)) dashed color-mix(in srgb, var(--accent, #6366f1) 35%, transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.triple-cal--layout-tasma .triple-cal__months {
+  grid-template-columns: 0.17fr 0.66fr 0.17fr;
+  grid-template-areas: 'prev main next';
+  gap: calc(0.4 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.triple-cal--layout-tasma .triple-cal__panel--prev,
+.triple-cal--layout-tasma .triple-cal__panel--next {
+  opacity: 0.65;
+}
+
+.triple-cal--layout-tasma .triple-cal__panel--main {
+  transform: scale(1.02);
+  z-index: 1;
+  border-top: calc(0.55 * 100cqw / var(--zone-w-mm, 186)) solid var(--accent, currentColor);
+  border-radius: 0;
+  background: #fff;
+}
+
+.triple-cal--layout-blok .triple-cal__months {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.85fr 1.35fr;
+  grid-template-areas:
+    'prev next'
+    'main main';
+  gap: 0;
+}
+
+.triple-cal--layout-blok .triple-cal__panel {
+  border-radius: 0;
+  border: calc(0.45 * 100cqw / var(--zone-w-mm, 186)) solid currentColor;
+}
+
+.triple-cal--layout-blok .triple-cal__panel--main {
+  border-width: calc(0.7 * 100cqw / var(--zone-w-mm, 186));
+  background: #fff;
+  box-shadow: none;
+}
+
+.triple-cal--layout-blok .triple-cal__panel--main .print-cal__title {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.triple-cal--layout-nakladka {
+  padding: calc(0.6 * 100cqw / var(--zone-w-mm, 186));
+  background: rgba(15, 23, 42, 0.55) !important;
+  backdrop-filter: blur(6px);
+}
+
+.triple-cal--layout-nakladka .triple-cal__veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.4) 100%);
+  pointer-events: none;
+}
+
+.triple-cal--layout-nakladka .triple-cal__months {
+  grid-template-columns: 0.2fr 0.6fr 0.2fr;
+  grid-template-areas: 'prev main next';
+  position: relative;
+  z-index: 1;
+}
+
+.triple-cal--layout-nakladka .triple-cal__panel--prev,
+.triple-cal--layout-nakladka .triple-cal__panel--next {
+  background: rgba(15, 23, 42, 0.75);
+  color: #cbd5e1;
+  opacity: 1;
+  border-radius: calc(0.8 * 100cqw / var(--zone-w-mm, 186));
+}
+
+.triple-cal--layout-nakladka .triple-cal__panel--prev .print-cal,
+.triple-cal--layout-nakladka .triple-cal__panel--next .print-cal {
+  color: #cbd5e1;
+}
+
+.triple-cal--layout-nakladka .triple-cal__panel--main {
+  background: #fff;
+  color: #0f172a;
+  border-radius: calc(1 * 100cqw / var(--zone-w-mm, 186));
+  box-shadow: 0 calc(1 * 100cqw / var(--zone-w-mm, 186)) calc(5 * 100cqw / var(--zone-w-mm, 186)) rgba(0, 0, 0, 0.25);
+}
+
+.triple-cal--layout-nakladka .triple-cal__panel--main .print-cal {
+  color: #0f172a;
+}
+
+.triple-cal--layout-nakladka .triple-cal__hint {
+  color: #94a3b8;
+}
+
+.triple-cal__panel--prev { grid-area: prev; }
+.triple-cal__panel--main { grid-area: main; }
+.triple-cal__panel--next { grid-area: next; }
+
+/* ═══ WARIANTY WIZUALNE ═══ */
+
+.triple-cal--trojka-zlota-rzad .triple-cal__panel--main {
+  background: linear-gradient(180deg, #fffef8, #fff);
+  box-shadow: inset 0 calc(0.45 * 100cqw / var(--zone-w-mm, 186)) 0 color-mix(in srgb, var(--accent, #b45309) 65%, transparent);
+}
+
+.triple-cal--trojka-deco-piramida .triple-cal__panel--main {
+  background:
+    linear-gradient(var(--accent), var(--accent)) top left / calc(2.5 * 100cqw / var(--zone-w-mm, 186)) calc(0.35 * 100cqw / var(--zone-w-mm, 186)) no-repeat,
+    linear-gradient(var(--accent), var(--accent)) top left / calc(0.35 * 100cqw / var(--zone-w-mm, 186)) calc(2.5 * 100cqw / var(--zone-w-mm, 186)) no-repeat,
+    linear-gradient(var(--accent), var(--accent)) top right / calc(2.5 * 100cqw / var(--zone-w-mm, 186)) calc(0.35 * 100cqw / var(--zone-w-mm, 186)) no-repeat,
+    #fffef8;
+  border-radius: 0;
+}
+
+.triple-cal--trojka-pastel-rogi .triple-cal__panel {
+  border-radius: calc(4 * 100cqw / var(--zone-w-mm, 186));
+  background: color-mix(in srgb, var(--accent, #c026d3) 10%, #fff);
+}
+
+.triple-cal--trojka-botanic-tasma .triple-cal__panel--main {
+  border-top-color: #166534;
+  background: color-mix(in srgb, #166534 5%, #fff);
+}
+
+.triple-cal--trojka-botanic-tasma .triple-cal__panel--prev,
+.triple-cal--trojka-botanic-tasma .triple-cal__panel--next {
+  border-bottom: calc(0.35 * 100cqw / var(--zone-w-mm, 186)) solid color-mix(in srgb, #166534 25%, transparent);
+}
