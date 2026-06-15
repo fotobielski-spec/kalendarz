@@ -127,6 +127,53 @@ function nameDaysPosition(layout: CalendarLayout): string {
   return 'below-day-number';
 }
 
+function buildDayGrid(layout: CalendarLayout, kalendarium: Kalendarium) {
+  const grid: Record<string, unknown> = {
+    week_start: 'monday',
+    weekday_labels: layout === 'strip-bottom' ? [...STRIP_WEEKDAY_LABELS] : [...WEEKDAY_LABELS],
+    rows: 6,
+    columns: 7,
+    cells: 42,
+    show_adjacent_month_days: true,
+  };
+  if (layout === 'senior-grid') grid.senior = true;
+  if (kalendarium.typografia.dense) grid.dense = true;
+  return grid;
+}
+
+type MonthTitleSpec = NonNullable<NonNullable<StronaMiesiaca['typografia']>['nazwaMiesiaca']>;
+
+function buildMonthTitle(
+  monthTitle: MonthTitleSpec | undefined,
+  calZone: { x: number; y: number; width: number; height: number },
+  kalendarium: Kalendarium,
+) {
+  const accent = kalendarium.paleta.akcent ?? '#333333';
+  const size = kalendarium.typografia.rozmiarMiesiac ?? 12;
+
+  if (monthTitle) {
+    return {
+      x: monthTitle.x,
+      y: monthTitle.y,
+      size_mm: monthTitle.rozmiar ?? size,
+      align: mapAlign(monthTitle.wyrownanie),
+      color: monthTitle.kolor ?? accent,
+      transform: monthTitle.transform ?? 'none',
+      letter_spacing_mm: monthTitle.letterSpacing ?? 0,
+    };
+  }
+
+  return {
+    x: calZone.x + 2,
+    y: calZone.y + 2,
+    size_mm: size,
+    align: 'left',
+    color: accent,
+    transform: 'none',
+    letter_spacing_mm: 0,
+  };
+}
+
 export function exportThemeSchema(kalendarium: Kalendarium, pageFormat: PageFormat = 'A4') {
   const page = getJanuaryPage(kalendarium);
   if (!page) throw new Error(`Brak strony stycznia dla ${kalendarium.id}`);
@@ -187,6 +234,7 @@ export function exportThemeSchema(kalendarium: Kalendarium, pageFormat: PageForm
     },
     photo_zone: photoZone,
     calendar_zone: calendarZone,
+    day_grid: buildDayGrid(layout, kalendarium),
     name_days: {
       enabled: showNameDays,
       position: nameDaysPosition(layout),
@@ -198,17 +246,7 @@ export function exportThemeSchema(kalendarium: Kalendarium, pageFormat: PageForm
       body_font: fontStack(kalendarium.typografia.tekst),
       day_number_size_mm: daySize,
       name_day_size_mm: Math.round(daySize * 0.62 * 10) / 10,
-      month_title: monthTitle
-        ? {
-            x: monthTitle.x,
-            y: monthTitle.y,
-            size_mm: monthTitle.rozmiar ?? kalendarium.typografia.rozmiarMiesiac ?? 12,
-            align: mapAlign(monthTitle.wyrownanie),
-            color: monthTitle.kolor ?? kalendarium.paleta.akcent ?? '#333333',
-            transform: monthTitle.transform ?? 'none',
-            letter_spacing_mm: monthTitle.letterSpacing ?? 0,
-          }
-        : undefined,
+      month_title: buildMonthTitle(monthTitle, calZone, kalendarium),
     },
     colors: {
       panel_background: kalendarium.paleta.tlo ?? '#FFFFFF',
@@ -230,19 +268,6 @@ export function exportThemeSchema(kalendarium: Kalendarium, pageFormat: PageForm
     },
     safe_margins_mm: safeMargins(pageW, pageH, photoZone, calZone),
   };
-
-  if (layout === 'week-grid' || layout === 'senior-grid' || layout === 'strip-bottom') {
-    exportDoc.day_grid = {
-      week_start: 'monday',
-      weekday_labels: layout === 'strip-bottom' ? [...STRIP_WEEKDAY_LABELS] : [...WEEKDAY_LABELS],
-      rows: 6,
-      columns: 7,
-      cells: 42,
-      show_adjacent_month_days: true,
-      senior: layout === 'senior-grid',
-      dense: kalendarium.typografia.dense === true,
-    };
-  }
 
   if (layout === 'vertical-list') {
     exportDoc.day_list = {
