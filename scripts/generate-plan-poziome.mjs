@@ -316,7 +316,7 @@ const DEFINICJE = [
       ukladMiesiac: 'poz-strip-bottom',
       titleRozmiar: 11,
       strefyMiesiac: () => [
-        zone('foto', 'hero', M, M, W, PH85, { opis: 'Duże zdjęcie — 85% powierzchni strony' }),
+        zone('foto', 'hero', 0, M, PAGE_W, PH85, { opis: 'Duże zdjęcie — pełna szerokość strony' }),
       ],
       strefaKalendarza: { x: 0, y: M + PH85, szerokosc: PAGE_W, wysokosc: CH15, uklad: 'pasek-dol' },
       typografiaMiesiac: {

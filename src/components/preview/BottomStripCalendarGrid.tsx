@@ -1,6 +1,6 @@
 import type { StrefaKalendarza } from '../../types/plan';
 import { usePageSize } from '../../context/PageSizeContext';
-import { mmPosStyle, zoneCssVars } from '../../utils/previewUtils';
+import { zoneCssVars } from '../../utils/previewUtils';
 import './BottomStripCalendarGrid.css';
 
 /** Skrócone etykiety — mieszczą się w wąskich kolumnach */
@@ -92,11 +92,14 @@ export function BottomStripCalendarGrid({
       <div
         className="strip-cal"
         style={{
-          ...mmPosStyle(area, pageW, pageH),
           position: 'absolute',
+          left: 0,
+          top: `${(area.y / pageH) * 100}%`,
+          width: '100%',
+          height: `${(area.wysokosc / pageH) * 100}%`,
           color: textColor,
           background: backgroundColor,
-          ...zoneCssVars(area),
+          ...zoneCssVars({ szerokosc: pageW, wysokosc: area.wysokosc }),
           '--font-heading': headingFont,
           '--font-body': bodyFont,
           '--accent': accentColor,
