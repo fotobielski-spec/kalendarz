@@ -11379,9 +11379,9 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
@@ -11445,16 +11445,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11463,9 +11463,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -11507,16 +11507,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11525,9 +11525,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -11569,16 +11569,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11587,9 +11587,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -11631,16 +11631,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11649,9 +11649,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -11693,16 +11693,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11711,9 +11711,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -11755,16 +11755,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11773,9 +11773,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -11817,16 +11817,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11835,9 +11835,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -11879,16 +11879,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11897,9 +11897,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -11941,16 +11941,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -11959,9 +11959,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -12003,16 +12003,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -12021,9 +12021,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -12065,16 +12065,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -12083,9 +12083,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }
@@ -12127,16 +12127,16 @@
             }
           ],
           "strefaKalendarza": {
-            "x": 12,
+            "x": 0,
             "y": 179,
-            "szerokosc": 273,
+            "szerokosc": 297,
             "wysokosc": 19,
             "uklad": "pasek-dol"
           },
           "typografia": {
             "nazwaMiesiaca": {
               "x": 14,
-              "y": 195,
+              "y": 175,
               "rozmiar": 11,
               "wyrownanie": "left",
               "kolor": "#18181B"
@@ -12145,9 +12145,9 @@
           "dekoracje": [
             {
               "typ": "linia",
-              "x": 12,
+              "x": 0,
               "y": 179,
-              "szerokosc": 273,
+              "szerokosc": 297,
               "kolor": "#18181B",
               "grubosc": 0.5
             }

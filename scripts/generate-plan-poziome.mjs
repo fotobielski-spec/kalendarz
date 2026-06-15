@@ -318,12 +318,12 @@ const DEFINICJE = [
       strefyMiesiac: () => [
         zone('foto', 'hero', M, M, W, PH90, { opis: 'Duże zdjęcie — 90% powierzchni strony' }),
       ],
-      strefaKalendarza: { x: M, y: M + PH90, szerokosc: W, wysokosc: CH10, uklad: 'pasek-dol' },
+      strefaKalendarza: { x: 0, y: M + PH90, szerokosc: PAGE_W, wysokosc: CH10, uklad: 'pasek-dol' },
       typografiaMiesiac: {
-        nazwaMiesiaca: { x: M + 2, y: M + H - 3, rozmiar: 11, wyrownanie: 'left', kolor: '#18181B' },
+        nazwaMiesiaca: { x: M + 2, y: M + PH90 - 4, rozmiar: 11, wyrownanie: 'left', kolor: '#18181B' },
       },
       dekoracjeMiesiac: () => [
-        { typ: 'linia', x: M, y: M + PH90, szerokosc: W, kolor: '#18181B', grubosc: 0.5 },
+        { typ: 'linia', x: 0, y: M + PH90, szerokosc: PAGE_W, kolor: '#18181B', grubosc: 0.5 },
       ],
       elementyOkładka: [
         { id: 'rok', tekst: '{rok}', pozycja: { x: M + W - 4, y: M + 8 }, rozmiar: 28, wyrownanie: 'right', kolor: '#18181B' },

@@ -13,7 +13,6 @@ interface BottomStripCalendarGridProps {
   headingFont?: string;
   bodyFont?: string;
   backgroundColor?: string;
-  /** Rok w prawym górnym rogu strony (mm od góry obszaru roboczego) */
   yearTopMm?: number;
   yearRightMm?: number;
 }
@@ -33,15 +32,28 @@ export function BottomStripCalendarGrid({
 }: BottomStripCalendarGridProps) {
   const { pageW, pageH } = usePageSize();
   const today = new Date();
-  const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
-  const startOffset = (new Date(year, monthIndex, 1).getDay() + 6) % 7;
 
-  const cells: (number | null)[] = [
-    ...Array.from({ length: startOffset }, () => null),
-    ...Array.from({ length: daysInMonth }, (_, i) => i + 1),
-  ];
+  const firstDay = new Date(year, monthIndex, 1);
+  const startOffset = (firstDay.getDay() + 6) % 7;
+  const startDate = new Date(year, monthIndex, 1 - startOffset);
 
-  const yearX = area.x + area.szerokosc - yearRightMm;
+  const cells = Array.from({ length: 42 }, (_, i) => {
+    const date = new Date(startDate);
+    date.setDate(startDate.getDate() + i);
+    const isCurrentMonth = date.getMonth() === monthIndex;
+    const d = date.getDate();
+    return {
+      day: isCurrentMonth ? d : null,
+      isCurrentMonth,
+      isToday:
+        isCurrentMonth &&
+        d === today.getDate() &&
+        today.getMonth() === monthIndex &&
+        year === today.getFullYear(),
+    };
+  });
+
+  const yearX = pageW - yearRightMm;
 
   return (
     <>
@@ -60,6 +72,20 @@ export function BottomStripCalendarGrid({
         {year}
       </div>
 
+      <span
+        className="strip-cal__month"
+        style={{
+          position: 'absolute',
+          left: `${((area.x + 12) / pageW) * 100}%`,
+          top: `${((area.y - 5) / pageH) * 100}%`,
+          fontFamily: headingFont,
+          color: accentColor,
+          transform: 'translateY(-100%)',
+        }}
+      >
+        {monthName}
+      </span>
+
       <div
         className="strip-cal"
         style={{
@@ -73,29 +99,19 @@ export function BottomStripCalendarGrid({
           '--accent': accentColor,
         } as React.CSSProperties}
       >
-        <span className="strip-cal__month" style={{ fontFamily: headingFont }}>
-          {monthName}
-        </span>
         <div className="strip-cal__row" style={{ fontFamily: bodyFont }}>
-          {cells.map((day, i) => {
-            const isToday =
-              day != null &&
-              day === today.getDate() &&
-              today.getMonth() === monthIndex &&
-              year === today.getFullYear();
-            return (
-              <span
-                key={i}
-                className={[
-                  'strip-cal__cell',
-                  day == null && 'strip-cal__cell--empty',
-                  isToday && 'strip-cal__cell--today',
-                ].filter(Boolean).join(' ')}
-              >
-                {day ?? ''}
-              </span>
-            );
-          })}
+          {cells.map((cell, i) => (
+            <span
+              key={i}
+              className={[
+                'strip-cal__cell',
+                !cell.isCurrentMonth && 'strip-cal__cell--muted',
+                cell.isToday && 'strip-cal__cell--today',
+              ].filter(Boolean).join(' ')}
+            >
+              {cell.day ?? ''}
+            </span>
+          ))}
         </div>
       </div>
     </>
