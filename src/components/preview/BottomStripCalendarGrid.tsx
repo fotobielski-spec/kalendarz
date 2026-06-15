@@ -33,21 +33,20 @@ export function BottomStripCalendarGrid({
   const { pageW, pageH } = usePageSize();
   const today = new Date();
 
-  const firstDay = new Date(year, monthIndex, 1);
-  const startOffset = (firstDay.getDay() + 6) % 7;
-  const startDate = new Date(year, monthIndex, 1 - startOffset);
+  const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
+  const startOffset = (new Date(year, monthIndex, 1).getDay() + 6) % 7;
+  const colCount = Math.ceil((startOffset + daysInMonth) / 7) * 7;
 
-  const cells = Array.from({ length: 42 }, (_, i) => {
-    const date = new Date(startDate);
-    date.setDate(startDate.getDate() + i);
-    const isCurrentMonth = date.getMonth() === monthIndex;
-    const d = date.getDate();
+  const cells = Array.from({ length: colCount }, (_, i) => {
+    if (i < startOffset || i >= startOffset + daysInMonth) {
+      return { day: null, isEmpty: true, isToday: false };
+    }
+    const day = i - startOffset + 1;
     return {
-      day: isCurrentMonth ? d : null,
-      isCurrentMonth,
+      day,
+      isEmpty: false,
       isToday:
-        isCurrentMonth &&
-        d === today.getDate() &&
+        day === today.getDate() &&
         today.getMonth() === monthIndex &&
         year === today.getFullYear(),
     };
@@ -97,19 +96,23 @@ export function BottomStripCalendarGrid({
           '--font-heading': headingFont,
           '--font-body': bodyFont,
           '--accent': accentColor,
+          '--strip-cols': colCount,
         } as React.CSSProperties}
       >
-        <div className="strip-cal__row" style={{ fontFamily: bodyFont }}>
+        <div
+          className="strip-cal__row"
+          style={{ fontFamily: bodyFont, gridTemplateColumns: `repeat(${colCount}, minmax(0, 1fr))` }}
+        >
           {cells.map((cell, i) => (
             <span
               key={i}
               className={[
                 'strip-cal__cell',
-                !cell.isCurrentMonth && 'strip-cal__cell--muted',
+                cell.isEmpty && 'strip-cal__cell--empty',
                 cell.isToday && 'strip-cal__cell--today',
               ].filter(Boolean).join(' ')}
             >
-              {cell.day ?? ''}
+              <span className="strip-cal__num">{cell.day ?? ''}</span>
             </span>
           ))}
         </div>

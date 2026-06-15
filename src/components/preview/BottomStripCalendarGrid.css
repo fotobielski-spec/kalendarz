@@ -7,9 +7,6 @@
   padding: 0;
   box-sizing: border-box;
   border-top: 1px solid color-mix(in srgb, var(--accent, #6366f1) 40%, transparent);
-  width: 100%;
-  left: 0 !important;
-  right: 0;
 }
 
 .strip-cal__month {
@@ -33,45 +30,53 @@
 }
 
 .strip-cal__row {
-  display: flex;
-  align-items: center;
-  justify-content: stretch;
-  flex-wrap: nowrap;
+  display: grid;
   width: 100%;
   height: 100%;
   min-width: 0;
+  align-items: stretch;
 }
 
 .strip-cal__cell {
-  flex: 1 1 0;
-  min-width: 0;
+  container-type: size;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  text-align: center;
-  font-size: min(
-    calc(6.5 * 100cqw / var(--zone-w-mm, 297)),
-    62cqh
-  );
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-  line-height: 1;
+  min-width: 0;
+  overflow: hidden;
   box-sizing: border-box;
-  border-right: 1px solid color-mix(in srgb, var(--accent, #6366f1) 28%, transparent);
+  border-right: 1px solid color-mix(in srgb, var(--accent, #6366f1) 30%, #c4c4c4);
 }
 
 .strip-cal__cell:last-child {
   border-right: none;
 }
 
-.strip-cal__cell--muted {
-  opacity: 0.2;
+.strip-cal__num {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  line-height: 1;
+  font-size: min(72cqh, 58cqw);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.strip-cal__cell--empty {
+  background: color-mix(in srgb, currentColor 3%, transparent);
+}
+
+.strip-cal__cell--empty .strip-cal__num {
+  opacity: 0;
 }
 
 .strip-cal__cell--today {
+  background: color-mix(in srgb, var(--accent, #6366f1) 14%, transparent);
+}
+
+.strip-cal__cell--today .strip-cal__num {
   color: var(--accent, #6366f1);
   font-weight: 800;
-  background: color-mix(in srgb, var(--accent, #6366f1) 12%, transparent);
-  opacity: 1;
 }
