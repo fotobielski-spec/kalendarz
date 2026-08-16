@@ -13,6 +13,7 @@ Aplikacja webowa do procesu zdjęć biometrycznych: kiosk (QR) → mobile captur
 
 Szczegóły architektury: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)  
 Plan etapów 0–5: [docs/DEPLOYMENT_PLAN.md](docs/DEPLOYMENT_PLAN.md)
+Migracja z bazy FOTOWAY ID: [docs/FOTOWAY_BASE_MIGRATION.md](docs/FOTOWAY_BASE_MIGRATION.md)
 
 ## Wymagania
 
@@ -88,8 +89,8 @@ Zmienne środowiskowe: skopiuj z `.env.example` do secret store — **nigdy nie 
 
 ## Status projektu
 
-**ETAP 0** — plan + struktura monorepo (bieżący).  
-Następny krok po akceptacji: **ETAP 1 — MVP Capture**.
+**ETAP 3** — mobile-first bez QR + generowanie 2 assetów (electronic + imposition 1x8), tokenizowany podgląd i secure download (bieżący).  
+Następny krok: **ETAP 4 — koszyk, płatność i dostarczenie e-mail**.
 
 ## Licencja
 

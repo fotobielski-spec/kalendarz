@@ -27,3 +27,32 @@ export const CreateSessionResponseSchema = z.object({
   expiresAt: z.string().datetime(),
 });
 export type CreateSessionResponse = z.infer<typeof CreateSessionResponseSchema>;
+
+export const SessionDetailsResponseSchema = z.object({
+  sessionId: z.string().uuid(),
+  qrToken: z.string(),
+  status: SessionStatusSchema,
+  expiresAt: z.string().datetime(),
+  uploadCount: z.number().int().nonnegative(),
+  analysisStatus: z.enum(['pending', 'running', 'completed', 'failed']).optional(),
+  compliancePercent: z.number().min(0).max(100).optional(),
+});
+export type SessionDetailsResponse = z.infer<typeof SessionDetailsResponseSchema>;
+
+export const SessionResolveByTokenResponseSchema = z.object({
+  sessionId: z.string().uuid(),
+  qrToken: z.string(),
+  status: SessionStatusSchema,
+  expiresAt: z.string().datetime(),
+});
+export type SessionResolveByTokenResponse = z.infer<typeof SessionResolveByTokenResponseSchema>;
+
+export const CreateUploadResponseSchema = z.object({
+  uploadId: z.string().uuid(),
+  sessionId: z.string().uuid(),
+  status: SessionStatusSchema,
+  mimeType: z.string(),
+  sizeBytes: z.number().int().positive(),
+  legacyPhotoId: z.string().optional(),
+});
+export type CreateUploadResponse = z.infer<typeof CreateUploadResponseSchema>;

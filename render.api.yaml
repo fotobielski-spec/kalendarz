@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: dokumenty-id-api-test
+    runtime: node
+    plan: free
+    rootDir: .
+    autoDeploy: true
+    buildCommand: corepack enable && corepack pnpm install --frozen-lockfile && corepack pnpm --filter @dokumenty-id/shared build && corepack pnpm --filter @dokumenty-id/api build
+    startCommand: API_PORT=$PORT corepack pnpm --filter @dokumenty-id/api start
+    envVars:
+      - key: NODE_ENV
+        value: test
+      - key: APP_BASE_URL
+        value: https://kalendarz-woad.vercel.app
+      - key: CORS_ORIGINS
+        value: https://kalendarz-woad.vercel.app
+      - key: FOTOWAY_LEGACY_BASE_URL
+        sync: false
